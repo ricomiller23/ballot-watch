@@ -1,0 +1,62 @@
+[
+  {
+    "id": "fec",
+    "name": "Federal Election Commission (OpenFEC API)",
+    "url": "https://api.open.fec.gov",
+    "type": "api",
+    "tier": 1,
+    "cadence": "Hourly",
+    "bias_note": "Statutory disclosure records as filed by campaigns and PACs.",
+    "enabled": true
+  },
+  {
+    "id": "state_sos",
+    "name": "State Election Authorities (Official SOS Results)",
+    "url": "https://www.nass.org/can-i-vote",
+    "type": "html",
+    "tier": 1,
+    "cadence": "Daily / Realtime on Election Night",
+    "bias_note": "Constitutional authority of record for certified vote tallies and voter turnout.",
+    "enabled": true
+  },
+  {
+    "id": "cook",
+    "name": "Cook Political Report with Amy Walter",
+    "url": "https://www.cookpolitical.com/ratings",
+    "type": "html",
+    "tier": 1,
+    "cadence": "Daily",
+    "bias_note": "Premier non-partisan election forecaster; race ratings displayed verbatim with date.",
+    "enabled": true
+  },
+  {
+    "id": "sabato",
+    "name": "Sabato's Crystal Ball (UVA Center for Politics)",
+    "url": "https://centerforpolitics.org/crystalball",
+    "type": "html",
+    "tier": 1,
+    "cadence": "Weekly",
+    "bias_note": "Academic non-partisan handicapper; displayed side by side without blending.",
+    "enabled": true
+  },
+  {
+    "id": "inside_elections",
+    "name": "Inside Elections with Nathan L. Gonzales",
+    "url": "https://www.insideelections.com",
+    "type": "html",
+    "tier": 1,
+    "cadence": "Weekly",
+    "bias_note": "Non-partisan analytical race rating service.",
+    "enabled": true
+  },
+  {
+    "id": "polymarket",
+    "name": "Polymarket Prediction Markets",
+    "url": "https://polymarket.com/predictions/midterms",
+    "type": "api",
+    "tier": 2,
+    "cadence": "15 min",
+    "bias_note": "Market-implied crowd probabilities. Rendered strictly with `as of` timestamps; never as our forecast.",
+    "enabled": true
+  }
+]
