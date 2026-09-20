@@ -1,3 +1,4 @@
+import { BattlegroundElectoralMap } from "@/components/BattlegroundElectoralMap";
 import React from 'react';
 import Link from 'next/link';
 import { SEED_RACES, SEED_POLLS, SEED_RATINGS, SEED_FORECASTS } from '@/lib/fallback-data';
@@ -42,6 +43,8 @@ export default function ControlBoardPage() {
           </div>
         </div>
       </div>
+
+      <BattlegroundElectoralMap />
 
       {/* Control Arithmetic: House & Senate */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
