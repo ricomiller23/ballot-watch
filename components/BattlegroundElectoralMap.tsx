@@ -1,16 +1,16 @@
 'use client';
 
-import { UsVectorLandmass } from './UsVectorLandmass';
-
 import React, { useState } from 'react';
+import { UsVectorLandmass } from './UsVectorLandmass';
 import { Vote, TrendingUp, BarChart2, Layers, Info, ExternalLink, ShieldCheck } from 'lucide-react';
 
 export interface BattlegroundRace {
   id: string;
   raceTitle: string;
   state: string;
-  lat: number;
-  lng: number;
+  stateName: string;
+  x: number;
+  y: number;
   demCandidate: string;
   repCandidate: string;
   pollAverageLead: string;
@@ -26,8 +26,9 @@ export const BATTLEGROUND_RACES: BattlegroundRace[] = [
     id: 'tx-sen',
     raceTitle: 'Texas U.S. Senate',
     state: 'TX',
-    lat: 31.0,
-    lng: -99.0,
+    stateName: 'Texas',
+    x: 420.0,
+    y: 430.0,
     demCandidate: 'Colin Allred (D)',
     repCandidate: 'Ted Cruz (R)',
     pollAverageLead: 'R +1.8%',
@@ -41,8 +42,9 @@ export const BATTLEGROUND_RACES: BattlegroundRace[] = [
     id: 'oh-sen',
     raceTitle: 'Ohio U.S. Senate',
     state: 'OH',
-    lat: 40.4,
-    lng: -82.9,
+    stateName: 'Ohio',
+    x: 695.0,
+    y: 226.0,
     demCandidate: 'Sherrod Brown (D)',
     repCandidate: 'Bernie Moreno (R)',
     pollAverageLead: 'D +0.8%',
@@ -56,8 +58,9 @@ export const BATTLEGROUND_RACES: BattlegroundRace[] = [
     id: 'mt-sen',
     raceTitle: 'Montana U.S. Senate',
     state: 'MT',
-    lat: 46.8,
-    lng: -110.3,
+    stateName: 'Montana',
+    x: 235.0,
+    y: 78.0,
     demCandidate: 'Jon Tester (D)',
     repCandidate: 'Tim Sheehy (R)',
     pollAverageLead: 'R +3.2%',
@@ -71,8 +74,9 @@ export const BATTLEGROUND_RACES: BattlegroundRace[] = [
     id: 'az-sen',
     raceTitle: 'Arizona U.S. Senate',
     state: 'AZ',
-    lat: 34.0,
-    lng: -111.0,
+    stateName: 'Arizona',
+    x: 205.0,
+    y: 360.0,
     demCandidate: 'Ruben Gallego (D)',
     repCandidate: 'Kari Lake (R)',
     pollAverageLead: 'D +2.4%',
@@ -86,8 +90,9 @@ export const BATTLEGROUND_RACES: BattlegroundRace[] = [
     id: 'nv-sen',
     raceTitle: 'Nevada U.S. Senate',
     state: 'NV',
-    lat: 38.8,
-    lng: -116.4,
+    stateName: 'Nevada',
+    x: 135.0,
+    y: 265.0,
     demCandidate: 'Jacky Rosen (D)',
     repCandidate: 'Sam Brown (R)',
     pollAverageLead: 'D +2.1%',
@@ -101,8 +106,9 @@ export const BATTLEGROUND_RACES: BattlegroundRace[] = [
     id: 'pa-sen',
     raceTitle: 'Pennsylvania U.S. Senate',
     state: 'PA',
-    lat: 41.2,
-    lng: -77.1,
+    stateName: 'Pennsylvania',
+    x: 775.0,
+    y: 208.0,
     demCandidate: 'Bob Casey Jr. (D)',
     repCandidate: 'Dave McCormick (R)',
     pollAverageLead: 'D +2.0%',
@@ -116,8 +122,9 @@ export const BATTLEGROUND_RACES: BattlegroundRace[] = [
     id: 'wi-sen',
     raceTitle: 'Wisconsin U.S. Senate',
     state: 'WI',
-    lat: 43.7,
-    lng: -88.7,
+    stateName: 'Wisconsin',
+    x: 575.0,
+    y: 120.0,
     demCandidate: 'Tammy Baldwin (D)',
     repCandidate: 'Eric Hovde (R)',
     pollAverageLead: 'D +2.8%',
@@ -131,8 +138,9 @@ export const BATTLEGROUND_RACES: BattlegroundRace[] = [
     id: 'mi-sen',
     raceTitle: 'Michigan U.S. Senate',
     state: 'MI',
-    lat: 44.3,
-    lng: -85.6,
+    stateName: 'Michigan',
+    x: 645.0,
+    y: 168.0,
     demCandidate: 'Elissa Slotkin (D)',
     repCandidate: 'Mike Rogers (R)',
     pollAverageLead: 'D +2.5%',
@@ -141,26 +149,74 @@ export const BATTLEGROUND_RACES: BattlegroundRace[] = [
     pollsCount: 10,
     latestPollDate: '2026-09-16',
     mathBlock: 'Weighted Exponential Decay Average (λ=0.035, N=10 polls, Min 3 polls met)'
+  },
+  {
+    id: 'ga-sen',
+    raceTitle: 'Georgia Senate Battleground',
+    state: 'GA',
+    stateName: 'Georgia',
+    x: 685.0,
+    y: 400.0,
+    demCandidate: 'Jon Ossoff (D)',
+    repCandidate: 'Brian Kemp (R)',
+    pollAverageLead: 'D +0.4%',
+    leaderParty: 'DEM',
+    ratingCook: 'Toss-up',
+    pollsCount: 9,
+    latestPollDate: '2026-09-17',
+    mathBlock: 'Weighted Exponential Decay Average (λ=0.035, N=9 polls, Min 3 polls met)'
+  },
+  {
+    id: 'nc-sen',
+    raceTitle: 'North Carolina Battleground',
+    state: 'NC',
+    stateName: 'North Carolina',
+    x: 742.0,
+    y: 338.0,
+    demCandidate: 'Roy Cooper (D)',
+    repCandidate: 'Thom Tillis (R)',
+    pollAverageLead: 'R +1.1%',
+    leaderParty: 'REP',
+    ratingCook: 'Lean R',
+    pollsCount: 11,
+    latestPollDate: '2026-09-16',
+    mathBlock: 'Weighted Exponential Decay Average (λ=0.035, N=11 polls, Min 3 polls met)'
   }
 ];
 
-function projectUsCoords(lat: number, lng: number): { x: number; y: number } {
-  const minLng = -125;
-  const maxLng = -67;
-  const minLat = 24.5;
-  const maxLat = 49.5;
-
-  const x = ((lng - minLng) / (maxLng - minLng)) * 100;
-  const y = ((maxLat - lat) / (maxLat - minLat)) * 100;
-
-  return {
-    x: Math.max(2, Math.min(98, x)),
-    y: Math.max(4, Math.min(96, y))
-  };
-}
-
 export function BattlegroundElectoralMap() {
   const [selectedRace, setSelectedRace] = useState<BattlegroundRace>(BATTLEGROUND_RACES[0]);
+
+  // Highlight active states based on partisan lean
+  const highlightStates: Record<string, { fill?: string; stroke?: string; strokeWidth?: number }> = {
+    'Pennsylvania': { fill: '#E0EDFF', stroke: '#0E63C4', strokeWidth: 1.2 },
+    'Michigan': { fill: '#E0EDFF', stroke: '#0E63C4', strokeWidth: 1.2 },
+    'Wisconsin': { fill: '#E0EDFF', stroke: '#0E63C4', strokeWidth: 1.2 },
+    'Nevada': { fill: '#E0EDFF', stroke: '#0E63C4', strokeWidth: 1.2 },
+    'Arizona': { fill: '#E0EDFF', stroke: '#0E63C4', strokeWidth: 1.2 },
+    'Georgia': { fill: '#FEF08A', stroke: '#CA8A04', strokeWidth: 1.2 },
+    'Ohio': { fill: '#FEF08A', stroke: '#CA8A04', strokeWidth: 1.2 },
+    'Texas': { fill: '#FEE4E2', stroke: '#B42318', strokeWidth: 1.2 },
+    'Montana': { fill: '#FEE4E2', stroke: '#B42318', strokeWidth: 1.2 },
+    'North Carolina': { fill: '#FEE4E2', stroke: '#B42318', strokeWidth: 1.2 },
+    'Florida': { fill: '#FEE4E2', stroke: '#B42318', strokeWidth: 1.0 },
+  };
+
+  // Give selected state special prominent highlight
+  if (selectedRace.stateName && highlightStates[selectedRace.stateName]) {
+    highlightStates[selectedRace.stateName] = {
+      fill: selectedRace.leaderParty === 'DEM' ? '#C2E0FF' : '#FCD4D0',
+      stroke: selectedRace.leaderParty === 'DEM' ? '#0E63C4' : '#B42318',
+      strokeWidth: 2.2
+    };
+  }
+
+  const handleSelectState = (stateName: string) => {
+    const match = BATTLEGROUND_RACES.find((r) => r.stateName === stateName);
+    if (match) {
+      setSelectedRace(match);
+    }
+  };
 
   return (
     <div className="w-full bg-[#FFFFFF] border border-[#E4E9F0] rounded-xl overflow-hidden shadow-sm my-6 font-mono">
@@ -186,88 +242,107 @@ export function BattlegroundElectoralMap() {
             Lean D: 6
           </span>
           <span className="bg-white border border-[#E4E9F0] px-2.5 py-1 rounded text-[#B42318] font-bold">
-            Lean R: 2
+            Lean R: 3
           </span>
           <span className="bg-white border border-[#E4E9F0] px-2.5 py-1 rounded text-purple-700 font-bold">
-            Toss-up: 2
+            Toss-up: 1
           </span>
         </div>
       </div>
 
-      {/* SVG Canvas */}
-      <div className="relative w-full bg-[#F8FAFC] border-b border-[#E4E9F0] overflow-hidden" style={{ minHeight: '340px' }}>
+      {/* SVG Canvas with In-SVG Synchronized Indicators */}
+      <div className="relative w-full bg-[#EEF4FB] border-b border-[#E4E9F0] overflow-hidden">
         <svg
           viewBox="0 0 960 600"
-          className="w-full h-auto max-h-[440px] select-none pointer-events-none"
+          className="w-full h-auto max-h-[480px] select-none"
           preserveAspectRatio="xMidYMid meet"
         >
+          {/* Base Vector Landmass */}
           <UsVectorLandmass
-            highlightStates={{
-              'Pennsylvania': { fill: '#E0EDFF', stroke: '#0E63C4', strokeWidth: 1.2 },
-              'Michigan': { fill: '#E0EDFF', stroke: '#0E63C4', strokeWidth: 1.2 },
-              'Wisconsin': { fill: '#FEF08A', stroke: '#CA8A04', strokeWidth: 1.2 },
-              'Nevada': { fill: '#FEF08A', stroke: '#CA8A04', strokeWidth: 1.2 },
-              'Arizona': { fill: '#FEF08A', stroke: '#CA8A04', strokeWidth: 1.2 },
-              'Georgia': { fill: '#FEE4E2', stroke: '#B42318', strokeWidth: 1.2 },
-              'North Carolina': { fill: '#FEE4E2', stroke: '#B42318', strokeWidth: 1.2 },
-              'Ohio': { fill: '#FEE4E2', stroke: '#B42318', strokeWidth: 1.2 },
-              'Florida': { fill: '#FEE4E2', stroke: '#B42318', strokeWidth: 1.2 },
-              'Texas': { fill: '#FEE4E2', stroke: '#B42318', strokeWidth: 1.2 },
-            }}
+            highlightStates={highlightStates}
+            selectedState={selectedRace.stateName}
+            onSelectState={handleSelectState}
+            showLabels={true}
           />
-        </svg>
 
-        {/* Race Markers */}
-        <div className="absolute inset-0 pointer-events-auto">
-          {BATTLEGROUND_RACES.map((race) => {
-            const { x, y } = projectUsCoords(race.lat, race.lng);
-            const isSelected = selectedRace.id === race.id;
-            return (
-              <div
-                key={race.id}
-                style={{ left: `${x}%`, top: `${y}%` }}
-                className="absolute -translate-x-1/2 -translate-y-1/2 cursor-pointer group z-10"
-                onClick={() => setSelectedRace(race)}
-              >
-                <div
-                  className={`relative flex items-center justify-center transition-transform ${
-                    isSelected ? 'scale-125 z-20' : 'hover:scale-110'
-                  }`}
+          {/* Cartographically Locked Battleground Indicators */}
+          <g className="battleground-indicators">
+            {BATTLEGROUND_RACES.map((race) => {
+              const isSelected = selectedRace.id === race.id;
+              const isDem = race.leaderParty === 'DEM';
+              const isRep = race.leaderParty === 'REP';
+              const badgeColor = isDem ? '#0E63C4' : isRep ? '#B42318' : '#7E22CE';
+
+              return (
+                <g
+                  key={race.id}
+                  transform={`translate(${race.x}, ${race.y})`}
+                  onClick={() => setSelectedRace(race)}
+                  className="cursor-pointer"
+                  style={{
+                    filter: isSelected
+                      ? 'drop-shadow(0 4px 10px rgba(0,0,0,0.30))'
+                      : 'drop-shadow(0 2px 4px rgba(0,0,0,0.12))',
+                  }}
                 >
-                  <span
-                    className={`absolute w-7 h-7 rounded-full opacity-30 ${
-                      race.leaderParty === 'DEM' ? 'bg-[#0E63C4]' : 'bg-[#B42318]'
-                    } ${isSelected ? 'animate-ping' : ''}`}
+                  {/* Aura Pulse Ring */}
+                  <circle
+                    r={isSelected ? 18 : 13}
+                    fill={badgeColor}
+                    opacity={isSelected ? 0.35 : 0.2}
+                    className={isSelected ? 'animate-pulse' : ''}
                   />
-                  <div
-                    className={`w-6 h-6 rounded-full flex items-center justify-center border-2 shadow-md ${
-                      isSelected
-                        ? race.leaderParty === 'DEM'
-                          ? 'bg-[#0E63C4] border-[#FFFFFF] text-[#FFFFFF]'
-                          : 'bg-[#B42318] border-[#FFFFFF] text-[#FFFFFF]'
-                        : race.leaderParty === 'DEM'
-                        ? 'bg-[#FFFFFF] border-[#0E63C4] text-[#0E63C4]'
-                        : 'bg-[#FFFFFF] border-[#B42318] text-[#B42318]'
-                    }`}
-                  >
-                    <Vote className="w-3 h-3" />
-                  </div>
 
-                  {/* Badge */}
-                  <div
-                    className={`absolute top-7 left-1/2 -translate-x-1/2 whitespace-nowrap px-1.5 py-0.5 rounded text-[10px] font-mono font-semibold shadow-xs border pointer-events-none transition ${
-                      isSelected
-                        ? 'bg-[#101828] text-[#FFFFFF] border-[#101828]'
-                        : 'bg-[#FFFFFF]/95 text-[#344054] border-[#E4E9F0]'
-                    }`}
+                  {/* Indicator Pin Body */}
+                  <circle
+                    r={isSelected ? 11 : 9}
+                    fill={isSelected ? badgeColor : '#FFFFFF'}
+                    stroke={badgeColor}
+                    strokeWidth={isSelected ? 2.5 : 2}
+                  />
+
+                  {/* Center Party Monogram */}
+                  <text
+                    x="0"
+                    y="3.2"
+                    textAnchor="middle"
+                    fill={isSelected ? '#FFFFFF' : badgeColor}
+                    fontSize={isSelected ? '9' : '8'}
+                    fontFamily="JetBrains Mono, monospace"
+                    fontWeight="800"
                   >
-                    {race.state}: {race.pollAverageLead}
-                  </div>
-                </div>
-              </div>
-            );
-          })}
-        </div>
+                    {isDem ? 'D' : isRep ? 'R' : 'T'}
+                  </text>
+
+                  {/* High-Contrast State Margin Pill */}
+                  <g transform={`translate(0, ${isSelected ? 22 : 18})`}>
+                    <rect
+                      x="-34"
+                      y="-9"
+                      width="68"
+                      height="18"
+                      rx="4"
+                      fill={isSelected ? '#101828' : '#FFFFFF'}
+                      stroke={isSelected ? '#101828' : '#CBD5E1'}
+                      strokeWidth="1.2"
+                    />
+                    <text
+                      x="0"
+                      y="3.5"
+                      textAnchor="middle"
+                      fill={isSelected ? '#FFFFFF' : '#1E293B'}
+                      fontSize="9"
+                      fontFamily="JetBrains Mono, monospace"
+                      fontWeight="700"
+                    >
+                      {race.state}: {race.pollAverageLead}
+                    </text>
+                  </g>
+                </g>
+              );
+            })}
+          </g>
+        </svg>
       </div>
 
       {/* Selected Race Dossier */}
