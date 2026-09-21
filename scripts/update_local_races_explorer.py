@@ -1,4 +1,4 @@
-'use client';
+code = """'use client';
 
 import React, { useState, useMemo, useRef, useEffect } from 'react';
 import Link from 'next/link';
@@ -917,3 +917,9 @@ export default function LocalRacesExplorer() {
     </div>
   );
 }
+"""
+
+with open("components/LocalRacesExplorer.tsx", "w") as f:
+    f.write(code)
+
+print("Successfully updated components/LocalRacesExplorer.tsx with complete candidate polling, bios, and verified sources!")

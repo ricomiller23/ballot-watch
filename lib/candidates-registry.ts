@@ -9,6 +9,14 @@ import { LOCAL_RACES_DATA } from './local-races-data';
 export type Party = 'DEM' | 'REP' | 'IND' | 'LIB' | 'GRN' | 'NP' | 'WFP' | 'CON';
 export type CandidateStatus = 'Incumbent' | 'Challenger' | 'Open Seat' | 'Primary Winner' | 'Write-In' | 'Declared';
 
+export interface CandidateSourceVerification {
+  agency: string;
+  filingId: string;
+  filingDate: string;
+  verificationStatus: string;
+  sourceUrl?: string;
+}
+
 export interface Candidate {
   name: string;
   party: Party;
@@ -18,6 +26,17 @@ export interface Candidate {
   website?: string;
   age?: number;
   hometown?: string;
+  pollShare?: number;
+  biography?: string;
+  platformStance?: string;
+  sourceVerification?: CandidateSourceVerification;
+}
+
+export interface VerifiedSource {
+  title: string;
+  sourceType: string;
+  url: string;
+  lastChecked: string;
 }
 
 export interface RaceEntry {
@@ -33,11 +52,15 @@ export interface RaceEntry {
   isPartisan: boolean;
   cookRating?: string;
   pollAverage?: string;
+  pollingMethod?: string;
+  qualifyingPollsCount?: number;
   totalFundraisingM?: number;
   candidates: Candidate[];
   keyIssues?: string[];
   notes?: string;
   population?: number;
+  verifiedSources?: VerifiedSource[];
+  lastUpdated?: string;
 }
 
 // ─── US SENATE 2026 (CLASS II SEATS + SPECIAL ELECTIONS) ───────────────────────
