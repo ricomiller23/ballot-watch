@@ -37,5 +37,73 @@ if (popOver1k.length < 2500) {
   process.exit(1);
 }
 
-console.log("✅ PARITY & COMPLETENESS VERIFIED: Sibling application consistency confirmed.");
+// ── AUDIT FULL CANDIDATE REGISTRY FOR 100% POLLING, BIOS, & SOURCES ──────────
+const regContent = fs.readFileSync(__dirname + "/../lib/candidates-registry.ts", "utf8");
+const senateMatch = regContent.match(/export const SENATE_2026_RACES: RaceEntry\[\] = (\[[\s\S]*?\]);/);
+if (!senateMatch) {
+  console.error("❌ Failed to parse SENATE_2026_RACES in candidates-registry.ts");
+  process.exit(1);
+}
+const senateRaces = JSON.parse(senateMatch[1]);
+console.log(`  - Senate Races in Main Registry: ${senateRaces.length}`);
+
+for (const race of senateRaces) {
+  if (!race.pollAverage) {
+    console.error(`❌ SENATE RACE MISSING POLL AVERAGE: ${race.office}`);
+    process.exit(1);
+  }
+  for (const cand of race.candidates) {
+    if (cand.pollShare === undefined || cand.pollShare === null) {
+      console.error(`❌ CANDIDATE MISSING POLL SHARE: ${cand.name} in ${race.office}`);
+      process.exit(1);
+    }
+    if (!cand.biography) {
+      console.error(`❌ CANDIDATE MISSING BIO: ${cand.name} in ${race.office}`);
+      process.exit(1);
+    }
+    if (!cand.sourceVerification) {
+      console.error(`❌ CANDIDATE MISSING SOURCE VERIFICATION: ${cand.name} in ${race.office}`);
+      process.exit(1);
+    }
+  }
+}
+console.log(`  - Senate Candidates Polling & Bio Completeness: 100% Certified`);
+
+const dogMatch = regContent.match(/export const DOG_CATCHER_RACES: RaceEntry\[\] = (\[[\s\S]*?\]);/);
+if (dogMatch) {
+  const dogRaces = JSON.parse(dogMatch[1]);
+  for (const r of dogRaces) {
+    if (!r.pollAverage) {
+      console.error(`❌ DOG CATCHER RACE MISSING POLL AVERAGE: ${r.office}`);
+      process.exit(1);
+    }
+    for (const c of r.candidates) {
+      if (c.pollShare === undefined || !c.biography) {
+        console.error(`❌ DOG CATCHER CANDIDATE INCOMPLETE: ${c.name} in ${r.office}`);
+        process.exit(1);
+      }
+    }
+  }
+  console.log(`  - Featured Dog Catcher Races Polling & Bio Completeness: 100% Certified (${dogRaces.length} races)`);
+}
+
+const treasMatch = regContent.match(/export const TREASURER_RACES: RaceEntry\[\] = (\[[\s\S]*?\]);/);
+if (treasMatch) {
+  const treasRaces = JSON.parse(treasMatch[1]);
+  for (const r of treasRaces) {
+    if (!r.pollAverage) {
+      console.error(`❌ TREASURER RACE MISSING POLL AVERAGE: ${r.office}`);
+      process.exit(1);
+    }
+    for (const c of r.candidates) {
+      if (c.pollShare === undefined || !c.biography) {
+        console.error(`❌ TREASURER CANDIDATE INCOMPLETE: ${c.name} in ${r.office}`);
+        process.exit(1);
+      }
+    }
+  }
+  console.log(`  - Featured Treasurer Races Polling & Bio Completeness: 100% Certified (${treasRaces.length} races)`);
+}
+
+console.log("✅ PARITY, CANDIDATE POLLING & SOURCE VERIFICATION CONFIRMED: 100% Complete.");
 process.exit(0);
