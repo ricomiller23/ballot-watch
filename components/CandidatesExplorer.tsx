@@ -112,15 +112,25 @@ export default function CandidatesExplorer() {
     if (officeTypeFilter === 'dog_catcher') {
       races = races.filter(r => r.office.toLowerCase().includes('dog') || r.office.toLowerCase().includes('animal'));
     } else if (officeTypeFilter === 'treasurer') {
-      races = races.filter(r => r.office.toLowerCase().includes('treasurer') || r.office.toLowerCase().includes('controller') || r.office.toLowerCase().includes('collector'));
-    } else if (officeTypeFilter === 'mayor') {
-      races = races.filter(r => r.office.toLowerCase().includes('mayor'));
+      races = races.filter(r => r.office.toLowerCase().includes('treasurer') || r.office.toLowerCase().includes('collector'));
+    } else if (officeTypeFilter === 'clerk') {
+      races = races.filter(r => r.office.toLowerCase().includes('clerk'));
+    } else if (officeTypeFilter === 'selectboard') {
+      races = races.filter(r => r.office.toLowerCase().includes('selectboard') || r.office.toLowerCase().includes('council') || r.office.toLowerCase().includes('alderman'));
+    } else if (officeTypeFilter === 'moderator') {
+      races = races.filter(r => r.office.toLowerCase().includes('moderator'));
     } else if (officeTypeFilter === 'judicial') {
       races = races.filter(r => r.level === 'judicial' || r.office.toLowerCase().includes('judge') || r.office.toLowerCase().includes('justice of the peace') || r.office.toLowerCase().includes('constable'));
     } else if (officeTypeFilter === 'school') {
       races = races.filter(r => r.office.toLowerCase().includes('school board'));
+    } else if (officeTypeFilter === 'roads') {
+      races = races.filter(r => r.office.toLowerCase().includes('highway') || r.office.toLowerCase().includes('road commissioner'));
     } else if (officeTypeFilter === 'water_soil') {
-      races = races.filter(r => r.office.toLowerCase().includes('water') || r.office.toLowerCase().includes('soil'));
+      races = races.filter(r => r.office.toLowerCase().includes('water') || r.office.toLowerCase().includes('soil') || r.office.toLowerCase().includes('fire'));
+    } else if (officeTypeFilter === 'county_officers') {
+      races = races.filter(r => r.office.toLowerCase().includes('sheriff') || r.office.toLowerCase().includes('district attorney') || r.office.toLowerCase().includes('assessor') || r.office.toLowerCase().includes('coroner') || r.office.toLowerCase().includes('deeds'));
+    } else if (officeTypeFilter === 'mayor') {
+      races = races.filter(r => r.office.toLowerCase().includes('mayor'));
     } else if (officeTypeFilter === 'senate') {
       races = races.filter(r => r.office.toLowerCase().includes('senate'));
     } else if (officeTypeFilter === 'governor') {
@@ -132,12 +142,14 @@ export default function CandidatesExplorer() {
     // Population threshold filter (e.g. population >= 1,000)
     if (populationFilter === '1k_plus') {
       races = races.filter(r => (r.population || 0) >= 1000);
-    } else if (populationFilter === '10k_plus') {
-      races = races.filter(r => (r.population || 0) >= 10000);
-    } else if (populationFilter === '50k_plus') {
-      races = races.filter(r => (r.population || 0) >= 50000);
-    } else if (populationFilter === '250k_plus') {
-      races = races.filter(r => (r.population || 0) >= 250000);
+    } else if (populationFilter === '1k_to_5k') {
+      races = races.filter(r => (r.population || 0) >= 1000 && (r.population || 0) < 5000);
+    } else if (populationFilter === '5k_to_25k') {
+      races = races.filter(r => (r.population || 0) >= 5000 && (r.population || 0) < 25000);
+    } else if (populationFilter === '25k_to_100k') {
+      races = races.filter(r => (r.population || 0) >= 25000 && (r.population || 0) < 100000);
+    } else if (populationFilter === '100k_plus') {
+      races = races.filter(r => (r.population || 0) >= 100000);
     }
 
     return races;
@@ -253,15 +265,20 @@ export default function CandidatesExplorer() {
         <div className="flex flex-wrap gap-1.5 pt-1">
           {[
             { id: 'all', label: 'All Offices', icon: '🗳️' },
-            { id: 'dog_catcher', label: 'Dog Catcher / Animal Control', icon: '🐕' },
-            { id: 'treasurer', label: 'City & County Treasurers', icon: '💰' },
-            { id: 'mayor', label: 'Mayors & Municipal', icon: '🏛️' },
-            { id: 'judicial', label: 'Justices & Constables', icon: '⚖️' },
-            { id: 'school', label: 'School Boards', icon: '🏫' },
-            { id: 'water_soil', label: 'Water & Soil Conservation', icon: '💧' },
-            { id: 'senate', label: 'U.S. Senate (Class II)', icon: '🏛️' },
-            { id: 'governor', label: 'Governors (36 States)', icon: '🏦' },
-            { id: 'house', label: 'House Battlegrounds', icon: '🇺🇸' },
+            { id: 'dog_catcher', label: '🐕 Dog Catchers (Pop. ≥ 1k)', icon: '' },
+            { id: 'treasurer', label: '💰 Treasurers & Tax Collectors', icon: '' },
+            { id: 'clerk', label: '📜 Town & City Clerks', icon: '' },
+            { id: 'selectboard', label: '🏛️ Selectboard & Councils', icon: '' },
+            { id: 'moderator', label: '🗣️ Town Moderators', icon: '' },
+            { id: 'judicial', label: '⚖️ Constables & JPs', icon: '' },
+            { id: 'school', label: '🏫 School Boards', icon: '' },
+            { id: 'roads', label: '🛣️ Road Commissioners', icon: '' },
+            { id: 'water_soil', label: '🚒 Fire, Water & Soil', icon: '' },
+            { id: 'county_officers', label: '🚔 Sheriffs & DAs', icon: '' },
+            { id: 'mayor', label: '🏙️ Mayors', icon: '' },
+            { id: 'senate', label: '🏛️ U.S. Senate', icon: '' },
+            { id: 'governor', label: '🏦 Governors', icon: '' },
+            { id: 'house', label: '🇺🇸 House', icon: '' },
           ].map(p => {
             const active = officeTypeFilter === p.id;
             return (

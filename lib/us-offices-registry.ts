@@ -1,3 +1,4 @@
+import { US_LOCAL_JURISDICTIONS } from './local-jurisdictions';
 /**
  * US COMPLETE OFFICES REGISTRY
  * Every electable position in the United States — federal, state, county, municipal.
@@ -625,7 +626,24 @@ export function generateCompleteOfficeRegistry(): JurisdictionOffice[] {
   // =====================
   // MUNICIPAL OFFICES
   // =====================
-  const uniqueMunicipalities = MAJOR_MUNICIPALITIES.filter((m, idx, arr) =>
+  const allMuniSources = [
+    ...MAJOR_MUNICIPALITIES,
+    ...US_LOCAL_JURISDICTIONS.map(j => ({
+      name: j.name,
+      state: j.state,
+      stateAbbr: j.stateAbbr,
+      county: j.county,
+      population: j.population,
+      cityType: j.cityType as any,
+      hasComptroller: false,
+      hasCityAttorney: false,
+      hasCityAuditor: false,
+      councilSeats: j.councilSeats || 5,
+      nextMayorYear: j.nextMayorYear || 2026,
+      hasElectedDogCatcher: j.hasElectedDogCatcher,
+    }))
+  ];
+  const uniqueMunicipalities = allMuniSources.filter((m, idx, arr) =>
     arr.findIndex(x => x.name === m.name && x.stateAbbr === m.stateAbbr) === idx
   );
 
@@ -646,6 +664,49 @@ export function generateCompleteOfficeRegistry(): JurisdictionOffice[] {
         population: muni.population, tier: 'DOG_CATCHER', level: 'municipal',
         title: `Dog Catcher / Animal Control Officer — ${muni.name}, ${muni.stateAbbr}`,
         category: 'Municipal Public Safety & Animal Control',
+        nextElection: mayorNext, cycleYear: muni.nextMayorYear,
+        isPartisan: false, termYears: 2, totalSeats: 1, seatsUpThisCycle: 1,
+      });
+    }
+
+    offices.push({
+      id: `MUN-TAXCOLLECTOR-${muni.stateAbbr}-${muni.name.replace(/\s/g, '_')}`,
+      state: muni.state, stateAbbr: muni.stateAbbr, municipality: muni.name,
+      population: muni.population, tier: 'TAX_COLLECTOR', level: 'municipal',
+      title: `Tax Collector — ${muni.name}, ${muni.stateAbbr}`,
+      category: 'Municipal Financial',
+      nextElection: mayorNext, cycleYear: muni.nextMayorYear,
+      isPartisan: false, termYears: 2, totalSeats: 1, seatsUpThisCycle: 1,
+    });
+
+    if (['VT', 'ME', 'NH', 'MA', 'CT', 'RI'].includes(muni.stateAbbr)) {
+      offices.push({
+        id: `MUN-MODERATOR-${muni.stateAbbr}-${muni.name.replace(/\s/g, '_')}`,
+        state: muni.state, stateAbbr: muni.stateAbbr, municipality: muni.name,
+        population: muni.population, tier: 'TOWN_MODERATOR', level: 'municipal',
+        title: `Town Moderator — ${muni.name}, ${muni.stateAbbr}`,
+        category: 'Municipal Parliamentary & Governance',
+        nextElection: '2026-03-03', cycleYear: 2026,
+        isPartisan: false, termYears: 1, totalSeats: 1, seatsUpThisCycle: 1,
+      });
+      offices.push({
+        id: `MUN-SELECTBOARD-${muni.stateAbbr}-${muni.name.replace(/\s/g, '_')}`,
+        state: muni.state, stateAbbr: muni.stateAbbr, municipality: muni.name,
+        population: muni.population, tier: 'SELECTBOARD_MEMBER', level: 'municipal',
+        title: `Selectboard Member — ${muni.name}, ${muni.stateAbbr}`,
+        category: 'Municipal Executive & Legislative',
+        nextElection: '2026-03-03', cycleYear: 2026,
+        isPartisan: false, termYears: 3, totalSeats: 3, seatsUpThisCycle: 1,
+      });
+    }
+
+    if (['VT', 'PA', 'TX', 'KY', 'AZ', 'TN', 'IL', 'ME', 'GA', 'CO', 'OH'].includes(muni.stateAbbr)) {
+      offices.push({
+        id: `MUN-CONSTABLE-${muni.stateAbbr}-${muni.name.replace(/\s/g, '_')}`,
+        state: muni.state, stateAbbr: muni.stateAbbr, municipality: muni.name,
+        population: muni.population, tier: 'CONSTABLE', level: 'municipal',
+        title: `Town Constable — ${muni.name}, ${muni.stateAbbr}`,
+        category: 'Municipal Public Safety',
         nextElection: mayorNext, cycleYear: muni.nextMayorYear,
         isPartisan: false, termYears: 2, totalSeats: 1, seatsUpThisCycle: 1,
       });

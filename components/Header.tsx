@@ -3,20 +3,21 @@
 import React from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Vote, BarChart2, TrendingUp, Layers, CheckCircle2, BookOpen, Shield, Building2, Users } from 'lucide-react';
+import { Vote, BarChart2, TrendingUp, Layers, CheckCircle2, BookOpen, Shield, Building2, Users, MapPin } from 'lucide-react';
 
 export default function Header() {
   const pathname = usePathname();
 
   const links = [
     { name: 'Control Board', href: '/', icon: Vote },
-    { name: 'Races', href: '/races', icon: Layers },
+    { name: 'Local Races (Pop ≥ 1k)', href: '/local', icon: MapPin },
+    { name: 'All Races', href: '/races', icon: Layers },
+    { name: 'Candidates', href: '/candidates', icon: Users },
+    { name: 'All Offices', href: '/offices', icon: Building2 },
     { name: 'Polls', href: '/polls', icon: BarChart2 },
     { name: 'Chamber Control', href: '/senate', icon: TrendingUp },
     { name: 'Rating Moves', href: '/rating-changes', icon: CheckCircle2 },
     { name: 'Sources & Methods', href: '/sources', icon: BookOpen },
-    { name: 'Candidates', href: '/candidates', icon: Users },
-    { name: 'All Offices', href: '/offices', icon: Building2 },
     { name: 'Admin', href: '/admin', icon: Shield },
   ];
 

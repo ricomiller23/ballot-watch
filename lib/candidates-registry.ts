@@ -1,3 +1,4 @@
+import { LOCAL_RACES_DATA } from './local-races-data';
 /**
  * COMPLETE US CANDIDATES REGISTRY — 2026 CYCLE
  * Verified current 2026 Midterm Cycle (Class II Senate seats, 36 Governors, House Battlegrounds,
@@ -1645,7 +1646,7 @@ export const TREASURER_RACES: RaceEntry[] = [
   },
 ];
 
-export const ALL_RACES_REGISTRY: RaceEntry[] = [
+const RAW_RACES: RaceEntry[] = [
   ...DOG_CATCHER_RACES,
   ...TREASURER_RACES,
   ...SENATE_2026_RACES,
@@ -1656,7 +1657,15 @@ export const ALL_RACES_REGISTRY: RaceEntry[] = [
   ...COUNTY_RACES_FEATURED,
   ...MAYORAL_RACES,
   ...SPECIAL_DISTRICT_RACES,
+  ...LOCAL_RACES_DATA,
 ];
+
+const _seenRaceIds = new Set<string>();
+export const ALL_RACES_REGISTRY: RaceEntry[] = RAW_RACES.filter(r => {
+  if (_seenRaceIds.has(r.raceId)) return false;
+  _seenRaceIds.add(r.raceId);
+  return true;
+});
 
 /**
  * Returns all unique candidates across every registered race.

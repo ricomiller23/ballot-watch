@@ -47,56 +47,69 @@ export default function ControlBoardPage() {
       <BattlegroundElectoralMap />
 
       {/* ── COMPLETE LOCAL-TO-FEDERAL REGISTRY LAUNCHER ───────────────────────── */}
-      <div className="bg-[#FFFFFF] border-2 border-[#0E63C4] rounded-xl p-4 shadow-sm space-y-3">
-        <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[#E4E9F0] pb-2">
+      <div className="bg-[#FFFFFF] border-2 border-[#0E63C4] rounded-xl p-5 shadow-sm space-y-3">
+        <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[#E4E9F0] pb-3">
           <div>
-            <span className="text-[10px] font-bold uppercase tracking-wider bg-[#EBF3FD] text-[#0A3F73] px-2 py-0.5 rounded border border-[#CBD5E1]">
-              Every Office in America · Populations ≥ 1,000
-            </span>
-            <h2 className="text-base font-extrabold text-[#0B1220] mt-1">
-              Complete Candidate & Office Registry — From U.S. Senate Down to Town Dog Catcher
+            <div className="flex items-center gap-2">
+              <span className="text-[10px] font-bold uppercase tracking-wider bg-[#0E63C4] text-white px-2.5 py-0.5 rounded shadow-xs">
+                3,000+ Local Races · Populations ≥ 1,000
+              </span>
+              <span className="text-xs text-[#5B6779]">
+                Covering All 50 States
+              </span>
+            </div>
+            <h2 className="text-lg font-extrabold text-[#0B1220] mt-1.5">
+              Local Elections Directory: Every Office From Treasurer Down to Dog Catcher
             </h2>
           </div>
-          <Link
-            href="/candidates"
-            className="bg-[#0E63C4] hover:bg-[#0A4E9E] text-white text-xs font-bold px-3 py-1.5 rounded-lg transition shadow-xs"
-          >
-            Explore All Candidates →
-          </Link>
+          <div className="flex gap-2">
+            <Link
+              href="/local"
+              className="bg-[#0E63C4] hover:bg-[#0A4E9E] text-white text-xs font-bold px-4 py-2 rounded-lg transition shadow-xs flex items-center gap-1.5"
+            >
+              Browse Local Races (Pop ≥ 1k) →
+            </Link>
+            <Link
+              href="/candidates"
+              className="bg-[#F6F8FB] hover:bg-[#EBF3FD] text-[#0B1220] text-xs font-bold px-3 py-2 rounded-lg border border-[#CBD5E1] transition"
+            >
+              All Candidates
+            </Link>
+          </div>
         </div>
         <p className="text-xs text-[#5B6779] leading-relaxed">
-          Full database indexing all elected positions across jurisdictions with population over 1,000: Federal, Gubernatorial, State Legislatures, County Treasurers, Sheriffs, Assessors, Municipal Mayors, School Boards, Special Districts, and elected Dog Catchers / Animal Control Officers.
+          Exhaustive nationwide directory tracking all electable positions in jurisdictions with population over 1,000: elected Town Dog Catchers / Animal Control Officers, City & County Treasurers, Tax Collectors, Town Clerks, Selectboards, Town Moderators, Constables, Justices of the Peace, School Boards, Highway Superintendents, and Fire/Water Special Districts.
         </p>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-2 pt-1 text-xs">
-          <Link href="/candidates" className="p-2.5 rounded-lg bg-[#F6F8FB] border border-[#CBD5E1] hover:bg-[#EBF3FD] transition text-center group">
-            <span className="text-base block mb-0.5">🐕</span>
+          <Link href="/local?office=dog_catcher" className="p-3 rounded-lg bg-[#FEFCE8] border-2 border-[#EAB308] hover:bg-[#FEF08A] transition text-center group">
+            <span className="text-xl block mb-1">🐕</span>
             <strong className="text-[#0B1220] block group-hover:text-[#0E63C4]">Dog Catchers</strong>
-            <span className="text-[10px] text-[#5B6779]">Town Meeting Ballots</span>
+            <span className="text-[10px] text-[#713F12] font-semibold">25 Contests (Pop ≥ 1k)</span>
           </Link>
-          <Link href="/candidates" className="p-2.5 rounded-lg bg-[#F6F8FB] border border-[#CBD5E1] hover:bg-[#EBF3FD] transition text-center group">
-            <span className="text-base block mb-0.5">💰</span>
+          <Link href="/local?office=treasurer" className="p-3 rounded-lg bg-[#F0FDF4] border border-[#BBF7D0] hover:bg-[#DCFCE7] transition text-center group">
+            <span className="text-xl block mb-1">💰</span>
             <strong className="text-[#0B1220] block group-hover:text-[#0E63C4]">Treasurers</strong>
-            <span className="text-[10px] text-[#5B6779]">City & County</span>
+            <span className="text-[10px] text-[#166534] font-semibold">290+ Town/County</span>
           </Link>
-          <Link href="/candidates" className="p-2.5 rounded-lg bg-[#F6F8FB] border border-[#CBD5E1] hover:bg-[#EBF3FD] transition text-center group">
-            <span className="text-base block mb-0.5">🏛️</span>
-            <strong className="text-[#0B1220] block group-hover:text-[#0E63C4]">U.S. Senate</strong>
-            <span className="text-[10px] text-[#5B6779]">35 Seats (Class II)</span>
+          <Link href="/local?office=clerk" className="p-3 rounded-lg bg-[#F6F8FB] border border-[#CBD5E1] hover:bg-[#EBF3FD] transition text-center group">
+            <span className="text-xl block mb-1">📜</span>
+            <strong className="text-[#0B1220] block group-hover:text-[#0E63C4]">Town Clerks</strong>
+            <span className="text-[10px] text-[#5B6779]">270+ Elections</span>
           </Link>
-          <Link href="/candidates" className="p-2.5 rounded-lg bg-[#F6F8FB] border border-[#CBD5E1] hover:bg-[#EBF3FD] transition text-center group">
-            <span className="text-base block mb-0.5">🏦</span>
-            <strong className="text-[#0B1220] block group-hover:text-[#0E63C4]">Governors</strong>
-            <span className="text-[10px] text-[#5B6779]">36 State Races</span>
+          <Link href="/local?office=selectboard" className="p-3 rounded-lg bg-[#F6F8FB] border border-[#CBD5E1] hover:bg-[#EBF3FD] transition text-center group">
+            <span className="text-xl block mb-1">🏛️</span>
+            <strong className="text-[#0B1220] block group-hover:text-[#0E63C4]">Selectboard / Council</strong>
+            <span className="text-[10px] text-[#5B6779]">Local Governing</span>
           </Link>
-          <Link href="/candidates" className="p-2.5 rounded-lg bg-[#F6F8FB] border border-[#CBD5E1] hover:bg-[#EBF3FD] transition text-center group">
-            <span className="text-base block mb-0.5">🏢</span>
-            <strong className="text-[#0B1220] block group-hover:text-[#0E63C4]">Mayors</strong>
-            <span className="text-[10px] text-[#5B6779]">Pop. ≥ 1,000</span>
+          <Link href="/local?office=moderator" className="p-3 rounded-lg bg-[#F6F8FB] border border-[#CBD5E1] hover:bg-[#EBF3FD] transition text-center group">
+            <span className="text-xl block mb-1">🗣️</span>
+            <strong className="text-[#0B1220] block group-hover:text-[#0E63C4]">Town Moderators</strong>
+            <span className="text-[10px] text-[#5B6779]">Town Meeting Day</span>
           </Link>
-          <Link href="/offices" className="p-2.5 rounded-lg bg-[#F6F8FB] border border-[#CBD5E1] hover:bg-[#EBF3FD] transition text-center group">
-            <span className="text-base block mb-0.5">📋</span>
-            <strong className="text-[#0B1220] block group-hover:text-[#0E63C4]">All 1,200+ Offices</strong>
-            <span className="text-[10px] text-[#5B6779]">Every Hierarchy</span>
+          <Link href="/offices" className="p-3 rounded-lg bg-[#F6F8FB] border border-[#CBD5E1] hover:bg-[#EBF3FD] transition text-center group">
+            <span className="text-xl block mb-1">📋</span>
+            <strong className="text-[#0B1220] block group-hover:text-[#0E63C4]">All 4,190+ Offices</strong>
+            <span className="text-[10px] text-[#5B6779]">Every Single Office</span>
           </Link>
         </div>
       </div>

@@ -142,7 +142,13 @@ export default function OfficesExplorer() {
       if (quickTierFilter === 'DOG_CATCHER') {
         if (o.tier !== 'DOG_CATCHER' && !o.title.toLowerCase().includes('dog') && !o.title.toLowerCase().includes('animal control')) return false;
       } else if (quickTierFilter === 'TREASURER') {
-        if (o.tier !== 'CITY_TREASURER' && o.tier !== 'COUNTY_TREASURER' && o.tier !== 'STATE_TREASURER' && !o.title.toLowerCase().includes('treasurer')) return false;
+        if (o.tier !== 'CITY_TREASURER' && o.tier !== 'COUNTY_TREASURER' && o.tier !== 'STATE_TREASURER' && o.tier !== 'TAX_COLLECTOR' && !o.title.toLowerCase().includes('treasurer') && !o.title.toLowerCase().includes('tax')) return false;
+      } else if (quickTierFilter === 'CLERK') {
+        if (o.tier !== 'CITY_CLERK' && o.tier !== 'COUNTY_CLERK' && !o.title.toLowerCase().includes('clerk')) return false;
+      } else if (quickTierFilter === 'SELECTBOARD') {
+        if (o.tier !== 'SELECTBOARD_MEMBER' && o.tier !== 'CITY_COUNCIL' && o.tier !== 'COUNTY_COMMISSIONER' && !o.title.toLowerCase().includes('selectboard') && !o.title.toLowerCase().includes('council')) return false;
+      } else if (quickTierFilter === 'MODERATOR') {
+        if (o.tier !== 'TOWN_MODERATOR' && !o.title.toLowerCase().includes('moderator')) return false;
       } else if (quickTierFilter === 'MAYOR') {
         if (o.tier !== 'MAYOR' && o.tier !== 'VILLAGE_PRESIDENT') return false;
       } else if (quickTierFilter === 'JUDICIAL') {
@@ -160,12 +166,14 @@ export default function OfficesExplorer() {
       // Population Threshold Filter
       if (popFilter === '1k_plus') {
         if ((o.population || 0) < 1000) return false;
-      } else if (popFilter === '10k_plus') {
-        if ((o.population || 0) < 10000) return false;
-      } else if (popFilter === '50k_plus') {
-        if ((o.population || 0) < 50000) return false;
-      } else if (popFilter === '250k_plus') {
-        if ((o.population || 0) < 250000) return false;
+      } else if (popFilter === '1k_to_5k') {
+        if ((o.population || 0) < 1000 || (o.population || 0) >= 5000) return false;
+      } else if (popFilter === '5k_to_25k') {
+        if ((o.population || 0) < 5000 || (o.population || 0) >= 25000) return false;
+      } else if (popFilter === '25k_to_100k') {
+        if ((o.population || 0) < 25000 || (o.population || 0) >= 100000) return false;
+      } else if (popFilter === '100k_plus') {
+        if ((o.population || 0) < 100000) return false;
       }
 
       return true;
@@ -403,6 +411,67 @@ export default function OfficesExplorer() {
         <span className="text-xs text-[#8494A8] font-mono ml-auto whitespace-nowrap">
           {filtered.length.toLocaleString()} offices · {totalSeatsInView.toLocaleString()} seats
         </span>
+      </div>
+
+      {/* ── QUICK TIER & POPULATION FILTER PILLS BAR ─────────────────────── */}
+      <div className="bg-white border border-[#E4E9F0] rounded-xl p-3 shadow-xs space-y-2.5">
+        <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[#E4E9F0] pb-2">
+          <div className="flex items-center gap-2">
+            <span className="text-[10px] font-bold uppercase tracking-wider bg-[#EBF3FD] text-[#0A3F73] px-2 py-0.5 rounded border border-[#CBD5E1]">
+              Every Office From Treasurer Down to Dog Catcher (Pop. ≥ 1,000)
+            </span>
+            <span className="text-xs text-[#5B6779]">Select Tier:</span>
+          </div>
+
+          <div className="flex items-center gap-1.5 text-xs">
+            <span className="text-[#5B6779] text-[11px] font-medium">Population:</span>
+            <select
+              value={popFilter}
+              onChange={e => { setPopFilter(e.target.value); setPage(0); }}
+              className="text-xs bg-[#F6F8FB] border border-[#CBD5E1] rounded px-2.5 py-1 font-semibold text-[#0B1220] focus:outline-none focus:ring-1 focus:ring-[#0E63C4]"
+            >
+              <option value="all">All Populations (Census Places)</option>
+              <option value="1k_plus">Pop. ≥ 1,000 (All Qualified)</option>
+              <option value="1k_to_5k">1,000 – 5,000 (Small Rural Towns)</option>
+              <option value="5k_to_25k">5,000 – 25,000 (Midsize Municipalities)</option>
+              <option value="25k_to_100k">25,000 – 100,000 (Large Towns & Cities)</option>
+              <option value="100k_plus">100,000+ (Metros & Major Counties)</option>
+            </select>
+          </div>
+        </div>
+
+        <div className="flex flex-wrap gap-1.5">
+          {[
+            { id: 'all', label: 'All Offices', icon: '🌐' },
+            { id: 'DOG_CATCHER', label: '🐕 Dog Catchers (Pop. ≥ 1k)' },
+            { id: 'TREASURER', label: '💰 Treasurers & Tax Collectors' },
+            { id: 'CLERK', label: '📜 Town & City Clerks' },
+            { id: 'SELECTBOARD', label: '🏛️ Selectboard & Councils' },
+            { id: 'MODERATOR', label: '🗣️ Town Moderators' },
+            { id: 'JUDICIAL', label: '⚖️ Constables & JPs' },
+            { id: 'MAYOR', label: '🏙️ Mayors' },
+            { id: 'SCHOOL', label: '🏫 School Boards' },
+            { id: 'SPECIAL_DISTRICT', label: '🚒 Fire, Water & Soil' },
+            { id: 'FEDERAL', label: '🏛️ Federal (Senate/House)' },
+            { id: 'STATE_EXEC', label: '🏦 State Executive' },
+          ].map(p => {
+            const active = quickTierFilter === p.id;
+            return (
+              <button
+                key={p.id}
+                onClick={() => { setQuickTierFilter(p.id); setPage(0); }}
+                className={`flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-bold transition-all border ${
+                  active
+                    ? 'bg-[#0E63C4] text-white border-[#0E63C4] shadow-xs'
+                    : 'bg-[#F6F8FB] text-[#24303F] border-[#E4E9F0] hover:bg-[#EBF3FD] hover:text-[#0E63C4]'
+                }`}
+              >
+                {p.icon && <span>{p.icon}</span>}
+                <span>{p.label}</span>
+              </button>
+            );
+          })}
+        </div>
       </div>
 
       {/* ── ADVANCED FILTERS PANEL ──────────────────────────────────────── */}
