@@ -549,6 +549,7 @@ function CheckedSourcesModal({
 
 export default function CandidatesExplorer() {
   const [query, setQuery] = useState('');
+  const [officeCategoryFilter, setOfficeCategoryFilter] = useState<'all' | 'senate' | 'house' | 'governor' | 'ag_sos' | 'mayor' | 'county' | 'treasurer' | 'dog_catcher' | 'school_board' | 'water_district'>('all');
   const [levelFilter, setLevelFilter] = useState<'all' | RaceEntry['level']>('all');
   const [stateFilter, setStateFilter] = useState('');
   const [partyFilter, setPartyFilter] = useState<'all' | Party>('all');
@@ -603,12 +604,23 @@ export default function CandidatesExplorer() {
 
   const filteredRaces = useMemo(() => {
     let races = query ? searchRaces(query) : ALL_RACE_ENTRIES;
+    if (officeCategoryFilter === 'senate') races = races.filter(r => r.office.toLowerCase().includes('u.s. senate'));
+    else if (officeCategoryFilter === 'house') races = races.filter(r => r.office.toLowerCase().includes('u.s. house'));
+    else if (officeCategoryFilter === 'governor') races = races.filter(r => r.office.toLowerCase().includes('governor'));
+    else if (officeCategoryFilter === 'ag_sos') races = races.filter(r => r.office.toLowerCase().includes('attorney general') || r.office.toLowerCase().includes('secretary of state'));
+    else if (officeCategoryFilter === 'mayor') races = races.filter(r => r.office.toLowerCase().includes('mayor'));
+    else if (officeCategoryFilter === 'county') races = races.filter(r => r.level === 'county' || r.office.toLowerCase().includes('commissioner') || r.office.toLowerCase().includes('sheriff') || r.office.toLowerCase().includes('district attorney'));
+    else if (officeCategoryFilter === 'treasurer') races = races.filter(r => r.office.toLowerCase().includes('treasurer'));
+    else if (officeCategoryFilter === 'dog_catcher') races = races.filter(r => r.office.toLowerCase().includes('dog catcher') || r.office.toLowerCase().includes('animal control') || r.office.toLowerCase().includes('animal warden'));
+    else if (officeCategoryFilter === 'school_board') races = races.filter(r => r.office.toLowerCase().includes('school board'));
+    else if (officeCategoryFilter === 'water_district') races = races.filter(r => r.office.toLowerCase().includes('water') || r.office.toLowerCase().includes('conservation'));
+
     if (levelFilter !== 'all') races = races.filter(r => r.level === levelFilter);
     if (stateFilter) races = races.filter(r => r.stateAbbr === stateFilter);
     if (partyFilter !== 'all') races = races.filter(r => r.candidates.some(c => c.party === partyFilter));
     if (statusFilter !== 'all') races = races.filter(r => r.candidates.some(c => c.status === statusFilter));
     return races;
-  }, [query, levelFilter, stateFilter, partyFilter, statusFilter]);
+  }, [query, officeCategoryFilter, levelFilter, stateFilter, partyFilter, statusFilter]);
 
   const totalPages = Math.ceil(filteredRaces.length / PAGE_SIZE);
   const pagedRaces = useMemo(() =>
@@ -735,6 +747,54 @@ export default function CandidatesExplorer() {
 
       {/* ── FILTER CONTROLS ─────────────────────────────────────────────────── */}
       <div className="bg-white border border-[#E4E9F0] rounded-xl p-3 sm:p-4 shadow-xs space-y-3">
+        {/* Office Category Quick-Selector Bar */}
+        <div className="space-y-1.5 border-b border-[#F0F4F8] pb-3">
+          <div className="flex items-center justify-between">
+            <span className="text-[11px] font-bold text-[#0B1220] uppercase tracking-wider flex items-center gap-1.5">
+              <Layers className="w-3.5 h-3.5 text-[#0E63C4]" /> Jump to Specific Office Category:
+            </span>
+            <span className="text-[10px] text-[#5B6779] font-mono">
+              3,654 Total Races Tracked
+            </span>
+          </div>
+
+          <div className="flex items-center gap-1.5 overflow-x-auto pb-1 text-xs no-scrollbar">
+            {[
+              ['all', '🏛️ All Races', '3,654'],
+              ['senate', '🇺🇸 U.S. Senate', '35'],
+              ['house', '🏛️ U.S. House', '435'],
+              ['governor', '🎖️ Governors', '36'],
+              ['ag_sos', '⚖️ State AG & SoS', '21'],
+              ['mayor', '🏙️ Mayors', '58'],
+              ['county', '🛡️ County & Sheriffs', '100+'],
+              ['treasurer', '💰 Treasurers', '291'],
+              ['dog_catcher', '🐾 Dog Catchers', '32'],
+              ['school_board', '🎓 School Boards', '272'],
+              ['water_district', '💧 Water & Utilities', '544'],
+            ].map(([catKey, label, count]) => (
+              <button
+                key={catKey}
+                onClick={() => {
+                  setOfficeCategoryFilter(catKey as any);
+                  setPage(0);
+                }}
+                className={`px-3 py-1.5 rounded-lg font-bold transition-all flex-shrink-0 flex items-center gap-1.5 min-h-[38px] ${
+                  officeCategoryFilter === catKey
+                    ? 'bg-[#0E63C4] text-white shadow-xs'
+                    : 'bg-[#F6F8FB] hover:bg-[#EBF3FD] text-[#334155] border border-[#CBD5E1]'
+                }`}
+              >
+                <span>{label}</span>
+                <span className={`text-[10px] px-1.5 py-0.2 rounded font-mono ${
+                  officeCategoryFilter === catKey ? 'bg-white/20 text-white' : 'bg-white text-[#5B6779] border border-[#CBD5E1]'
+                }`}>
+                  {count}
+                </span>
+              </button>
+            ))}
+          </div>
+        </div>
+
         {/* Level Tabs */}
         <div className="flex items-center gap-1.5 overflow-x-auto pb-1 text-xs">
           <span className="text-[#8494A8] font-bold text-[11px] uppercase mr-1 flex-shrink-0">Level:</span>
@@ -828,6 +888,7 @@ export default function CandidatesExplorer() {
             <button
               onClick={() => {
                 setQuery('');
+                setOfficeCategoryFilter('all');
                 setLevelFilter('all');
                 setStateFilter('');
                 setPartyFilter('all');
