@@ -9,6 +9,7 @@ import {
   ClipboardList, FileText, UserCheck, Building, Map, Hash, Clock
 } from 'lucide-react';
 import { ALL_RACES_REGISTRY, RaceEntry } from '@/lib/candidates-registry';
+import { findMatchingRaceForOffice } from '@/lib/office-candidates-matcher';
 import {
   getCompleteOfficeRegistry,
   getOfficeStats,
@@ -949,66 +950,6 @@ function TableView({ offices, total, page, pageSize, onPage, onSelectOffice, sel
 // ─── OFFICE DETAIL DRAWER ────────────────────────────────────────────────────
 
 
-// ─── HELPER: MATCH OFFICE TO ACTIVE 2026 RACE ──────────────────────────────
-
-function findMatchingRaceForOffice(office: JurisdictionOffice): RaceEntry | undefined {
-  if (office.id.startsWith('FED-HOUSE-')) {
-    const key = office.id.replace('FED-HOUSE-', '');
-    const found = ALL_RACES_REGISTRY.find(r => r.raceId === `2026-HOUSE-${key}`);
-    if (found) return found;
-  }
-  if (office.id.startsWith('FED-SEN-')) {
-    const key = office.id.replace('FED-SEN-', '');
-    const found = ALL_RACES_REGISTRY.find(r => r.raceId.startsWith(`2026-SEN-${key}`));
-    if (found) return found;
-  }
-  if (office.id.startsWith('STATE-GOV-')) {
-    const key = office.id.replace('STATE-GOV-', '');
-    const found = ALL_RACES_REGISTRY.find(r => r.raceId.startsWith(`2026-GOV-${key}`));
-    if (found) return found;
-  }
-  if (office.id.startsWith('STATE-AG-')) {
-    const key = office.id.replace('STATE-AG-', '');
-    const found = ALL_RACES_REGISTRY.find(r => r.raceId.startsWith(`2026-AG-${key}`));
-    if (found) return found;
-  }
-  if (office.id.startsWith('STATE-SOS-')) {
-    const key = office.id.replace('STATE-SOS-', '');
-    const found = ALL_RACES_REGISTRY.find(r => r.raceId.startsWith(`2026-SOS-${key}`));
-    if (found) return found;
-  }
-
-  // Exact or fuzzy fallback
-  const oTitle = office.title.toLowerCase();
-  const oState = office.state.toLowerCase();
-  const oMuni = (office.municipality || '').toLowerCase();
-  const oCounty = (office.county || '').toLowerCase();
-
-  return ALL_RACES_REGISTRY.find(r => {
-    if (r.stateAbbr !== office.stateAbbr && r.state.toLowerCase() !== oState) return false;
-    const rOffice = r.office.toLowerCase();
-    const rMuni = (r.municipality || '').toLowerCase();
-    const rCounty = (r.county || '').toLowerCase();
-
-    if (oTitle.includes('representative') && rOffice.includes('representative')) {
-      const oDist = oTitle.match(/([0-9]+)/)?.[1];
-      const rDist = rOffice.match(/([0-9]+)/)?.[1];
-      if (oDist && rDist && oDist === rDist) return true;
-    }
-    if (oMuni && rMuni && oMuni === rMuni) {
-      if (rOffice.includes('treasurer') && oTitle.includes('treasurer')) return true;
-      if (rOffice.includes('mayor') && oTitle.includes('mayor')) return true;
-      if (rOffice.includes('dog catcher') && oTitle.includes('dog catcher')) return true;
-    }
-    if (oCounty && rCounty && oCounty === rCounty) {
-      if (rOffice.includes('treasurer') && oTitle.includes('treasurer')) return true;
-      if (rOffice.includes('sheriff') && oTitle.includes('sheriff')) return true;
-      if (rOffice.includes('commissioner') && oTitle.includes('commissioner')) return true;
-    }
-    return false;
-  });
-}
-
 function OfficeDetailDrawer({ office, onClose }: { office: JurisdictionOffice; onClose: () => void }) {
   const def = OFFICE_DEFINITIONS[office.tier];
   const col = LEVEL_COLORS[office.level];
@@ -1058,7 +999,7 @@ function OfficeDetailDrawer({ office, onClose }: { office: JurisdictionOffice; o
         {/* Body */}
         <div className="p-4 sm:p-5 space-y-5 overflow-y-auto flex-1 text-xs">
           {/* Active 2026 Contest & Candidates Breakdown */}
-          {matchedRace ? (
+          {matchedRace && (
             <div className="bg-[#FFFFFF] border-2 border-[#0E63C4] rounded-xl p-4 sm:p-5 shadow-xs space-y-4">
               <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[#E4E9F0] pb-3">
                 <div>
@@ -1261,13 +1202,6 @@ function OfficeDetailDrawer({ office, onClose }: { office: JurisdictionOffice; o
                   </div>
                 )}
               </div>
-            </div>
-          ) : (
-            <div className="p-4 rounded-xl bg-[#F6F8FB] border border-[#E4E9F0] text-xs space-y-1 text-[#5B6779]">
-              <strong className="text-[#0B1220] block font-bold">General Election Office Specification</strong>
-              <p>
-                This office operates under statutory nonpartisan/local rules. Detailed local candidates and municipal filings are indexed under the Local Races Registry.
-              </p>
             </div>
           )}
 

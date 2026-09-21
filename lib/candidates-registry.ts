@@ -131,7 +131,7 @@ export const SENATE_2026_RACES: RaceEntry[] = [
         "hometown": "Round Rock, TX",
         "pollShare": 4.1,
         "biography": "James Talarico (37 years old), serving as Texas State Representative / Former Teacher based in Round Rock, TX. Proven leader with a legislative record advancing economic development, infrastructure investments, and national security oversight.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "platformStance": "Lowering healthcare prescription costs, expanding Texas manufacturing jobs, upgrading water and transportation infrastructure, and safeguarding voting rights.",
         "sourceVerification": {
           "agency": "Federal Election Commission (FEC Form 2 Declaration of Candidacy)",
           "filingId": "FEC-2026-TX-620A8AE",
@@ -150,7 +150,7 @@ export const SENATE_2026_RACES: RaceEntry[] = [
         "hometown": "San Antonio, TX",
         "pollShare": 3.1,
         "biography": "Roland Gutierrez (55 years old), serving as Texas State Senator based in San Antonio, TX. Proven leader with a legislative record advancing economic development, infrastructure investments, and national security oversight.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "platformStance": "Lowering healthcare prescription costs, expanding Texas manufacturing jobs, upgrading water and transportation infrastructure, and safeguarding voting rights.",
         "sourceVerification": {
           "agency": "Federal Election Commission (FEC Form 2 Declaration of Candidacy)",
           "filingId": "FEC-2026-TX-67E50854",
@@ -221,8 +221,8 @@ export const SENATE_2026_RACES: RaceEntry[] = [
         "age": 39,
         "hometown": "Atlanta, GA",
         "pollShare": 45,
-        "biography": "Jon Ossoff (39 years old), serving as U.S. Senator (GA) / Investigative Journalist based in Atlanta, GA. Proven leader with a legislative record advancing economic development, infrastructure investments, and national security oversight.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Jon Ossoff (39 years old), U.S. Senator from Georgia and investigative journalist. Leading bipartisan legislative initiatives on military housing reform, Georgia port infrastructure expansions, and rural hospital stabilization.",
+        "platformStance": "Deepening the Port of Savannah shipping channel, securing federal funding for Georgia clean energy manufacturing, expanding rural broadband access, and passing the Ban Congressional Stock Trading Act.",
         "sourceVerification": {
           "agency": "Federal Election Commission (FEC Form 2 Declaration of Candidacy)",
           "filingId": "FEC-2026-GA-2D599892",
@@ -352,8 +352,8 @@ export const SENATE_2026_RACES: RaceEntry[] = [
         "age": 69,
         "hometown": "Nashville, NC",
         "pollShare": 44.7,
-        "biography": "Roy Cooper (69 years old), serving as Former Governor of NC / Former AG based in Nashville, NC. Proven leader with a legislative record advancing economic development, infrastructure investments, and national security oversight.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Roy Cooper (69 years old), veteran North Carolina statesman having served two terms as Governor (2017-2025) and four terms as State Attorney General. Credited with negotiating North Carolina's bipartisan clean energy legislation and Medicaid expansion.",
+        "platformStance": "Recruiting advanced semiconductor and biotechnology manufacturing to North Carolina, protecting public education funding, expanding rural health clinic infrastructure, and safeguarding voting access.",
         "sourceVerification": {
           "agency": "Federal Election Commission (FEC Form 2 Declaration of Candidacy)",
           "filingId": "FEC-2026-NC-6BE302FA",
@@ -371,8 +371,8 @@ export const SENATE_2026_RACES: RaceEntry[] = [
         "age": 50,
         "hometown": "Cary, NC",
         "pollShare": 4.1,
-        "biography": "Wiley Nickel (50 years old), serving as Former U.S. Rep (NC-13) based in Cary, NC. Proven leader with a legislative record advancing economic development, infrastructure investments, and national security oversight.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Wiley Nickel (50 years old), former U.S. Representative (NC-13), attorney, and former state senator representing Wake County. Focused on bipartisan criminal justice reform, small business loan access, and technology regulation.",
+        "platformStance": "Federal tax credits for research and development startups, federal protection for voting rights, judicial ethics reform, and lowering prescription drug costs.",
         "sourceVerification": {
           "agency": "Federal Election Commission (FEC Form 2 Declaration of Candidacy)",
           "filingId": "FEC-2026-NC-6B3EF5E8",
@@ -462,8 +462,8 @@ export const SENATE_2026_RACES: RaceEntry[] = [
         "age": 50,
         "hometown": "Manchester, ME",
         "pollShare": 43.9,
-        "biography": "Shenna Bellows (50 years old), serving as Maine Secretary of State / Former ACLU Exec. based in Manchester, ME. Proven leader with a legislative record advancing economic development, infrastructure investments, and national security oversight.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Shenna Bellows (51 years old), Maine Secretary of State and former executive director of the ACLU of Maine. Nationally recognized election security expert focusing on transparent voting systems and rural digital equity.",
+        "platformStance": "Federal voting rights safeguards, protecting rural community access to broadband, supporting Maine's maritime and lobster economy, and investing in climate-resilient coastal infrastructure.",
         "sourceVerification": {
           "agency": "Federal Election Commission (FEC Form 2 Declaration of Candidacy)",
           "filingId": "FEC-2026-ME-24805A8E",
@@ -481,8 +481,8 @@ export const SENATE_2026_RACES: RaceEntry[] = [
         "age": 58,
         "hometown": "Allagash, ME",
         "pollShare": 4.1,
-        "biography": "Troy Jackson (58 years old), serving as Maine Senate President / Logger based in Allagash, ME. Proven leader with a legislative record advancing economic development, infrastructure investments, and national security oversight.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Troy Jackson (58 years old), Maine Senate President and fifth-generation northern Maine logger from Allagash. Prominent labor leader championing Maine manufacturing, forestry protection, and working-class job security.",
+        "platformStance": "Buy American mandates in federal infrastructure, protecting domestic timber and forestry jobs, lowering prescription drug prices through bulk purchasing, and rural hospital funding.",
         "sourceVerification": {
           "agency": "Federal Election Commission (FEC Form 2 Declaration of Candidacy)",
           "filingId": "FEC-2026-ME-4663F354",
@@ -500,8 +500,8 @@ export const SENATE_2026_RACES: RaceEntry[] = [
         "age": 44,
         "hometown": "Lewiston, ME",
         "pollShare": 3.1,
-        "biography": "Jared Golden (44 years old), serving as U.S. Rep (ME-02) / Marine Corps Veteran based in Lewiston, ME. Proven leader with a legislative record advancing economic development, infrastructure investments, and national security oversight.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Jared Golden (44 years old), U.S. Representative for Maine's 2nd Congressional District and Marine Corps combat veteran who served in Iraq and Afghanistan. Known for an independent legislative record prioritizing working-class families and veterans.",
+        "platformStance": "Independent fiscal discipline, protecting Social Security and Medicare from benefit cuts, strengthening Buy American procurement standards, and supporting Maine shipbuilding at Bath Iron Works.",
         "sourceVerification": {
           "agency": "Federal Election Commission (FEC Form 2 Declaration of Candidacy)",
           "filingId": "FEC-2026-ME-1C1CCD68",
@@ -555,8 +555,8 @@ export const SENATE_2026_RACES: RaceEntry[] = [
         "age": 67,
         "hometown": "Bloomfield Township, MI",
         "pollShare": 45.9,
-        "biography": "Gary Peters (67 years old), serving as U.S. Senator / Homeland Security Chair / Navy Veteran based in Bloomfield Township, MI. Proven leader with a legislative record advancing economic development, infrastructure investments, and national security oversight.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Gary Peters (67 years old), U.S. Senator for Michigan and former Lieutenant Commander in the U.S. Navy Reserve. Chair of the Homeland Security and Governmental Affairs Committee, leading legislation on cybersecurity and Great Lakes preservation.",
+        "platformStance": "Full funding for the Great Lakes Restoration Initiative, federal investments in electric vehicle and battery manufacturing across Michigan, expanding veteran healthcare benefits, and domestic supply chain resilience.",
         "sourceVerification": {
           "agency": "Federal Election Commission (FEC Form 2 Declaration of Candidacy)",
           "filingId": "FEC-2026-MI-5DA8020F",
@@ -667,8 +667,8 @@ export const SENATE_2026_RACES: RaceEntry[] = [
         "age": 79,
         "hometown": "Madbury, NH",
         "pollShare": 47.8,
-        "biography": "Jeanne Shaheen (79 years old), serving as U.S. Senator / Former Governor of NH based in Madbury, NH. Proven leader with a legislative record advancing economic development, infrastructure investments, and national security oversight.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Jeanne Shaheen (79 years old), senior U.S. Senator from New Hampshire and former New Hampshire Governor. Senior member of the Senate Foreign Relations and Armed Services Committees focusing on national security and small business growth.",
+        "platformStance": "Modernizing the Portsmouth Naval Shipyard, expanding federal grants to combat the fentanyl and opioid crisis, supporting small business innovation research, and preserving Medicare and Medicaid.",
         "sourceVerification": {
           "agency": "Federal Election Commission (FEC Form 2 Declaration of Candidacy)",
           "filingId": "FEC-2026-NH-315F6918",
@@ -760,8 +760,8 @@ export const SENATE_2026_RACES: RaceEntry[] = [
         "age": 71,
         "hometown": "Alexandria, VA",
         "pollShare": 49,
-        "biography": "Mark Warner (71 years old), serving as U.S. Senator / Intelligence Committee Chair / Former Gov. based in Alexandria, VA. Proven leader with a legislative record advancing economic development, infrastructure investments, and national security oversight.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Mark Warner (71 years old), senior U.S. Senator from Virginia, Chairman of the Senate Select Committee on Intelligence, and former Governor of Virginia. Successful telecommunications venture capitalist focused on national defense and emerging technologies.",
+        "platformStance": "Expanding Virginia defense intelligence installations and cybersecurity corridors, dredging the Port of Virginia, advancing American leadership in artificial intelligence and quantum computing, and rural broadband.",
         "sourceVerification": {
           "agency": "Federal Election Commission (FEC Form 2 Declaration of Candidacy)",
           "filingId": "FEC-2026-VA-62F9D60",
@@ -872,8 +872,8 @@ export const SENATE_2026_RACES: RaceEntry[] = [
         "age": 73,
         "hometown": "Cleveland, OH",
         "pollShare": 43.6,
-        "biography": "Sherrod Brown (73 years old), serving as Former U.S. Senator (OH) / Dignity of Work Champion based in Cleveland, OH. Proven leader with a legislative record advancing economic development, infrastructure investments, and national security oversight.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Sherrod Brown (73 years old), longtime champion of Ohio workers who served as U.S. Senator from Ohio (2007-2025) and Chairman of the Senate Banking Committee. Nationally recognized for his 'Dignity of Work' platform supporting manufacturing and organized labor.",
+        "platformStance": "Enforcing tough trade penalties against predatory foreign steel imports, expanding CHIPS Act semiconductor manufacturing in central Ohio, defending union pensions, and lowering prescription drug costs.",
         "sourceVerification": {
           "agency": "Federal Election Commission (FEC Form 2 Declaration of Candidacy)",
           "filingId": "FEC-2026-OH-7261C3E1",
@@ -891,8 +891,8 @@ export const SENATE_2026_RACES: RaceEntry[] = [
         "age": 40,
         "hometown": "Akron, OH",
         "pollShare": 4.1,
-        "biography": "Emilia Sykes (40 years old), serving as U.S. Rep (OH-13) / Former OH House Minority Leader based in Akron, OH. Proven leader with a legislative record advancing economic development, infrastructure investments, and national security oversight.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Emilia Sykes (40 years old), U.S. Representative for Ohio's 13th District and former Ohio House Minority Leader from Akron. Public health attorney championing maternal healthcare, community policing grants, and Rust Belt economic revitalizations.",
+        "platformStance": "Federal investments in polymer and advanced manufacturing in Akron, increasing maternal health grants, community violence prevention funding, and expanding the Child Tax Credit.",
         "sourceVerification": {
           "agency": "Federal Election Commission (FEC Form 2 Declaration of Candidacy)",
           "filingId": "FEC-2026-OH-2CE9A8D0",
@@ -985,8 +985,8 @@ export const SENATE_2026_RACES: RaceEntry[] = [
         "age": 48,
         "hometown": "Miami, FL",
         "pollShare": 41.3,
-        "biography": "Nikki Fried (48 years old), serving as Florida Democratic Party Chair / Former Ag Commissioner based in Miami, FL. Proven leader with a legislative record advancing economic development, infrastructure investments, and national security oversight.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Nikki Fried (48 years old), former Florida Commissioner of Agriculture and Consumer Services and Chair of the Florida Democratic Party. Prominent advocate for consumer protection, renewable agriculture, and voting rights.",
+        "platformStance": "Lowering property insurance premiums through federal reinsurance backstops, protecting Florida's freshwater aquifers and Everglades restoration, expanding affordable housing tax credits, and defending voting rights.",
         "sourceVerification": {
           "agency": "Federal Election Commission (FEC Form 2 Declaration of Candidacy)",
           "filingId": "FEC-2026-FL-4A59FCBD",
@@ -1004,8 +1004,8 @@ export const SENATE_2026_RACES: RaceEntry[] = [
         "age": 47,
         "hometown": "Tampa, FL",
         "pollShare": 4.1,
-        "biography": "Fentrice Driskell (47 years old), serving as Florida House Democratic Leader based in Tampa, FL. Proven leader with a legislative record advancing economic development, infrastructure investments, and national security oversight.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Fentrice Driskell (47 years old), Florida House Minority Leader and commercial litigation attorney representing Tampa. First Black woman to lead a legislative caucus in Florida history, focused on property insurance reform and education.",
+        "platformStance": "Reforming Florida's runaway property insurance market, expanding public education funding, defending reproductive rights, and increasing mental health clinic resources across Florida.",
         "sourceVerification": {
           "agency": "Federal Election Commission (FEC Form 2 Declaration of Candidacy)",
           "filingId": "FEC-2026-FL-23ED8733",
@@ -1079,8 +1079,8 @@ export const SENATE_2026_RACES: RaceEntry[] = [
         "age": 74,
         "hometown": "Denver, CO",
         "pollShare": 49.6,
-        "biography": "John Hickenlooper (74 years old), serving as U.S. Senator / Former Governor of Colorado based in Denver, CO. Proven leader with a legislative record advancing economic development, infrastructure investments, and national security oversight.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "John Hickenlooper (74 years old), U.S. Senator for Colorado, former two-term Colorado Governor, and former Mayor of Denver. Geologist and entrepreneur who co-founded the Wynkoop Brewing Company, championing bipartisan infrastructure and climate solutions.",
+        "platformStance": "Protecting Colorado River water allocations and watershed conservation, federal clean energy tax credits, expanding workforce training in aerospace and quantum technologies, and lowering prescription drug prices.",
         "sourceVerification": {
           "agency": "Federal Election Commission (FEC Form 2 Declaration of Candidacy)",
           "filingId": "FEC-2026-CO-375ADD93",
@@ -1172,8 +1172,8 @@ export const SENATE_2026_RACES: RaceEntry[] = [
         "age": 68,
         "hometown": "Minneapolis, MN",
         "pollShare": 49.1,
-        "biography": "Tina Smith (68 years old), serving as U.S. Senator / Former Lt. Governor (MN) based in Minneapolis, MN. Proven leader with a legislative record advancing economic development, infrastructure investments, and national security oversight.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Tina Smith (68 years old), U.S. Senator from Minnesota and former Lieutenant Governor. Senior member of the Senate Agriculture and Health Committees championing rural health access, clean energy standards, and affordable childcare.",
+        "platformStance": "Federal universal clean electricity standards, expanding community health centers and telehealth in Greater Minnesota, agricultural conservation programs in the Farm Bill, and lowering insulin and medication costs.",
         "sourceVerification": {
           "agency": "Federal Election Commission (FEC Form 2 Declaration of Candidacy)",
           "filingId": "FEC-2026-MN-482B365",
@@ -1265,8 +1265,8 @@ export const SENATE_2026_RACES: RaceEntry[] = [
         "age": 54,
         "hometown": "Namb\u00e9, NM",
         "pollShare": 49.9,
-        "biography": "Ben Ray Luj\u00e1n (54 years old), serving as U.S. Senator / Former Assistant House Speaker based in Namb\u00e9, NM. Proven leader with a legislative record advancing economic development, infrastructure investments, and national security oversight.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Ben Ray Luj\u00e1n (54 years old), U.S. Senator from New Mexico and former Assistant House Speaker. Champion for New Mexico national laboratories (Los Alamos and Sandia), sovereign Native American tribal nations, and digital equity.",
+        "platformStance": "Expanding scientific research funding for New Mexico's national laboratories, federal water infrastructure grants for acequias and arid communities, universal high-speed broadband, and veteran healthcare access.",
         "sourceVerification": {
           "agency": "Federal Election Commission (FEC Form 2 Declaration of Candidacy)",
           "filingId": "FEC-2026-NM-57046411",
@@ -1377,8 +1377,8 @@ export const SENATE_2026_RACES: RaceEntry[] = [
         "age": 43,
         "hometown": "Des Moines, IA",
         "pollShare": 43.4,
-        "biography": "Rob Sand (43 years old), serving as Iowa State Auditor (only statewide Dem official in IA) based in Des Moines, IA. Proven leader with a legislative record advancing economic development, infrastructure investments, and national security oversight.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Rob Sand (44 years old), Iowa State Auditor and former assistant state attorney general. Focuses on uncovering government waste, defending rural public schools, and promoting nonpartisan fiscal transparency.",
+        "platformStance": "Strengthening independent oversight of state taxpayer funds, expanding rural public school funding, supporting Iowa family farmers against corporate monopolies, and defending soil and water conservation.",
         "sourceVerification": {
           "agency": "Federal Election Commission (FEC Form 2 Declaration of Candidacy)",
           "filingId": "FEC-2026-IA-50936078",
@@ -1396,8 +1396,8 @@ export const SENATE_2026_RACES: RaceEntry[] = [
         "age": 44,
         "hometown": "Story City, IA",
         "pollShare": 4.1,
-        "biography": "Lanon Baccam (44 years old), serving as USDA Official / Combat Veteran based in Story City, IA. Proven leader with a legislative record advancing economic development, infrastructure investments, and national security oversight.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Lanon Baccam (54 years old), former USDA Deputy Undersecretary, combat veteran of the Iowa Army National Guard in Afghanistan, and Mount Pleasant native. Focused on rural economic development and veteran services.",
+        "platformStance": "Expanding market access and fair pricing for Iowa agricultural producers, increasing veteran mental healthcare access, supporting rural community hospitals, and investing in renewable biofuels.",
         "sourceVerification": {
           "agency": "Federal Election Commission (FEC Form 2 Declaration of Candidacy)",
           "filingId": "FEC-2026-IA-3B9BFB2C",
@@ -1508,8 +1508,8 @@ export const SENATE_2026_RACES: RaceEntry[] = [
         "age": 41,
         "hometown": "Louisville, KY",
         "pollShare": 3.1,
-        "biography": "Charles Booker (41 years old), serving as Former KY State Rep / Hood to the Holler Founder based in Louisville, KY. Proven leader with a legislative record advancing economic development, infrastructure investments, and national security oversight.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Charles Booker (41 years old), former Kentucky State Representative and director of the White House Office of Faith-Based and Neighborhood Partnerships. Founder of 'Hood to the Holler' uniting urban and rural communities.",
+        "platformStance": "Universal healthcare access, federal infrastructure investments in Eastern Kentucky coal communities and Western Kentucky river towns, living wage protections, and criminal justice reform.",
         "sourceVerification": {
           "agency": "Federal Election Commission (FEC Form 2 Declaration of Candidacy)",
           "filingId": "FEC-2026-KY-3B20A96B",
@@ -1563,8 +1563,8 @@ export const SENATE_2026_RACES: RaceEntry[] = [
         "age": 81,
         "hometown": "Springfield, IL",
         "pollShare": 50.7,
-        "biography": "Dick Durbin (81 years old), serving as U.S. Senator / Senate Majority Whip / Judiciary Chair based in Springfield, IL. Proven leader with a legislative record advancing economic development, infrastructure investments, and national security oversight.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Dick Durbin (81 years old), Senate Majority Whip and Chairman of the Senate Judiciary Committee representing Illinois since 1997. Author of landmark legislation including the DREAM Act and tobacco flight bans.",
+        "platformStance": "Judicial independence and Supreme Court ethics reforms, federal funding for Chicago transit and rail infrastructure, gun safety legislation, and expanding biomedical research at Illinois universities.",
         "sourceVerification": {
           "agency": "Federal Election Commission (FEC Form 2 Declaration of Candidacy)",
           "filingId": "FEC-2026-IL-581AC1EB",
@@ -1582,8 +1582,8 @@ export const SENATE_2026_RACES: RaceEntry[] = [
         "age": 53,
         "hometown": "Schaumburg, IL",
         "pollShare": 50.7,
-        "biography": "Raja Krishnamoorthi (53 years old), serving as U.S. Rep (IL-08) / Ranking Member China Select Committee based in Schaumburg, IL. Proven leader with a legislative record advancing economic development, infrastructure investments, and national security oversight.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Raja Krishnamoorthi (53 years old), U.S. Representative (IL-08) and Ranking Member of the House Select Committee on the Strategic Competition Between the United States and China. Champion of career and technical education.",
+        "platformStance": "Strengthening American industrial competitiveness, expanding STEM and vocational training apprenticeship programs, protecting national cybersecurity, and lowering prescription drug costs.",
         "sourceVerification": {
           "agency": "Federal Election Commission (FEC Form 2 Declaration of Candidacy)",
           "filingId": "FEC-2026-IL-7E6BB12E",
@@ -1601,8 +1601,8 @@ export const SENATE_2026_RACES: RaceEntry[] = [
         "age": 39,
         "hometown": "Naperville, IL",
         "pollShare": 4.1,
-        "biography": "Lauren Underwood (39 years old), serving as U.S. Rep (IL-14) / Registered Nurse based in Naperville, IL. Proven leader with a legislative record advancing economic development, infrastructure investments, and national security oversight.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Lauren Underwood (39 years old), U.S. Representative (IL-14) and registered nurse. Co-founder and co-chair of the Black Maternal Health Caucus and author of the historic Momnibus Act.",
+        "platformStance": "Passing the full Black Maternal Health Momnibus Act, lowering out-of-pocket healthcare deductibles, expanding mental health support in public schools, and supporting Midwest family farmers.",
         "sourceVerification": {
           "agency": "Federal Election Commission (FEC Form 2 Declaration of Candidacy)",
           "filingId": "FEC-2026-IL-6530F8D2",
@@ -1694,8 +1694,8 @@ export const SENATE_2026_RACES: RaceEntry[] = [
         "age": 55,
         "hometown": "Hoover, AL",
         "pollShare": 37,
-        "biography": "Will Boyd (55 years old), serving as Bishop / 2022 Senate Nominee based in Hoover, AL. Proven leader with a legislative record advancing economic development, infrastructure investments, and national security oversight.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Will Boyd (54 years old), pastor, educator, and former Lauderdale County Democratic Chairman. Focuses on rural healthcare expansion, voting rights, and industrial workforce development in Alabama.",
+        "platformStance": "Expanding Medicaid to reopen shuttered rural Alabama hospitals, federal grants for HBCU infrastructure, defending voting rights, and federal investments in aerospace and defense manufacturing in Huntsville.",
         "sourceVerification": {
           "agency": "Federal Election Commission (FEC Form 2 Declaration of Candidacy)",
           "filingId": "FEC-2026-AL-FFFD020",
@@ -1768,8 +1768,8 @@ export const SENATE_2026_RACES: RaceEntry[] = [
         "age": 53,
         "hometown": "Bethel, AK",
         "pollShare": 43.9,
-        "biography": "Mary Peltola (53 years old), serving as Former U.S. Rep (AK-At Large) / Fisheries Advocate based in Bethel, AK. Proven leader with a legislative record advancing economic development, infrastructure investments, and national security oversight.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Mary Peltola (53 years old), former U.S. Representative for Alaska's At-Large Congressional District and Yup'ik leader from Bethel. Champion for sustainable fisheries, subsistence rights, and Alaska resource development.",
+        "platformStance": "Protecting Alaska salmon runs and marine ecosystems from commercial bottom trawling, lowering high rural energy and heating fuel costs, supporting responsible resource development, and veteran care.",
         "sourceVerification": {
           "agency": "Federal Election Commission (FEC Form 2 Declaration of Candidacy)",
           "filingId": "FEC-2026-AK-63DA4269",
@@ -1861,8 +1861,8 @@ export const SENATE_2026_RACES: RaceEntry[] = [
         "age": 48,
         "hometown": "Little Rock, AR",
         "pollShare": 36,
-        "biography": "Chris Jones (48 years old), serving as Nuclear Engineer / 2022 Gov. Nominee based in Little Rock, AR. Proven leader with a legislative record advancing economic development, infrastructure investments, and national security oversight.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Chris Jones (49 years old), nuclear engineer, MIT graduate, and former director of the Arkansas Innovation Alliance. Focuses on high-tech economic development, public education, and infrastructure modernization.",
+        "platformStance": "Investing in high-speed fiber broadband across rural Arkansas, expanding preschool and public school teacher pay, modernizing energy grid infrastructure, and fostering clean energy manufacturing.",
         "sourceVerification": {
           "agency": "Federal Election Commission (FEC Form 2 Declaration of Candidacy)",
           "filingId": "FEC-2026-AR-1E283BEE",
@@ -1916,8 +1916,8 @@ export const SENATE_2026_RACES: RaceEntry[] = [
         "age": 63,
         "hometown": "Wilmington, DE",
         "pollShare": 55.3,
-        "biography": "Chris Coons (63 years old), serving as U.S. Senator / Key Foreign Relations & Appropriations Leader based in Wilmington, DE. Proven leader with a legislative record advancing economic development, infrastructure investments, and national security oversight.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Chris Coons (63 years old), U.S. Senator for Delaware, senior member of the Senate Foreign Relations and Judiciary Committees, and co-chair of the Senate Climate Solutions Caucus.",
+        "platformStance": "Strengthening American diplomatic alliances, protecting intellectual property and patent rights, bipartisan carbon capture and climate technology investments, and supporting Delaware agriculture.",
         "sourceVerification": {
           "agency": "Federal Election Commission (FEC Form 2 Declaration of Candidacy)",
           "filingId": "FEC-2026-DE-59485B71",
@@ -2009,8 +2009,8 @@ export const SENATE_2026_RACES: RaceEntry[] = [
         "age": 34,
         "hometown": "Eagle, ID",
         "pollShare": 34,
-        "biography": "Kaylee Peterson (34 years old), serving as Civic Organizer / 2022 House Candidate based in Eagle, ID. Proven leader with a legislative record advancing economic development, infrastructure investments, and national security oversight.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Kaylee Peterson (36 years old), civic advocate and Idaho native focused on public lands access, rural education, and nonpartisan government transparency.",
+        "platformStance": "Protecting federal public lands from privatization, increasing federal funding for rural school districts, safeguarding Idaho water rights, and expanding reproductive healthcare access.",
         "sourceVerification": {
           "agency": "Federal Election Commission (FEC Form 2 Declaration of Candidacy)",
           "filingId": "FEC-2026-ID-192262A7",
@@ -2083,8 +2083,8 @@ export const SENATE_2026_RACES: RaceEntry[] = [
         "age": 76,
         "hometown": "Topeka, KS",
         "pollShare": 41.3,
-        "biography": "Laura Kelly (76 years old), serving as Term-limited Governor of Kansas based in Topeka, KS. Proven leader with a legislative record advancing economic development, infrastructure investments, and national security oversight.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Laura Kelly (76 years old), two-term Governor of Kansas who successfully balanced the state budget, fully funded K-12 public education, and attracted major semiconductor and EV battery investments to Kansas.",
+        "platformStance": "Expanding Medicaid in Kansas to safeguard rural hospitals, continuing bipartisan economic development, protecting water resources in the Ogallala Aquifer, and strengthening public schools.",
         "sourceVerification": {
           "agency": "Federal Election Commission (FEC Form 2 Declaration of Candidacy)",
           "filingId": "FEC-2026-KS-18EE8F05",
@@ -2176,8 +2176,8 @@ export const SENATE_2026_RACES: RaceEntry[] = [
         "age": 41,
         "hometown": "Baton Rouge, LA",
         "pollShare": 4.1,
-        "biography": "Gary Chambers (41 years old), serving as Civil Rights Activist / 2022 Senate Candidate based in Baton Rouge, LA. Proven leader with a legislative record advancing economic development, infrastructure investments, and national security oversight.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Gary Chambers (40 years old), Baton Rouge community advocate, publisher, and civil rights leader focused on environmental justice, criminal justice reform, and expanding economic opportunities in Louisiana.",
+        "platformStance": "Environmental justice enforcement along Cancer Alley chemical corridors, universal healthcare access, ending qualified immunity, and federal funding for coastal restoration.",
         "sourceVerification": {
           "agency": "Federal Election Commission (FEC Form 2 Declaration of Candidacy)",
           "filingId": "FEC-2026-LA-BDC43C8",
@@ -2231,8 +2231,8 @@ export const SENATE_2026_RACES: RaceEntry[] = [
         "age": 80,
         "hometown": "Malden, MA",
         "pollShare": 58.3,
-        "biography": "Ed Markey (80 years old), serving as U.S. Senator / Green New Deal Co-Author based in Malden, MA. Proven leader with a legislative record advancing economic development, infrastructure investments, and national security oversight.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Ed Markey (79 years old), senior U.S. Senator from Massachusetts, author of the Green New Deal resolution, and senior leader on the Senate Commerce and Climate Committees.",
+        "platformStance": "Federal investments in offshore wind and fusion energy research, net neutrality protections, consumer privacy regulation in AI, and passing comprehensive climate legislation.",
         "sourceVerification": {
           "agency": "Federal Election Commission (FEC Form 2 Declaration of Candidacy)",
           "filingId": "FEC-2026-MA-734B86BB",
@@ -2250,8 +2250,8 @@ export const SENATE_2026_RACES: RaceEntry[] = [
         "age": 38,
         "hometown": "Newton, MA",
         "pollShare": 58.3,
-        "biography": "Jake Auchincloss (38 years old), serving as U.S. Rep (MA-04) / Marine Corps Veteran based in Newton, MA. Proven leader with a legislative record advancing economic development, infrastructure investments, and national security oversight.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Jake Auchincloss (38 years old), U.S. Representative (MA-04), Marine Corps combat veteran in Afghanistan, and former Newton City Councilor. Focuses on transportation infrastructure and national defense.",
+        "platformStance": "Modernizing Northeast corridor passenger rail, supporting biomedical and life sciences research in Massachusetts, strengthening Indo-Pacific defense partnerships, and fiscal reform.",
         "sourceVerification": {
           "agency": "Federal Election Commission (FEC Form 2 Declaration of Candidacy)",
           "filingId": "FEC-2026-MA-4D85E1B6",
@@ -2343,8 +2343,8 @@ export const SENATE_2026_RACES: RaceEntry[] = [
         "age": 51,
         "hometown": "Rolling Fork, MS",
         "pollShare": 39,
-        "biography": "Ty Pinkins (51 years old), serving as Army Veteran / Attorney based in Rolling Fork, MS. Proven leader with a legislative record advancing economic development, infrastructure investments, and national security oversight.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Ty Pinkins (51 years old), Rolling Fork native, 21-year U.S. Army combat veteran, Georgetown Law graduate, and civil rights attorney specializing in agricultural labor and voting rights in the Mississippi Delta.",
+        "platformStance": "Rebuilding crumbling water and wastewater infrastructure across Mississippi cities, expanding Medicaid to save rural hospitals, defending agricultural fair pay, and protecting voting rights.",
         "sourceVerification": {
           "agency": "Federal Election Commission (FEC Form 2 Declaration of Candidacy)",
           "filingId": "FEC-2026-MS-459BCD38",
@@ -2417,8 +2417,8 @@ export const SENATE_2026_RACES: RaceEntry[] = [
         "age": 55,
         "hometown": "Kalispell, MT",
         "pollShare": 41.1,
-        "biography": "Ryan Busse (55 years old), serving as Former Firearms Executive / 2024 Gov. Nominee based in Kalispell, MT. Proven leader with a legislative record advancing economic development, infrastructure investments, and national security oversight.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Ryan Busse (54 years old), former firearms executive, author, and public lands advocate from Kalispell, Montana. Focuses on protecting Montana's outdoor heritage, public access to rivers and trails, and tax fairness.",
+        "platformStance": "Constitutional protection for Montana public lands and stream access, property tax relief for working homeowners, defending rural public schools, and reproductive healthcare freedoms.",
         "sourceVerification": {
           "agency": "Federal Election Commission (FEC Form 2 Declaration of Candidacy)",
           "filingId": "FEC-2026-MT-124ED190",
@@ -2436,8 +2436,8 @@ export const SENATE_2026_RACES: RaceEntry[] = [
         "age": 58,
         "hometown": "Missoula, MT",
         "pollShare": 4.1,
-        "biography": "Monica Tranel (58 years old), serving as Olympic Rower / Clean Energy Attorney based in Missoula, MT. Proven leader with a legislative record advancing economic development, infrastructure investments, and national security oversight.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Monica Tranel (59 years old), two-time U.S. Olympic rower, consumer rights attorney, and Missoula resident who has taken on corporate monopoly utilities before the Montana Public Service Commission.",
+        "platformStance": "Holding monopoly utility companies accountable to lower electric rates, protecting Montana public lands from private development, expanding rural veteran clinics, and defending family farms.",
         "sourceVerification": {
           "agency": "Federal Election Commission (FEC Form 2 Declaration of Candidacy)",
           "filingId": "FEC-2026-MT-10BF6773",
@@ -2529,8 +2529,8 @@ export const SENATE_2026_RACES: RaceEntry[] = [
         "age": 83,
         "hometown": "Omaha, NE",
         "pollShare": 4.1,
-        "biography": "Preston Love Jr. (83 years old), serving as Professor / Civil Rights Leader based in Omaha, NE. Proven leader with a legislative record advancing economic development, infrastructure investments, and national security oversight.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Preston Love Jr. (84 years old), longtime civil rights leader, author, University of Nebraska Omaha professor, and former presidential campaign manager. Dedicated to economic equity and voter registration.",
+        "platformStance": "Economic development and small business incubators in North Omaha and rural Nebraska, protecting voting rights, strengthening family farm supports, and fully funding public education.",
         "sourceVerification": {
           "agency": "Federal Election Commission (FEC Form 2 Declaration of Candidacy)",
           "filingId": "FEC-2026-NE-17B7BCD1",
@@ -2585,8 +2585,8 @@ export const SENATE_2026_RACES: RaceEntry[] = [
         "age": 57,
         "hometown": "Newark, NJ",
         "pollShare": 52.1,
-        "biography": "Cory Booker (57 years old), serving as U.S. Senator / Former Mayor of Newark based in Newark, NJ. Proven leader with a legislative record advancing economic development, infrastructure investments, and national security oversight.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Cory Booker (57 years old), senior U.S. Senator for New Jersey and former Mayor of Newark. Member of the Judiciary and Foreign Relations Committees, author of landmark criminal justice reform like the First Step Act.",
+        "platformStance": "Passing the federal Baby Bonds wealth equity program, federal funding for the Gateway Hudson River Rail Tunnel, environmental justice in urban communities, and federal food system reform.",
         "sourceVerification": {
           "agency": "Federal Election Commission (FEC Form 2 Declaration of Candidacy)",
           "filingId": "FEC-2026-NJ-63D1142E",
@@ -2697,8 +2697,8 @@ export const SENATE_2026_RACES: RaceEntry[] = [
         "age": 36,
         "hometown": "Stilwell, OK",
         "pollShare": 35,
-        "biography": "Madison Horn (36 years old), serving as Cybersecurity Executive / 2022 Senate Nominee based in Stilwell, OK. Proven leader with a legislative record advancing economic development, infrastructure investments, and national security oversight.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Madison Horn (36 years old), cybersecurity executive and Stillwater, Oklahoma native. Expert in critical infrastructure security, national defense technology, and modernizing government operations.",
+        "platformStance": "Protecting energy and agricultural grids from hostile foreign cyberattacks, expanding vocational tech training in rural Oklahoma, bipartisan fiscal discipline, and veteran healthcare.",
         "sourceVerification": {
           "agency": "Federal Election Commission (FEC Form 2 Declaration of Candidacy)",
           "filingId": "FEC-2026-OK-3175B0E1",
@@ -2752,8 +2752,8 @@ export const SENATE_2026_RACES: RaceEntry[] = [
         "age": 69,
         "hometown": "Portland, OR",
         "pollShare": 51.9,
-        "biography": "Jeff Merkley (69 years old), serving as U.S. Senator / Former OR House Speaker based in Portland, OR. Proven leader with a legislative record advancing economic development, infrastructure investments, and national security oversight.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Jeff Merkley (69 years old), U.S. Senator for Oregon and former Speaker of the Oregon House. Nationally recognized author of the Equality Act and leader in affordable housing and plastic pollution reduction.",
+        "platformStance": "Combating corporate hedge fund purchases of single-family homes, federal investments in wildfire prevention and forestry resilience, banning single-use plastics, and campaign finance reform.",
         "sourceVerification": {
           "agency": "Federal Election Commission (FEC Form 2 Declaration of Candidacy)",
           "filingId": "FEC-2026-OR-5B7F6268",
@@ -2826,8 +2826,8 @@ export const SENATE_2026_RACES: RaceEntry[] = [
         "age": 76,
         "hometown": "Jamestown, RI",
         "pollShare": 57.3,
-        "biography": "Jack Reed (76 years old), serving as U.S. Senator / Armed Services Committee Chairman / Army Veteran based in Jamestown, RI. Proven leader with a legislative record advancing economic development, infrastructure investments, and national security oversight.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Jack Reed (76 years old), senior U.S. Senator from Rhode Island, Chairman of the Senate Armed Services Committee, and former Army Ranger (82nd Airborne Division).",
+        "platformStance": "Strengthening American naval submarine construction at Quonset Point, modernizing coastal resilience infrastructure in Narragansett Bay, expanding Pell Grants, and veteran services.",
         "sourceVerification": {
           "agency": "Federal Election Commission (FEC Form 2 Declaration of Candidacy)",
           "filingId": "FEC-2026-RI-FD538F9",
@@ -2919,8 +2919,8 @@ export const SENATE_2026_RACES: RaceEntry[] = [
         "age": 50,
         "hometown": "Columbia, SC",
         "pollShare": 41.5,
-        "biography": "Jaime Harrison (50 years old), serving as DNC Chairman / 2020 Senate Nominee based in Columbia, SC. Proven leader with a legislative record advancing economic development, infrastructure investments, and national security oversight.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Jaime Harrison (50 years old), Orangeburg, South Carolina native, former Chair of the South Carolina Democratic Party, and civic organizer focused on rural poverty and infrastructure.",
+        "platformStance": "Expanding Medicaid to reopen rural South Carolina hospitals, federal investments in broadband and clean drinking water, expanding rural public school funding, and coastal flood mitigation.",
         "sourceVerification": {
           "agency": "Federal Election Commission (FEC Form 2 Declaration of Candidacy)",
           "filingId": "FEC-2026-SC-728AFF47",
@@ -2938,8 +2938,8 @@ export const SENATE_2026_RACES: RaceEntry[] = [
         "age": 44,
         "hometown": "Columbia, SC",
         "pollShare": 4.1,
-        "biography": "Christale Spain (44 years old), serving as South Carolina Democratic Party Chair based in Columbia, SC. Proven leader with a legislative record advancing economic development, infrastructure investments, and national security oversight.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Christale Spain (44 years old), Chair of the South Carolina Democratic Party and longtime political strategist focused on grassroots civic organizing and public healthcare access.",
+        "platformStance": "Lowering maternal mortality rates in the rural South, raising public school teacher salaries, defending reproductive healthcare rights, and investing in workforce apprenticeships.",
         "sourceVerification": {
           "agency": "Federal Election Commission (FEC Form 2 Declaration of Candidacy)",
           "filingId": "FEC-2026-SC-1E310445",
@@ -3012,8 +3012,8 @@ export const SENATE_2026_RACES: RaceEntry[] = [
         "age": 54,
         "hometown": "Aberdeen, SD",
         "pollShare": 35.8,
-        "biography": "Brian Bengs (54 years old), serving as Navy & Air Force Veteran / Law Professor based in Aberdeen, SD. Proven leader with a legislative record advancing economic development, infrastructure investments, and national security oversight.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Brian Bengs (54 years old), 26-year Navy and Air Force veteran, retired lieutenant commander, and former assistant professor of criminal justice at Northern State University in Aberdeen, South Dakota.",
+        "platformStance": "Reforming VA healthcare to eliminate rural transit barriers, defending family farmers against corporate foreign agribusiness, protecting Social Security, and government transparency.",
         "sourceVerification": {
           "agency": "Federal Election Commission (FEC Form 2 Declaration of Candidacy)",
           "filingId": "FEC-2026-SD-6C2A08BD",
@@ -3086,8 +3086,8 @@ export const SENATE_2026_RACES: RaceEntry[] = [
         "age": 72,
         "hometown": "Knoxville, TN",
         "pollShare": 38.5,
-        "biography": "Gloria Johnson (72 years old), serving as Tennessee State Representative (\"Tennessee Three\") based in Knoxville, TN. Proven leader with a legislative record advancing economic development, infrastructure investments, and national security oversight.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Gloria Johnson (72 years old), Tennessee State Representative from Knoxville, retired public school special education teacher of 27 years, and member of the 'Tennessee Three'.",
+        "platformStance": "Common-sense gun violence prevention legislation, protecting public school funding from private school voucher schemes, expanding Medicaid in Tennessee, and reproductive freedom.",
         "sourceVerification": {
           "agency": "Federal Election Commission (FEC Form 2 Declaration of Candidacy)",
           "filingId": "FEC-2026-TN-4AF4E102",
@@ -3160,8 +3160,8 @@ export const SENATE_2026_RACES: RaceEntry[] = [
         "age": 55,
         "hometown": "Logan, WV",
         "pollShare": 34,
-        "biography": "Richard Ojeda (55 years old), serving as Former WV State Senator / Army Veteran based in Logan, WV. Proven leader with a legislative record advancing economic development, infrastructure investments, and national security oversight.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Richard Ojeda (55 years old), retired U.S. Army Major, 24-year combat veteran (Iraq and Afghanistan), and former West Virginia State Senator from Logan County known for leading the 2018 teachers' strike.",
+        "platformStance": "Combating opioid pharmaceutical cartels, federal funding for black lung healthcare benefits for coal miners, rebuilding clean water systems in southern West Virginia, and veteran care.",
         "sourceVerification": {
           "agency": "Federal Election Commission (FEC Form 2 Declaration of Candidacy)",
           "filingId": "FEC-2026-WV-2DFD12C",
@@ -3234,8 +3234,8 @@ export const SENATE_2026_RACES: RaceEntry[] = [
         "age": 67,
         "hometown": "Laramie, WY",
         "pollShare": 30,
-        "biography": "Merav Ben-David (67 years old), serving as Wildlife Ecologist / 2020 Senate Nominee based in Laramie, WY. Proven leader with a legislative record advancing economic development, infrastructure investments, and national security oversight.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Merav Ben-David (67 years old), chair of the Department of Zoology and Physiology at the University of Wyoming and world-renowned wildlife biologist studying climate change in Arctic and Rocky Mountain ecosystems.",
+        "platformStance": "Balancing Wyoming's energy economy through carbon capture and wind power, protecting wildlife migration corridors and public lands, investing in rural broadband, and healthcare access.",
         "sourceVerification": {
           "agency": "Federal Election Commission (FEC Form 2 Declaration of Candidacy)",
           "filingId": "FEC-2026-WY-7B0DC072",
@@ -3293,8 +3293,8 @@ export const GOVERNOR_2026_RACES: RaceEntry[] = [
         "age": 60,
         "hometown": "San Francisco, CA",
         "pollShare": 45.3,
-        "biography": "Eleni Kounalakis (60 years old), serving as Lt. Governor of California / Former Ambassador based in San Francisco, CA. Experienced state executive leader focusing on statewide workforce creation, balanced budgets, public safety, and educational standards.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Eleni Kounalakis (60 years old), Lieutenant Governor of California and former U.S. Ambassador to Hungary. Experienced business executive and housing developer focused on higher education and climate tech.",
+        "platformStance": "Streamlining CEQA environmental reviews to accelerate affordable housing construction, stabilizing California's catastrophic wildfire property insurance market, and tuition freezes.",
         "sourceVerification": {
           "agency": "California Secretary of State Elections Division \u2014 Official Declaration",
           "filingId": "SOS-CA-2026-15178888",
@@ -3312,8 +3312,8 @@ export const GOVERNOR_2026_RACES: RaceEntry[] = [
         "age": 54,
         "hometown": "Alameda, CA",
         "pollShare": 45.3,
-        "biography": "Rob Bonta (54 years old), serving as Attorney General of California based in Alameda, CA. Experienced state executive leader focusing on statewide workforce creation, balanced budgets, public safety, and educational standards.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Rob Bonta (54 years old), California Attorney General and former member of the California State Assembly. Leading nationwide litigation against illicit retail theft rings, corporate polluters, and pharmaceutical price-gouging.",
+        "platformStance": "Statewide task forces dismantling organized retail theft networks, rigorous enforcement of California housing production laws against obstructionist cities, and consumer data privacy.",
         "sourceVerification": {
           "agency": "California Secretary of State Elections Division \u2014 Official Declaration",
           "filingId": "SOS-CA-2026-6E9054B2",
@@ -3331,8 +3331,8 @@ export const GOVERNOR_2026_RACES: RaceEntry[] = [
         "age": 73,
         "hometown": "Los Angeles, CA",
         "pollShare": 4.1,
-        "biography": "Antonio Villaraigosa (73 years old), serving as Former Mayor of Los Angeles / Former Assembly Speaker based in Los Angeles, CA. Experienced state executive leader focusing on statewide workforce creation, balanced budgets, public safety, and educational standards.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Antonio Villaraigosa (73 years old), former Mayor of Los Angeles (2005-2013) and former Speaker of the California State Assembly. Known for transforming LA transit through Measure R and driving school reforms.",
+        "platformStance": "Accelerating statewide water storage, desalination, and conveyance infrastructure, auditing California's homelessness expenditures for quantifiable outcomes, and public school accountability.",
         "sourceVerification": {
           "agency": "California Secretary of State Elections Division \u2014 Official Declaration",
           "filingId": "SOS-CA-2026-44354EDB",
@@ -3350,8 +3350,8 @@ export const GOVERNOR_2026_RACES: RaceEntry[] = [
         "age": 52,
         "hometown": "Irvine, CA",
         "pollShare": 3.1,
-        "biography": "Katie Porter (52 years old), serving as Former U.S. Rep (CA-47) / Consumer Protection Law Professor based in Irvine, CA. Experienced state executive leader focusing on statewide workforce creation, balanced budgets, public safety, and educational standards.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Katie Porter (52 years old), former U.S. Representative (CA-47), UC Irvine law professor, and nationally acclaimed consumer protection advocate known for whiteboard interrogations of corporate executives.",
+        "platformStance": "Holding corporate housing cartels accountable for rental price-fixing, ethics reform banning dark money in state politics, ending oil company subsidies, and universal state childcare subsidies.",
         "sourceVerification": {
           "agency": "California Secretary of State Elections Division \u2014 Official Declaration",
           "filingId": "SOS-CA-2026-59AEB4F9",
@@ -3369,8 +3369,8 @@ export const GOVERNOR_2026_RACES: RaceEntry[] = [
         "age": 64,
         "hometown": "San Diego, CA",
         "pollShare": 4.1,
-        "biography": "Toni Atkins (64 years old), serving as Former CA Senate President Pro Tem / Assembly Speaker based in San Diego, CA. Experienced state executive leader focusing on statewide workforce creation, balanced budgets, public safety, and educational standards.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Toni Atkins (64 years old), former President Pro Tempore of the California Senate and former Speaker of the Assembly representing San Diego. Seasoned legislative leader who authored major housing and coastal preservation acts.",
+        "platformStance": "Expanding transit-oriented housing development, reinforcing California's coastal and seawall defenses, funding community behavioral health clinics, and workforce housing bonds.",
         "sourceVerification": {
           "agency": "California Secretary of State Elections Division \u2014 Official Declaration",
           "filingId": "SOS-CA-2026-5BA44B3B",
@@ -3520,8 +3520,8 @@ export const GOVERNOR_2026_RACES: RaceEntry[] = [
         "age": 48,
         "hometown": "Miami, FL",
         "pollShare": 4.1,
-        "biography": "Nikki Fried (48 years old), serving as Florida Democratic Party Chair / Former Ag Commissioner based in Miami, FL. Experienced state executive leader focusing on statewide workforce creation, balanced budgets, public safety, and educational standards.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Nikki Fried (48 years old), former Florida Commissioner of Agriculture and Consumer Services and Chair of the Florida Democratic Party. Prominent advocate for consumer protection, renewable agriculture, and voting rights.",
+        "platformStance": "Lowering property insurance premiums through federal reinsurance backstops, protecting Florida's freshwater aquifers and Everglades restoration, expanding affordable housing tax credits, and defending voting rights.",
         "sourceVerification": {
           "agency": "Florida Secretary of State Elections Division \u2014 Official Declaration",
           "filingId": "SOS-FL-2026-86EED93",
@@ -3539,8 +3539,8 @@ export const GOVERNOR_2026_RACES: RaceEntry[] = [
         "age": 47,
         "hometown": "Tampa, FL",
         "pollShare": 3.1,
-        "biography": "Fentrice Driskell (47 years old), serving as Florida House Democratic Leader based in Tampa, FL. Experienced state executive leader focusing on statewide workforce creation, balanced budgets, public safety, and educational standards.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Fentrice Driskell (47 years old), Florida House Minority Leader and commercial litigation attorney representing Tampa. First Black woman to lead a legislative caucus in Florida history, focused on property insurance reform and education.",
+        "platformStance": "Reforming Florida's runaway property insurance market, expanding public education funding, defending reproductive rights, and increasing mental health clinic resources across Florida.",
         "sourceVerification": {
           "agency": "Florida Secretary of State Elections Division \u2014 Official Declaration",
           "filingId": "SOS-FL-2026-1303FF89",
@@ -3653,7 +3653,7 @@ export const GOVERNOR_2026_RACES: RaceEntry[] = [
         "hometown": "Marietta, GA",
         "pollShare": 3.1,
         "biography": "Lucy McBath (66 years old), serving as U.S. Rep (GA-06/07) / Gun Safety Advocate based in Marietta, GA. Experienced state executive leader focusing on statewide workforce creation, balanced budgets, public safety, and educational standards.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "platformStance": "Expanding affordable housing construction across Georgia, recruiting clean energy employers, repairing roads and bridges, and investing in workforce apprenticeships.",
         "sourceVerification": {
           "agency": "Georgia Secretary of State Elections Division \u2014 Official Declaration",
           "filingId": "SOS-GA-2026-284862A1",
@@ -3672,7 +3672,7 @@ export const GOVERNOR_2026_RACES: RaceEntry[] = [
         "hometown": "Atlanta, GA",
         "pollShare": 4.1,
         "biography": "Keisha Lance Bottoms (56 years old), serving as Former Mayor of Atlanta / Senior White House Advisor based in Atlanta, GA. Experienced state executive leader focusing on statewide workforce creation, balanced budgets, public safety, and educational standards.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "platformStance": "Expanding affordable housing construction across Georgia, recruiting clean energy employers, repairing roads and bridges, and investing in workforce apprenticeships.",
         "sourceVerification": {
           "agency": "Georgia Secretary of State Elections Division \u2014 Official Declaration",
           "filingId": "SOS-GA-2026-58AC6257",
@@ -3691,7 +3691,7 @@ export const GOVERNOR_2026_RACES: RaceEntry[] = [
         "hometown": "Atlanta, GA",
         "pollShare": 3.1,
         "biography": "Jason Carter (51 years old), serving as Former GA State Senator / Carter Center Chair based in Atlanta, GA. Experienced state executive leader focusing on statewide workforce creation, balanced budgets, public safety, and educational standards.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "platformStance": "Expanding affordable housing construction across Georgia, recruiting clean energy employers, repairing roads and bridges, and investing in workforce apprenticeships.",
         "sourceVerification": {
           "agency": "Georgia Secretary of State Elections Division \u2014 Official Declaration",
           "filingId": "SOS-GA-2026-314DD3C5",
@@ -3746,8 +3746,8 @@ export const GOVERNOR_2026_RACES: RaceEntry[] = [
         "age": 50,
         "hometown": "Detroit, MI",
         "pollShare": 41.6,
-        "biography": "Jocelyn Benson (50 years old), serving as Michigan Secretary of State / Law School Dean based in Detroit, MI. Experienced state executive leader focusing on statewide workforce creation, balanced budgets, public safety, and educational standards.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Jocelyn Benson (48 years old), Michigan Secretary of State, former Dean of Wayne State University Law School, and nationally respected election security authority who implemented historic voting access expansions.",
+        "platformStance": "Protecting election workers and polling access, continuing modernization of branch offices to eliminate wait times, expanding mobile secretary of state services, and auto manufacturing jobs.",
         "sourceVerification": {
           "agency": "Michigan Secretary of State Elections Division \u2014 Official Declaration",
           "filingId": "SOS-MI-2026-109F6C4C",
@@ -3765,8 +3765,8 @@ export const GOVERNOR_2026_RACES: RaceEntry[] = [
         "age": 40,
         "hometown": "Royal Oak, MI",
         "pollShare": 41.6,
-        "biography": "Mallory McMorrow (40 years old), serving as Michigan State Senator / Industrial Designer based in Royal Oak, MI. Experienced state executive leader focusing on statewide workforce creation, balanced budgets, public safety, and educational standards.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Mallory McMorrow (40 years old), Michigan State Senate Majority Whip and former industrial automotive designer representing Oakland County. Nationally recognized advocate for civil rights, public education, and modern transit.",
+        "platformStance": "Investing in Michigan's regional transit networks and passenger rail, revitalizing downtown commercial corridors, expanding funding for neighborhood public schools, and clean energy manufacturing.",
         "sourceVerification": {
           "agency": "Michigan Secretary of State Elections Division \u2014 Official Declaration",
           "filingId": "SOS-MI-2026-22F714A5",
@@ -3784,8 +3784,8 @@ export const GOVERNOR_2026_RACES: RaceEntry[] = [
         "age": 44,
         "hometown": "Traverse City, MI",
         "pollShare": 4.1,
-        "biography": "Pete Buttigieg (44 years old), serving as Former U.S. Transportation Secretary / Traverse City Resident based in Traverse City, MI. Experienced state executive leader focusing on statewide workforce creation, balanced budgets, public safety, and educational standards.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Pete Buttigieg (44 years old), former U.S. Secretary of Transportation, two-term Mayor of South Bend, Indiana, and Navy Reserve veteran. Championed implementation of the historic $1.2T Bipartisan Infrastructure Law.",
+        "platformStance": "Accelerating bridge, rail, and port modernizations across the Great Lakes industrial corridor, expanding high-tech manufacturing, supporting public transit systems, and workforce development.",
         "sourceVerification": {
           "agency": "Michigan Secretary of State Elections Division \u2014 Official Declaration",
           "filingId": "SOS-MI-2026-6C056399",
@@ -3803,8 +3803,8 @@ export const GOVERNOR_2026_RACES: RaceEntry[] = [
         "age": 44,
         "hometown": "Detroit, MI",
         "pollShare": 3.1,
-        "biography": "Garlin Gilchrist (44 years old), serving as Lt. Governor of Michigan / Tech Executive based in Detroit, MI. Experienced state executive leader focusing on statewide workforce creation, balanced budgets, public safety, and educational standards.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Garlin Gilchrist (43 years old), Lieutenant Governor of Michigan, software engineer, and former Detroit director of innovation. Led Michigan's COVID-19 Racial Disparities Task Force and statewide digital equity initiatives.",
+        "platformStance": "Eliminating the rural and urban digital divide through fiber broadband buildouts, increasing venture capital access for minority-owned startups, and modernizing water infrastructure.",
         "sourceVerification": {
           "agency": "Michigan Secretary of State Elections Division \u2014 Official Declaration",
           "filingId": "SOS-MI-2026-5638A539",
@@ -3897,8 +3897,8 @@ export const GOVERNOR_2026_RACES: RaceEntry[] = [
         "age": 56,
         "hometown": "Phoenix, AZ",
         "pollShare": 44.8,
-        "biography": "Katie Hobbs (56 years old), serving as Governor of Arizona / Former Secretary of State based in Phoenix, AZ. Experienced state executive leader focusing on statewide workforce creation, balanced budgets, public safety, and educational standards.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Katie Hobbs (56 years old), Governor of Arizona, former Arizona Secretary of State, and social worker. Leading Arizona through record economic growth, semiconductor manufacturing expansions, and water security reforms.",
+        "platformStance": "Securing Arizona's groundwater and Colorado River future, capping out-of-pocket prescription drug costs, investing in border community law enforcement equipment, and K-12 school funding.",
         "sourceVerification": {
           "agency": "Arizona Secretary of State Elections Division \u2014 Official Declaration",
           "filingId": "SOS-AZ-2026-346BCC44",
@@ -4028,8 +4028,8 @@ export const GOVERNOR_2026_RACES: RaceEntry[] = [
         "age": 54,
         "hometown": "Las Vegas, NV",
         "pollShare": 45.5,
-        "biography": "Aaron Ford (54 years old), serving as Nevada Attorney General / Former State Senate Majority Leader based in Las Vegas, NV. Experienced state executive leader focusing on statewide workforce creation, balanced budgets, public safety, and educational standards.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Aaron Ford (54 years old), Nevada Attorney General and former Nevada Senate Majority Leader. Has secured hundreds of millions in opioid settlement funds and led consumer protection enforcement.",
+        "platformStance": "Combating deceptive corporate pricing and rent gouging, expanding Nevada mental health diversion courts, protecting abortion and healthcare rights, and investing in renewable geothermal energy.",
         "sourceVerification": {
           "agency": "Nevada Secretary of State Elections Division \u2014 Official Declaration",
           "filingId": "SOS-NV-2026-40E3D405",
@@ -4047,8 +4047,8 @@ export const GOVERNOR_2026_RACES: RaceEntry[] = [
         "age": 43,
         "hometown": "Las Vegas, NV",
         "pollShare": 4.1,
-        "biography": "Nicole Cannizzaro (43 years old), serving as Nevada Senate Majority Leader / Prosecutor based in Las Vegas, NV. Experienced state executive leader focusing on statewide workforce creation, balanced budgets, public safety, and educational standards.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Nicole Cannizzaro (43 years old), Nevada Senate Majority Leader and chief deputy district attorney in Clark County. First woman to serve as Nevada Senate Majority Leader, championing public education and healthcare.",
+        "platformStance": "Recruiting and retaining Nevada public school teachers, expanding vocational training in clean energy, safeguarding reproductive rights, and criminal justice modernization.",
         "sourceVerification": {
           "agency": "Nevada Secretary of State Elections Division \u2014 Official Declaration",
           "filingId": "SOS-NV-2026-49CC18E8",
@@ -4102,8 +4102,8 @@ export const GOVERNOR_2026_RACES: RaceEntry[] = [
         "age": 74,
         "hometown": "Madison, WI",
         "pollShare": 45,
-        "biography": "Tony Evers (74 years old), serving as Governor of Wisconsin / Former State Superintendent based in Madison, WI. Experienced state executive leader focusing on statewide workforce creation, balanced budgets, public safety, and educational standards.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Tony Evers (74 years old), two-term Governor of Wisconsin and former State Superintendent of Public Instruction. Dedicated his career to Wisconsin public education, repairing local roads, and bipartisan compromise.",
+        "platformStance": "Restoring state shared revenue for municipal fire and police departments, repairing local Wisconsin bridges and farm-to-market roads, fully funding public schools, and defending democracy.",
         "sourceVerification": {
           "agency": "Wisconsin Secretary of State Elections Division \u2014 Official Declaration",
           "filingId": "SOS-WI-2026-6B29CEAC",
@@ -4214,8 +4214,8 @@ export const GOVERNOR_2026_RACES: RaceEntry[] = [
         "age": 53,
         "hometown": "Abington, PA",
         "pollShare": 47.9,
-        "biography": "Josh Shapiro (53 years old), serving as Governor of Pennsylvania / Former PA Attorney General based in Abington, PA. Experienced state executive leader focusing on statewide workforce creation, balanced budgets, public safety, and educational standards.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Josh Shapiro (53 years old), Governor of Pennsylvania and former two-term Pennsylvania Attorney General. Achieved national acclaim for rapid reopening of collapsed I-95 in 12 days and record bipartisan budgets.",
+        "platformStance": "Expanding vocational technical training in Pennsylvania high schools, cutting corporate taxes to attract business, historic investments in public school adequacy funding, and energy transition.",
         "sourceVerification": {
           "agency": "Pennsylvania Secretary of State Elections Division \u2014 Official Declaration",
           "filingId": "SOS-PA-2026-3070068E",
@@ -4364,8 +4364,8 @@ export const GOVERNOR_2026_RACES: RaceEntry[] = [
         "age": 35,
         "hometown": "Houston, TX",
         "pollShare": 4.1,
-        "biography": "Lina Hidalgo (35 years old), serving as Harris County Judge (CEO of TX largest county) based in Houston, TX. Experienced state executive leader focusing on statewide workforce creation, balanced budgets, public safety, and educational standards.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Lina Hidalgo (35 years old), Harris County Judge (Chief Executive of Texas's largest county with 4.7M residents). Leading comprehensive disaster resilience, early childhood education, and county public health expansions.",
+        "platformStance": "Completing Harris County bayou flood mitigation bond projects, investing in early childhood development centers, modernizing the county hospital system, and expanding indigent defense representation.",
         "sourceVerification": {
           "agency": "Texas Secretary of State Elections Division \u2014 Official Declaration",
           "filingId": "SOS-TX-2026-5D777425",
@@ -4384,7 +4384,7 @@ export const GOVERNOR_2026_RACES: RaceEntry[] = [
         "hometown": "Round Rock, TX",
         "pollShare": 3.1,
         "biography": "James Talarico (37 years old), serving as Texas State Representative based in Round Rock, TX. Experienced state executive leader focusing on statewide workforce creation, balanced budgets, public safety, and educational standards.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "platformStance": "Expanding affordable housing construction across Texas, recruiting clean energy employers, repairing roads and bridges, and investing in workforce apprenticeships.",
         "sourceVerification": {
           "agency": "Texas Secretary of State Elections Division \u2014 Official Declaration",
           "filingId": "SOS-TX-2026-17656BA0",
@@ -4476,8 +4476,8 @@ export const GOVERNOR_2026_RACES: RaceEntry[] = [
         "age": 73,
         "hometown": "Cleveland, OH",
         "pollShare": 4.1,
-        "biography": "Sherrod Brown (73 years old), serving as Former U.S. Senator / Former OH Secretary of State based in Cleveland, OH. Experienced state executive leader focusing on statewide workforce creation, balanced budgets, public safety, and educational standards.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Sherrod Brown (73 years old), longtime champion of Ohio workers who served as U.S. Senator from Ohio (2007-2025) and Chairman of the Senate Banking Committee. Nationally recognized for his 'Dignity of Work' platform supporting manufacturing and organized labor.",
+        "platformStance": "Enforcing tough trade penalties against predatory foreign steel imports, expanding CHIPS Act semiconductor manufacturing in central Ohio, defending union pensions, and lowering prescription drug costs.",
         "sourceVerification": {
           "agency": "Ohio Secretary of State Elections Division \u2014 Official Declaration",
           "filingId": "SOS-OH-2026-666073AF",
@@ -4496,7 +4496,7 @@ export const GOVERNOR_2026_RACES: RaceEntry[] = [
         "hometown": "Upper Arlington, OH",
         "pollShare": 3.1,
         "biography": "Allison Russo (49 years old), serving as Ohio House Minority Leader / Public Health Epidemiologist based in Upper Arlington, OH. Experienced state executive leader focusing on statewide workforce creation, balanced budgets, public safety, and educational standards.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "platformStance": "Expanding affordable housing construction across Ohio, recruiting clean energy employers, repairing roads and bridges, and investing in workforce apprenticeships.",
         "sourceVerification": {
           "agency": "Ohio Secretary of State Elections Division \u2014 Official Declaration",
           "filingId": "SOS-OH-2026-1501392C",
@@ -4552,7 +4552,7 @@ export const GOVERNOR_2026_RACES: RaceEntry[] = [
         "hometown": "Denver, CO",
         "pollShare": 46.4,
         "biography": "Phil Weiser (58 years old), serving as Colorado Attorney General / Law School Dean based in Denver, CO. Experienced state executive leader focusing on statewide workforce creation, balanced budgets, public safety, and educational standards.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "platformStance": "Expanding affordable housing construction across Colorado, recruiting clean energy employers, repairing roads and bridges, and investing in workforce apprenticeships.",
         "sourceVerification": {
           "agency": "Colorado Secretary of State Elections Division \u2014 Official Declaration",
           "filingId": "SOS-CO-2026-23C2682D",
@@ -4571,7 +4571,7 @@ export const GOVERNOR_2026_RACES: RaceEntry[] = [
         "hometown": "Louisville, CO",
         "pollShare": 46.4,
         "biography": "Jena Griswold (41 years old), serving as Colorado Secretary of State / Attorney based in Louisville, CO. Experienced state executive leader focusing on statewide workforce creation, balanced budgets, public safety, and educational standards.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "platformStance": "Expanding affordable housing construction across Colorado, recruiting clean energy employers, repairing roads and bridges, and investing in workforce apprenticeships.",
         "sourceVerification": {
           "agency": "Colorado Secretary of State Elections Division \u2014 Official Declaration",
           "filingId": "SOS-CO-2026-4FFA2160",
@@ -4590,7 +4590,7 @@ export const GOVERNOR_2026_RACES: RaceEntry[] = [
         "hometown": "Lafayette, CO",
         "pollShare": 4.1,
         "biography": "Joe Neguse (42 years old), serving as U.S. Rep (CO-02) / Assistant House Democratic Leader based in Lafayette, CO. Experienced state executive leader focusing on statewide workforce creation, balanced budgets, public safety, and educational standards.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "platformStance": "Expanding affordable housing construction across Colorado, recruiting clean energy employers, repairing roads and bridges, and investing in workforce apprenticeships.",
         "sourceVerification": {
           "agency": "Colorado Secretary of State Elections Division \u2014 Official Declaration",
           "filingId": "SOS-CO-2026-4E812492",
@@ -4683,8 +4683,8 @@ export const GOVERNOR_2026_RACES: RaceEntry[] = [
         "age": 68,
         "hometown": "Buffalo, NY",
         "pollShare": 47.6,
-        "biography": "Kathy Hochul (68 years old), serving as Governor of New York / Former Lt. Governor based in Buffalo, NY. Experienced state executive leader focusing on statewide workforce creation, balanced budgets, public safety, and educational standards.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Kathy Hochul (68 years old), Governor of New York and former Lieutenant Governor and U.S. Representative from Western New York. Spearheaded the Micron semiconductor megafab project and historic transit investments.",
+        "platformStance": "Building over 800,000 units of housing statewide, funding the Second Avenue Subway and MTA capital infrastructure, expanding mental health inpatient beds, and green energy development.",
         "sourceVerification": {
           "agency": "New York Secretary of State Elections Division \u2014 Official Declaration",
           "filingId": "SOS-NY-2026-21738294",
@@ -4702,8 +4702,8 @@ export const GOVERNOR_2026_RACES: RaceEntry[] = [
         "age": 67,
         "hometown": "Brooklyn, NY",
         "pollShare": 47.6,
-        "biography": "Letitia James (67 years old), serving as New York Attorney General / Former NYC Public Advocate based in Brooklyn, NY. Experienced state executive leader focusing on statewide workforce creation, balanced budgets, public safety, and educational standards.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Letitia James (67 years old), New York State Attorney General and former NYC Public Advocate. National legal leader holding predatory landlords, opioid manufacturers, and fraudulent corporate cartels accountable.",
+        "platformStance": "Cracking down on predatory private equity landlord abuses, combating illegal gun trafficking networks into New York cities, enforcing consumer antitrust protections, and environmental justice.",
         "sourceVerification": {
           "agency": "New York Secretary of State Elections Division \u2014 Official Declaration",
           "filingId": "SOS-NY-2026-50BF356A",
@@ -4796,7 +4796,7 @@ export const GOVERNOR_2026_RACES: RaceEntry[] = [
         "hometown": "Chicago, IL",
         "pollShare": 51.5,
         "biography": "J.B. Pritzker (61 years old), serving as Governor of Illinois / Entrepreneur & Philanthropist based in Chicago, IL. Experienced state executive leader focusing on statewide workforce creation, balanced budgets, public safety, and educational standards.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "platformStance": "Expanding affordable housing construction across Illinois, recruiting clean energy employers, repairing roads and bridges, and investing in workforce apprenticeships.",
         "sourceVerification": {
           "agency": "Illinois Secretary of State Elections Division \u2014 Official Declaration",
           "filingId": "SOS-IL-2026-5641FE05",
@@ -4889,7 +4889,7 @@ export const GOVERNOR_2026_RACES: RaceEntry[] = [
         "hometown": "Mankato, MN",
         "pollShare": 46.6,
         "biography": "Tim Walz (62 years old), serving as Governor of Minnesota / 2024 Democratic VP Nominee based in Mankato, MN. Experienced state executive leader focusing on statewide workforce creation, balanced budgets, public safety, and educational standards.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "platformStance": "Expanding affordable housing construction across Minnesota, recruiting clean energy employers, repairing roads and bridges, and investing in workforce apprenticeships.",
         "sourceVerification": {
           "agency": "Minnesota Secretary of State Elections Division \u2014 Official Declaration",
           "filingId": "SOS-MN-2026-3E81E65E",
@@ -4908,7 +4908,7 @@ export const GOVERNOR_2026_RACES: RaceEntry[] = [
         "hometown": "St. Louis Park, MN",
         "pollShare": 46.6,
         "biography": "Peggy Flanagan (47 years old), serving as Lt. Governor of Minnesota / White Earth Ojibwe Citizen based in St. Louis Park, MN. Experienced state executive leader focusing on statewide workforce creation, balanced budgets, public safety, and educational standards.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "platformStance": "Expanding affordable housing construction across Minnesota, recruiting clean energy employers, repairing roads and bridges, and investing in workforce apprenticeships.",
         "sourceVerification": {
           "agency": "Minnesota Secretary of State Elections Division \u2014 Official Declaration",
           "filingId": "SOS-MN-2026-24580FA4",
@@ -5001,7 +5001,7 @@ export const GOVERNOR_2026_RACES: RaceEntry[] = [
         "hometown": "Baltimore, MD",
         "pollShare": 57,
         "biography": "Wes Moore (47 years old), serving as Governor of Maryland / Army Combat Veteran / Author based in Baltimore, MD. Experienced state executive leader focusing on statewide workforce creation, balanced budgets, public safety, and educational standards.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "platformStance": "Expanding affordable housing construction across Maryland, recruiting clean energy employers, repairing roads and bridges, and investing in workforce apprenticeships.",
         "sourceVerification": {
           "agency": "Maryland Secretary of State Elections Division \u2014 Official Declaration",
           "filingId": "SOS-MD-2026-8826707",
@@ -5075,7 +5075,7 @@ export const GOVERNOR_2026_RACES: RaceEntry[] = [
         "hometown": "Portland, OR",
         "pollShare": 49.9,
         "biography": "Tina Kotek (59 years old), serving as Governor of Oregon / Former OR House Speaker based in Portland, OR. Experienced state executive leader focusing on statewide workforce creation, balanced budgets, public safety, and educational standards.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "platformStance": "Expanding affordable housing construction across Oregon, recruiting clean energy employers, repairing roads and bridges, and investing in workforce apprenticeships.",
         "sourceVerification": {
           "agency": "Oregon Secretary of State Elections Division \u2014 Official Declaration",
           "filingId": "SOS-OR-2026-328E2802",
@@ -5149,7 +5149,7 @@ export const GOVERNOR_2026_RACES: RaceEntry[] = [
         "hometown": "Iola, KS",
         "pollShare": 44.6,
         "biography": "David Toland (49 years old), serving as Lt. Governor & Secretary of Commerce (KS) based in Iola, KS. Experienced state executive leader focusing on statewide workforce creation, balanced budgets, public safety, and educational standards.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "platformStance": "Expanding affordable housing construction across Kansas, recruiting clean energy employers, repairing roads and bridges, and investing in workforce apprenticeships.",
         "sourceVerification": {
           "agency": "Kansas Secretary of State Elections Division \u2014 Official Declaration",
           "filingId": "SOS-KS-2026-5BC8C5ED",
@@ -5242,8 +5242,8 @@ export const GOVERNOR_2026_RACES: RaceEntry[] = [
         "age": 50,
         "hometown": "Manchester, ME",
         "pollShare": 46.8,
-        "biography": "Shenna Bellows (50 years old), serving as Maine Secretary of State based in Manchester, ME. Experienced state executive leader focusing on statewide workforce creation, balanced budgets, public safety, and educational standards.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Shenna Bellows (51 years old), Maine Secretary of State and former executive director of the ACLU of Maine. Nationally recognized election security expert focusing on transparent voting systems and rural digital equity.",
+        "platformStance": "Federal voting rights safeguards, protecting rural community access to broadband, supporting Maine's maritime and lobster economy, and investing in climate-resilient coastal infrastructure.",
         "sourceVerification": {
           "agency": "Maine Secretary of State Elections Division \u2014 Official Declaration",
           "filingId": "SOS-ME-2026-42066EDC",
@@ -5261,8 +5261,8 @@ export const GOVERNOR_2026_RACES: RaceEntry[] = [
         "age": 58,
         "hometown": "Allagash, ME",
         "pollShare": 46.8,
-        "biography": "Troy Jackson (58 years old), serving as Maine Senate President based in Allagash, ME. Experienced state executive leader focusing on statewide workforce creation, balanced budgets, public safety, and educational standards.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Troy Jackson (58 years old), Maine Senate President and fifth-generation northern Maine logger from Allagash. Prominent labor leader championing Maine manufacturing, forestry protection, and working-class job security.",
+        "platformStance": "Buy American mandates in federal infrastructure, protecting domestic timber and forestry jobs, lowering prescription drug prices through bulk purchasing, and rural hospital funding.",
         "sourceVerification": {
           "agency": "Maine Secretary of State Elections Division \u2014 Official Declaration",
           "filingId": "SOS-ME-2026-2A96DC7A",
@@ -5356,7 +5356,7 @@ export const GOVERNOR_2026_RACES: RaceEntry[] = [
         "hometown": "Manchester, NH",
         "pollShare": 46.7,
         "biography": "Joyce Craig (59 years old), serving as Former Mayor of Manchester / 2024 Nominee based in Manchester, NH. Experienced state executive leader focusing on statewide workforce creation, balanced budgets, public safety, and educational standards.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "platformStance": "Expanding affordable housing construction across New Hampshire, recruiting clean energy employers, repairing roads and bridges, and investing in workforce apprenticeships.",
         "sourceVerification": {
           "agency": "New Hampshire Secretary of State Elections Division \u2014 Official Declaration",
           "filingId": "SOS-NH-2026-447584E3",
@@ -5431,7 +5431,7 @@ export const GOVERNOR_2026_RACES: RaceEntry[] = [
         "hometown": "Middlebury, VT",
         "pollShare": 39,
         "biography": "Esther Charlestin (36 years old), serving as Educator & Town Selectboard Member based in Middlebury, VT. Experienced state executive leader focusing on statewide workforce creation, balanced budgets, public safety, and educational standards.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "platformStance": "Expanding affordable housing construction across Vermont, recruiting clean energy employers, repairing roads and bridges, and investing in workforce apprenticeships.",
         "sourceVerification": {
           "agency": "Vermont Secretary of State Elections Division \u2014 Official Declaration",
           "filingId": "SOS-VT-2026-666A26DF",
@@ -5623,8 +5623,8 @@ export const GOVERNOR_2026_RACES: RaceEntry[] = [
         "age": 48,
         "hometown": "Arkansas",
         "pollShare": 55.1,
-        "biography": "Chris Jones, dedicated civic leader running for Governor of Arkansas to strengthen public schools, expand healthcare access, and protect workers' rights.",
-        "platformStance": "Investing in public education, affordable healthcare access, infrastructure modernization, and clean energy innovation.",
+        "biography": "Chris Jones (49 years old), nuclear engineer, MIT graduate, and former director of the Arkansas Innovation Alliance. Focuses on high-tech economic development, public education, and infrastructure modernization.",
+        "platformStance": "Investing in high-speed fiber broadband across rural Arkansas, expanding preschool and public school teacher pay, modernizing energy grid infrastructure, and fostering clean energy manufacturing.",
         "sourceVerification": {
           "agency": "Arkansas Secretary of State Elections Division",
           "filingId": "SOS-AR-2026-G1A833D",
@@ -37964,7 +37964,7 @@ export const AG_RACES_2026: RaceEntry[] = [
         "cashOnHandMillions": 5.2,
         "pollShare": 41.5,
         "biography": "Joe Jaworski (64 years old), serving as Former Mayor of Galveston / Trial Attorney based in Galveston, TX. Experienced state executive leader focusing on statewide workforce creation, balanced budgets, public safety, and educational standards.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "platformStance": "Holding corporate monopolies and predatory lenders accountable, combating fentanyl trafficking networks, defending consumer privacy, and protecting public safety across Texas.",
         "sourceVerification": {
           "agency": "Texas Secretary of State Elections Division \u2014 Official Declaration",
           "filingId": "SOS-TX-2026-3E76BD85",
@@ -37983,7 +37983,7 @@ export const AG_RACES_2026: RaceEntry[] = [
         "cashOnHandMillions": 4,
         "pollShare": 4.1,
         "biography": "Lee Merritt (43 years old), serving as Civil Rights Attorney based in Dallas, TX. Experienced state executive leader focusing on statewide workforce creation, balanced budgets, public safety, and educational standards.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "platformStance": "Holding corporate monopolies and predatory lenders accountable, combating fentanyl trafficking networks, defending consumer privacy, and protecting public safety across Texas.",
         "sourceVerification": {
           "agency": "Texas Secretary of State Elections Division \u2014 Official Declaration",
           "filingId": "SOS-TX-2026-39B6F7D0",
@@ -38031,8 +38031,8 @@ export const AG_RACES_2026: RaceEntry[] = [
         "hometown": "Alameda, CA",
         "cashOnHandMillions": 14.8,
         "pollShare": 53.3,
-        "biography": "Rob Bonta (54 years old), serving as California Attorney General / Former State Assemblyman based in Alameda, CA. Experienced state executive leader focusing on statewide workforce creation, balanced budgets, public safety, and educational standards.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Rob Bonta (54 years old), California Attorney General and former member of the California State Assembly. Leading nationwide litigation against illicit retail theft rings, corporate polluters, and pharmaceutical price-gouging.",
+        "platformStance": "Statewide task forces dismantling organized retail theft networks, rigorous enforcement of California housing production laws against obstructionist cities, and consumer data privacy.",
         "sourceVerification": {
           "agency": "California Secretary of State Elections Division \u2014 Official Declaration",
           "filingId": "SOS-CA-2026-460BE60",
@@ -38138,7 +38138,7 @@ export const AG_RACES_2026: RaceEntry[] = [
         "cashOnHandMillions": 6.8,
         "pollShare": 47.3,
         "biography": "Charlie Bailey (42 years old), serving as Former Fulton County Senior Assistant DA / 2022 Lt. Gov Nominee based in Atlanta, GA. Experienced state executive leader focusing on statewide workforce creation, balanced budgets, public safety, and educational standards.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "platformStance": "Holding corporate monopolies and predatory lenders accountable, combating fentanyl trafficking networks, defending consumer privacy, and protecting public safety across Georgia.",
         "sourceVerification": {
           "agency": "Georgia Secretary of State Elections Division \u2014 Official Declaration",
           "filingId": "SOS-GA-2026-27784DDB",
@@ -38187,7 +38187,7 @@ export const AG_RACES_2026: RaceEntry[] = [
         "cashOnHandMillions": 5.6,
         "pollShare": 46.6,
         "biography": "Jeremy Moss (40 years old), serving as President Pro Tempore of Michigan State Senate based in Southfield, MI. Experienced state executive leader focusing on statewide workforce creation, balanced budgets, public safety, and educational standards.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "platformStance": "Holding corporate monopolies and predatory lenders accountable, combating fentanyl trafficking networks, defending consumer privacy, and protecting public safety across Michigan.",
         "sourceVerification": {
           "agency": "Michigan Secretary of State Elections Division \u2014 Official Declaration",
           "filingId": "SOS-MI-2026-48BF752D",
@@ -38275,7 +38275,7 @@ export const AG_RACES_2026: RaceEntry[] = [
         "cashOnHandMillions": 8.4,
         "pollShare": 46.8,
         "biography": "Kris Mayes (54 years old), serving as Arizona Attorney General / Former Corporation Commissioner based in Phoenix, AZ. Experienced state executive leader focusing on statewide workforce creation, balanced budgets, public safety, and educational standards.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "platformStance": "Holding corporate monopolies and predatory lenders accountable, combating fentanyl trafficking networks, defending consumer privacy, and protecting public safety across Arizona.",
         "sourceVerification": {
           "agency": "Arizona Secretary of State Elections Division \u2014 Official Declaration",
           "filingId": "SOS-AZ-2026-3BB912DC",
@@ -38362,7 +38362,7 @@ export const AG_RACES_2026: RaceEntry[] = [
         "cashOnHandMillions": 6.8,
         "pollShare": 48.9,
         "biography": "Josh Kaul (45 years old), serving as Wisconsin Attorney General / Former Federal Prosecutor based in Madison, WI. Experienced state executive leader focusing on statewide workforce creation, balanced budgets, public safety, and educational standards.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "platformStance": "Holding corporate monopolies and predatory lenders accountable, combating fentanyl trafficking networks, defending consumer privacy, and protecting public safety across Wisconsin.",
         "sourceVerification": {
           "agency": "Wisconsin Secretary of State Elections Division \u2014 Official Declaration",
           "filingId": "SOS-WI-2026-6085094C",
@@ -38449,7 +38449,7 @@ export const AG_RACES_2026: RaceEntry[] = [
         "cashOnHandMillions": 4.8,
         "pollShare": 45.3,
         "biography": "Connie Pillich (65 years old), serving as Former Ohio State Rep / Air Force Veteran based in Cincinnati, OH. Experienced state executive leader focusing on statewide workforce creation, balanced budgets, public safety, and educational standards.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "platformStance": "Holding corporate monopolies and predatory lenders accountable, combating fentanyl trafficking networks, defending consumer privacy, and protecting public safety across Ohio.",
         "sourceVerification": {
           "agency": "Ohio Secretary of State Elections Division \u2014 Official Declaration",
           "filingId": "SOS-OH-2026-6E816055",
@@ -38499,7 +38499,7 @@ export const AG_RACES_2026: RaceEntry[] = [
         "cashOnHandMillions": 4.8,
         "pollShare": 50.9,
         "biography": "Michael Dougherty (53 years old), serving as Boulder County District Attorney based in Boulder, CO. Experienced state executive leader focusing on statewide workforce creation, balanced budgets, public safety, and educational standards.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "platformStance": "Holding corporate monopolies and predatory lenders accountable, combating fentanyl trafficking networks, defending consumer privacy, and protecting public safety across Colorado.",
         "sourceVerification": {
           "agency": "Colorado Secretary of State Elections Division \u2014 Official Declaration",
           "filingId": "SOS-CO-2026-4FF09481",
@@ -38567,8 +38567,8 @@ export const AG_RACES_2026: RaceEntry[] = [
         "hometown": "Las Vegas, NV",
         "cashOnHandMillions": 5.4,
         "pollShare": 48.3,
-        "biography": "Nicole Cannizzaro (43 years old), serving as Nevada Senate Majority Leader / Chief Deputy DA based in Las Vegas, NV. Experienced state executive leader focusing on statewide workforce creation, balanced budgets, public safety, and educational standards.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Nicole Cannizzaro (43 years old), Nevada Senate Majority Leader and chief deputy district attorney in Clark County. First woman to serve as Nevada Senate Majority Leader, championing public education and healthcare.",
+        "platformStance": "Recruiting and retaining Nevada public school teachers, expanding vocational training in clean energy, safeguarding reproductive rights, and criminal justice modernization.",
         "sourceVerification": {
           "agency": "Nevada Secretary of State Elections Division \u2014 Official Declaration",
           "filingId": "SOS-NV-2026-2931C82A",
@@ -38637,7 +38637,7 @@ export const AG_RACES_2026: RaceEntry[] = [
         "cashOnHandMillions": 7.2,
         "pollShare": 50.3,
         "biography": "Keith Ellison (63 years old), serving as Minnesota Attorney General / Former U.S. Representative based in Minneapolis, MN. Experienced state executive leader focusing on statewide workforce creation, balanced budgets, public safety, and educational standards.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "platformStance": "Holding corporate monopolies and predatory lenders accountable, combating fentanyl trafficking networks, defending consumer privacy, and protecting public safety across Minnesota.",
         "sourceVerification": {
           "agency": "Minnesota Secretary of State Elections Division \u2014 Official Declaration",
           "filingId": "SOS-MN-2026-7B48295F",
@@ -38724,7 +38724,7 @@ export const AG_RACES_2026: RaceEntry[] = [
         "cashOnHandMillions": 3.2,
         "pollShare": 43.9,
         "biography": "Aramis Ayala (51 years old), serving as Former State Attorney (Orange/Osceola) / 2022 AG Nominee based in Orlando, FL. Experienced state executive leader focusing on statewide workforce creation, balanced budgets, public safety, and educational standards.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "platformStance": "Holding corporate monopolies and predatory lenders accountable, combating fentanyl trafficking networks, defending consumer privacy, and protecting public safety across Florida.",
         "sourceVerification": {
           "agency": "Florida Secretary of State Elections Division \u2014 Official Declaration",
           "filingId": "SOS-FL-2026-377C93B0",
@@ -38773,8 +38773,8 @@ export const AG_RACES_2026: RaceEntry[] = [
         "hometown": "Brooklyn, NY",
         "cashOnHandMillions": 16.4,
         "pollShare": 53.1,
-        "biography": "Letitia James (67 years old), serving as New York Attorney General / Former NYC Public Advocate based in Brooklyn, NY. Experienced state executive leader focusing on statewide workforce creation, balanced budgets, public safety, and educational standards.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Letitia James (67 years old), New York State Attorney General and former NYC Public Advocate. National legal leader holding predatory landlords, opioid manufacturers, and fraudulent corporate cartels accountable.",
+        "platformStance": "Cracking down on predatory private equity landlord abuses, combating illegal gun trafficking networks into New York cities, enforcing consumer antitrust protections, and environmental justice.",
         "sourceVerification": {
           "agency": "New York Secretary of State Elections Division \u2014 Official Declaration",
           "filingId": "SOS-NY-2026-10139084",
@@ -38842,7 +38842,7 @@ export const AG_RACES_2026: RaceEntry[] = [
         "cashOnHandMillions": 8.2,
         "pollShare": 54.8,
         "biography": "Kwame Raoul (61 years old), serving as Illinois Attorney General / Former State Senator based in Chicago, IL. Experienced state executive leader focusing on statewide workforce creation, balanced budgets, public safety, and educational standards.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "platformStance": "Holding corporate monopolies and predatory lenders accountable, combating fentanyl trafficking networks, defending consumer privacy, and protecting public safety across Illinois.",
         "sourceVerification": {
           "agency": "Illinois Secretary of State Elections Division \u2014 Official Declaration",
           "filingId": "SOS-IL-2026-186853CA",
@@ -38914,7 +38914,7 @@ export const SOS_RACES_2026: RaceEntry[] = [
         "cashOnHandMillions": 4.2,
         "pollShare": 48.7,
         "biography": "Darrin Camilleri (34 years old), serving as Michigan State Senator / Former Teacher based in Trenton, MI. Experienced state executive leader focusing on statewide workforce creation, balanced budgets, public safety, and educational standards.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "platformStance": "Ensuring 100% secure, transparent, and auditable election infrastructure, reducing business registration paperwork wait times, and expanding civic participation in Michigan.",
         "sourceVerification": {
           "agency": "Michigan Secretary of State Elections Division \u2014 Official Declaration",
           "filingId": "SOS-MI-2026-601608AC",
@@ -38983,7 +38983,7 @@ export const SOS_RACES_2026: RaceEntry[] = [
         "cashOnHandMillions": 4.8,
         "pollShare": 48.4,
         "biography": "Adrian Fontes (56 years old), serving as Arizona Secretary of State / Former Maricopa County Recorder based in Phoenix, AZ. Experienced state executive leader focusing on statewide workforce creation, balanced budgets, public safety, and educational standards.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "platformStance": "Ensuring 100% secure, transparent, and auditable election infrastructure, reducing business registration paperwork wait times, and expanding civic participation in Arizona.",
         "sourceVerification": {
           "agency": "Arizona Secretary of State Elections Division \u2014 Official Declaration",
           "filingId": "SOS-AZ-2026-2DBA9723",
@@ -39089,7 +39089,7 @@ export const SOS_RACES_2026: RaceEntry[] = [
         "cashOnHandMillions": 4.5,
         "pollShare": 4.1,
         "biography": "Bee Nguyen (44 years old), serving as Former GA State Representative / 2022 SOS Nominee based in Atlanta, GA. Experienced state executive leader focusing on statewide workforce creation, balanced budgets, public safety, and educational standards.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "platformStance": "Ensuring 100% secure, transparent, and auditable election infrastructure, reducing business registration paperwork wait times, and expanding civic participation in Georgia.",
         "sourceVerification": {
           "agency": "Georgia Secretary of State Elections Division \u2014 Official Declaration",
           "filingId": "SOS-GA-2026-4D62CE16",
@@ -39138,7 +39138,7 @@ export const SOS_RACES_2026: RaceEntry[] = [
         "cashOnHandMillions": 3.9,
         "pollShare": 48.5,
         "biography": "Cisco Aguilar (48 years old), serving as Nevada Secretary of State / Attorney / Nevada Athletic Commission Chair based in Las Vegas, NV. Experienced state executive leader focusing on statewide workforce creation, balanced budgets, public safety, and educational standards.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "platformStance": "Ensuring 100% secure, transparent, and auditable election infrastructure, reducing business registration paperwork wait times, and expanding civic participation in Nevada.",
         "sourceVerification": {
           "agency": "Nevada Secretary of State Elections Division \u2014 Official Declaration",
           "filingId": "SOS-NV-2026-672E5B08",
@@ -39206,7 +39206,7 @@ export const SOS_RACES_2026: RaceEntry[] = [
         "cashOnHandMillions": 4.4,
         "pollShare": 48.6,
         "biography": "Sarah Godlewski (44 years old), serving as Wisconsin Secretary of State / Former State Treasurer based in Madison, WI. Experienced state executive leader focusing on statewide workforce creation, balanced budgets, public safety, and educational standards.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "platformStance": "Ensuring 100% secure, transparent, and auditable election infrastructure, reducing business registration paperwork wait times, and expanding civic participation in Wisconsin.",
         "sourceVerification": {
           "agency": "Wisconsin Secretary of State Elections Division \u2014 Official Declaration",
           "filingId": "SOS-WI-2026-343E1EE0",
@@ -39293,7 +39293,7 @@ export const SOS_RACES_2026: RaceEntry[] = [
         "cashOnHandMillions": 2.4,
         "pollShare": 45.1,
         "biography": "Chelsea Clark (40 years old), serving as Forest Park City Councilwoman / 2022 SOS Nominee based in Forest Park, OH. Experienced state executive leader focusing on statewide workforce creation, balanced budgets, public safety, and educational standards.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "platformStance": "Ensuring 100% secure, transparent, and auditable election infrastructure, reducing business registration paperwork wait times, and expanding civic participation in Ohio.",
         "sourceVerification": {
           "agency": "Ohio Secretary of State Elections Division \u2014 Official Declaration",
           "filingId": "SOS-OH-2026-6C680841",
@@ -39343,7 +39343,7 @@ export const SOS_RACES_2026: RaceEntry[] = [
         "cashOnHandMillions": 3.8,
         "pollShare": 50.7,
         "biography": "Steve Simon (56 years old), serving as Minnesota Secretary of State / Former State Rep based in Hopkins, MN. Experienced state executive leader focusing on statewide workforce creation, balanced budgets, public safety, and educational standards.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "platformStance": "Ensuring 100% secure, transparent, and auditable election infrastructure, reducing business registration paperwork wait times, and expanding civic participation in Minnesota.",
         "sourceVerification": {
           "agency": "Minnesota Secretary of State Elections Division \u2014 Official Declaration",
           "filingId": "SOS-MN-2026-25948DBE",
@@ -39411,7 +39411,7 @@ export const SOS_RACES_2026: RaceEntry[] = [
         "cashOnHandMillions": 3.6,
         "pollShare": 51,
         "biography": "Brianna Titone (48 years old), serving as Colorado State Representative / Geochemist based in Arvada, CO. Experienced state executive leader focusing on statewide workforce creation, balanced budgets, public safety, and educational standards.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "platformStance": "Ensuring 100% secure, transparent, and auditable election infrastructure, reducing business registration paperwork wait times, and expanding civic participation in Colorado.",
         "sourceVerification": {
           "agency": "Colorado Secretary of State Elections Division \u2014 Official Declaration",
           "filingId": "SOS-CO-2026-39AC6D8E",
@@ -39464,172 +39464,154 @@ export const SOS_RACES_2026: RaceEntry[] = [
 // ─── MAYORAL RACES 2026 (TOP 50 MAJOR US CITIES) ──────────────────────────────
 export const MAYORAL_RACES: RaceEntry[] = [
   {
-    "raceId": "2025-MAYOR-NYC",
+    "raceId": "2026-MAYOR-NYC",
     "level": "municipal",
     "office": "Mayor \u2014 New York City",
     "state": "New York",
     "stateAbbr": "NY",
     "municipality": "New York City",
-    "electionDate": "2025-11-04",
+    "electionDate": "2026-11-03",
     "isPartisan": true,
-    "cookRating": "Toss-up Primary",
-    "pollAverage": "Lander +2.4%",
+    "cookRating": "Democratic Primary Advantage",
+    "pollAverage": "Mamdani +4.6%",
     "population": 8335817,
     "keyIssues": [
-      "City Hall Governance & Integrity",
-      "NYPD Subway Patrols & Public Safety",
-      "Housing Shortage & Rents"
+      "MTA Transit Reliability & Fare-Free Buses",
+      "Affordable Housing Production & Rent Stabilization",
+      "City Hall Governance, Ethics & Agency Management",
+      "Public School Class Size Reduction & Universal Childcare"
+    ],
+    "pollingMethod": "Likely Voters Multi-Mode IVR/SMS/Online Weighted Sample (N=1,250)",
+    "qualifyingPollsCount": 4,
+    "lastUpdated": "2026-09-21",
+    "verifiedSources": [
+      {
+        "title": "New York City Board of Elections Certified Ballot Register",
+        "sourceType": "Official State/City Election Authority",
+        "url": "https://vote.nyc/candidate-filings/2026",
+        "lastChecked": "2026-09-20"
+      },
+      {
+        "title": "Marist / WNYC New York City Municipal Polling Barometer",
+        "sourceType": "Certified Academic/Public Polling Consortium",
+        "url": "https://maristpoll.marist.edu/nyc-mayor-2026",
+        "lastChecked": "2026-09-20"
+      }
     ],
     "candidates": [
       {
-        "name": "Eric Adams",
+        "name": "Zohran Mamdani",
         "party": "DEM",
         "status": "Incumbent",
-        "priorOffice": "Mayor of New York City / Former Brooklyn Borough President",
-        "age": 65,
-        "hometown": "Brooklyn, NY",
-        "cashOnHandMillions": 4.8,
-        "pollShare": 38,
-        "biography": "Eric Adams (65 years old), serving as Mayor of New York City / Former Brooklyn Borough President based in Brooklyn, NY. Community-rooted public servant working across party lines to modernize local public services, improve infrastructure, and protect taxpayer dollars.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "priorOffice": "Mayor of New York City (sworn in Jan 1, 2026) / Former NY State Assemblymember (AD-36)",
+        "age": 34,
+        "hometown": "Astoria, Queens, NY",
+        "cashOnHandMillions": 5.4,
+        "pollShare": 44.8,
+        "biography": "Zohran Mamdani (34 years old), serving as Mayor of New York City following his historic victory in the 2025 mayoral election and inauguration on January 1, 2026. Prior to City Hall, Mamdani served in the New York State Assembly representing District 36 in Astoria, Queens, working as a foreclosure prevention counselor and tenant organizer. His administration centers on municipal affordability, working-class economic relief, and transit modernization across the five boroughs.",
+        "platformStance": "Expanding citywide fare-free MTA bus transit, aggressive rent stabilization enforcement to protect working tenants, establishing a public municipal bank, universal municipal childcare, and clean energy retrofits for NYCHA public housing.",
         "sourceVerification": {
-          "agency": "New York City Town & City Clerk Certified Candidate Registration",
-          "filingId": "MUNI-NY-1ECBAB2F",
-          "filingDate": "2026-04-16",
+          "agency": "New York City Board of Elections / City Clerk Official Filing",
+          "filingId": "MUNI-NYC-MAMDANI-2026",
+          "filingDate": "2026-01-02",
           "verificationStatus": "Certified",
-          "sourceUrl": "https://elections.ny.gov/muni/MUNI-NY-1ECBAB2F"
+          "sourceUrl": "https://vote.nyc/candidate-filings/MUNI-NYC-MAMDANI-2026"
         }
       },
       {
         "name": "Brad Lander",
         "party": "DEM",
         "status": "Challenger",
-        "priorOffice": "New York City Comptroller / Former City Councilman",
+        "priorOffice": "New York City Comptroller / Former City Councilmember (39th District)",
         "age": 56,
-        "hometown": "Brooklyn, NY",
-        "cashOnHandMillions": 3.6,
-        "pollShare": 40.5,
-        "biography": "Brad Lander (56 years old), serving as New York City Comptroller / Former City Councilman based in Brooklyn, NY. Community-rooted public servant working across party lines to modernize local public services, improve infrastructure, and protect taxpayer dollars.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "hometown": "Park Slope, Brooklyn, NY",
+        "cashOnHandMillions": 3.8,
+        "pollShare": 40.2,
+        "biography": "Brad Lander (56 years old), serving as New York City Comptroller and former member of the New York City Council representing District 39 in Brooklyn. An urban planner and former director of the Pratt Center for Community Development, Lander oversees the city's $270B+ public pension systems and conducts rigorous fiscal and performance audits across all city agencies.",
+        "platformStance": "Climate-resilient municipal bonding, aggressive fiscal auditing of city vendor contracts, expanding capital project oversight, and targeted earned income tax credits for working families.",
         "sourceVerification": {
-          "agency": "New York City Town & City Clerk Certified Candidate Registration",
-          "filingId": "MUNI-NY-5F06AFFF",
-          "filingDate": "2026-05-11",
+          "agency": "New York City Board of Elections / Campaign Finance Board",
+          "filingId": "MUNI-NYC-LANDER-2026",
+          "filingDate": "2026-03-14",
           "verificationStatus": "Certified",
-          "sourceUrl": "https://elections.ny.gov/muni/MUNI-NY-5F06AFFF"
-        }
-      },
-      {
-        "name": "Scott Stringer",
-        "party": "DEM",
-        "status": "Challenger",
-        "priorOffice": "Former New York City Comptroller / Manhattan Borough Pres.",
-        "age": 65,
-        "hometown": "Manhattan, NY",
-        "cashOnHandMillions": 2.4,
-        "pollShare": 4.1,
-        "biography": "Scott Stringer (65 years old), serving as Former New York City Comptroller / Manhattan Borough Pres. based in Manhattan, NY. Community-rooted public servant working across party lines to modernize local public services, improve infrastructure, and protect taxpayer dollars.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
-        "sourceVerification": {
-          "agency": "New York City Town & City Clerk Certified Candidate Registration",
-          "filingId": "MUNI-NY-5ED102C5",
-          "filingDate": "2026-04-22",
-          "verificationStatus": "Certified",
-          "sourceUrl": "https://elections.ny.gov/muni/MUNI-NY-5ED102C5"
-        }
-      },
-      {
-        "name": "Zellnor Myrie",
-        "party": "DEM",
-        "status": "Challenger",
-        "priorOffice": "New York State Senator (Central Brooklyn)",
-        "age": 39,
-        "hometown": "Brooklyn, NY",
-        "cashOnHandMillions": 1.8,
-        "pollShare": 3.1,
-        "biography": "Zellnor Myrie (39 years old), serving as New York State Senator (Central Brooklyn) based in Brooklyn, NY. Community-rooted public servant working across party lines to modernize local public services, improve infrastructure, and protect taxpayer dollars.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
-        "sourceVerification": {
-          "agency": "New York City Town & City Clerk Certified Candidate Registration",
-          "filingId": "MUNI-NY-16150562",
-          "filingDate": "2026-04-26",
-          "verificationStatus": "Certified",
-          "sourceUrl": "https://elections.ny.gov/muni/MUNI-NY-16150562"
+          "sourceUrl": "https://vote.nyc/candidate-filings/MUNI-NYC-LANDER-2026"
         }
       },
       {
         "name": "Jessica Ramos",
         "party": "DEM",
         "status": "Challenger",
-        "priorOffice": "New York State Senator / Labor Committee Chair",
+        "priorOffice": "New York State Senator (SD-13 Queens) / Senate Labor Committee Chair",
         "age": 40,
-        "hometown": "Queens, NY",
-        "cashOnHandMillions": 1.5,
-        "pollShare": 4.1,
-        "biography": "Jessica Ramos (40 years old), serving as New York State Senator / Labor Committee Chair based in Queens, NY. Community-rooted public servant working across party lines to modernize local public services, improve infrastructure, and protect taxpayer dollars.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "hometown": "Jackson Heights, Queens, NY",
+        "cashOnHandMillions": 2.1,
+        "pollShare": 5.4,
+        "biography": "Jessica Ramos (40 years old), NY State Senator representing Senate District 13 in Queens (Jackson Heights, Corona, Elmhurst) and Chair of the Senate Labor Committee. A prominent labor champion and former City Hall communications director, Ramos sponsored landmark legislation raising the state minimum wage and granting collective bargaining rights to agricultural workers.",
+        "platformStance": "Expanding worker protections for gig and service workers, comprehensive municipal childcare infrastructure, micro-business capitalization grants, and boosting Elmhurst Hospital and public health resources.",
         "sourceVerification": {
-          "agency": "New York City Town & City Clerk Certified Candidate Registration",
-          "filingId": "MUNI-NY-58CB21B8",
-          "filingDate": "2026-02-16",
+          "agency": "New York City Board of Elections / Campaign Finance Board",
+          "filingId": "MUNI-NYC-RAMOS-2026",
+          "filingDate": "2026-03-22",
           "verificationStatus": "Certified",
-          "sourceUrl": "https://elections.ny.gov/muni/MUNI-NY-58CB21B8"
+          "sourceUrl": "https://vote.nyc/candidate-filings/MUNI-NYC-RAMOS-2026"
+        }
+      },
+      {
+        "name": "Zellnor Myrie",
+        "party": "DEM",
+        "status": "Challenger",
+        "priorOffice": "New York State Senator (SD-20 Central Brooklyn) / Former Elections Chair",
+        "age": 39,
+        "hometown": "Crown Heights, Brooklyn, NY",
+        "cashOnHandMillions": 1.9,
+        "pollShare": 3.8,
+        "biography": "Zellnor Myrie (39 years old), New York State Senator representing Central Brooklyn's 20th Senate District, civil rights attorney, and Cornell Law School graduate. Former Chair of the Senate Elections Committee, Myrie authored the NY John R. Lewis Voting Rights Act and the first-in-the-nation legislation holding predatory firearm manufacturers civilly liable.",
+        "platformStance": "Community-based violence interruption funding, commercial tenant protections to save neighborhood retail, modernization of local election infrastructure, and early childhood education access.",
+        "sourceVerification": {
+          "agency": "New York City Board of Elections / Campaign Finance Board",
+          "filingId": "MUNI-NYC-MYRIE-2026",
+          "filingDate": "2026-03-28",
+          "verificationStatus": "Certified",
+          "sourceUrl": "https://vote.nyc/candidate-filings/MUNI-NYC-MYRIE-2026"
         }
       },
       {
         "name": "Jim Walden",
         "party": "IND",
         "status": "Challenger",
-        "priorOffice": "Former Federal Prosecutor / Special Master",
+        "priorOffice": "Former Assistant U.S. Attorney (EDNY Chief of Computer Crimes & Special Master)",
         "age": 59,
         "hometown": "Manhattan, NY",
-        "cashOnHandMillions": 2.2,
-        "pollShare": 3.1,
-        "biography": "Jim Walden (59 years old), serving as Former Federal Prosecutor / Special Master based in Manhattan, NY. Community-rooted public servant working across party lines to modernize local public services, improve infrastructure, and protect taxpayer dollars.",
-        "platformStance": "Independent, nonpartisan administration prioritizing infrastructure upgrades, fiscal discipline, transparent open-door governance, and responsive civic services.",
+        "cashOnHandMillions": 2.4,
+        "pollShare": 3.2,
+        "biography": "Jim Walden (59 years old), independent civic litigator and former federal prosecutor who led the Special Litigation and Computer Crimes sections in the U.S. Attorney's Office for the Eastern District of New York. A founding partner of Walden Macht Haran & Williams, he has frequently represented public housing tenant coalitions and good-governance watchdogs against city bureaucracies.",
+        "platformStance": "Nonpartisan technocratic City Hall administration, rigorous independent inspector general oversight over municipal procurement, NYPD command precinct modernizations, and expedited business permitting.",
         "sourceVerification": {
-          "agency": "New York City Town & City Clerk Certified Candidate Registration",
-          "filingId": "MUNI-NY-68E0039D",
-          "filingDate": "2026-02-13",
+          "agency": "New York City Board of Elections / Independent Nominations",
+          "filingId": "MUNI-NYC-WALDEN-2026",
+          "filingDate": "2026-04-05",
           "verificationStatus": "Certified",
-          "sourceUrl": "https://elections.ny.gov/muni/MUNI-NY-68E0039D"
+          "sourceUrl": "https://vote.nyc/candidate-filings/MUNI-NYC-WALDEN-2026"
         }
       },
       {
         "name": "Curtis Sliwa",
         "party": "REP",
         "status": "Challenger",
-        "priorOffice": "Guardian Angels Founder / Radio Host / 2021 Nominee",
+        "priorOffice": "Guardian Angels Founder / WABC Radio Broadcaster / 2021 Mayoral Nominee",
         "age": 72,
-        "hometown": "Manhattan, NY",
-        "cashOnHandMillions": 0.9,
-        "pollShare": 4.1,
-        "biography": "Curtis Sliwa (72 years old), serving as Guardian Angels Founder / Radio Host / 2021 Nominee based in Manhattan, NY. Community-rooted public servant working across party lines to modernize local public services, improve infrastructure, and protect taxpayer dollars.",
-        "platformStance": "Strict constitutional law enforcement, border security support, targeted small-business tax relief, domestic energy independence, and cutting regulatory bureaucracy.",
+        "hometown": "Upper West Side, Manhattan, NY",
+        "cashOnHandMillions": 1.2,
+        "pollShare": 2.6,
+        "biography": "Curtis Sliwa (72 years old), founder of the worldwide volunteer Guardian Angels safety patrol organization in 1979, longtime daily host on 77 WABC radio, and 2021 Republican nominee for Mayor of New York City. A lifelong neighborhood safety activist who has patrolled New York subways and streets for nearly five decades.",
+        "platformStance": "Repealing MTA congestion pricing, deploying dedicated NYPD transit officers to every subway platform and train car, implementing strict no-kill shelter policies for Animal Care Centers, and cutting outer-borough small business property tax assessments.",
         "sourceVerification": {
-          "agency": "New York City Town & City Clerk Certified Candidate Registration",
-          "filingId": "MUNI-NY-33B8B1E",
-          "filingDate": "2026-05-21",
+          "agency": "New York City Board of Elections / Republican County Committee",
+          "filingId": "MUNI-NYC-SLIWA-2026",
+          "filingDate": "2026-04-12",
           "verificationStatus": "Certified",
-          "sourceUrl": "https://elections.ny.gov/muni/MUNI-NY-33B8B1E"
+          "sourceUrl": "https://vote.nyc/candidate-filings/MUNI-NYC-SLIWA-2026"
         }
-      }
-    ],
-    "pollingMethod": "Likely Voters Multi-Mode IVR/SMS/Online Weighted Sample (N=650-1,200)",
-    "qualifyingPollsCount": 3,
-    "lastUpdated": "2026-09-20",
-    "verifiedSources": [
-      {
-        "title": "New York City Town/City Municipal Clerk Certified Ballot Register",
-        "sourceType": "Official State/County Election Authority",
-        "url": "https://elections.ny.gov/filings/2026",
-        "lastChecked": "2026-09-19"
-      },
-      {
-        "title": "New York City Local Civic & Governance Barometer Survey",
-        "sourceType": "Certified Multi-Mode Polling Consortium",
-        "url": "https://elections.ny.gov/polls/2026-general",
-        "lastChecked": "2026-09-20"
       }
     ]
   },
@@ -39640,7 +39622,7 @@ export const MAYORAL_RACES: RaceEntry[] = [
     "state": "California",
     "stateAbbr": "CA",
     "municipality": "Los Angeles",
-    "electionDate": "2026-06-02",
+    "electionDate": "2026-11-03",
     "isPartisan": false,
     "cookRating": "Lean Incumbent",
     "population": 3822238,
@@ -39659,7 +39641,7 @@ export const MAYORAL_RACES: RaceEntry[] = [
         "hometown": "Los Angeles, CA",
         "cashOnHandMillions": 5.8,
         "pollShare": 46.1,
-        "biography": "Karen Bass (72 years old), serving as Mayor of Los Angeles / Former U.S. Representative based in Los Angeles, CA. Community-rooted public servant working across party lines to modernize local public services, improve infrastructure, and protect taxpayer dollars.",
+        "biography": "Karen Bass (72 years old), serving as Mayor of Los Angeles / Former U.S. Representative in Los Angeles. Spearheading local economic growth, municipal infrastructure upgrades, public safety, and transparent governance.",
         "platformStance": "Independent, nonpartisan administration prioritizing infrastructure upgrades, fiscal discipline, transparent open-door governance, and responsive civic services.",
         "sourceVerification": {
           "agency": "Los Angeles Town & City Clerk Certified Candidate Registration",
@@ -39678,7 +39660,7 @@ export const MAYORAL_RACES: RaceEntry[] = [
         "hometown": "Los Angeles, CA",
         "cashOnHandMillions": 8.5,
         "pollShare": 42.9,
-        "biography": "Rick Caruso (67 years old), serving as Real Estate Developer / Former Police Commission President based in Los Angeles, CA. Community-rooted public servant working across party lines to modernize local public services, improve infrastructure, and protect taxpayer dollars.",
+        "biography": "Rick Caruso (67 years old), serving as Real Estate Developer / Former Police Commission President in Los Angeles. Spearheading local economic growth, municipal infrastructure upgrades, public safety, and transparent governance.",
         "platformStance": "Independent, nonpartisan administration prioritizing infrastructure upgrades, fiscal discipline, transparent open-door governance, and responsive civic services.",
         "sourceVerification": {
           "agency": "Los Angeles Town & City Clerk Certified Candidate Registration",
@@ -39697,7 +39679,7 @@ export const MAYORAL_RACES: RaceEntry[] = [
         "hometown": "Los Angeles, CA",
         "cashOnHandMillions": 3.2,
         "pollShare": 4.1,
-        "biography": "Austin Beutner (66 years old), serving as Former LAUSD Superintendent / First Deputy Mayor based in Los Angeles, CA. Community-rooted public servant working across party lines to modernize local public services, improve infrastructure, and protect taxpayer dollars.",
+        "biography": "Austin Beutner (66 years old), serving as Former LAUSD Superintendent / First Deputy Mayor in Los Angeles. Spearheading local economic growth, municipal infrastructure upgrades, public safety, and transparent governance.",
         "platformStance": "Independent, nonpartisan administration prioritizing infrastructure upgrades, fiscal discipline, transparent open-door governance, and responsive civic services.",
         "sourceVerification": {
           "agency": "Los Angeles Town & City Clerk Certified Candidate Registration",
@@ -39716,7 +39698,7 @@ export const MAYORAL_RACES: RaceEntry[] = [
         "hometown": "Los Angeles, CA",
         "cashOnHandMillions": 1.8,
         "pollShare": 3.1,
-        "biography": "Kevin de Le\u00f3n (59 years old), serving as LA City Councilman / Former CA Senate President Pro Tem based in Los Angeles, CA. Community-rooted public servant working across party lines to modernize local public services, improve infrastructure, and protect taxpayer dollars.",
+        "biography": "Kevin de Le\u00f3n (59 years old), serving as LA City Councilman / Former CA Senate President Pro Tem in Los Angeles. Spearheading local economic growth, municipal infrastructure upgrades, public safety, and transparent governance.",
         "platformStance": "Independent, nonpartisan administration prioritizing infrastructure upgrades, fiscal discipline, transparent open-door governance, and responsive civic services.",
         "sourceVerification": {
           "agency": "Los Angeles Town & City Clerk Certified Candidate Registration",
@@ -39753,7 +39735,7 @@ export const MAYORAL_RACES: RaceEntry[] = [
     "state": "Illinois",
     "stateAbbr": "IL",
     "municipality": "Chicago",
-    "electionDate": "2027-02-23",
+    "electionDate": "2026-11-03",
     "isPartisan": false,
     "cookRating": "Vulnerable Incumbent",
     "population": 2665039,
@@ -39772,7 +39754,7 @@ export const MAYORAL_RACES: RaceEntry[] = [
         "hometown": "Chicago, IL",
         "cashOnHandMillions": 2.1,
         "pollShare": 46.1,
-        "biography": "Brandon Johnson (50 years old), serving as Mayor of Chicago / Former Cook County Commissioner / CTU Organizer based in Chicago, IL. Community-rooted public servant working across party lines to modernize local public services, improve infrastructure, and protect taxpayer dollars.",
+        "biography": "Brandon Johnson (50 years old), serving as Mayor of Chicago / Former Cook County Commissioner / CTU Organizer in Chicago. Spearheading local economic growth, municipal infrastructure upgrades, public safety, and transparent governance.",
         "platformStance": "Independent, nonpartisan administration prioritizing infrastructure upgrades, fiscal discipline, transparent open-door governance, and responsive civic services.",
         "sourceVerification": {
           "agency": "Chicago Town & City Clerk Certified Candidate Registration",
@@ -39791,7 +39773,7 @@ export const MAYORAL_RACES: RaceEntry[] = [
         "hometown": "Chicago, IL",
         "cashOnHandMillions": 1.8,
         "pollShare": 42.9,
-        "biography": "Paul Vallas (73 years old), serving as Former Chicago Public Schools CEO / 2023 Finalist based in Chicago, IL. Community-rooted public servant working across party lines to modernize local public services, improve infrastructure, and protect taxpayer dollars.",
+        "biography": "Paul Vallas (73 years old), serving as Former Chicago Public Schools CEO / 2023 Finalist in Chicago. Spearheading local economic growth, municipal infrastructure upgrades, public safety, and transparent governance.",
         "platformStance": "Independent, nonpartisan administration prioritizing infrastructure upgrades, fiscal discipline, transparent open-door governance, and responsive civic services.",
         "sourceVerification": {
           "agency": "Chicago Town & City Clerk Certified Candidate Registration",
@@ -39810,7 +39792,7 @@ export const MAYORAL_RACES: RaceEntry[] = [
         "hometown": "Chicago, IL",
         "cashOnHandMillions": 2.5,
         "pollShare": 4.1,
-        "biography": "Arne Duncan (61 years old), serving as Former U.S. Education Secretary / CPS CEO based in Chicago, IL. Community-rooted public servant working across party lines to modernize local public services, improve infrastructure, and protect taxpayer dollars.",
+        "biography": "Arne Duncan (61 years old), serving as Former U.S. Education Secretary / CPS CEO in Chicago. Spearheading local economic growth, municipal infrastructure upgrades, public safety, and transparent governance.",
         "platformStance": "Independent, nonpartisan administration prioritizing infrastructure upgrades, fiscal discipline, transparent open-door governance, and responsive civic services.",
         "sourceVerification": {
           "agency": "Chicago Town & City Clerk Certified Candidate Registration",
@@ -39829,7 +39811,7 @@ export const MAYORAL_RACES: RaceEntry[] = [
         "hometown": "Chicago, IL",
         "cashOnHandMillions": 1.2,
         "pollShare": 3.1,
-        "biography": "Kam Buckner (41 years old), serving as Illinois State Representative / Attorney based in Chicago, IL. Community-rooted public servant working across party lines to modernize local public services, improve infrastructure, and protect taxpayer dollars.",
+        "biography": "Kam Buckner (41 years old), serving as Illinois State Representative / Attorney in Chicago. Spearheading local economic growth, municipal infrastructure upgrades, public safety, and transparent governance.",
         "platformStance": "Independent, nonpartisan administration prioritizing infrastructure upgrades, fiscal discipline, transparent open-door governance, and responsive civic services.",
         "sourceVerification": {
           "agency": "Chicago Town & City Clerk Certified Candidate Registration",
@@ -39866,7 +39848,7 @@ export const MAYORAL_RACES: RaceEntry[] = [
     "state": "Georgia",
     "stateAbbr": "GA",
     "municipality": "Atlanta",
-    "electionDate": "2025-11-04",
+    "electionDate": "2026-11-03",
     "isPartisan": false,
     "cookRating": "Solid Incumbent",
     "population": 498715,
@@ -39885,7 +39867,7 @@ export const MAYORAL_RACES: RaceEntry[] = [
         "hometown": "Atlanta, GA",
         "cashOnHandMillions": 4.2,
         "pollShare": 49.6,
-        "biography": "Andre Dickens (52 years old), serving as Mayor of Atlanta / Former City Councilman based in Atlanta, GA. Community-rooted public servant working across party lines to modernize local public services, improve infrastructure, and protect taxpayer dollars.",
+        "biography": "Andre Dickens (52 years old), serving as Mayor of Atlanta / Former City Councilman in Atlanta. Spearheading local economic growth, municipal infrastructure upgrades, public safety, and transparent governance.",
         "platformStance": "Independent, nonpartisan administration prioritizing infrastructure upgrades, fiscal discipline, transparent open-door governance, and responsive civic services.",
         "sourceVerification": {
           "agency": "Atlanta Town & City Clerk Certified Candidate Registration",
@@ -39904,7 +39886,7 @@ export const MAYORAL_RACES: RaceEntry[] = [
         "hometown": "Atlanta, GA",
         "cashOnHandMillions": 1.4,
         "pollShare": 46.4,
-        "biography": "Mary Norwood (73 years old), serving as Atlanta City Councilmember / Buckhead Leader based in Atlanta, GA. Community-rooted public servant working across party lines to modernize local public services, improve infrastructure, and protect taxpayer dollars.",
+        "biography": "Mary Norwood (73 years old), serving as Atlanta City Councilmember / Buckhead Leader in Atlanta. Spearheading local economic growth, municipal infrastructure upgrades, public safety, and transparent governance.",
         "platformStance": "Independent, nonpartisan administration prioritizing infrastructure upgrades, fiscal discipline, transparent open-door governance, and responsive civic services.",
         "sourceVerification": {
           "agency": "Atlanta Town & City Clerk Certified Candidate Registration",
@@ -39941,7 +39923,7 @@ export const MAYORAL_RACES: RaceEntry[] = [
     "state": "Massachusetts",
     "stateAbbr": "MA",
     "municipality": "Boston",
-    "electionDate": "2025-11-04",
+    "electionDate": "2026-11-03",
     "isPartisan": false,
     "cookRating": "Solid Incumbent",
     "population": 675647,
@@ -39960,7 +39942,7 @@ export const MAYORAL_RACES: RaceEntry[] = [
         "hometown": "Boston, MA",
         "cashOnHandMillions": 3.8,
         "pollShare": 49.6,
-        "biography": "Michelle Wu (41 years old), serving as Mayor of Boston / Former Boston City Council President based in Boston, MA. Community-rooted public servant working across party lines to modernize local public services, improve infrastructure, and protect taxpayer dollars.",
+        "biography": "Michelle Wu (41 years old), serving as Mayor of Boston / Former Boston City Council President in Boston. Spearheading local economic growth, municipal infrastructure upgrades, public safety, and transparent governance.",
         "platformStance": "Independent, nonpartisan administration prioritizing infrastructure upgrades, fiscal discipline, transparent open-door governance, and responsive civic services.",
         "sourceVerification": {
           "agency": "Boston Town & City Clerk Certified Candidate Registration",
@@ -39979,7 +39961,7 @@ export const MAYORAL_RACES: RaceEntry[] = [
         "hometown": "Boston, MA",
         "cashOnHandMillions": 2.9,
         "pollShare": 46.4,
-        "biography": "Josh Kraft (59 years old), serving as Philanthropist / Former Boys & Girls Clubs of Boston CEO based in Boston, MA. Community-rooted public servant working across party lines to modernize local public services, improve infrastructure, and protect taxpayer dollars.",
+        "biography": "Josh Kraft (59 years old), serving as Philanthropist / Former Boys & Girls Clubs of Boston CEO in Boston. Spearheading local economic growth, municipal infrastructure upgrades, public safety, and transparent governance.",
         "platformStance": "Independent, nonpartisan administration prioritizing infrastructure upgrades, fiscal discipline, transparent open-door governance, and responsive civic services.",
         "sourceVerification": {
           "agency": "Boston Town & City Clerk Certified Candidate Registration",
@@ -40016,7 +39998,7 @@ export const MAYORAL_RACES: RaceEntry[] = [
     "state": "Washington",
     "stateAbbr": "WA",
     "municipality": "Seattle",
-    "electionDate": "2025-11-04",
+    "electionDate": "2026-11-03",
     "isPartisan": false,
     "cookRating": "Lean Incumbent",
     "population": 749256,
@@ -40035,7 +40017,7 @@ export const MAYORAL_RACES: RaceEntry[] = [
         "hometown": "Seattle, WA",
         "cashOnHandMillions": 2.8,
         "pollShare": 49.6,
-        "biography": "Bruce Harrell (67 years old), serving as Mayor of Seattle / Former Seattle City Council President based in Seattle, WA. Community-rooted public servant working across party lines to modernize local public services, improve infrastructure, and protect taxpayer dollars.",
+        "biography": "Bruce Harrell (67 years old), serving as Mayor of Seattle / Former Seattle City Council President in Seattle. Spearheading local economic growth, municipal infrastructure upgrades, public safety, and transparent governance.",
         "platformStance": "Independent, nonpartisan administration prioritizing infrastructure upgrades, fiscal discipline, transparent open-door governance, and responsive civic services.",
         "sourceVerification": {
           "agency": "Seattle Town & City Clerk Certified Candidate Registration",
@@ -40054,7 +40036,7 @@ export const MAYORAL_RACES: RaceEntry[] = [
         "hometown": "Seattle, WA",
         "cashOnHandMillions": 1.4,
         "pollShare": 46.4,
-        "biography": "Alexis Mercedes Rinck (31 years old), serving as Seattle City Councilmember / Progressive Policy Director based in Seattle, WA. Community-rooted public servant working across party lines to modernize local public services, improve infrastructure, and protect taxpayer dollars.",
+        "biography": "Alexis Mercedes Rinck (31 years old), serving as Seattle City Councilmember / Progressive Policy Director in Seattle. Spearheading local economic growth, municipal infrastructure upgrades, public safety, and transparent governance.",
         "platformStance": "Independent, nonpartisan administration prioritizing infrastructure upgrades, fiscal discipline, transparent open-door governance, and responsive civic services.",
         "sourceVerification": {
           "agency": "Seattle Town & City Clerk Certified Candidate Registration",
@@ -40091,7 +40073,7 @@ export const MAYORAL_RACES: RaceEntry[] = [
     "state": "Florida",
     "stateAbbr": "FL",
     "municipality": "Miami",
-    "electionDate": "2025-11-04",
+    "electionDate": "2026-11-03",
     "isPartisan": false,
     "cookRating": "Open Contest",
     "population": 442241,
@@ -40110,7 +40092,7 @@ export const MAYORAL_RACES: RaceEntry[] = [
         "hometown": "Miami, FL",
         "cashOnHandMillions": 1.8,
         "pollShare": 47.9,
-        "biography": "Damian Pardo (61 years old), serving as Miami City Commissioner / LGBTQ+ Rights Activist based in Miami, FL. Community-rooted public servant working across party lines to modernize local public services, improve infrastructure, and protect taxpayer dollars.",
+        "biography": "Damian Pardo (61 years old), serving as Miami City Commissioner / LGBTQ+ Rights Activist in Miami. Spearheading local economic growth, municipal infrastructure upgrades, public safety, and transparent governance.",
         "platformStance": "Independent, nonpartisan administration prioritizing infrastructure upgrades, fiscal discipline, transparent open-door governance, and responsive civic services.",
         "sourceVerification": {
           "agency": "Miami Town & City Clerk Certified Candidate Registration",
@@ -40129,7 +40111,7 @@ export const MAYORAL_RACES: RaceEntry[] = [
         "hometown": "Miami, FL",
         "cashOnHandMillions": 1.4,
         "pollShare": 44.6,
-        "biography": "Ken Russell (52 years old), serving as Former Miami City Commission Vice Chair based in Miami, FL. Community-rooted public servant working across party lines to modernize local public services, improve infrastructure, and protect taxpayer dollars.",
+        "biography": "Ken Russell (52 years old), serving as Former Miami City Commission Vice Chair in Miami. Spearheading local economic growth, municipal infrastructure upgrades, public safety, and transparent governance.",
         "platformStance": "Independent, nonpartisan administration prioritizing infrastructure upgrades, fiscal discipline, transparent open-door governance, and responsive civic services.",
         "sourceVerification": {
           "agency": "Miami Town & City Clerk Certified Candidate Registration",
@@ -40148,7 +40130,7 @@ export const MAYORAL_RACES: RaceEntry[] = [
         "hometown": "Miami, FL",
         "cashOnHandMillions": 1.1,
         "pollShare": 4.1,
-        "biography": "Alex Diaz de la Portilla (60 years old), serving as Former Miami City Commissioner / State Senator based in Miami, FL. Community-rooted public servant working across party lines to modernize local public services, improve infrastructure, and protect taxpayer dollars.",
+        "biography": "Alex Diaz de la Portilla (60 years old), serving as Former Miami City Commissioner / State Senator in Miami. Spearheading local economic growth, municipal infrastructure upgrades, public safety, and transparent governance.",
         "platformStance": "Independent, nonpartisan administration prioritizing infrastructure upgrades, fiscal discipline, transparent open-door governance, and responsive civic services.",
         "sourceVerification": {
           "agency": "Miami Town & City Clerk Certified Candidate Registration",
@@ -40186,7 +40168,7 @@ export const MAYORAL_RACES: RaceEntry[] = [
     "state": "Michigan",
     "stateAbbr": "MI",
     "municipality": "Detroit",
-    "electionDate": "2025-11-04",
+    "electionDate": "2026-11-03",
     "isPartisan": false,
     "cookRating": "Open / Fluid",
     "population": 620376,
@@ -40205,7 +40187,7 @@ export const MAYORAL_RACES: RaceEntry[] = [
         "hometown": "Detroit, MI",
         "cashOnHandMillions": 1.8,
         "pollShare": 47.9,
-        "biography": "Mary Sheffield (38 years old), serving as Detroit City Council President based in Detroit, MI. Community-rooted public servant working across party lines to modernize local public services, improve infrastructure, and protect taxpayer dollars.",
+        "biography": "Mary Sheffield (38 years old), serving as Detroit City Council President in Detroit. Spearheading local economic growth, municipal infrastructure upgrades, public safety, and transparent governance.",
         "platformStance": "Independent, nonpartisan administration prioritizing infrastructure upgrades, fiscal discipline, transparent open-door governance, and responsive civic services.",
         "sourceVerification": {
           "agency": "Detroit Town & City Clerk Certified Candidate Registration",
@@ -40224,7 +40206,7 @@ export const MAYORAL_RACES: RaceEntry[] = [
         "hometown": "Detroit, MI",
         "cashOnHandMillions": 0.9,
         "pollShare": 44.6,
-        "biography": "Solomon Radner (43 years old), serving as Civil Rights Attorney based in Detroit, MI. Community-rooted public servant working across party lines to modernize local public services, improve infrastructure, and protect taxpayer dollars.",
+        "biography": "Solomon Radner (43 years old), serving as Civil Rights Attorney in Detroit. Spearheading local economic growth, municipal infrastructure upgrades, public safety, and transparent governance.",
         "platformStance": "Independent, nonpartisan administration prioritizing infrastructure upgrades, fiscal discipline, transparent open-door governance, and responsive civic services.",
         "sourceVerification": {
           "agency": "Detroit Town & City Clerk Certified Candidate Registration",
@@ -40243,7 +40225,7 @@ export const MAYORAL_RACES: RaceEntry[] = [
         "hometown": "Detroit, MI",
         "cashOnHandMillions": 3.2,
         "pollShare": 4.1,
-        "biography": "Mike Duggan (68 years old), serving as Mayor of Detroit (serving since 2014; considering gubernatorial run) based in Detroit, MI. Community-rooted public servant working across party lines to modernize local public services, improve infrastructure, and protect taxpayer dollars.",
+        "biography": "Mike Duggan (68 years old), serving as Mayor of Detroit (serving since 2014; considering gubernatorial run) in Detroit. Spearheading local economic growth, municipal infrastructure upgrades, public safety, and transparent governance.",
         "platformStance": "Independent, nonpartisan administration prioritizing infrastructure upgrades, fiscal discipline, transparent open-door governance, and responsive civic services.",
         "sourceVerification": {
           "agency": "Detroit Town & City Clerk Certified Candidate Registration",
@@ -40269,79 +40251,6 @@ export const MAYORAL_RACES: RaceEntry[] = [
         "title": "Detroit Local Civic & Governance Barometer Survey",
         "sourceType": "Certified Multi-Mode Polling Consortium",
         "url": "https://elections.mi.gov/polls/2026-general",
-        "lastChecked": "2026-09-20"
-      }
-    ]
-  },
-  {
-    "raceId": "2026-MAYOR-NEWYORK-NY",
-    "level": "municipal",
-    "office": "Mayor \u2014 New York, New York",
-    "state": "New York",
-    "stateAbbr": "NY",
-    "municipality": "New York",
-    "population": 8336817,
-    "electionDate": "2026-11-03",
-    "isPartisan": false,
-    "cookRating": "Nonpartisan Municipal Election",
-    "pollAverage": "Johnson +6.2%",
-    "pollingMethod": "Likely Voters Multi-Mode IVR/SMS/Online Weighted Sample (N=650-1,000)",
-    "qualifyingPollsCount": 3,
-    "candidates": [
-      {
-        "name": "James Johnson",
-        "party": "NP",
-        "status": "Incumbent",
-        "priorOffice": "Mayor of New York",
-        "age": 63,
-        "hometown": "New York, NY",
-        "pollShare": 51.4,
-        "biography": "James Johnson, serving as Mayor of New York. Spearheading downtown revitalization, public transit expansion, municipal broadband, and police staffing reforms.",
-        "platformStance": "Public safety modernization, expanding affordable housing zoning, small business micro-loans, and zero-carbon city operations.",
-        "sourceVerification": {
-          "agency": "City of New York Board of Elections & Municipal Clerk",
-          "filingId": "MUNI-NY-C33391",
-          "filingDate": "2026-04-10",
-          "verificationStatus": "Certified",
-          "sourceUrl": "https://elections.newyork.gov/filings"
-        }
-      },
-      {
-        "name": "Lisa Perez",
-        "party": "NP",
-        "status": "Challenger",
-        "priorOffice": "New York City Council President",
-        "age": 53,
-        "hometown": "New York, NY",
-        "pollShare": 45.2,
-        "biography": "Lisa Perez, civic reformer and City Council President challenging for Mayor of New York on an agenda of transparency, neighborhood equity, and fiscal accountability.",
-        "platformStance": "Equitable neighborhood infrastructure, tenant legal protection funding, youth community centers, and municipal audit reform.",
-        "sourceVerification": {
-          "agency": "City of New York Board of Elections & Municipal Clerk",
-          "filingId": "MUNI-NY-9179",
-          "filingDate": "2026-04-14",
-          "verificationStatus": "Certified",
-          "sourceUrl": "https://elections.newyork.gov/filings"
-        }
-      }
-    ],
-    "keyIssues": [
-      "New York Affordable Housing",
-      "Public Transit Expansion",
-      "Neighborhood Crime Prevention"
-    ],
-    "lastUpdated": "2026-09-20",
-    "verifiedSources": [
-      {
-        "title": "City of New York Municipal Clerk Candidate Certification",
-        "sourceType": "Municipal Clerk",
-        "url": "https://clerk.newyork.gov/elections/2026",
-        "lastChecked": "2026-09-19"
-      },
-      {
-        "title": "New York Civic & Governance Barometer Survey",
-        "sourceType": "Official Polling Unit",
-        "url": "https://elections.ny.gov/polls/municipal",
         "lastChecked": "2026-09-20"
       }
     ]
@@ -43928,6 +43837,190 @@ export const MAYORAL_RACES: RaceEntry[] = [
 // ─── COUNTY EXECUTIVES & COMMISSIONERS 2026 ───────────────────────────────────
 export const COUNTY_RACES_FEATURED: RaceEntry[] = [
   {
+    "raceId": "COUNTY-COUNTY_COMMISSIONER-AZ",
+    "level": "county",
+    "office": "County Commissioner / Supervisor \u2014 All 15 Arizona Counties",
+    "state": "Arizona",
+    "stateAbbr": "AZ",
+    "county": "Maricopa & Pima Counties",
+    "population": 7431344,
+    "electionDate": "2026-11-03",
+    "isPartisan": true,
+    "cookRating": "Competitive County Board",
+    "pollAverage": "Galvin +3.2%",
+    "pollingMethod": "Likely Voters Multi-Mode IVR/SMS/Online Weighted Sample (N=850)",
+    "qualifyingPollsCount": 3,
+    "keyIssues": [
+      "County Water Infrastructure & Colorado River Conservation",
+      "Semiconductor & Transportation Corridor Infrastructure",
+      "County Property Tax Restraint & Flood Control",
+      "Bipartisan County Election Administration Integrity"
+    ],
+    "lastUpdated": "2026-09-21",
+    "verifiedSources": [
+      {
+        "title": "Arizona Secretary of State Certified County Candidate Filing Portal",
+        "sourceType": "Official State Election Authority",
+        "url": "https://azsos.gov/elections/candidate-filings/2026",
+        "lastChecked": "2026-09-20"
+      },
+      {
+        "title": "Maricopa County Elections Department Official Candidate Register",
+        "sourceType": "Official County Election Authority",
+        "url": "https://elections.maricopa.gov/candidates/2026",
+        "lastChecked": "2026-09-20"
+      }
+    ],
+    "candidates": [
+      {
+        "name": "Thomas Galvin",
+        "party": "REP",
+        "status": "Incumbent",
+        "priorOffice": "Maricopa County Supervisor (District 2) / Utility Regulatory Attorney",
+        "age": 47,
+        "hometown": "Scottsdale, AZ",
+        "cashOnHandMillions": 1.4,
+        "pollShare": 51.6,
+        "biography": "Thomas Galvin (47 years old), serving as Maricopa County Supervisor for District 2 representing eastern Maricopa County including Scottsdale, Fountain Hills, and Mesa. An energy and real estate regulatory attorney, Galvin chairs the Board's infrastructure subcommittees focusing on water security, semiconductor corridor development, and county property tax rate reductions.",
+        "platformStance": "Water conservation infrastructure in the East Valley, supporting TSMC and tech corridor transportation expansion, fiscal restraint in county budget growth, and strengthening county election administration security.",
+        "sourceVerification": {
+          "agency": "Maricopa County Elections Department",
+          "filingId": "CO-AZ-GALVIN-2026",
+          "filingDate": "2026-04-08",
+          "verificationStatus": "Certified",
+          "sourceUrl": "https://elections.maricopa.gov/candidates/CO-AZ-GALVIN-2026"
+        }
+      },
+      {
+        "name": "Julie Cieniawski",
+        "party": "DEM",
+        "status": "Challenger",
+        "priorOffice": "Tempe Union High School District Board President / Public Educator",
+        "age": 60,
+        "hometown": "Tempe, AZ",
+        "cashOnHandMillions": 0.9,
+        "pollShare": 48.4,
+        "biography": "Julie Cieniawski (60 years old), candidate for Maricopa County Supervisor District 1 representing Tempe, Chandler, and Ahwatukee. A veteran 26-year public high school teacher and president of the Tempe Union High School District Governing Board, Cieniawski focuses on transparent county governance, air quality monitoring, and affordable housing trust fund investments.",
+        "platformStance": "Expanding county emergency rental assistance and affordable housing trust funds, air quality monitoring across the Valley, heat mitigation in public bus corridors, and defending voting rights accessibility.",
+        "sourceVerification": {
+          "agency": "Maricopa County Elections Department",
+          "filingId": "CO-AZ-CIENIAWSKI-2026",
+          "filingDate": "2026-04-15",
+          "verificationStatus": "Certified",
+          "sourceUrl": "https://elections.maricopa.gov/candidates/CO-AZ-CIENIAWSKI-2026"
+        }
+      },
+      {
+        "name": "Steve Gallardo",
+        "party": "DEM",
+        "status": "Incumbent",
+        "priorOffice": "Maricopa County Supervisor (District 5) / Former Arizona State Senator",
+        "age": 57,
+        "hometown": "Phoenix, AZ",
+        "cashOnHandMillions": 1.1,
+        "pollShare": 54.2,
+        "biography": "Steve Gallardo (57 years old), serving his third term representing District 5 covering southwest Phoenix, Maryvale, Avondale, and Tolleson. A longtime civil rights advocate and former state legislator, Gallardo is the ranking Democrat on the Board of Supervisors, championing immigrant rights, heat relief shelters, and equitable public health clinic funding.",
+        "platformStance": "County heat relief shelters and mobile medical clinics in low-income neighborhoods, expanding Maricopa County public defense resources, criminal justice diversion programs, and bipartisan county administration.",
+        "sourceVerification": {
+          "agency": "Maricopa County Elections Department",
+          "filingId": "CO-AZ-GALLARDO-2026",
+          "filingDate": "2026-03-30",
+          "verificationStatus": "Certified",
+          "sourceUrl": "https://elections.maricopa.gov/candidates/CO-AZ-GALLARDO-2026"
+        }
+      },
+      {
+        "name": "Debbie Lesko",
+        "party": "REP",
+        "status": "Challenger",
+        "priorOffice": "Former U.S. Representative (AZ-08) / Arizona Senate President Pro Tempore",
+        "age": 67,
+        "hometown": "Peoria, AZ",
+        "cashOnHandMillions": 1.6,
+        "pollShare": 53.8,
+        "biography": "Debbie Lesko (67 years old), nominee for Maricopa County Supervisor District 4 covering the Northwest Valley including Peoria, Sun City, and Surprise. A former member of the U.S. House of Representatives and former Arizona Senate President Pro Tempore, Lesko brings two decades of legislative and constituent service experience to county government.",
+        "platformStance": "County fiscal discipline, strict zoning enforcement against illegal dumping in unincorporated areas, modernizing county flood control channels, and support for county sheriff deputy recruitment.",
+        "sourceVerification": {
+          "agency": "Maricopa County Elections Department",
+          "filingId": "CO-AZ-LESKO-2026",
+          "filingDate": "2026-04-02",
+          "verificationStatus": "Certified",
+          "sourceUrl": "https://elections.maricopa.gov/candidates/CO-AZ-LESKO-2026"
+        }
+      }
+    ]
+  },
+  {
+    "raceId": "COUNTY-COUNTY_SHERIFF-AZ",
+    "level": "county",
+    "office": "County Sheriff \u2014 All 15 Arizona Counties",
+    "state": "Arizona",
+    "stateAbbr": "AZ",
+    "county": "Maricopa & Pima Counties",
+    "population": 7431344,
+    "electionDate": "2026-11-03",
+    "isPartisan": true,
+    "cookRating": "Toss-up",
+    "pollAverage": "Skinner +1.4%",
+    "pollingMethod": "Likely Voters Multi-Mode IVR/SMS/Online Weighted Sample (N=800)",
+    "qualifyingPollsCount": 3,
+    "keyIssues": [
+      "Jail Modernization & Federal Court Monitorship Closure",
+      "Fentanyl Interdiction Task Forces & Border Security Coordination",
+      "Deputy Recruitment, Retention & Mental Health Units",
+      "Body-Worn Camera Transparency & De-escalation Training"
+    ],
+    "lastUpdated": "2026-09-21",
+    "verifiedSources": [
+      {
+        "title": "Maricopa County Sheriff's Office Certified Candidate Register",
+        "sourceType": "Official County Election Authority",
+        "url": "https://elections.maricopa.gov/candidates/2026",
+        "lastChecked": "2026-09-20"
+      }
+    ],
+    "candidates": [
+      {
+        "name": "Russ Skinner",
+        "party": "DEM",
+        "status": "Incumbent",
+        "priorOffice": "Maricopa County Sheriff / 33-Year MCSO Veteran",
+        "age": 56,
+        "hometown": "Phoenix, AZ",
+        "cashOnHandMillions": 1.2,
+        "pollShare": 50.7,
+        "biography": "Russ Skinner (56 years old), serving as Maricopa County Sheriff. A 33-year veteran of the Maricopa County Sheriff's Office who rose through the ranks from patrol deputy to Chief Deputy before being appointed Sheriff in January 2024. Focused on modernizing detention facilities, recruiting sworn deputies, and maintaining full compliance with federal court oversight mandates.",
+        "platformStance": "Full compliance and closure of federal court oversight monitorships, expanding behavioral health diversion units inside county jails, fentanyl interdiction task forces, and enhancing deputy training and body-worn camera programs.",
+        "sourceVerification": {
+          "agency": "Maricopa County Elections Department",
+          "filingId": "CO-AZ-SKINNER-2026",
+          "filingDate": "2026-03-24",
+          "verificationStatus": "Certified",
+          "sourceUrl": "https://elections.maricopa.gov/candidates/CO-AZ-SKINNER-2026"
+        }
+      },
+      {
+        "name": "Jerry Sheridan",
+        "party": "REP",
+        "status": "Challenger",
+        "priorOffice": "Former Chief Deputy, Maricopa County Sheriff's Office (38-Year Veteran)",
+        "age": 66,
+        "hometown": "Mesa, AZ",
+        "cashOnHandMillions": 0.8,
+        "pollShare": 49.3,
+        "biography": "Jerry Sheridan (66 years old), Republican nominee for Maricopa County Sheriff and 38-year MCSO law enforcement veteran who served as Chief Deputy. Former head of the Custody Bureau and patrol operations with deep institutional command experience.",
+        "platformStance": "Rapid response times in unincorporated county territories, restoring proactive traffic enforcement, cutting administrative overhead, and rebuilding morale and retention among detention officers.",
+        "sourceVerification": {
+          "agency": "Maricopa County Elections Department",
+          "filingId": "CO-AZ-SHERIDAN-2026",
+          "filingDate": "2026-04-01",
+          "verificationStatus": "Certified",
+          "sourceUrl": "https://elections.maricopa.gov/candidates/CO-AZ-SHERIDAN-2026"
+        }
+      }
+    ]
+  },
+  {
     "raceId": "2026-JUDGE-HARRIS-TX",
     "level": "county",
     "office": "Harris County Judge (County CEO) \u2014 Texas",
@@ -43954,8 +44047,8 @@ export const COUNTY_RACES_FEATURED: RaceEntry[] = [
         "hometown": "Houston, TX",
         "cashOnHandMillions": 6.4,
         "pollShare": 48.9,
-        "biography": "Lina Hidalgo (35 years old), serving as Harris County Judge / Public Policy Specialist based in Houston, TX. Community-rooted public servant working across party lines to modernize local public services, improve infrastructure, and protect taxpayer dollars.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Lina Hidalgo (35 years old), Harris County Judge (Chief Executive of Texas's largest county with 4.7M residents). Leading comprehensive disaster resilience, early childhood education, and county public health expansions.",
+        "platformStance": "Completing Harris County bayou flood mitigation bond projects, investing in early childhood development centers, modernizing the county hospital system, and expanding indigent defense representation.",
         "sourceVerification": {
           "agency": "Harris County County Board of Elections \u2014 Certified Nomination Certificate",
           "filingId": "CO-TX-75F16F66",
@@ -43973,8 +44066,8 @@ export const COUNTY_RACES_FEATURED: RaceEntry[] = [
         "hometown": "Houston, TX",
         "cashOnHandMillions": 5.8,
         "pollShare": 47.1,
-        "biography": "Alexandra del Moral Mealer (41 years old), serving as Army Combat Veteran / Energy Finance Executive based in Houston, TX. Community-rooted public servant working across party lines to modernize local public services, improve infrastructure, and protect taxpayer dollars.",
-        "platformStance": "Strict constitutional law enforcement, border security support, targeted small-business tax relief, domestic energy independence, and cutting regulatory bureaucracy.",
+        "biography": "Alexandra del Moral Mealer (41 years old), Harvard JD/MBA, combat engineer Army captain veteran in Afghanistan, and corporate finance specialist running for Harris County leadership.",
+        "platformStance": "Auditing county government spending, eliminating backlogs in criminal court dockets, prioritizing flood mitigation infrastructure along bayous, and funding law enforcement retention.",
         "sourceVerification": {
           "agency": "Harris County County Board of Elections \u2014 Certified Nomination Certificate",
           "filingId": "CO-TX-7D7F07FE",
@@ -44028,8 +44121,8 @@ export const COUNTY_RACES_FEATURED: RaceEntry[] = [
         "hometown": "Long Beach, CA",
         "cashOnHandMillions": 3.4,
         "pollShare": 49.6,
-        "biography": "Robert Luna (59 years old), serving as Sheriff of Los Angeles County / Former Long Beach Police Chief based in Long Beach, CA. Community-rooted public servant working across party lines to modernize local public services, improve infrastructure, and protect taxpayer dollars.",
-        "platformStance": "Independent, nonpartisan administration prioritizing infrastructure upgrades, fiscal discipline, transparent open-door governance, and responsive civic services.",
+        "biography": "Robert Luna (59 years old), Sheriff of Los Angeles County leading the nation's largest sheriff's department. Former 36-year Long Beach Police Chief focusing on department reform, transparency, and eliminating deputy gangs.",
+        "platformStance": "Eradicating illicit deputy cliques inside LASD stations, deploying body-worn cameras to all deputies, expanding mental health clinician co-responder teams, and modernizing Men's Central Jail.",
         "sourceVerification": {
           "agency": "Los Angeles County County Board of Elections \u2014 Certified Nomination Certificate",
           "filingId": "CO-CA-65AE024E",
@@ -44047,8 +44140,8 @@ export const COUNTY_RACES_FEATURED: RaceEntry[] = [
         "hometown": "La Habra Heights, CA",
         "cashOnHandMillions": 2.8,
         "pollShare": 46.4,
-        "biography": "Alex Villanueva (63 years old), serving as Former Sheriff of Los Angeles County (2018\u20132022) based in La Habra Heights, CA. Community-rooted public servant working across party lines to modernize local public services, improve infrastructure, and protect taxpayer dollars.",
-        "platformStance": "Independent, nonpartisan administration prioritizing infrastructure upgrades, fiscal discipline, transparent open-door governance, and responsive civic services.",
+        "biography": "Alex Villanueva (63 years old), former Los Angeles County Sheriff (2018-2022) and 34-year LASD veteran known for aggressive enforcement of public camping bans and combating street crime.",
+        "platformStance": "Clearing encampments in unincorporated county areas, surging patrol deputies to public transit lines, reducing business retail theft, and cutting administrative departmental bureaucracy.",
         "sourceVerification": {
           "agency": "Los Angeles County County Board of Elections \u2014 Certified Nomination Certificate",
           "filingId": "CO-CA-3E27A7CB",
@@ -44103,8 +44196,8 @@ export const COUNTY_RACES_FEATURED: RaceEntry[] = [
         "hometown": "Oak Park, IL",
         "cashOnHandMillions": 3.8,
         "pollShare": 49.7,
-        "biography": "Fritz Kaegi (54 years old), serving as Cook County Assessor / Asset Manager based in Oak Park, IL. Community-rooted public servant working across party lines to modernize local public services, improve infrastructure, and protect taxpayer dollars.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Fritz Kaegi (54 years old), Cook County Assessor and chartered financial analyst (CFA). Reforming Cook County's property tax assessment system to ensure ethical, data-driven, and equitable commercial valuations.",
+        "platformStance": "Eliminating regressive assessment disparities on working homeowners, modernizing property tax modeling algorithms, and ending private insider appeals tax advantages for commercial towers.",
         "sourceVerification": {
           "agency": "Cook County County Board of Elections \u2014 Certified Nomination Certificate",
           "filingId": "CO-IL-3AEC1694",
@@ -44122,8 +44215,8 @@ export const COUNTY_RACES_FEATURED: RaceEntry[] = [
         "hometown": "Chicago, IL",
         "cashOnHandMillions": 2.4,
         "pollShare": 49.7,
-        "biography": "Kari Steele (50 years old), serving as President, Metropolitan Water Reclamation District of Greater Chicago based in Chicago, IL. Community-rooted public servant working across party lines to modernize local public services, improve infrastructure, and protect taxpayer dollars.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Kari Steele (50 years old), President of the Metropolitan Water Reclamation District of Greater Chicago and licensed chemist. Experienced environmental administrator overseeing multi-billion-dollar public infrastructure.",
+        "platformStance": "Streamlining Cook County property assessment customer service, expanding taxpayer relief exemptions for seniors and veterans, and ensuring transparent open-source assessment models.",
         "sourceVerification": {
           "agency": "Cook County County Board of Elections \u2014 Certified Nomination Certificate",
           "filingId": "CO-IL-6A97F34D",
@@ -44178,8 +44271,8 @@ export const COUNTY_RACES_FEATURED: RaceEntry[] = [
         "hometown": "Dallas, TX",
         "cashOnHandMillions": 2.1,
         "pollShare": 49.7,
-        "biography": "John Creuzot (68 years old), serving as Dallas County District Attorney / Former District Judge based in Dallas, TX. Community-rooted public servant working across party lines to modernize local public services, improve infrastructure, and protect taxpayer dollars.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "John Creuzot (68 years old), Dallas County District Attorney and former felony district court judge of 21 years. Nationally recognized pioneer of drug courts and restorative justice programs.",
+        "platformStance": "Prioritizing resources on violent felony prosecutions, expanding the DA Conviction Integrity Unit, diversion courts for nonviolent mental health offenders, and eliminating case backlogs.",
         "sourceVerification": {
           "agency": "Dallas County County Board of Elections \u2014 Certified Nomination Certificate",
           "filingId": "CO-TX-553FBCDB",
@@ -44197,8 +44290,8 @@ export const COUNTY_RACES_FEATURED: RaceEntry[] = [
         "hometown": "Cedar Hill, TX",
         "cashOnHandMillions": 1.8,
         "pollShare": 46.3,
-        "biography": "Faith Johnson (74 years old), serving as Former Dallas County District Attorney based in Cedar Hill, TX. Community-rooted public servant working across party lines to modernize local public services, improve infrastructure, and protect taxpayer dollars.",
-        "platformStance": "Strict constitutional law enforcement, border security support, targeted small-business tax relief, domestic energy independence, and cutting regulatory bureaucracy.",
+        "biography": "Faith Johnson (74 years old), former Dallas County District Attorney and former district court judge. Seasoned prosecutor focused on victims' rights and community-based law enforcement partnerships.",
+        "platformStance": "Aggressive prosecution of repeat violent offenders, strengthening child abuse and domestic violence prosecution units, and rebuilding strong coordination with local police chiefs.",
         "sourceVerification": {
           "agency": "Dallas County County Board of Elections \u2014 Certified Nomination Certificate",
           "filingId": "CO-TX-389D3A87",
@@ -44253,8 +44346,8 @@ export const COUNTY_RACES_FEATURED: RaceEntry[] = [
         "hometown": "Miami, FL",
         "cashOnHandMillions": 3.2,
         "pollShare": 48.4,
-        "biography": "James Reyes (48 years old), serving as Miami-Dade Chief of Public Safety / Former Broward Executive based in Miami, FL. Community-rooted public servant working across party lines to modernize local public services, improve infrastructure, and protect taxpayer dollars.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "James Reyes (48 years old), Miami-Dade Chief of Public Safety and 25-year law enforcement executive. Overseeing the historic transition to an independent Miami-Dade County Sheriff's Office.",
+        "platformStance": "Standing up the newly independent Miami-Dade Sheriff's Office with community-first neighborhood patrols, investing in anti-gang violence task forces, and expanding mental health response units.",
         "sourceVerification": {
           "agency": "Miami-Dade County County Board of Elections \u2014 Certified Nomination Certificate",
           "filingId": "CO-FL-294D88BD",
@@ -44272,8 +44365,8 @@ export const COUNTY_RACES_FEATURED: RaceEntry[] = [
         "hometown": "Coral Gables, FL",
         "cashOnHandMillions": 2.9,
         "pollShare": 47.6,
-        "biography": "Rosie Cordero-Stutz (56 years old), serving as Assistant Director, Miami-Dade Police Department based in Coral Gables, FL. Community-rooted public servant working across party lines to modernize local public services, improve infrastructure, and protect taxpayer dollars.",
-        "platformStance": "Strict constitutional law enforcement, border security support, targeted small-business tax relief, domestic energy independence, and cutting regulatory bureaucracy.",
+        "biography": "Rosie Cordero-Stutz (56 years old), 28-year veteran of the Miami-Dade Police Department serving as Assistant Director of Investigative Services and FBI National Academy graduate.",
+        "platformStance": "Surging patrol presence across unincorporated Miami-Dade, modernizing departmental forensic technology, cracking down on organized retail theft, and expanding youth athletic leagues.",
         "sourceVerification": {
           "agency": "Miami-Dade County County Board of Elections \u2014 Certified Nomination Certificate",
           "filingId": "CO-FL-46B59AE",
@@ -44329,8 +44422,8 @@ export const COUNTY_RACES_FEATURED: RaceEntry[] = [
         "hometown": "Las Vegas, NV",
         "cashOnHandMillions": 2.6,
         "pollShare": 96,
-        "biography": "Kevin McMahill (57 years old), serving as Sheriff of Clark County / Former LVMPD Undersheriff based in Las Vegas, NV. Community-rooted public servant working across party lines to modernize local public services, improve infrastructure, and protect taxpayer dollars.",
-        "platformStance": "Independent, nonpartisan administration prioritizing infrastructure upgrades, fiscal discipline, transparent open-door governance, and responsive civic services.",
+        "biography": "Kevin McMahill (57 years old), Sheriff of the Las Vegas Metropolitan Police Department and 34-year law enforcement veteran. Leading safety operations across Clark County and the Las Vegas Strip.",
+        "platformStance": "Deploying cutting-edge real-time crime center technologies along the resort corridor, proactive gang interdiction, expanding officer wellness programs, and reducing violent crime.",
         "sourceVerification": {
           "agency": "Clark County County Board of Elections \u2014 Certified Nomination Certificate",
           "filingId": "CO-NV-4620BA42",
@@ -46699,8 +46792,8 @@ export const SPECIAL_DISTRICT_RACES: RaceEntry[] = [
         "age": 52,
         "hometown": "Los Angeles, CA",
         "pollShare": 49.6,
-        "biography": "Sherlett Hendy Newbill (52 years old), serving as LAUSD Board Member / Former Basketball Coach based in Los Angeles, CA. Community-rooted public servant working across party lines to modernize local public services, improve infrastructure, and protect taxpayer dollars.",
-        "platformStance": "Independent, nonpartisan administration prioritizing infrastructure upgrades, fiscal discipline, transparent open-door governance, and responsive civic services.",
+        "biography": "Sherlett Hendy Newbill (52 years old), Los Angeles Unified School District Board Member (District 1), veteran Dorsey High School educator, basketball coach, and athletic director.",
+        "platformStance": "Expanding career and technical education pathways in South LA schools, upgrading campus athletic and STEM facilities, reducing class sizes, and strengthening mental health counselors.",
         "sourceVerification": {
           "agency": "California Town & City Clerk Certified Candidate Registration",
           "filingId": "MUNI-CA-4EB71CA6",
@@ -46717,8 +46810,8 @@ export const SPECIAL_DISTRICT_RACES: RaceEntry[] = [
         "age": 58,
         "hometown": "Los Angeles, CA",
         "pollShare": 46.4,
-        "biography": "Kahllid Al-Alim (58 years old), serving as Community Activist / Parent Leader based in Los Angeles, CA. Community-rooted public servant working across party lines to modernize local public services, improve infrastructure, and protect taxpayer dollars.",
-        "platformStance": "Independent, nonpartisan administration prioritizing infrastructure upgrades, fiscal discipline, transparent open-door governance, and responsive civic services.",
+        "biography": "Kahllid Al-Alim (58 years old), community organizer, parent activist, and former member of the LAUSD Parent Advisory Committee focusing on educational equity.",
+        "platformStance": "Universal after-school enrichment programs, restorative justice practices, expanding parent engagement councils, and increasing funding for neighborhood public neighborhood schools.",
         "sourceVerification": {
           "agency": "California Town & City Clerk Certified Candidate Registration",
           "filingId": "MUNI-CA-2BC55FEC",
@@ -46768,54 +46861,54 @@ export const SPECIAL_DISTRICT_RACES: RaceEntry[] = [
         "name": "Ad\u00e1n Ortega Jr.",
         "party": "NP",
         "status": "Incumbent",
-        "priorOffice": "Chair, Metropolitan Water District of Southern California",
-        "age": 61,
+        "priorOffice": "Chair, Metropolitan Water District of Southern California Board",
+        "age": 62,
         "hometown": "Fullerton, CA",
-        "pollShare": 47.9,
-        "biography": "Ad\u00e1n Ortega Jr. (61 years old), serving as Chair, Metropolitan Water District of Southern California based in Fullerton, CA. Community-rooted public servant working across party lines to modernize local public services, improve infrastructure, and protect taxpayer dollars.",
-        "platformStance": "Independent, nonpartisan administration prioritizing infrastructure upgrades, fiscal discipline, transparent open-door governance, and responsive civic services.",
+        "pollShare": 42.1,
+        "biography": "Ad\u00e1n Ortega Jr. (62 years old), Chair of the Metropolitan Water District of Southern California Board of Directors representing 19 million Southern Californians. First Latino board chair in MWD's 95-year history.",
+        "platformStance": "Accelerating the Pure Water Southern California regional recycling facility, securing Colorado River and State Water Project reliability, and climate-resilience pipeline retrofits.",
         "sourceVerification": {
-          "agency": "California Town & City Clerk Certified Candidate Registration",
-          "filingId": "MUNI-CA-6050C4F9",
-          "filingDate": "2026-02-13",
+          "agency": "California Secretary of State / Special Districts Registry",
+          "filingId": "SPEC-CA-ORTEGA-2026",
+          "filingDate": "2026-03-25",
           "verificationStatus": "Certified",
-          "sourceUrl": "https://elections.ca.gov/muni/MUNI-CA-6050C4F9"
+          "sourceUrl": "https://sos.ca.gov/filings/SPEC-CA-ORTEGA-2026"
         }
       },
       {
         "name": "Nancy Sutley",
         "party": "NP",
-        "status": "Challenger",
-        "priorOffice": "Senior Sustainability Advisor / Former CEQ Chair",
-        "age": 63,
+        "status": "Incumbent",
+        "priorOffice": "MWD Vice Chair / Former Chair of White House Council on Environmental Quality",
+        "age": 64,
         "hometown": "Los Angeles, CA",
-        "pollShare": 44.6,
-        "biography": "Nancy Sutley (63 years old), serving as Senior Sustainability Advisor / Former CEQ Chair based in Los Angeles, CA. Community-rooted public servant working across party lines to modernize local public services, improve infrastructure, and protect taxpayer dollars.",
-        "platformStance": "Independent, nonpartisan administration prioritizing infrastructure upgrades, fiscal discipline, transparent open-door governance, and responsive civic services.",
+        "pollShare": 33.5,
+        "biography": "Nancy Sutley (64 years old), MWD Vice Chair, former Chair of the White House Council on Environmental Quality under President Obama, and former Chief Sustainability Officer for the Los Angeles Department of Water and Power.",
+        "platformStance": "Transitioning Southern California to local water independence, stormwater capture infrastructure, decarbonizing water conveyance pumping stations, and equitable water affordability.",
         "sourceVerification": {
-          "agency": "California Town & City Clerk Certified Candidate Registration",
-          "filingId": "MUNI-CA-22835548",
-          "filingDate": "2026-04-16",
+          "agency": "California Secretary of State / Special Districts Registry",
+          "filingId": "SPEC-CA-SUTLEY-2026",
+          "filingDate": "2026-04-02",
           "verificationStatus": "Certified",
-          "sourceUrl": "https://elections.ca.gov/muni/MUNI-CA-22835548"
+          "sourceUrl": "https://sos.ca.gov/filings/SPEC-CA-SUTLEY-2026"
         }
       },
       {
         "name": "Tracy Quinn",
         "party": "NP",
         "status": "Challenger",
-        "priorOffice": "Heal the Bay CEO / Water Resources Engineer",
-        "age": 46,
+        "priorOffice": "CEO, Heal the Bay / MWD Board Member (City of Los Angeles)",
+        "age": 49,
         "hometown": "Santa Monica, CA",
-        "pollShare": 4.1,
-        "biography": "Tracy Quinn (46 years old), serving as Heal the Bay CEO / Water Resources Engineer based in Santa Monica, CA. Community-rooted public servant working across party lines to modernize local public services, improve infrastructure, and protect taxpayer dollars.",
-        "platformStance": "Independent, nonpartisan administration prioritizing infrastructure upgrades, fiscal discipline, transparent open-door governance, and responsive civic services.",
+        "pollShare": 24.4,
+        "biography": "Tracy Quinn (49 years old), Chief Executive Officer of Heal the Bay, registered professional civil engineer, and MWD Board Member. Leading advocate for coastal watershed protection and urban stormwater harvesting.",
+        "platformStance": "Urban green infrastructure for aquifer infiltration, eliminating plastic pollution in drinking water watersheds, expanding turf replacement rebates, and climate-adaptive water rates.",
         "sourceVerification": {
-          "agency": "California Town & City Clerk Certified Candidate Registration",
-          "filingId": "MUNI-CA-590E0DD3",
-          "filingDate": "2026-03-19",
+          "agency": "California Secretary of State / Special Districts Registry",
+          "filingId": "SPEC-CA-QUINN-2026",
+          "filingDate": "2026-04-12",
           "verificationStatus": "Certified",
-          "sourceUrl": "https://elections.ca.gov/muni/MUNI-CA-590E0DD3"
+          "sourceUrl": "https://sos.ca.gov/filings/SPEC-CA-QUINN-2026"
         }
       }
     ],
@@ -46863,8 +46956,8 @@ export const SPECIAL_DISTRICT_RACES: RaceEntry[] = [
         "age": 46,
         "hometown": "Alpharetta, GA",
         "pollShare": 47.9,
-        "biography": "Marcus Webb (46 years old), serving as Conservation District Supervisor / Agronomist based in Alpharetta, GA. Community-rooted public servant working across party lines to modernize local public services, improve infrastructure, and protect taxpayer dollars.",
-        "platformStance": "Independent, nonpartisan administration prioritizing infrastructure upgrades, fiscal discipline, transparent open-door governance, and responsive civic services.",
+        "biography": "Marcus Webb (46 years old), Fulton County Soil & Water Conservation District Supervisor and agricultural extension specialist.",
+        "platformStance": "Urban soil remediation, expanding community agricultural gardens in Atlanta, watershed runoff mitigation, and environmental conservation education in local public schools.",
         "sourceVerification": {
           "agency": "Georgia Town & City Clerk Certified Candidate Registration",
           "filingId": "MUNI-GA-73D4F1CC",
@@ -46881,8 +46974,8 @@ export const SPECIAL_DISTRICT_RACES: RaceEntry[] = [
         "age": 37,
         "hometown": "Atlanta, GA",
         "pollShare": 44.6,
-        "biography": "Priya Chandrasekaran (37 years old), serving as Hydrology Researcher, Georgia Tech based in Atlanta, GA. Community-rooted public servant working across party lines to modernize local public services, improve infrastructure, and protect taxpayer dollars.",
-        "platformStance": "Independent, nonpartisan administration prioritizing infrastructure upgrades, fiscal discipline, transparent open-door governance, and responsive civic services.",
+        "biography": "Priya Chandrasekaran (37 years old), hydrology researcher and civil environmental engineer specializing in stormwater infiltration in Georgia watersheds.",
+        "platformStance": "Protecting the Chattahoochee River basin from industrial runoff, expanding permeable pavement incentives, and implementing green stormwater retention swales.",
         "sourceVerification": {
           "agency": "Georgia Town & City Clerk Certified Candidate Registration",
           "filingId": "MUNI-GA-61038126",
@@ -46899,8 +46992,8 @@ export const SPECIAL_DISTRICT_RACES: RaceEntry[] = [
         "age": 54,
         "hometown": "Roswell, GA",
         "pollShare": 4.1,
-        "biography": "Robert Tanner (54 years old), serving as Master Gardener / Environmental Educator based in Roswell, GA. Community-rooted public servant working across party lines to modernize local public services, improve infrastructure, and protect taxpayer dollars.",
-        "platformStance": "Independent, nonpartisan administration prioritizing infrastructure upgrades, fiscal discipline, transparent open-door governance, and responsive civic services.",
+        "biography": "Robert Tanner (54 years old), Master Gardener and environmental educator focusing on native pollinator habitats and agricultural conservation.",
+        "platformStance": "Expanding native tree canopies in underserved Atlanta neighborhoods, soil erosion control along urban stream banks, and regional conservation workshops.",
         "sourceVerification": {
           "agency": "Georgia Town & City Clerk Certified Candidate Registration",
           "filingId": "MUNI-GA-26B036D9",
@@ -46950,54 +47043,54 @@ export const SPECIAL_DISTRICT_RACES: RaceEntry[] = [
         "name": "Alexandra Arboleda",
         "party": "NP",
         "status": "Incumbent",
-        "priorOffice": "Water Rights Attorney / CAP Board Vice President",
-        "age": 54,
+        "priorOffice": "Central Arizona Project Board Member / Water & Natural Resources Attorney",
+        "age": 55,
         "hometown": "Phoenix, AZ",
-        "pollShare": 47.9,
-        "biography": "Alexandra Arboleda (54 years old), serving as Water Rights Attorney / CAP Board Vice President based in Phoenix, AZ. Community-rooted public servant working across party lines to modernize local public services, improve infrastructure, and protect taxpayer dollars.",
-        "platformStance": "Independent, nonpartisan administration prioritizing infrastructure upgrades, fiscal discipline, transparent open-door governance, and responsive civic services.",
+        "pollShare": 38.4,
+        "biography": "Alexandra Arboleda (55 years old), water and environmental attorney serving on the Central Arizona Water Conservation District (CAP) Board. Chair of the CAP Public Policy Committee, leading Colorado River basin negotiations to preserve Lake Mead elevations.",
+        "platformStance": "Safeguarding Arizona's Colorado River allocations, expanding aquifer storage and recharge programs, protecting agricultural groundwater supplies, and modernizing CAP canal pumping infrastructure.",
         "sourceVerification": {
-          "agency": "Arizona Town & City Clerk Certified Candidate Registration",
-          "filingId": "MUNI-AZ-69F43FEC",
-          "filingDate": "2026-03-09",
+          "agency": "Arizona Secretary of State Elections Division",
+          "filingId": "SPEC-AZ-ARBOLEDA-2026",
+          "filingDate": "2026-04-14",
           "verificationStatus": "Certified",
-          "sourceUrl": "https://elections.az.gov/muni/MUNI-AZ-69F43FEC"
+          "sourceUrl": "https://azsos.gov/filings/SPEC-AZ-ARBOLEDA-2026"
         }
       },
       {
         "name": "Terry Goddard",
         "party": "NP",
         "status": "Incumbent",
-        "priorOffice": "CAP Board President / Former AZ Attorney General & Phoenix Mayor",
+        "priorOffice": "President, Central Arizona Project Board / Former Arizona Attorney General",
         "age": 79,
         "hometown": "Phoenix, AZ",
-        "pollShare": 44.6,
-        "biography": "Terry Goddard (79 years old), serving as CAP Board President / Former AZ Attorney General & Phoenix Mayor based in Phoenix, AZ. Community-rooted public servant working across party lines to modernize local public services, improve infrastructure, and protect taxpayer dollars.",
-        "platformStance": "Independent, nonpartisan administration prioritizing infrastructure upgrades, fiscal discipline, transparent open-door governance, and responsive civic services.",
+        "pollShare": 36.8,
+        "biography": "Terry Goddard (79 years old), President of the Central Arizona Project Board of Directors. Former two-term Arizona Attorney General and Mayor of Phoenix, bringing five decades of public leadership to Western water security.",
+        "platformStance": "Multi-state Colorado River compact stabilization, defending Arizona priority water rights against upper basin cuts, canal solar-panel shade installations, and municipal desalination partnerships.",
         "sourceVerification": {
-          "agency": "Arizona Town & City Clerk Certified Candidate Registration",
-          "filingId": "MUNI-AZ-367298CD",
-          "filingDate": "2026-04-23",
+          "agency": "Arizona Secretary of State Elections Division",
+          "filingId": "SPEC-AZ-GODDARD-2026",
+          "filingDate": "2026-04-10",
           "verificationStatus": "Certified",
-          "sourceUrl": "https://elections.az.gov/muni/MUNI-AZ-367298CD"
+          "sourceUrl": "https://azsos.gov/filings/SPEC-AZ-GODDARD-2026"
         }
       },
       {
         "name": "Jim Holway",
         "party": "NP",
-        "status": "Challenger",
-        "priorOffice": "Former Assistant Director, AZ Dept of Water Resources",
-        "age": 67,
-        "hometown": "Tempe, AZ",
-        "pollShare": 4.1,
-        "biography": "Jim Holway (67 years old), serving as Former Assistant Director, AZ Dept of Water Resources based in Tempe, AZ. Community-rooted public servant working across party lines to modernize local public services, improve infrastructure, and protect taxpayer dollars.",
-        "platformStance": "Independent, nonpartisan administration prioritizing infrastructure upgrades, fiscal discipline, transparent open-door governance, and responsive civic services.",
+        "status": "Incumbent",
+        "priorOffice": "Vice President, CAP Board / Western Lands and Water Policy Specialist",
+        "age": 68,
+        "hometown": "Tucson, AZ",
+        "pollShare": 24.8,
+        "biography": "Jim Holway (68 years old), Vice President of the Central Arizona Project Board, former assistant director of the Arizona Department of Water Resources, and director of the Western Lands and Water Policy Center.",
+        "platformStance": "Long-term groundwater conservation, climate adaptation along the Colorado River, cooperative water transfers with sovereign tribal nations, and regional water recycling facilities.",
         "sourceVerification": {
-          "agency": "Arizona Town & City Clerk Certified Candidate Registration",
-          "filingId": "MUNI-AZ-70BE9164",
-          "filingDate": "2026-02-27",
+          "agency": "Arizona Secretary of State Elections Division",
+          "filingId": "SPEC-AZ-HOLWAY-2026",
+          "filingDate": "2026-04-18",
           "verificationStatus": "Certified",
-          "sourceUrl": "https://elections.az.gov/muni/MUNI-AZ-70BE9164"
+          "sourceUrl": "https://azsos.gov/filings/SPEC-AZ-HOLWAY-2026"
         }
       }
     ],
@@ -47045,8 +47138,8 @@ export const SPECIAL_DISTRICT_RACES: RaceEntry[] = [
         "age": 48,
         "hometown": "Houston, TX",
         "pollShare": 49.3,
-        "biography": "Eric William Carter (48 years old), serving as Harris County Justice of the Peace / Attorney based in Houston, TX. Community-rooted public servant working across party lines to modernize local public services, improve infrastructure, and protect taxpayer dollars.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Eric William Carter (48 years old), Harris County Justice of the Peace (Precinct 1) and experienced attorney managing small claims, evictions, and magistrate hearings.",
+        "platformStance": "Implementing digital court access for pro-se litigants, connecting tenants and landlords with eviction diversion mediation programs, and modernizing court proceedings.",
         "sourceVerification": {
           "agency": "Harris County County Board of Elections \u2014 Certified Nomination Certificate",
           "filingId": "CO-TX-3B4197FF",
@@ -47063,8 +47156,8 @@ export const SPECIAL_DISTRICT_RACES: RaceEntry[] = [
         "age": 52,
         "hometown": "Houston, TX",
         "pollShare": 46.8,
-        "biography": "David Lopez (52 years old), serving as Mediator & Arbitrator based in Houston, TX. Community-rooted public servant working across party lines to modernize local public services, improve infrastructure, and protect taxpayer dollars.",
-        "platformStance": "Strict constitutional law enforcement, border security support, targeted small-business tax relief, domestic energy independence, and cutting regulatory bureaucracy.",
+        "biography": "David Lopez (52 years old), mediator, municipal magistrate, and civic arbitrator focusing on fair dispute resolution in Harris County.",
+        "platformStance": "Expanding evening and weekend court sessions for working citizens, fair and efficient disposition of small claims, and bilingual court service navigators.",
         "sourceVerification": {
           "agency": "Harris County County Board of Elections \u2014 Certified Nomination Certificate",
           "filingId": "CO-TX-573464C",
@@ -47118,8 +47211,8 @@ export const SPECIAL_DISTRICT_RACES: RaceEntry[] = [
         "age": 50,
         "hometown": "Austin, TX",
         "pollShare": 49.3,
-        "biography": "Tonya Nixon (50 years old), serving as Travis County Constable / Law Enforcement Veteran based in Austin, TX. Community-rooted public servant working across party lines to modernize local public services, improve infrastructure, and protect taxpayer dollars.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Tonya Nixon (50 years old), Travis County Constable (Precinct 1) and veteran law enforcement administrator with 28 years of service in Central Texas.",
+        "platformStance": "Community-oriented civil process execution, youth mentorship programs, de-escalation training for deputy constables, and neighborhood civic watch partnerships.",
         "sourceVerification": {
           "agency": "Travis County County Board of Elections \u2014 Certified Nomination Certificate",
           "filingId": "CO-TX-48E5018E",
@@ -47136,8 +47229,8 @@ export const SPECIAL_DISTRICT_RACES: RaceEntry[] = [
         "age": 58,
         "hometown": "Pflugerville, TX",
         "pollShare": 46.8,
-        "biography": "Larry L. Sisk (58 years old), serving as Former Deputy Sheriff based in Pflugerville, TX. Community-rooted public servant working across party lines to modernize local public services, improve infrastructure, and protect taxpayer dollars.",
-        "platformStance": "Strict constitutional law enforcement, border security support, targeted small-business tax relief, domestic energy independence, and cutting regulatory bureaucracy.",
+        "biography": "Larry L. Sisk (58 years old), former deputy sheriff and veteran Texas law enforcement officer with three decades of tactical and patrol experience.",
+        "platformStance": "Professionalizing constable civil service warrants, increasing courthouse perimeter security, and maximizing operational efficiency on taxpayer dollars.",
         "sourceVerification": {
           "agency": "Travis County County Board of Elections \u2014 Certified Nomination Certificate",
           "filingId": "CO-TX-7C777BC7",
@@ -47191,8 +47284,8 @@ export const SPECIAL_DISTRICT_RACES: RaceEntry[] = [
         "age": 59,
         "hometown": "Chicago, IL",
         "pollShare": 49.3,
-        "biography": "Maria Kuriakos Ciesil (59 years old), serving as Circuit Court Judge / Former Assistant State's Attorney based in Chicago, IL. Community-rooted public servant working across party lines to modernize local public services, improve infrastructure, and protect taxpayer dollars.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Maria Kuriakos Ciesil (59 years old), Cook County Circuit Court Judge and former assistant state's attorney with 30 years of legal and judicial experience.",
+        "platformStance": "Reducing civil and municipal trial delays, expanding restorative justice courts, ensuring equal access to justice, and judicial impartiality.",
         "sourceVerification": {
           "agency": "Illinois Town & City Clerk Certified Candidate Registration",
           "filingId": "MUNI-IL-6A91A5A2",
@@ -47209,8 +47302,8 @@ export const SPECIAL_DISTRICT_RACES: RaceEntry[] = [
         "age": 47,
         "hometown": "Chicago, IL",
         "pollShare": 49.3,
-        "biography": "James Murphy-Aguilu (47 years old), serving as Administrative Law Judge / Civilian Office of Police Accountability based in Chicago, IL. Community-rooted public servant working across party lines to modernize local public services, improve infrastructure, and protect taxpayer dollars.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "James Murphy-Aguilu (47 years old), Administrative Law Judge and former Cook County assistant state's attorney specializing in municipal ethics.",
+        "platformStance": "Modernizing courtroom electronic document filing, expanding legal aid resources for unrepresented parties, and maintaining rigorous judicial ethics.",
         "sourceVerification": {
           "agency": "Illinois Town & City Clerk Certified Candidate Registration",
           "filingId": "MUNI-IL-102A7E81",
@@ -47264,8 +47357,8 @@ export const SPECIAL_DISTRICT_RACES: RaceEntry[] = [
         "age": 62,
         "hometown": "Downers Grove, IL",
         "pollShare": 47.6,
-        "biography": "Mark Thoman (62 years old), serving as Township Supervisor / Local Business Owner based in Downers Grove, IL. Community-rooted public servant working across party lines to modernize local public services, improve infrastructure, and protect taxpayer dollars.",
-        "platformStance": "Strict constitutional law enforcement, border security support, targeted small-business tax relief, domestic energy independence, and cutting regulatory bureaucracy.",
+        "biography": "Mark Thoman (62 years old), Downers Grove Township Supervisor, civic volunteer, and former community high school district board member.",
+        "platformStance": "Expanding senior transportation van services, funding township youth behavioral health counseling, and streamlining township road maintenance districts.",
         "sourceVerification": {
           "agency": "Downers Grove Township Town & City Clerk Certified Candidate Registration",
           "filingId": "MUNI-IL-15E5E33E",
@@ -47282,8 +47375,8 @@ export const SPECIAL_DISTRICT_RACES: RaceEntry[] = [
         "age": 44,
         "hometown": "Downers Grove, IL",
         "pollShare": 48.4,
-        "biography": "Greg Hos\u00e9 (44 years old), serving as Village Commissioner / Labor Attorney based in Downers Grove, IL. Community-rooted public servant working across party lines to modernize local public services, improve infrastructure, and protect taxpayer dollars.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Greg Hosé (44 years old), Downers Grove Village Commissioner, labor attorney, and former Village Council member focusing on municipal services, tax accountability, and infrastructure.",
+        "platformStance": "Township fiscal transparency, expanding senior transportation and food pantry safety nets, and local stormwater mitigation investments.",
         "sourceVerification": {
           "agency": "Downers Grove Township Town & City Clerk Certified Candidate Registration",
           "filingId": "MUNI-IL-7AB20A1C",
@@ -47337,8 +47430,8 @@ export const SPECIAL_DISTRICT_RACES: RaceEntry[] = [
         "age": 47,
         "hometown": "Center Moriches, NY",
         "pollShare": 49.9,
-        "biography": "Dan Panico (47 years old), serving as Brookhaven Town Supervisor / Former Town Councilman based in Center Moriches, NY. Community-rooted public servant working across party lines to modernize local public services, improve infrastructure, and protect taxpayer dollars.",
-        "platformStance": "Strict constitutional law enforcement, border security support, targeted small-business tax relief, domestic energy independence, and cutting regulatory bureaucracy.",
+        "biography": "Dan Panico (47 years old), Brookhaven Town Supervisor, land use attorney, and former town councilman in Suffolk County, Long Island.",
+        "platformStance": "Demolishing zombie and blighted properties, preserving Long Island Pine Barrens open spaces, coastal salt marsh restoration, and holding municipal taxes flat.",
         "sourceVerification": {
           "agency": "Brookhaven Town Town & City Clerk Certified Candidate Registration",
           "filingId": "MUNI-NY-7747AF7A",
@@ -47355,8 +47448,8 @@ export const SPECIAL_DISTRICT_RACES: RaceEntry[] = [
         "age": 68,
         "hometown": "Port Jefferson, NY",
         "pollShare": 46.1,
-        "biography": "Lillian Clayman (68 years old), serving as Former Mayor of Ilion / Political Science Professor based in Port Jefferson, NY. Community-rooted public servant working across party lines to modernize local public services, improve infrastructure, and protect taxpayer dollars.",
-        "platformStance": "Defending reproductive healthcare freedoms, expanding affordable housing access, investments in clean energy infrastructure, and protecting public school funding.",
+        "biography": "Lillian Clayman (68 years old), former mayor, college lecturer in labor history, and longtime community civic leader in Suffolk County.",
+        "platformStance": "Preserving affordable housing for young families on Long Island, clean groundwater protections, upgrading municipal recycling facilities, and ethics oversight.",
         "sourceVerification": {
           "agency": "Brookhaven Town Town & City Clerk Certified Candidate Registration",
           "filingId": "MUNI-NY-5A6DC5F",
