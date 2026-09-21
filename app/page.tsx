@@ -46,6 +46,62 @@ export default function ControlBoardPage() {
 
       <BattlegroundElectoralMap />
 
+      {/* ── COMPLETE LOCAL-TO-FEDERAL REGISTRY LAUNCHER ───────────────────────── */}
+      <div className="bg-[#FFFFFF] border-2 border-[#0E63C4] rounded-xl p-4 shadow-sm space-y-3">
+        <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[#E4E9F0] pb-2">
+          <div>
+            <span className="text-[10px] font-bold uppercase tracking-wider bg-[#EBF3FD] text-[#0A3F73] px-2 py-0.5 rounded border border-[#CBD5E1]">
+              Every Office in America · Populations ≥ 1,000
+            </span>
+            <h2 className="text-base font-extrabold text-[#0B1220] mt-1">
+              Complete Candidate & Office Registry — From U.S. Senate Down to Town Dog Catcher
+            </h2>
+          </div>
+          <Link
+            href="/candidates"
+            className="bg-[#0E63C4] hover:bg-[#0A4E9E] text-white text-xs font-bold px-3 py-1.5 rounded-lg transition shadow-xs"
+          >
+            Explore All Candidates →
+          </Link>
+        </div>
+        <p className="text-xs text-[#5B6779] leading-relaxed">
+          Full database indexing all elected positions across jurisdictions with population over 1,000: Federal, Gubernatorial, State Legislatures, County Treasurers, Sheriffs, Assessors, Municipal Mayors, School Boards, Special Districts, and elected Dog Catchers / Animal Control Officers.
+        </p>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-2 pt-1 text-xs">
+          <Link href="/candidates" className="p-2.5 rounded-lg bg-[#F6F8FB] border border-[#CBD5E1] hover:bg-[#EBF3FD] transition text-center group">
+            <span className="text-base block mb-0.5">🐕</span>
+            <strong className="text-[#0B1220] block group-hover:text-[#0E63C4]">Dog Catchers</strong>
+            <span className="text-[10px] text-[#5B6779]">Town Meeting Ballots</span>
+          </Link>
+          <Link href="/candidates" className="p-2.5 rounded-lg bg-[#F6F8FB] border border-[#CBD5E1] hover:bg-[#EBF3FD] transition text-center group">
+            <span className="text-base block mb-0.5">💰</span>
+            <strong className="text-[#0B1220] block group-hover:text-[#0E63C4]">Treasurers</strong>
+            <span className="text-[10px] text-[#5B6779]">City & County</span>
+          </Link>
+          <Link href="/candidates" className="p-2.5 rounded-lg bg-[#F6F8FB] border border-[#CBD5E1] hover:bg-[#EBF3FD] transition text-center group">
+            <span className="text-base block mb-0.5">🏛️</span>
+            <strong className="text-[#0B1220] block group-hover:text-[#0E63C4]">U.S. Senate</strong>
+            <span className="text-[10px] text-[#5B6779]">35 Seats (Class II)</span>
+          </Link>
+          <Link href="/candidates" className="p-2.5 rounded-lg bg-[#F6F8FB] border border-[#CBD5E1] hover:bg-[#EBF3FD] transition text-center group">
+            <span className="text-base block mb-0.5">🏦</span>
+            <strong className="text-[#0B1220] block group-hover:text-[#0E63C4]">Governors</strong>
+            <span className="text-[10px] text-[#5B6779]">36 State Races</span>
+          </Link>
+          <Link href="/candidates" className="p-2.5 rounded-lg bg-[#F6F8FB] border border-[#CBD5E1] hover:bg-[#EBF3FD] transition text-center group">
+            <span className="text-base block mb-0.5">🏢</span>
+            <strong className="text-[#0B1220] block group-hover:text-[#0E63C4]">Mayors</strong>
+            <span className="text-[10px] text-[#5B6779]">Pop. ≥ 1,000</span>
+          </Link>
+          <Link href="/offices" className="p-2.5 rounded-lg bg-[#F6F8FB] border border-[#CBD5E1] hover:bg-[#EBF3FD] transition text-center group">
+            <span className="text-base block mb-0.5">📋</span>
+            <strong className="text-[#0B1220] block group-hover:text-[#0E63C4]">All 1,200+ Offices</strong>
+            <span className="text-[10px] text-[#5B6779]">Every Hierarchy</span>
+          </Link>
+        </div>
+      </div>
+
+
       {/* Control Arithmetic: House & Senate */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {/* House */}

@@ -95,6 +95,8 @@ export default function OfficesExplorer() {
     query: '',
     upcomingOnly: false,
   });
+  const [quickTierFilter, setQuickTierFilter] = useState<string>('all');
+  const [popFilter, setPopFilter] = useState<string>('all');
   const [showFilters, setShowFilters] = useState(false);
   const [activeTab, setActiveTab] = useState<'browse' | 'stats'>('browse');
   const searchRef = useRef<HTMLInputElement>(null);
@@ -135,9 +137,40 @@ export default function OfficesExplorer() {
         const sixMonths = new Date(now.getTime() + 180 * 24 * 60 * 60 * 1000);
         if (electionDate > sixMonths) return false;
       }
+
+      // Quick Tier Filter
+      if (quickTierFilter === 'DOG_CATCHER') {
+        if (o.tier !== 'DOG_CATCHER' && !o.title.toLowerCase().includes('dog') && !o.title.toLowerCase().includes('animal control')) return false;
+      } else if (quickTierFilter === 'TREASURER') {
+        if (o.tier !== 'CITY_TREASURER' && o.tier !== 'COUNTY_TREASURER' && o.tier !== 'STATE_TREASURER' && !o.title.toLowerCase().includes('treasurer')) return false;
+      } else if (quickTierFilter === 'MAYOR') {
+        if (o.tier !== 'MAYOR' && o.tier !== 'VILLAGE_PRESIDENT') return false;
+      } else if (quickTierFilter === 'JUDICIAL') {
+        if (o.tier !== 'JUSTICE_OF_PEACE' && o.tier !== 'CONSTABLE' && o.tier !== 'MUNICIPAL_JUDGE' && o.tier !== 'DISTRICT_COURT') return false;
+      } else if (quickTierFilter === 'SCHOOL') {
+        if (o.tier !== 'SCHOOL_BOARD') return false;
+      } else if (quickTierFilter === 'SPECIAL_DISTRICT') {
+        if (o.level !== 'special_district') return false;
+      } else if (quickTierFilter === 'FEDERAL') {
+        if (o.level !== 'federal') return false;
+      } else if (quickTierFilter === 'STATE_EXEC') {
+        if (o.level !== 'state' || o.category !== 'State Executive') return false;
+      }
+
+      // Population Threshold Filter
+      if (popFilter === '1k_plus') {
+        if ((o.population || 0) < 1000) return false;
+      } else if (popFilter === '10k_plus') {
+        if ((o.population || 0) < 10000) return false;
+      } else if (popFilter === '50k_plus') {
+        if ((o.population || 0) < 50000) return false;
+      } else if (popFilter === '250k_plus') {
+        if ((o.population || 0) < 250000) return false;
+      }
+
       return true;
     });
-  }, [allOffices, query, filters]);
+  }, [allOffices, query, filters, quickTierFilter, popFilter]);
 
   // Sorted offices
   const sorted = useMemo(() => {

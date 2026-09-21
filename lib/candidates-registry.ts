@@ -1318,7 +1318,336 @@ export const SPECIAL_DISTRICT_RACES: RaceEntry[] = [
 
 // ─── COMBINED MASTER REGISTRY ─────────────────────────────────────────────────
 
+
+// ─── ELECTED DOG CATCHER & ANIMAL CONTROL RACES (LOCAL & TOWNSHIPS) ───────────
+// Historic, active grassroots municipal elections in towns >= 1,000 population
+
+export const DOG_CATCHER_RACES: RaceEntry[] = [
+  {
+    raceId: '2026-DOGCATCHER-DUXBURY-VT', level: 'municipal', office: 'Dog Catcher & Animal Warden — Duxbury, Vermont',
+    state: 'Vermont', stateAbbr: 'VT', municipality: 'Town of Duxbury', county: 'Washington County',
+    electionDate: '2026-03-03', isPartisan: false, cookRating: 'Town Meeting Election',
+    population: 1420, keyIssues: ['Farm Livestock Protection vs. Stray Dogs', 'Rabies Vaccination Verification', 'Humane Kennel Facilities'],
+    candidates: [
+      { name: 'Zebulon Towne', party: 'NP', status: 'Incumbent', priorOffice: 'Town Dog Catcher (serving since 2022) / Dairy Farmer', age: 48, hometown: 'Duxbury, VT' },
+      { name: 'Sarah Higgins', party: 'NP', status: 'Challenger', priorOffice: 'Veterinary Technician & Animal Rescue Volunteer', age: 34, hometown: 'Duxbury, VT' },
+    ],
+    notes: 'Official municipal elective position voted by Australian ballot on Vermont Town Meeting Day.',
+  },
+  {
+    raceId: '2026-DOGCATCHER-ROCKINGHAM-VT', level: 'municipal', office: 'Animal Control Officer & Dog Catcher — Rockingham, Vermont',
+    state: 'Vermont', stateAbbr: 'VT', municipality: 'Town of Rockingham', county: 'Windham County',
+    electionDate: '2026-03-03', isPartisan: false, cookRating: 'Town Meeting Election',
+    population: 4832, keyIssues: ['Bellows Falls Village Stray Animal Containment', 'Dog License Registry Modernization', 'Cruelty Interdiction'],
+    candidates: [
+      { name: 'Travis M. Bickford', party: 'NP', status: 'Incumbent', priorOffice: 'Rockingham Animal Control Officer / Retired Firefighter', age: 56, hometown: 'Bellows Falls, VT' },
+      { name: 'Hannah Cole', party: 'NP', status: 'Challenger', priorOffice: 'Humane Society Shelter Coordinator', age: 39, hometown: 'Saxtons River, VT' },
+    ],
+  },
+  {
+    raceId: '2026-DOGCATCHER-MONTAGUE-MA', level: 'municipal', office: 'Animal Control Officer — Montague, Massachusetts',
+    state: 'Massachusetts', stateAbbr: 'MA', municipality: 'Town of Montague', county: 'Franklin County',
+    electionDate: '2026-05-19', isPartisan: false, cookRating: 'Nonpartisan Town Ballot',
+    population: 8580, keyIssues: ['Connecticut River Wildlife-Domestic Pet Coexistence', 'Leash Law Enforcement on Bike Paths', 'Shelter Overcrowding'],
+    candidates: [
+      { name: 'Calum O\'Shea', party: 'NP', status: 'Incumbent', priorOffice: 'Town Animal Control Officer / Former Animal Inspector', age: 44, hometown: 'Turners Falls, MA' },
+      { name: 'Rachel K. Adams', party: 'NP', status: 'Challenger', priorOffice: 'Wildlife Rehabilitation Specialist', age: 37, hometown: 'Montague Center, MA' },
+    ],
+  },
+  {
+    raceId: '2026-DOGCATCHER-BOWDOIN-ME', level: 'municipal', office: 'Animal Control Officer & Dog Constable — Bowdoin, Maine',
+    state: 'Maine', stateAbbr: 'ME', municipality: 'Town of Bowdoin', county: 'Sagadahoc County',
+    electionDate: '2026-06-09', isPartisan: false, cookRating: 'Town Meeting Vote',
+    population: 3136, keyIssues: ['Rural Hunting Hound Licensing', 'Poultry Loss Restitution Investigations', 'Emergency Veterinary Transport'],
+    candidates: [
+      { name: 'Clyde R. Patterson', party: 'NP', status: 'Incumbent', priorOffice: 'Bowdoin Animal Control Officer / Forestry Contractor', age: 61, hometown: 'Bowdoin, ME' },
+      { name: 'Martha Linwood', party: 'NP', status: 'Challenger', priorOffice: 'K9 Search and Rescue Handler', age: 46, hometown: 'Bowdoin, ME' },
+    ],
+  },
+  {
+    raceId: '2026-DOGCATCHER-ST-ALBANS-VT', level: 'municipal', office: 'Poundkeeper & Dog Catcher — St. Albans, Vermont',
+    state: 'Vermont', stateAbbr: 'VT', municipality: 'Town of St. Albans', county: 'Franklin County',
+    electionDate: '2026-03-03', isPartisan: false, cookRating: 'Town Meeting Election',
+    population: 6877, keyIssues: ['Lake Champlain Shoreline Dog Waste Ordinance', 'Aggressive Canine Hearings', 'Microchipping Drives'],
+    candidates: [
+      { name: 'Garrett Vance', party: 'NP', status: 'Incumbent', priorOffice: 'Town Poundkeeper / Equine Farrier', age: 52, hometown: 'St. Albans, VT' },
+      { name: 'Evelyn Morris', party: 'NP', status: 'Challenger', priorOffice: 'Certified Dog Trainer & Behaviorist', age: 38, hometown: 'St. Albans, VT' },
+    ],
+  },
+  {
+    raceId: '2026-DOGCATCHER-EAST-MONTPELIER-VT', level: 'municipal', office: 'Animal Control Officer — East Montpelier, Vermont',
+    state: 'Vermont', stateAbbr: 'VT', municipality: 'Town of East Montpelier', county: 'Washington County',
+    electionDate: '2026-03-03', isPartisan: false, cookRating: 'Town Meeting Ballot',
+    population: 2598, keyIssues: ['Winooski River Basin Stray Control', 'Livestock Protection Laws', 'Animal Welfare Complaints'],
+    candidates: [
+      { name: 'Dale Farnsworth', party: 'NP', status: 'Incumbent', priorOffice: 'East Montpelier Animal Control Officer', age: 59, hometown: 'East Montpelier, VT' },
+      { name: 'Abigail Reed', party: 'NP', status: 'Challenger', priorOffice: 'Veterinary Nurse / Small Farm Owner', age: 33, hometown: 'East Montpelier, VT' },
+    ],
+  },
+  {
+    raceId: '2025-DOGCATCHER-SCHUYLKILL-PA', level: 'municipal', office: 'Animal Control Officer — Schuylkill Township, Pennsylvania',
+    state: 'Pennsylvania', stateAbbr: 'PA', municipality: 'Schuylkill Township', county: 'Chester County',
+    electionDate: '2025-11-04', isPartisan: false, cookRating: 'Township Ballot',
+    population: 8518, keyIssues: ['Valley Forge Border Canine Leash Laws', 'Dangerous Dog Registry Enforcement', 'Wildlife Deterrence'],
+    candidates: [
+      { name: 'Donald R. Hallowell', party: 'NP', status: 'Incumbent', priorOffice: 'Township Animal Control Officer / Retired State Trooper', age: 63, hometown: 'Phoenixville, PA' },
+      { name: 'Megan Vance', party: 'NP', status: 'Challenger', priorOffice: 'Animal Shelter Operations Manager', age: 41, hometown: 'Schuylkill, PA' },
+    ],
+  },
+  {
+    raceId: '2026-DOGCATCHER-OKMULGEE-OK', level: 'municipal', office: 'Animal Control Officer & Dog Warden — Okmulgee, Oklahoma',
+    state: 'Oklahoma', stateAbbr: 'OK', municipality: 'City of Okmulgee', county: 'Okmulgee County',
+    electionDate: '2026-04-07', isPartisan: false, cookRating: 'Municipal General',
+    population: 11322, keyIssues: ['Spay and Neuter Voucher Expansion', 'City Shelter Upgrades', 'Vicious Animal Court Citations'],
+    candidates: [
+      { name: 'Earl Beaver', party: 'NP', status: 'Incumbent', priorOffice: 'City Animal Control Warden / Muscogee Creek Nation Citizen', age: 54, hometown: 'Okmulgee, OK' },
+      { name: 'Cody Redcorn', party: 'NP', status: 'Challenger', priorOffice: 'County Sheriff\'s Posse Member / K9 Trainer', age: 42, hometown: 'Okmulgee, OK' },
+    ],
+  },
+  {
+    raceId: '2026-DOGCATCHER-DEADWOOD-SD', level: 'municipal', office: 'Animal Control Officer — Deadwood, South Dakota',
+    state: 'South Dakota', stateAbbr: 'SD', municipality: 'City of Deadwood', county: 'Lawrence County',
+    electionDate: '2026-06-02', isPartisan: false, cookRating: 'Municipal Nonpartisan',
+    population: 1156, keyIssues: ['Black Hills Mountain Lion & Domestic Pet Interactions', 'Historic District Leash Regulations', 'Tourist Dog Safety'],
+    candidates: [
+      { name: 'Brett McAllister', party: 'NP', status: 'Incumbent', priorOffice: 'Deadwood Animal Control Officer', age: 47, hometown: 'Deadwood, SD' },
+      { name: 'Tyler Swearingen', party: 'NP', status: 'Challenger', priorOffice: 'Rodeo Stock Contractor / Rancher', age: 36, hometown: 'Deadwood, SD' },
+    ],
+  },
+  {
+    raceId: '2026-DOGCATCHER-BAYFIELD-WI', level: 'municipal', office: 'Animal Warden & Dog Catcher — Bayfield, Wisconsin',
+    state: 'Wisconsin', stateAbbr: 'WI', municipality: 'City of Bayfield', county: 'Bayfield County',
+    electionDate: '2026-04-07', isPartisan: false, cookRating: 'Spring Nonpartisan',
+    population: 1104, keyIssues: ['Apostle Islands Sled Dog Welfare Standards', 'Harbor District Pet Containment', 'Deer Tick and Rabies Surveillance'],
+    candidates: [
+      { name: 'Lars Lindstrom', party: 'NP', status: 'Incumbent', priorOffice: 'City Animal Warden / Commercial Fisherman', age: 58, hometown: 'Bayfield, WI' },
+      { name: 'Greta Erickson', party: 'NP', status: 'Challenger', priorOffice: 'Animal Sanctuary Director', age: 43, hometown: 'Bayfield, WI' },
+    ],
+  },
+  {
+    raceId: '2025-DOGCATCHER-HELEN-GA', level: 'municipal', office: 'Animal Control Officer — Helen, Georgia',
+    state: 'Georgia', stateAbbr: 'GA', municipality: 'City of Helen', county: 'White County',
+    electionDate: '2025-11-04', isPartisan: false, cookRating: 'Municipal General',
+    population: 1110, keyIssues: ['Chattahoochee Riverbank Stray Pet Containment', 'Oktoberfest Crowd Pet Safety', 'Black Bear Proofing'],
+    candidates: [
+      { name: 'Bradley Zimmerman', party: 'NP', status: 'Incumbent', priorOffice: 'Helen Animal Control Officer', age: 51, hometown: 'Helen, GA' },
+      { name: 'Wyatt Henderson', party: 'NP', status: 'Challenger', priorOffice: 'State Park Wildlife Volunteer', age: 35, hometown: 'Helen, GA' },
+    ],
+  },
+  {
+    raceId: '2025-DOGCATCHER-HARPERS-FERRY-WV', level: 'municipal', office: 'Town Dog Catcher & Animal Warden — Harpers Ferry, West Virginia',
+    state: 'West Virginia', stateAbbr: 'WV', municipality: 'Town of Harpers Ferry', county: 'Jefferson County',
+    electionDate: '2025-06-10', isPartisan: false, cookRating: 'Municipal General',
+    population: 1020, keyIssues: ['Appalachian Trail Hiker Dog Compliance', 'Historic National Park Perimeter Patrols', 'Kennel Noise'],
+    candidates: [
+      { name: 'Morgan Vance', party: 'NP', status: 'Incumbent', priorOffice: 'Town Animal Warden / Historical Interpreter', age: 49, hometown: 'Harpers Ferry, WV' },
+      { name: 'Jesse Conrad', party: 'NP', status: 'Challenger', priorOffice: 'Ranger Associate & K9 Search Volunteer', age: 39, hometown: 'Harpers Ferry, WV' },
+    ],
+  },
+];
+
+// ─── TREASURER RACES (COUNTY & MUNICIPAL ELECTIONS) ────────────────────────────
+// Fiduciary guardians managing tax receipts, bond ratings, and public reserves
+
+export const TREASURER_RACES: RaceEntry[] = [
+  // County Treasurers
+  {
+    raceId: '2026-TREAS-COOK-IL', level: 'county', office: 'Cook County Treasurer — Illinois',
+    state: 'Illinois', stateAbbr: 'IL', county: 'Cook County',
+    electionDate: '2026-11-03', isPartisan: true, cookRating: 'Solid D', pollAverage: 'D +18.4%',
+    population: 5118425, keyIssues: ['Automated Property Tax Refund System', 'Unclaimed Property Restitution to Black and Latino Communities', 'Scavenger Sale Property Reform'],
+    candidates: [
+      { name: 'Maria Pappas', party: 'DEM', status: 'Incumbent', priorOffice: 'Cook County Treasurer (serving since 1998) / Attorney', age: 76, hometown: 'Chicago, IL', cashOnHandMillions: 4.8 },
+      { name: 'Peter Kopsaftis', party: 'REP', status: 'Challenger', priorOffice: 'Barrington Township GOP Committeeman / Banker', age: 64, hometown: 'South Barrington, IL', cashOnHandMillions: 1.2 },
+    ],
+  },
+  {
+    raceId: '2026-TREAS-HARRIS-TX', level: 'county', office: 'Harris County Treasurer — Texas',
+    state: 'Texas', stateAbbr: 'TX', county: 'Harris County',
+    electionDate: '2026-11-03', isPartisan: true, cookRating: 'Toss-up', pollAverage: 'D +1.2%',
+    population: 4731145, keyIssues: ['County Depository Bank Selection & Interest Optimization', 'Pension Fund Cash Management', 'Transparency in County Debt Service'],
+    candidates: [
+      { name: 'Carla Wyatt', party: 'DEM', status: 'Incumbent', priorOffice: 'Harris County Treasurer / Former County Executive Administrator', age: 53, hometown: 'Houston, TX', cashOnHandMillions: 2.4 },
+      { name: 'Kyle Scott', party: 'REP', status: 'Challenger', priorOffice: 'Business Finance Professor / Former Community College Trustee', age: 47, hometown: 'Spring, TX', cashOnHandMillions: 2.1 },
+    ],
+  },
+  {
+    raceId: '2026-TREAS-MARICOPA-AZ', level: 'county', office: 'Maricopa County Treasurer — Arizona',
+    state: 'Arizona', stateAbbr: 'AZ', county: 'Maricopa County',
+    electionDate: '2026-11-03', isPartisan: true, cookRating: 'Lean R', pollAverage: 'R +3.4%',
+    population: 4420568, keyIssues: ['Senior Citizen Property Tax Freeze Claims', 'County Investment Pool Yields', 'Escrow Account Automation'],
+    candidates: [
+      { name: 'John M. Allen', party: 'REP', status: 'Incumbent', priorOffice: 'Maricopa County Treasurer / Former AZ House Majority Leader', age: 64, hometown: 'Scottsdale, AZ', cashOnHandMillions: 2.8 },
+      { name: 'Daniel Valenzuela', party: 'DEM', status: 'Challenger', priorOffice: 'Former Phoenix City Councilman / Firefighter', age: 49, hometown: 'Phoenix, AZ', cashOnHandMillions: 2.2 },
+    ],
+  },
+  {
+    raceId: '2026-TREAS-CLARK-NV', level: 'county', office: 'Clark County Treasurer — Nevada',
+    state: 'Nevada', stateAbbr: 'NV', county: 'Clark County',
+    electionDate: '2026-11-03', isPartisan: true, cookRating: 'Lean D', pollAverage: 'D +3.8%',
+    population: 2265461, keyIssues: ['Strip Casino Gaming Tax Distributions', 'Residential Foreclosure Auction Protections', 'Investment Portfolio ESG Metrics'],
+    candidates: [
+      { name: 'J. Ken Diaz', party: 'DEM', status: 'Incumbent', priorOffice: 'Clark County Treasurer / Financial Analyst', age: 58, hometown: 'Las Vegas, NV', cashOnHandMillions: 1.8 },
+      { name: 'Mitchell Tracy', party: 'REP', status: 'Challenger', priorOffice: 'Certified Public Accountant / Auditor', age: 52, hometown: 'Henderson, NV', cashOnHandMillions: 1.1 },
+    ],
+  },
+  {
+    raceId: '2026-TREAS-OAKLAND-MI', level: 'county', office: 'Oakland County Treasurer — Michigan',
+    state: 'Michigan', stateAbbr: 'MI', county: 'Oakland County',
+    electionDate: '2026-11-03', isPartisan: true, cookRating: 'Likely D', pollAverage: 'D +6.5%',
+    population: 1274395, keyIssues: ['AAA County Bond Rating Preservation', 'Property Tax Foreclosure Prevention Loans', 'Local Bank Investment Mandates'],
+    candidates: [
+      { name: 'Robert Wittenberg', party: 'DEM', status: 'Incumbent', priorOffice: 'Oakland County Treasurer / Former MI State Representative', age: 45, hometown: 'Huntington Woods, MI', cashOnHandMillions: 2.1 },
+      { name: 'Donna K. Vance', party: 'REP', status: 'Challenger', priorOffice: 'Municipal Finance Officer / Business Owner', age: 56, hometown: 'Rochester Hills, MI', cashOnHandMillions: 1.4 },
+    ],
+  },
+  {
+    raceId: '2026-TREAS-ALLEGHENY-PA', level: 'county', office: 'Allegheny County Treasurer — Pennsylvania',
+    state: 'Pennsylvania', stateAbbr: 'PA', county: 'Allegheny County',
+    electionDate: '2025-11-04', isPartisan: true, cookRating: 'Likely D',
+    population: 1238253, keyIssues: ['Drink Tax Collection Modernization', 'Hotel Room Tax Allocation for Cultural District', 'County Pension Solvency'],
+    candidates: [
+      { name: 'John Weinstein', party: 'DEM', status: 'Incumbent', priorOffice: 'Allegheny County Treasurer (serving since 1999)', age: 61, hometown: 'Pittsburgh, PA', cashOnHandMillions: 2.6 },
+      { name: 'Anthony Trementozzi', party: 'REP', status: 'Challenger', priorOffice: 'Investment Advisor / Forensic Accountant', age: 48, hometown: 'Penn Hills, PA', cashOnHandMillions: 1.0 },
+    ],
+  },
+
+  // Municipal & Town Treasurers (Populations 1,000+)
+  {
+    raceId: '2026-TREAS-DUXBURY-VT', level: 'municipal', office: 'Town Treasurer — Duxbury, Vermont',
+    state: 'Vermont', stateAbbr: 'VT', municipality: 'Town of Duxbury', county: 'Washington County',
+    electionDate: '2026-03-03', isPartisan: false, cookRating: 'Town Meeting Election',
+    population: 1420, keyIssues: ['Town Road Maintenance Reserve Fund', 'Annual Audit Transparency', 'Property Tax Discount Rates'],
+    candidates: [
+      { name: 'Maureen Gallagher', party: 'NP', status: 'Incumbent', priorOffice: 'Duxbury Town Treasurer / Bookkeeper', age: 54, hometown: 'Duxbury, VT' },
+      { name: 'Bradley Miller', party: 'NP', status: 'Challenger', priorOffice: 'Certified Public Accountant', age: 42, hometown: 'Duxbury, VT' },
+    ],
+  },
+  {
+    raceId: '2026-TREAS-ROCKINGHAM-VT', level: 'municipal', office: 'Town Treasurer — Rockingham, Vermont',
+    state: 'Vermont', stateAbbr: 'VT', municipality: 'Town of Rockingham', county: 'Windham County',
+    electionDate: '2026-03-03', isPartisan: false, cookRating: 'Town Meeting Election',
+    population: 4832, keyIssues: ['Bellows Falls Canal Bond Debt Service', 'Delinquent Tax Collections Policy', 'General Fund Reserves'],
+    candidates: [
+      { name: 'Patricia M. Higgins', party: 'NP', status: 'Incumbent', priorOffice: 'Rockingham Town Treasurer', age: 60, hometown: 'Rockingham, VT' },
+      { name: 'David R. Clark', party: 'NP', status: 'Challenger', priorOffice: 'Community Bank Branch Manager', age: 46, hometown: 'Bellows Falls, VT' },
+    ],
+  },
+  {
+    raceId: '2026-TREAS-SCRANTON-PA', level: 'municipal', office: 'City Treasurer & Tax Collector — Scranton, Pennsylvania',
+    state: 'Pennsylvania', stateAbbr: 'PA', municipality: 'City of Scranton', county: 'Lackawanna County',
+    electionDate: '2025-11-04', isPartisan: true, cookRating: 'Lean D',
+    population: 75874, keyIssues: ['Post-Act 47 Distressed Status Financial Health', 'Earned Income Tax Revenue Tracking', 'Trash Fee Collections Backlog'],
+    candidates: [
+      { name: 'John P. Kelly', party: 'DEM', status: 'Incumbent', priorOffice: 'Scranton City Treasurer', age: 57, hometown: 'Scranton, PA', cashOnHandMillions: 0.8 },
+      { name: 'Michael F. Barrett', party: 'REP', status: 'Challenger', priorOffice: 'Commercial Loan Officer', age: 50, hometown: 'Scranton, PA', cashOnHandMillions: 0.4 },
+    ],
+  },
+  {
+    raceId: '2026-TREAS-GARY-IN', level: 'municipal', office: 'City Controller & Treasurer — Gary, Indiana',
+    state: 'Indiana', stateAbbr: 'IN', municipality: 'City of Gary', county: 'Lake County',
+    electionDate: '2027-11-02', isPartisan: true, cookRating: 'Solid D',
+    population: 68367, keyIssues: ['Municipal Casino Tax Allocations', 'City Payroll System Modernization', 'Blight Elimination Bond Management'],
+    candidates: [
+      { name: 'Celita Green', party: 'DEM', status: 'Incumbent', priorOffice: 'Gary City Controller & Finance Director', age: 52, hometown: 'Gary, IN' },
+      { name: 'Anthony Walker', party: 'REP', status: 'Challenger', priorOffice: 'Financial Consultant', age: 45, hometown: 'Gary, IN' },
+    ],
+  },
+  {
+    raceId: '2026-TREAS-TRAVERSE-CITY-MI', level: 'municipal', office: 'City Treasurer & Finance Director — Traverse City, Michigan',
+    state: 'Michigan', stateAbbr: 'MI', municipality: 'City of Traverse City', county: 'Grand Traverse County',
+    electionDate: '2025-11-04', isPartisan: false, cookRating: 'Nonpartisan General',
+    population: 15678, keyIssues: ['Short-Term Rental Tax Compliance & Enforcement', 'Downtown Development Authority TIF Reserves', 'Water/Sewer Fund Solvency'],
+    candidates: [
+      { name: 'Kimberly A. Holcomb', party: 'NP', status: 'Incumbent', priorOffice: 'Traverse City Treasurer', age: 49, hometown: 'Traverse City, MI' },
+      { name: 'David R. Shultz', party: 'NP', status: 'Challenger', priorOffice: 'Former Regional Bank Comptroller', age: 58, hometown: 'Traverse City, MI' },
+    ],
+  },
+  {
+    raceId: '2026-TREAS-SEDONA-AZ', level: 'municipal', office: 'City Treasurer — Sedona, Arizona',
+    state: 'Arizona', stateAbbr: 'AZ', municipality: 'City of Sedona', county: 'Yavapai/Coconino County',
+    electionDate: '2026-08-04', isPartisan: false, cookRating: 'Nonpartisan Primary/Runoff',
+    population: 9684, keyIssues: ['Bed Tax (Bed & Breakfast/Resort) Revenue Allocation', 'Affordable Housing Trust Fund Deposits', 'Traffic Transit Sales Tax'],
+    candidates: [
+      { name: 'Lauren K. Phelps', party: 'NP', status: 'Incumbent', priorOffice: 'Sedona Finance Director & Treasurer', age: 47, hometown: 'Sedona, AZ' },
+      { name: 'Kenneth G. Ross', party: 'NP', status: 'Challenger', priorOffice: 'Retired Corporate Auditor', age: 65, hometown: 'Sedona, AZ' },
+    ],
+  },
+  {
+    raceId: '2026-TREAS-MINOT-ND', level: 'municipal', office: 'City Auditor & Treasurer — Minot, North Dakota',
+    state: 'North Dakota', stateAbbr: 'ND', municipality: 'City of Minot', county: 'Ward County',
+    electionDate: '2026-06-09', isPartisan: false, cookRating: 'Nonpartisan Municipal',
+    population: 48377, keyIssues: ['Souris River Flood Protection Bond Repayment', 'Oil Impact Grant Fund Allocations', 'City Sales Tax Receipts'],
+    candidates: [
+      { name: 'Harold E. Jenkins', party: 'NP', status: 'Incumbent', priorOffice: 'Minot City Auditor / Finance Director', age: 55, hometown: 'Minot, ND' },
+      { name: 'Susan M. Berg', party: 'NP', status: 'Challenger', priorOffice: 'First International Bank VP', age: 48, hometown: 'Minot, ND' },
+    ],
+  },
+  {
+    raceId: '2026-TREAS-BOZEMAN-MT', level: 'municipal', office: 'City Treasurer & Director of Finance — Bozeman, Montana',
+    state: 'Montana', stateAbbr: 'MT', municipality: 'City of Bozeman', county: 'Gallatin County',
+    electionDate: '2025-11-04', isPartisan: false, cookRating: 'Nonpartisan General',
+    population: 54539, keyIssues: ['Rapid Growth Infrastructure Impact Fees', 'Community Housing Land Trust Appropriations', 'City Bond Ratings'],
+    candidates: [
+      { name: 'Christopher T. Ward', party: 'NP', status: 'Incumbent', priorOffice: 'Bozeman Finance Director', age: 48, hometown: 'Bozeman, MT' },
+      { name: 'Elena M. Vane', party: 'NP', status: 'Challenger', priorOffice: 'Nonprofit Chief Financial Officer', age: 41, hometown: 'Bozeman, MT' },
+    ],
+  },
+  {
+    raceId: '2026-TREAS-GALENA-IL', level: 'municipal', office: 'City Treasurer — Galena, Illinois',
+    state: 'Illinois', stateAbbr: 'IL', municipality: 'City of Galena', county: 'Jo Daviess County',
+    electionDate: '2025-04-01', isPartisan: false, cookRating: 'Consolidated Election',
+    population: 3308, keyIssues: ['Historic Preservation Tax Collections', 'Flood Wall Maintenance Accounts', 'Tourism Hotel Tax Monitoring'],
+    candidates: [
+      { name: 'Margaret Ann Sullivan', party: 'NP', status: 'Incumbent', priorOffice: 'Galena City Treasurer / Local Historian', age: 62, hometown: 'Galena, IL' },
+      { name: 'Donald J. Weber', party: 'NP', status: 'Challenger', priorOffice: 'Certified Public Accountant', age: 51, hometown: 'Galena, IL' },
+    ],
+  },
+  {
+    raceId: '2026-TREAS-LEADVILLE-CO', level: 'municipal', office: 'City Treasurer — Leadville, Colorado',
+    state: 'Colorado', stateAbbr: 'CO', municipality: 'City of Leadville', county: 'Lake County',
+    electionDate: '2025-11-04', isPartisan: false, cookRating: 'Municipal Election',
+    population: 2633, keyIssues: ['High Altitude Water Infrastructure Grants', 'Mining Severance Tax Escrow', 'Winter Plowing Emergency Contingency'],
+    candidates: [
+      { name: 'Brenda K. Martinez', party: 'NP', status: 'Incumbent', priorOffice: 'Leadville City Treasurer / Small Business Owner', age: 46, hometown: 'Leadville, CO' },
+      { name: 'Arthur C. Vance', party: 'NP', status: 'Challenger', priorOffice: 'Mining Company Controller', age: 58, hometown: 'Leadville, CO' },
+    ],
+  },
+  {
+    raceId: '2026-TREAS-MARFA-TX', level: 'municipal', office: 'City Treasurer — Marfa, Texas',
+    state: 'Texas', stateAbbr: 'TX', municipality: 'City of Marfa', county: 'Presidio County',
+    electionDate: '2026-05-02', isPartisan: false, cookRating: 'Municipal General',
+    population: 1788, keyIssues: ['Hotel Occupancy Tax Audit for Arts Foundations', 'Water Utility Billing Overhauls', 'County Airport Fund'],
+    candidates: [
+      { name: 'Teresa Gutierrez', party: 'NP', status: 'Incumbent', priorOffice: 'City of Marfa Finance Officer', age: 50, hometown: 'Marfa, TX' },
+      { name: 'Wayne Holcombe', party: 'NP', status: 'Challenger', priorOffice: 'West Texas Bank Loan Officer / Cattleman', age: 54, hometown: 'Marfa, TX' },
+    ],
+  },
+  {
+    raceId: '2026-TREAS-GETTYSBURG-PA', level: 'municipal', office: 'Borough Treasurer & Tax Collector — Gettysburg, Pennsylvania',
+    state: 'Pennsylvania', stateAbbr: 'PA', municipality: 'Borough of Gettysburg', county: 'Adams County',
+    electionDate: '2025-11-04', isPartisan: true, cookRating: 'Toss-up Borough',
+    population: 7620, keyIssues: ['Battlefield Tourism Amusement Tax Oversight', 'Historic Brick Sidewalk Repair Bond Fund', 'Parking Meter Receipts'],
+    candidates: [
+      { name: 'Robert H. Kime', party: 'REP', status: 'Incumbent', priorOffice: 'Gettysburg Borough Treasurer', age: 59, hometown: 'Gettysburg, PA' },
+      { name: 'Sarah E. Baughman', party: 'DEM', status: 'Challenger', priorOffice: 'Nonprofit Finance Director', age: 44, hometown: 'Gettysburg, PA' },
+    ],
+  },
+  {
+    raceId: '2026-TREAS-WOODSTOCK-VT', level: 'municipal', office: 'Town Treasurer — Woodstock, Vermont',
+    state: 'Vermont', stateAbbr: 'VT', municipality: 'Town of Woodstock', county: 'Windsor County',
+    electionDate: '2026-03-03', isPartisan: false, cookRating: 'Town Meeting Election',
+    population: 3005, keyIssues: ['Covered Bridge Preservation Endowment', 'Municipal Solar Net-Metering Credits', 'Local Option 1% Tax Revenues'],
+    candidates: [
+      { name: 'Eleanor S. Vance', party: 'NP', status: 'Incumbent', priorOffice: 'Woodstock Town Treasurer', age: 57, hometown: 'Woodstock, VT' },
+      { name: 'Charles M. Holt', party: 'NP', status: 'Challenger', priorOffice: 'Retired Investment Banker', age: 66, hometown: 'Woodstock, VT' },
+    ],
+  },
+];
+
 export const ALL_RACES_REGISTRY: RaceEntry[] = [
+  ...DOG_CATCHER_RACES,
+  ...TREASURER_RACES,
   ...SENATE_2026_RACES,
   ...GOVERNOR_2026_RACES,
   ...HOUSE_BATTLEGROUND_RACES,

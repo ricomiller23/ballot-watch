@@ -78,6 +78,8 @@ export default function CandidatesExplorer() {
   const total = useMemo(() => getTotalCandidateCount(), []);
   const [query, setQuery] = useState('');
   const [levelFilter, setLevelFilter] = useState<LevelFilter>('all');
+  const [officeTypeFilter, setOfficeTypeFilter] = useState<string>('all');
+  const [populationFilter, setPopulationFilter] = useState<string>('all');
   const [stateFilter, setStateFilter] = useState('');
   const [partyFilter, setPartyFilter] = useState<Party | 'all'>('all');
   const [statusFilter, setStatusFilter] = useState<string>('all');
@@ -105,8 +107,41 @@ export default function CandidatesExplorer() {
     if (stateFilter) races = races.filter(r => r.stateAbbr === stateFilter);
     if (partyFilter !== 'all') races = races.filter(r => r.candidates.some(c => c.party === partyFilter));
     if (statusFilter !== 'all') races = races.filter(r => r.candidates.some(c => c.status === statusFilter));
+    
+    // Quick office type filter
+    if (officeTypeFilter === 'dog_catcher') {
+      races = races.filter(r => r.office.toLowerCase().includes('dog') || r.office.toLowerCase().includes('animal'));
+    } else if (officeTypeFilter === 'treasurer') {
+      races = races.filter(r => r.office.toLowerCase().includes('treasurer') || r.office.toLowerCase().includes('controller') || r.office.toLowerCase().includes('collector'));
+    } else if (officeTypeFilter === 'mayor') {
+      races = races.filter(r => r.office.toLowerCase().includes('mayor'));
+    } else if (officeTypeFilter === 'judicial') {
+      races = races.filter(r => r.level === 'judicial' || r.office.toLowerCase().includes('judge') || r.office.toLowerCase().includes('justice of the peace') || r.office.toLowerCase().includes('constable'));
+    } else if (officeTypeFilter === 'school') {
+      races = races.filter(r => r.office.toLowerCase().includes('school board'));
+    } else if (officeTypeFilter === 'water_soil') {
+      races = races.filter(r => r.office.toLowerCase().includes('water') || r.office.toLowerCase().includes('soil'));
+    } else if (officeTypeFilter === 'senate') {
+      races = races.filter(r => r.office.toLowerCase().includes('senate'));
+    } else if (officeTypeFilter === 'governor') {
+      races = races.filter(r => r.office.toLowerCase().includes('governor'));
+    } else if (officeTypeFilter === 'house') {
+      races = races.filter(r => r.office.toLowerCase().includes('house'));
+    }
+
+    // Population threshold filter (e.g. population >= 1,000)
+    if (populationFilter === '1k_plus') {
+      races = races.filter(r => (r.population || 0) >= 1000);
+    } else if (populationFilter === '10k_plus') {
+      races = races.filter(r => (r.population || 0) >= 10000);
+    } else if (populationFilter === '50k_plus') {
+      races = races.filter(r => (r.population || 0) >= 50000);
+    } else if (populationFilter === '250k_plus') {
+      races = races.filter(r => (r.population || 0) >= 250000);
+    }
+
     return races;
-  }, [query, levelFilter, stateFilter, partyFilter, statusFilter]);
+  }, [query, levelFilter, officeTypeFilter, populationFilter, stateFilter, partyFilter, statusFilter]);
 
   // Flatten to individual candidates for "candidates" view
   const flatCandidates = useMemo(() => {
@@ -117,10 +152,10 @@ export default function CandidatesExplorer() {
   const totalRacePages = Math.ceil(filteredRaces.length / PAGE_SIZE);
   const totalCandidatesFiltered = flatCandidates.length;
 
-  const hasFilters = query || levelFilter !== 'all' || stateFilter || partyFilter !== 'all' || statusFilter !== 'all';
+  const hasFilters = query || levelFilter !== 'all' || officeTypeFilter !== 'all' || populationFilter !== 'all' || stateFilter || partyFilter !== 'all' || statusFilter !== 'all';
 
   const clearFilters = () => {
-    setQuery(''); setLevelFilter('all'); setStateFilter(''); setPartyFilter('all'); setStatusFilter('all'); setPage(0);
+    setQuery(''); setLevelFilter('all'); setOfficeTypeFilter('all'); setPopulationFilter('all'); setStateFilter(''); setPartyFilter('all'); setStatusFilter('all'); setPage(0);
   };
 
   const levelCounts = useMemo(() => {
@@ -190,6 +225,60 @@ export default function CandidatesExplorer() {
               );
             })}
           </div>
+        </div>
+      </div>
+
+      
+      {/* ── QUICK FOCUS PRESETS: FROM SENATE TO DOG CATCHER (POP > 1,000) ─── */}
+      <div className="bg-[#FFFFFF] border border-[#CBD5E1] rounded-xl p-3 shadow-xs space-y-2">
+        <div className="flex flex-wrap items-center justify-between gap-2 text-xs font-semibold text-[#0B1220]">
+          <span className="flex items-center gap-1.5 uppercase tracking-wide text-[11px] text-[#0E63C4]">
+            <SlidersHorizontal className="w-3.5 h-3.5" /> Quick Focus by Position:
+          </span>
+          <div className="flex items-center gap-2">
+            <span className="text-[11px] text-[#5B6779] font-normal">Population Threshold:</span>
+            <select
+              value={populationFilter}
+              onChange={e => { setPopulationFilter(e.target.value); setPage(0); }}
+              className="text-xs font-medium border border-[#CBD5E1] rounded-md px-2 py-1 bg-[#F6F8FB] text-[#0B1220] focus:outline-none focus:ring-1 focus:ring-[#0E63C4]"
+            >
+              <option value="all">All Jurisdictions</option>
+              <option value="1k_plus">👥 Pop. ≥ 1,000 (Small Towns & Local)</option>
+              <option value="10k_plus">🏙️ Pop. ≥ 10,000 (Mid-Sized)</option>
+              <option value="50k_plus">🌆 Pop. ≥ 50,000 (Cities)</option>
+              <option value="250k_plus">🌃 Pop. ≥ 250,000 (Metros)</option>
+            </select>
+          </div>
+        </div>
+        <div className="flex flex-wrap gap-1.5 pt-1">
+          {[
+            { id: 'all', label: 'All Offices', icon: '🗳️' },
+            { id: 'dog_catcher', label: 'Dog Catcher / Animal Control', icon: '🐕' },
+            { id: 'treasurer', label: 'City & County Treasurers', icon: '💰' },
+            { id: 'mayor', label: 'Mayors & Municipal', icon: '🏛️' },
+            { id: 'judicial', label: 'Justices & Constables', icon: '⚖️' },
+            { id: 'school', label: 'School Boards', icon: '🏫' },
+            { id: 'water_soil', label: 'Water & Soil Conservation', icon: '💧' },
+            { id: 'senate', label: 'U.S. Senate (Class II)', icon: '🏛️' },
+            { id: 'governor', label: 'Governors (36 States)', icon: '🏦' },
+            { id: 'house', label: 'House Battlegrounds', icon: '🇺🇸' },
+          ].map(p => {
+            const active = officeTypeFilter === p.id;
+            return (
+              <button
+                key={p.id}
+                onClick={() => { setOfficeTypeFilter(p.id); setPage(0); }}
+                className={`flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-xs font-semibold transition-all border ${
+                  active
+                    ? 'bg-[#0E63C4] text-white border-[#0E63C4] shadow-xs scale-102'
+                    : 'bg-[#F6F8FB] text-[#24303F] border-[#E4E9F0] hover:bg-[#EBF3FD] hover:text-[#0E63C4]'
+                }`}
+              >
+                <span>{p.icon}</span>
+                <span>{p.label}</span>
+              </button>
+            );
+          })}
         </div>
       </div>
 

@@ -54,7 +54,12 @@ export type OfficeTier =
   | 'TOWNSHIP_TRUSTEE'
   | 'VILLAGE_PRESIDENT'
   | 'CONSTABLE'
-  | 'JUSTICE_OF_PEACE';
+  | 'JUSTICE_OF_PEACE'
+  | 'DOG_CATCHER'
+  | 'ANIMAL_CONTROL_OFFICER'
+  | 'TOWN_MODERATOR'
+  | 'SELECTBOARD_MEMBER'
+  | 'TAX_COLLECTOR';
 
 export interface OfficeDefinition {
   tier: OfficeTier;
@@ -327,6 +332,36 @@ export const OFFICE_DEFINITIONS: Record<OfficeTier, OfficeDefinition> = {
     category: 'County Judicial', description: 'Lowest level judicial officer; presides over minor civil and criminal matters.',
     isPartisan: false, termYears: 4, seats: 1, icon: '⚖️',
   },
+  DOG_CATCHER: {
+    tier: 'DOG_CATCHER', level: 'municipal', title: 'Dog Catcher / Animal Control Officer',
+    category: 'Municipal Administration & Safety',
+    description: 'Elected municipal officer responsible for animal control, stray licensing, rabies enforcement, and domestic animal safety. One of America’s most storied local grassroots elective offices, still elected at town meetings and municipal ballots in VT, NH, ME, PA townships, and rural municipalities.',
+    isPartisan: false, termYears: 2, seats: 1, icon: '🐕',
+  },
+  ANIMAL_CONTROL_OFFICER: {
+    tier: 'ANIMAL_CONTROL_OFFICER', level: 'municipal', title: 'Animal Control Officer',
+    category: 'Municipal Administration & Safety',
+    description: 'Elected officer enforcing local animal ordinances, impoundment, and pet welfare standards.',
+    isPartisan: false, termYears: 2, seats: 1, icon: '🐕',
+  },
+  TOWN_MODERATOR: {
+    tier: 'TOWN_MODERATOR', level: 'municipal', title: 'Town Moderator',
+    category: 'Municipal Administration',
+    description: 'Presiding officer of town meetings in New England and New York local governance.',
+    isPartisan: false, termYears: 1, seats: 1, icon: '⚖️',
+  },
+  SELECTBOARD_MEMBER: {
+    tier: 'SELECTBOARD_MEMBER', level: 'municipal', title: 'Town Selectboard Member',
+    category: 'Municipal Legislative',
+    description: 'Executive and legislative governing body of New England towns.',
+    isPartisan: false, termYears: 3, seats: 3, icon: '🏛️',
+  },
+  TAX_COLLECTOR: {
+    tier: 'TAX_COLLECTOR', level: 'municipal', title: 'Tax Collector',
+    category: 'Municipal Financial',
+    description: 'Elected official responsible for local property tax assessments and collections.',
+    isPartisan: false, termYears: 4, seats: 1, icon: '💰',
+  },
 };
 
 // Comprehensive US States with full office suite
@@ -390,6 +425,7 @@ export const MAJOR_MUNICIPALITIES: Array<{
   population: number; cityType: 'city' | 'town' | 'village' | 'borough' | 'township';
   hasComptroller: boolean; hasCityAttorney: boolean; hasCityAuditor: boolean;
   councilSeats: number; nextMayorYear: number;
+  hasElectedDogCatcher?: boolean;
 }> = [
   // Top 100 cities + representative sample by state (1,000+ pop)
   { name: 'New York City', state: 'New York', stateAbbr: 'NY', county: 'Multiple', population: 8336817, cityType: 'city', hasComptroller: true, hasCityAttorney: true, hasCityAuditor: false, councilSeats: 51, nextMayorYear: 2025 },
@@ -603,6 +639,18 @@ export function generateCompleteOfficeRegistry(): JurisdictionOffice[] {
     offices.push({ id: `MUN-CLERK-${muni.stateAbbr}-${muni.name.replace(/\s/g, '_')}`, state: muni.state, stateAbbr: muni.stateAbbr, municipality: muni.name, population: muni.population, tier: 'CITY_CLERK', level: 'municipal', title: `City Clerk — ${muni.name}, ${muni.stateAbbr}`, category: 'Municipal Administrative', nextElection: mayorNext, cycleYear: muni.nextMayorYear, isPartisan: false, termYears: 2, totalSeats: 1, seatsUpThisCycle: 1 });
     
     offices.push({ id: `MUN-TREAS-${muni.stateAbbr}-${muni.name.replace(/\s/g, '_')}`, state: muni.state, stateAbbr: muni.stateAbbr, municipality: muni.name, population: muni.population, tier: 'CITY_TREASURER', level: 'municipal', title: `City Treasurer — ${muni.name}, ${muni.stateAbbr}`, category: 'Municipal Financial', nextElection: mayorNext, cycleYear: muni.nextMayorYear, isPartisan: false, termYears: 2, totalSeats: 1, seatsUpThisCycle: 1 });
+    if (muni.hasElectedDogCatcher) {
+      offices.push({
+        id: `MUN-DOGCATCHER-${muni.stateAbbr}-${muni.name.replace(/\s/g, '_')}`,
+        state: muni.state, stateAbbr: muni.stateAbbr, municipality: muni.name,
+        population: muni.population, tier: 'DOG_CATCHER', level: 'municipal',
+        title: `Dog Catcher / Animal Control Officer — ${muni.name}, ${muni.stateAbbr}`,
+        category: 'Municipal Public Safety & Animal Control',
+        nextElection: mayorNext, cycleYear: muni.nextMayorYear,
+        isPartisan: false, termYears: 2, totalSeats: 1, seatsUpThisCycle: 1,
+      });
+    }
+
     
     if (muni.hasCityAttorney) offices.push({ id: `MUN-ATTY-${muni.stateAbbr}-${muni.name.replace(/\s/g, '_')}`, state: muni.state, stateAbbr: muni.stateAbbr, municipality: muni.name, population: muni.population, tier: 'CITY_ATTORNEY', level: 'municipal', title: `City Attorney — ${muni.name}, ${muni.stateAbbr}`, category: 'Municipal Legal', nextElection: mayorNext, cycleYear: muni.nextMayorYear, isPartisan: false, termYears: 4, totalSeats: 1, seatsUpThisCycle: 1 });
     if (muni.hasCityAuditor) offices.push({ id: `MUN-AUD-${muni.stateAbbr}-${muni.name.replace(/\s/g, '_')}`, state: muni.state, stateAbbr: muni.stateAbbr, municipality: muni.name, population: muni.population, tier: 'CITY_AUDITOR', level: 'municipal', title: `City Auditor — ${muni.name}, ${muni.stateAbbr}`, category: 'Municipal Financial', nextElection: mayorNext, cycleYear: muni.nextMayorYear, isPartisan: false, termYears: 4, totalSeats: 1, seatsUpThisCycle: 1 });
