@@ -4,7 +4,7 @@ import { useState, useMemo } from 'react';
 import Link from 'next/link';
 import { STATE_MATRIX, getMatrixTotals } from '@/lib/state-coverage-matrix';
 import { buildCoverageReport } from '@/lib/coverage';
-import { ShieldCheck, CheckCircle2, Search, ExternalLink, MapPin, Layers, Vote, Building2, Users } from 'lucide-react';
+import { ShieldCheck, CheckCircle2, Search, ExternalLink, MapPin, Layers, Vote, Building2, Users, AlertCircle, Clock } from 'lucide-react';
 
 export default function CoveragePage() {
   const [search, setSearch] = useState('');
@@ -34,17 +34,17 @@ export default function CoveragePage() {
           <div>
             <div className="flex items-center gap-2 mb-1">
               <span className="text-[10px] font-bold uppercase tracking-wider bg-[#16A34A] text-white px-2 py-0.5 rounded shadow-xs flex items-center gap-1">
-                <ShieldCheck className="w-3 h-3" /> 100% Certified Data Parity
+                <ShieldCheck className="w-3 h-3" /> Truth-in-Advertising Standard
               </span>
               <span className="text-xs text-[#5B6779]">
-                Covering All 50 States + DC · 3,587+ Verified Contests
+                Covering All 50 States + DC · 3,536 Contests Tracked
               </span>
             </div>
             <h1 className="text-2xl sm:text-3xl font-extrabold text-[#0B1220] tracking-tight font-display">
               Nationwide Coverage & Truth-in-Advertising Audit
             </h1>
             <p className="text-xs text-[#5B6779] mt-1 max-w-3xl leading-relaxed">
-              Every single election contest across America audited against official state election authorities and municipal clerk candidate registries. Zero synthetic jitter, zero boilerplate bios, and deterministic polling shares.
+              Every single election contest on the November 3, 2026 general election ballot. Candidate rosters are published strictly when certified by state election divisions or official clerk filings. Zero synthetic candidate names, zero fabricated polling shares, and zero simulated races.
             </p>
           </div>
           <div className="flex gap-2">
@@ -53,14 +53,14 @@ export default function CoveragePage() {
               className="bg-[#0E63C4] hover:bg-[#0A4E9E] text-white text-xs font-bold px-3.5 py-2 rounded-lg transition shadow-xs flex items-center gap-1.5"
             >
               <Users className="w-3.5 h-3.5" />
-              <span>Browse Candidates</span>
+              <span>Certified Candidates ({totals.totalCandidatesSourced})</span>
             </Link>
             <Link
               href="/local"
               className="bg-[#F6F8FB] hover:bg-[#EBF3FD] text-[#0B1220] text-xs font-bold px-3.5 py-2 rounded-lg border border-[#CBD5E1] transition flex items-center gap-1.5"
             >
               <MapPin className="w-3.5 h-3.5 text-[#0E63C4]" />
-              <span>Local Races (Pop ≥ 1k)</span>
+              <span>Local Races (3,023)</span>
             </Link>
           </div>
         </div>
@@ -73,7 +73,7 @@ export default function CoveragePage() {
             <Vote className="w-3 h-3 text-[#16A34A]" /> T1 · U.S. Senate
           </div>
           <div className="text-2xl font-black text-[#16A34A] mt-1">35 / 35</div>
-          <div className="text-[10px] text-[#166534] font-semibold mt-0.5">100% Shipped & Audited</div>
+          <div className="text-[10px] text-[#166534] font-semibold mt-0.5">36 Sourced Candidates</div>
         </div>
 
         <div className="bg-[#FFFFFF] border border-[#BBF7D0] rounded-xl p-4 shadow-xs">
@@ -81,39 +81,39 @@ export default function CoveragePage() {
             <ShieldCheck className="w-3 h-3 text-[#16A34A]" /> T2 · Governors
           </div>
           <div className="text-2xl font-black text-[#16A34A] mt-1">36 / 36</div>
-          <div className="text-[10px] text-[#166534] font-semibold mt-0.5">100% Shipped & Audited</div>
-        </div>
-
-        <div className="bg-[#FFFFFF] border border-[#BBF7D0] rounded-xl p-4 shadow-xs">
-          <div className="text-[10px] font-bold text-[#166534] uppercase tracking-wider flex items-center gap-1">
-            <Layers className="w-3 h-3 text-[#16A34A]" /> T3 · U.S. House
-          </div>
-          <div className="text-2xl font-black text-[#16A34A] mt-1">435 / 435</div>
-          <div className="text-[10px] text-[#166534] font-semibold mt-0.5">All Voting Districts</div>
-        </div>
-
-        <div className="bg-[#FFFFFF] border border-[#BBF7D0] rounded-xl p-4 shadow-xs">
-          <div className="text-[10px] font-bold text-[#166534] uppercase tracking-wider flex items-center gap-1">
-            <Building2 className="w-3 h-3 text-[#16A34A]" /> T4 · Major Mayors
-          </div>
-          <div className="text-2xl font-black text-[#16A34A] mt-1">58 / 58</div>
-          <div className="text-[10px] text-[#166534] font-semibold mt-0.5">Top U.S. Metro Cities</div>
-        </div>
-
-        <div className="bg-[#FFFFFF] border border-[#BBF7D0] rounded-xl p-4 shadow-xs">
-          <div className="text-[10px] font-bold text-[#166534] uppercase tracking-wider flex items-center gap-1">
-            <MapPin className="w-3 h-3 text-[#16A34A]" /> T5 · Local (≥1k Pop)
-          </div>
-          <div className="text-2xl font-black text-[#16A34A] mt-1">3,023</div>
-          <div className="text-[10px] text-[#166534] font-semibold mt-0.5">All 50 States Covered</div>
+          <div className="text-[10px] text-[#166534] font-semibold mt-0.5">20 Sourced Incumbents</div>
         </div>
 
         <div className="bg-[#FFFFFF] border border-[#CBD5E1] rounded-xl p-4 shadow-xs">
           <div className="text-[10px] font-bold text-[#0E63C4] uppercase tracking-wider flex items-center gap-1">
+            <Layers className="w-3 h-3 text-[#0E63C4]" /> T3 · U.S. House
+          </div>
+          <div className="text-2xl font-black text-[#0E63C4] mt-1">435 / 435</div>
+          <div className="text-[10px] text-[#5B6779] font-semibold mt-0.5">Primary Filing Pending</div>
+        </div>
+
+        <div className="bg-[#FFFFFF] border border-[#BBF7D0] rounded-xl p-4 shadow-xs">
+          <div className="text-[10px] font-bold text-[#166534] uppercase tracking-wider flex items-center gap-1">
+            <Building2 className="w-3 h-3 text-[#16A34A]" /> T4 · 2026 Mayors
+          </div>
+          <div className="text-2xl font-black text-[#16A34A] mt-1">7 / 7</div>
+          <div className="text-[10px] text-[#166534] font-semibold mt-0.5">LA, DC, SJ, LB, Oak, Lou, Ral</div>
+        </div>
+
+        <div className="bg-[#FFFFFF] border border-[#CBD5E1] rounded-xl p-4 shadow-xs">
+          <div className="text-[10px] font-bold text-[#5B6779] uppercase tracking-wider flex items-center gap-1">
+            <MapPin className="w-3 h-3 text-[#0E63C4]" /> T5 · Local (≥1k Pop)
+          </div>
+          <div className="text-2xl font-black text-[#0B1220] mt-1">3,023</div>
+          <div className="text-[10px] text-[#5B6779] font-semibold mt-0.5">Clerk Certification Pending</div>
+        </div>
+
+        <div className="bg-[#FFFFFF] border border-[#0E63C4] rounded-xl p-4 shadow-xs">
+          <div className="text-[10px] font-bold text-[#0E63C4] uppercase tracking-wider flex items-center gap-1">
             <CheckCircle2 className="w-3 h-3 text-[#0E63C4]" /> Total Contests
           </div>
-          <div className="text-2xl font-black text-[#0E63C4] mt-1">3,587+</div>
-          <div className="text-[10px] text-[#5B6779] font-semibold mt-0.5">Certified Candidates</div>
+          <div className="text-2xl font-black text-[#0E63C4] mt-1">3,536</div>
+          <div className="text-[10px] text-[#166534] font-semibold mt-0.5">100% Nationwide Parity</div>
         </div>
       </div>
 
@@ -121,14 +121,12 @@ export default function CoveragePage() {
       <div className="bg-[#F6F8FB] border border-[#E4E9F0] rounded-2xl p-5 space-y-2">
         <div className="flex items-center gap-2">
           <ShieldCheck className="w-4 h-4 text-[#16A34A]" />
-          <h2 className="text-xs font-bold text-[#0B1220] uppercase tracking-wider">Per-State Completion Standard & Verification Rules</h2>
+          <h2 className="text-xs font-bold text-[#0B1220] uppercase tracking-wider">Truth-in-Advertising Standard & Verification Policy</h2>
         </div>
         <p className="text-xs text-[#24303F] leading-relaxed">
-          For each of the 50 states plus DC, candidate rosters agree 100% with the official state election division. Special electoral architectures are explicitly accommodated:
-          <strong className="text-[#0E63C4]"> Ranked-Choice Voting (AK, ME)</strong>,
-          <strong className="text-[#0E63C4]"> Top-Two Nonpartisan Primaries (CA, WA)</strong>, and
-          <strong className="text-[#0E63C4]"> Majority 50%+1 General Runoffs (GA, LA)</strong>.
-          Every race from federal Senate to town dog catchers and municipal treasurers features audited incumbents, deterministic polling averages, and official filing credentials.
+          No single source covers every local race in America. BALLOT.WATCH reports only what is verified against authoritative state and municipal records.
+          Mayoral races are strictly audited: only cities with genuine general elections on November 3, 2026 (e.g., Los Angeles runoff between Karen Bass and Nithya Raman) are included.
+          For congressional districts and local positions where primary deadlines or clerk certifications are pending, candidate fields remain transparently unpopulated rather than filled with synthetic placeholder names or simulated polling averages.
         </p>
       </div>
 
@@ -175,6 +173,7 @@ export default function CoveragePage() {
                 <th className="py-3 px-3 font-bold text-center">T2: Gov</th>
                 <th className="py-3 px-3 font-bold text-center">T3: House</th>
                 <th className="py-3 px-3 font-bold text-center">T4/5: Local Contests</th>
+                <th className="py-3 px-3 font-bold text-center">Sourced Candidates</th>
                 <th className="py-3 px-4 font-bold text-center">Status</th>
                 <th className="py-3 px-4 font-bold text-right">Official Source</th>
               </tr>
@@ -241,10 +240,22 @@ export default function CoveragePage() {
                     </span>
                   </td>
 
-                  <td className="py-3 px-4 text-center font-sans">
-                    <span className="inline-flex items-center gap-1 text-[10px] font-bold px-2.5 py-0.5 rounded uppercase tracking-wider bg-[#F0FDF4] text-[#166534] border border-[#BBF7D0]">
-                      <CheckCircle2 className="w-3 h-3 text-[#16A34A]" /> {st.stateStatus}
+                  <td className="py-3 px-3 text-center">
+                    <span className="font-bold text-[#0E63C4]">
+                      {st.candidatesSourced}
                     </span>
+                  </td>
+
+                  <td className="py-3 px-4 text-center font-sans">
+                    {st.stateStatus === 'ROSTER SOURCED' ? (
+                      <span className="inline-flex items-center gap-1 text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider bg-[#F0FDF4] text-[#166534] border border-[#BBF7D0]">
+                        <CheckCircle2 className="w-3 h-3 text-[#16A34A]" /> ROSTER ACTIVE
+                      </span>
+                    ) : (
+                      <span className="inline-flex items-center gap-1 text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider bg-[#FFFBEB] text-[#92400E] border border-[#FDE68A]">
+                        <Clock className="w-3 h-3 text-[#D97706]" /> FILINGS PENDING
+                      </span>
+                    )}
                   </td>
 
                   <td className="py-3 px-4 text-right font-sans">

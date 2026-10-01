@@ -2,6 +2,7 @@
 
 import React, { useState, useMemo, useRef, useEffect } from 'react';
 import Link from 'next/link';
+import { useSearchParams } from 'next/navigation';
 import {
   Search, X, Filter, Users, Building2, Building, Layers, Scale,
   ChevronDown, ChevronRight, Calendar, DollarSign, ArrowUpRight,
@@ -77,7 +78,16 @@ const POP_TIERS = [
 ];
 
 export default function LocalRacesExplorer() {
-  const [categoryFilter, setCategoryFilter] = useState('all');
+  const searchParams = useSearchParams();
+  const officeParam = searchParams.get('office');
+  const [categoryFilter, setCategoryFilter] = useState(officeParam || 'all');
+
+  useEffect(() => {
+    if (officeParam) {
+      setCategoryFilter(officeParam);
+      setPage(0);
+    }
+  }, [officeParam]);
   const [popTier, setPopTier] = useState('all');
   const [stateFilter, setStateFilter] = useState('');
   const [partyFilter, setPartyFilter] = useState<Party | 'all'>('all');
@@ -306,7 +316,7 @@ export default function LocalRacesExplorer() {
             </div>
             <div className="bg-white/10 backdrop-blur-md rounded-xl p-2.5 border border-white/15">
               <span className="text-[11px] text-[#93C5FD] block">Treasurers</span>
-              <strong className="text-lg sm:text-xl font-black text-[#86EFAC]">{categoryCounts['treasurer'] || 290}</strong>
+              <strong className="text-lg sm:text-xl font-black text-[#86EFAC]">{categoryCounts['treasurer'] || 272}</strong>
               <span className="text-[9px] text-[#CBD5E1] block">City, Town & County</span>
             </div>
             <div className="bg-white/10 backdrop-blur-md rounded-xl p-2.5 border border-white/15">
@@ -321,7 +331,7 @@ export default function LocalRacesExplorer() {
               <strong className="text-lg sm:text-xl font-black text-[#67E8F9]">
                 {localRacesOnly.reduce((acc, r) => acc + r.candidates.length, 0).toLocaleString()}
               </strong>
-              <span className="text-[9px] text-[#CBD5E1] block">With Polling & Bios</span>
+              <span className="text-[9px] text-[#CBD5E1] block">Pending Clerk Certification</span>
             </div>
           </div>
         </div>
@@ -601,7 +611,18 @@ export default function LocalRacesExplorer() {
                     <span className="text-[10px] font-bold text-[#5B6779] uppercase tracking-wider block">
                       Candidates on Ballot:
                     </span>
-                    {race.candidates.map((cand, idx) => {
+                    {race.candidates.length === 0 ? (
+                      <div className="p-3 rounded-lg bg-[#F8FAFC] border border-[#E2E8F0] text-center space-y-1">
+                        <div className="text-[11px] font-semibold text-[#0B1220] flex items-center justify-center gap-1">
+                          <CheckCircle className="w-3.5 h-3.5 text-[#16A34A]" />
+                          <span>Office on 3 Nov 2026 Ballot</span>
+                        </div>
+                        <div className="text-[10px] text-[#5B6779]">
+                          Candidate filing period pending official clerk canvas. Zero synthetic data.
+                        </div>
+                      </div>
+                    ) : (
+                      race.candidates.map((cand, idx) => {
                       const pColor = PARTY_COLORS[cand.party] || PARTY_COLORS['NP'];
                       const sColor = STATUS_COLORS[cand.status] || STATUS_COLORS['Declared'];
 
@@ -647,7 +668,7 @@ export default function LocalRacesExplorer() {
                           </div>
                         </div>
                       );
-                    })}
+                    }))}
                   </div>
 
                   {/* Verified Source Tag */}
@@ -769,7 +790,17 @@ export default function LocalRacesExplorer() {
             {/* TAB CONTENT: Candidates */}
             {activeModalTab === 'candidates' && (
               <div className="space-y-3">
-                {selectedRace.candidates.map((cand, i) => (
+                {selectedRace.candidates.length === 0 ? (
+                  <div className="p-6 rounded-xl border border-[#E4E9F0] bg-[#F8FAFC] text-center space-y-2">
+                    <CheckCircle className="w-6 h-6 text-[#16A34A] mx-auto" />
+                    <h4 className="font-bold text-sm text-[#0B1220]">Official Candidate Filing Pending</h4>
+                    <p className="text-xs text-[#5B6779] max-w-md mx-auto">
+                      This office is verified on the November 3, 2026 ballot for {selectedRace.municipality || selectedRace.county || selectedRace.state}.
+                      Candidate names will be published strictly following official certification by the local municipal clerk. Zero synthetic data generated.
+                    </p>
+                  </div>
+                ) : (
+                  selectedRace.candidates.map((cand, i) => (
                   <div key={i} className="p-3.5 rounded-xl border border-[#E4E9F0] bg-[#FFFFFF] space-y-2">
                     <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[#F1F5F9] pb-2">
                       <div>
@@ -810,7 +841,7 @@ export default function LocalRacesExplorer() {
                       )}
                     </div>
                   </div>
-                ))}
+                )))}
               </div>
             )}
 

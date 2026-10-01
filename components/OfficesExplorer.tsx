@@ -292,7 +292,7 @@ export default function OfficesExplorer() {
                 <span className="text-[#60A5FA]"> in the United States</span>
               </h1>
               <p className="mt-2 text-sm text-[#94A3B8] max-w-lg leading-relaxed">
-                From U.S. President to city treasurer and soil conservation supervisor.
+                From U.S. Senate and Governor to city treasurer and soil conservation supervisor.
                 Federal · State · County · Municipal · Special District.
               </p>
             </div>

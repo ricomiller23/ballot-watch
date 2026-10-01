@@ -193,7 +193,7 @@ export function BattlegroundElectoralMap() {
               All United States Federal, State & Local Elections Heatmap
             </h2>
             <p className="text-xs text-[#667085] font-sans">
-              Dynamic cartographic telemetry covering all 50 states, 435 House districts, 33 Senate seats, and certified polling averages.
+              Dynamic cartographic telemetry covering all 50 states, 435 House districts, 35 Senate seats (33 Regular + 2 Specials), and certified polling averages.
             </p>
           </div>
 

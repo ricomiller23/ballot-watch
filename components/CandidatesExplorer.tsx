@@ -730,7 +730,7 @@ export default function CandidatesExplorer() {
                 setQuery(e.target.value);
                 setPage(0);
               }}
-              placeholder="Search candidate name, office title, town, county, or state (e.g. Cornyn, Paxton, Dog Catcher, Cook County Treasurer)..."
+              placeholder="Search candidate name, office title, town, county, or state (e.g. Cornyn, Talarico, Dog Catcher, Cook County Treasurer)..."
               className="w-full pl-10 pr-10 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-[#94A3B8] text-xs sm:text-sm focus:outline-hidden focus:ring-2 focus:ring-[#60A5FA] focus:bg-white/15 transition-all"
             />
             {query && (
@@ -754,21 +754,21 @@ export default function CandidatesExplorer() {
               <Layers className="w-3.5 h-3.5 text-[#0E63C4]" /> Jump to Specific Office Category:
             </span>
             <span className="text-[10px] text-[#5B6779] font-mono">
-              3,654 Total Races Tracked
+              3,536 Total Races Tracked
             </span>
           </div>
 
           <div className="flex items-center gap-1.5 overflow-x-auto pb-1 text-xs no-scrollbar">
             {[
-              ['all', '🏛️ All Races', '3,654'],
+              ['all', '🏛️ All Races', '3,536'],
               ['senate', '🇺🇸 U.S. Senate', '35'],
               ['house', '🏛️ U.S. House', '435'],
               ['governor', '🎖️ Governors', '36'],
               ['ag_sos', '⚖️ State AG & SoS', '21'],
-              ['mayor', '🏙️ Mayors', '58'],
+              ['mayor', '🏙️ Mayors', '7'],
               ['county', '🛡️ County & Sheriffs', '100+'],
-              ['treasurer', '💰 Treasurers', '291'],
-              ['dog_catcher', '🐾 Dog Catchers', '32'],
+              ['treasurer', '💰 Treasurers', '272'],
+              ['dog_catcher', '🐾 Dog Catchers', '25'],
               ['school_board', '🎓 School Boards', '272'],
               ['water_district', '💧 Water & Utilities', '544'],
             ].map(([catKey, label, count]) => (

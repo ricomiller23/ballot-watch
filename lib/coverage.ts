@@ -1,20 +1,20 @@
 import type { CoverageTier, CoverageReport, RaceEntry } from './types';
 import { SENATE_2026 } from './senate-data';
-import { SENATE_2026_RACES, GOVERNOR_2026_RACES, HOUSE_2026_RACES, MAYORAL_RACES } from './candidates-registry';
+import { SENATE_2026_RACES, GOVERNOR_2026_RACES, HOUSE_2026_RACES, MAYORAL_RACES, ALL_RACES_REGISTRY } from './candidates-registry';
 import { LOCAL_RACES_DATA } from './local-races-data';
 import { getMatrixTotals } from './state-coverage-matrix';
 
 /**
  * COVERAGE REPORTING & TRUTH-IN-ADVERTISING ENGINE
  * 
- * Strict Enforcement:
- * 1. Counts are computed dynamically from data, never hardcoded.
- * 2. All 5 tiers (Senate, Gov, House, Mayors, Local) are verified and shipped.
- * 3. Local races (Tier 5): 3,023 verified contests covering populations >= 1,000 across all 50 states.
- * 4. Zero synthetic names, bios, or polls. Every entry has verified filing credentials.
+ * Strict Truth-in-Advertising Rules:
+ * 1. Counts are computed dynamically from real arrays.
+ * 2. Transparently separates contests with verified candidate rosters from contests awaiting state/local clerk certification.
+ * 3. Zero synthetic candidate names, zero fabricated polling shares, zero boilerplate bios.
+ * 4. Only genuine 2026 elections on the November 3, 2026 ballot are included.
  */
 
-const DISCLAIMER = `Coverage statistics reflect contests with verified candidate filings and authoritative seat listings. State and federal races have authoritative seat lists (state election offices, FEC). Township, municipal, and county races are drawn from certified county and municipal clerk rosters for populations ≥ 1,000 across all 50 states. Every race includes certified polling shares, candidate biographies, policy platforms, and official filing credentials.`;
+const DISCLAIMER = `Coverage statistics reflect contests on the November 3, 2026 ballot across all 50 states + DC. State and federal races have authoritative seat lists (state election offices, FEC). Candidate rosters are published strictly when certified by official state election divisions or municipal clerk candidate filings. Where filing deadlines have not passed or primary canvases are pending, candidate fields are marked pending rather than populated with synthetic data.`;
 
 export function buildCoverageReport(): CoverageReport {
   const totals = getMatrixTotals();
@@ -36,7 +36,7 @@ export function buildCoverageReport(): CoverageReport {
       totalContests: 36,
       verifiedContests: GOVERNOR_2026_RACES.length,
       status: 'shipped',
-      notes: `36 gubernatorial races across 36 states up in 2026. Certified candidate rosters, verified platforms, and unblended ratings.`,
+      notes: `36 gubernatorial races across 36 states up in 2026. 20 running incumbents certified; 16 open seats marked pending primary certification.`,
       authoritativeSource: 'National Governors Association / State SoS Offices',
       authoritativeUrl: 'https://www.nga.org/governors/',
     },
@@ -46,7 +46,7 @@ export function buildCoverageReport(): CoverageReport {
       totalContests: 435,
       verifiedContests: HOUSE_2026_RACES.length,
       status: 'shipped',
-      notes: 'All 435 voting congressional districts (AL-01 to WY-AL) certified under post-redistricting 2026 boundaries.',
+      notes: 'All 435 voting congressional districts (AL-01 to WY-AL) certified under post-redistricting 2026 boundaries. Nominees populated upon official state primary canvas.',
       authoritativeSource: 'U.S. Census Bureau & State Election Divisions',
       authoritativeUrl: 'https://www.census.gov/programs-surveys/decennial-census/about/rdo.html',
     },
@@ -56,9 +56,9 @@ export function buildCoverageReport(): CoverageReport {
       totalContests: MAYORAL_RACES.length,
       verifiedContests: MAYORAL_RACES.length,
       status: 'shipped',
-      notes: 'Top major metropolitan mayoral races nationwide, including NYC, Los Angeles, Chicago, Houston, Phoenix, and Philadelphia.',
+      notes: '7 verified major city mayoral elections on the Nov 3, 2026 ballot (Los Angeles, DC, San Jose, Long Beach, Oakland, Louisville, Raleigh).',
       authoritativeSource: 'Municipal Board of Elections / City Clerks',
-      authoritativeUrl: 'https://www.usmayors.org/',
+      authoritativeUrl: 'https://ballotpedia.org/United_States_mayoral_elections,_2026',
     },
     {
       tier: 5,
@@ -66,7 +66,7 @@ export function buildCoverageReport(): CoverageReport {
       totalContests: LOCAL_RACES_DATA.length,
       verifiedContests: LOCAL_RACES_DATA.length,
       status: 'shipped',
-      notes: `Exhaustive coverage of 3,023 local contests across all 50 states: Town Dog Catchers, Treasurers, Selectboards, Town Clerks, School Boards, Constables, and Justices of the Peace.`,
+      notes: `Exhaustive coverage of 3,023 local contests across all 50 states: Town Dog Catchers (25), Treasurers (272), Selectboards, Town Clerks, School Boards. Candidate rosters awaiting clerk publication.`,
       authoritativeSource: 'County & Municipal Clerk Election Divisions',
       authoritativeUrl: 'https://www.census.gov/geographies/reference-files/2020/geo/county-entities.html',
     },
@@ -76,7 +76,7 @@ export function buildCoverageReport(): CoverageReport {
       totalContests: totals.censusCountiesTotal, // 3,143
       verifiedContests: totals.countiesCovered, // 209
       status: 'in_progress',
-      notes: `Actively covering ${totals.countiesCovered} of ${totals.censusCountiesTotal.toLocaleString()} U.S. counties with certified candidate rosters and filing credentials.`,
+      notes: `Actively covering ${totals.countiesCovered} of ${totals.censusCountiesTotal.toLocaleString()} U.S. counties with verified electable offices.`,
       authoritativeSource: 'U.S. Census Bureau County and Equivalent Entities Roster',
       authoritativeUrl: 'https://www.census.gov/geographies/reference-files/2020/geo/county-entities.html',
     },

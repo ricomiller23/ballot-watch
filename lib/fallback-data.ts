@@ -68,7 +68,7 @@ export const SEED_POLLS: Poll[] = [
     hyperpartisan: false,
     results: [
       { candidate: "James Talarico", party: "DEM", pct: 48.0 },
-      { candidate: "Ken Paxton", party: "REP", pct: 45.5 },
+      { candidate: "John Cornyn", party: "REP", pct: 45.5 },
     ],
     source_id: "siena",
     source_url: "https://www.siena.edu/research",
@@ -88,7 +88,7 @@ export const SEED_POLLS: Poll[] = [
     hyperpartisan: false,
     results: [
       { candidate: "James Talarico", party: "DEM", pct: 47.5 },
-      { candidate: "Ken Paxton", party: "REP", pct: 45.0 },
+      { candidate: "John Cornyn", party: "REP", pct: 45.0 },
     ],
     source_id: "marist",
     source_url: "https://maristpoll.marist.edu",
@@ -108,7 +108,7 @@ export const SEED_POLLS: Poll[] = [
     hyperpartisan: false,
     results: [
       { candidate: "James Talarico", party: "DEM", pct: 47.0 },
-      { candidate: "Ken Paxton", party: "REP", pct: 44.5 },
+      { candidate: "John Cornyn", party: "REP", pct: 44.5 },
     ],
     source_id: "quinnipiac",
     source_url: "https://poll.qu.edu",

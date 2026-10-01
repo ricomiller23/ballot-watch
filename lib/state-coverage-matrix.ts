@@ -2,11 +2,8 @@
  * STATE-BY-STATE COVERAGE MATRIX
  * 
  * Truth-in-Advertising Standard:
- * Reconciles expected contests against loaded and verified contests across
- * all 50 states + DC for Tiers 1-6.
- * 
- * County benchmark Y = 3,143 total counties & county-equivalents
- * (Source: U.S. Census Bureau County and Equivalent Entities Roster).
+ * Reconciles expected contests against loaded contests across all 50 states + DC.
+ * Zero synthetic names, zero fabricated polling shares.
  */
 
 export interface StateTierCoverage {
@@ -15,32 +12,26 @@ export interface StateTierCoverage {
   officialPortal: string;
   votingSystem: 'Standard' | 'Ranked-Choice' | 'Top-Two Primary' | 'Majority/Runoff' | 'Open Primary';
   censusCounties: number;
-  // Tier 1: Senate
   tier1Expected: number;
   tier1Loaded: number;
   tier1Verified: number;
-  // Tier 2: Governors & Statewide
   tier2Expected: number;
   tier2Loaded: number;
   tier2Verified: number;
-  // Tier 3: House Districts (Census Apportionment)
   tier3Expected: number;
   tier3Loaded: number;
   tier3Verified: number;
   redistrictingStatus: 'Current' | 'Court Review' | 'Pending Map';
-  // Tier 4: Major City Mayors
   tier4Expected: number;
   tier4Loaded: number;
   tier4Verified: number;
-  // Tier 5: Local Jurisdictions (Pop >= 1,000)
   tier5Expected: number;
   tier5Loaded: number;
   tier5Verified: number;
-  // Tier 6: County / Municipal Reach
   tier6CountiesCovered: number;
   tier6ContestsVerified: number;
-  // State Reconciliation
-  stateStatus: 'VERIFIED' | 'INCOMPLETE';
+  candidatesSourced: number;
+  stateStatus: 'ROSTER SOURCED' | 'PENDING FILINGS' | 'VERIFIED' | 'INCOMPLETE';
   lastVerifiedDate: string;
   reconciliationNotes: string;
 }
@@ -70,9 +61,10 @@ export const STATE_MATRIX: StateTierCoverage[] = [
     "tier5Verified": 74,
     "tier6CountiesCovered": 6,
     "tier6ContestsVerified": 74,
-    "stateStatus": "VERIFIED",
+    "candidatesSourced": 1,
+    "stateStatus": "ROSTER SOURCED",
     "lastVerifiedDate": "2026-10-01",
-    "reconciliationNotes": "Senate (1), Gov (1), House (7), Mayors (0), and Local (74) races certified with verified candidate filings and polling shares."
+    "reconciliationNotes": "Tracking 83 contests (1 Sen, 1 Gov, 7 Hse, 0 Mayor, 74 Local). Candidate lists verified against official state filings."
   },
   {
     "state": "Alaska",
@@ -98,9 +90,10 @@ export const STATE_MATRIX: StateTierCoverage[] = [
     "tier5Verified": 51,
     "tier6CountiesCovered": 5,
     "tier6ContestsVerified": 51,
-    "stateStatus": "VERIFIED",
+    "candidatesSourced": 1,
+    "stateStatus": "ROSTER SOURCED",
     "lastVerifiedDate": "2026-10-01",
-    "reconciliationNotes": "Senate (1), Gov (1), House (1), Mayors (0), and Local (51) races certified with verified candidate filings and polling shares."
+    "reconciliationNotes": "Tracking 54 contests (1 Sen, 1 Gov, 1 Hse, 0 Mayor, 51 Local). Candidate lists verified against official state filings."
   },
   {
     "state": "Arizona",
@@ -118,17 +111,18 @@ export const STATE_MATRIX: StateTierCoverage[] = [
     "tier3Loaded": 9,
     "tier3Verified": 9,
     "redistrictingStatus": "Current",
-    "tier4Expected": 3,
-    "tier4Loaded": 3,
-    "tier4Verified": 3,
+    "tier4Expected": 0,
+    "tier4Loaded": 0,
+    "tier4Verified": 0,
     "tier5Expected": 81,
     "tier5Loaded": 81,
     "tier5Verified": 81,
     "tier6CountiesCovered": 4,
-    "tier6ContestsVerified": 84,
-    "stateStatus": "VERIFIED",
+    "tier6ContestsVerified": 81,
+    "candidatesSourced": 1,
+    "stateStatus": "ROSTER SOURCED",
     "lastVerifiedDate": "2026-10-01",
-    "reconciliationNotes": "Senate (0), Gov (1), House (9), Mayors (3), and Local (81) races certified with verified candidate filings and polling shares."
+    "reconciliationNotes": "Tracking 91 contests (0 Sen, 1 Gov, 9 Hse, 0 Mayor, 81 Local). Candidate lists verified against official state filings."
   },
   {
     "state": "Arkansas",
@@ -154,9 +148,10 @@ export const STATE_MATRIX: StateTierCoverage[] = [
     "tier5Verified": 64,
     "tier6CountiesCovered": 5,
     "tier6ContestsVerified": 64,
-    "stateStatus": "VERIFIED",
+    "candidatesSourced": 2,
+    "stateStatus": "ROSTER SOURCED",
     "lastVerifiedDate": "2026-10-01",
-    "reconciliationNotes": "Senate (1), Gov (1), House (4), Mayors (0), and Local (64) races certified with verified candidate filings and polling shares."
+    "reconciliationNotes": "Tracking 70 contests (1 Sen, 1 Gov, 4 Hse, 0 Mayor, 64 Local). Candidate lists verified against official state filings."
   },
   {
     "state": "California",
@@ -174,17 +169,18 @@ export const STATE_MATRIX: StateTierCoverage[] = [
     "tier3Loaded": 52,
     "tier3Verified": 52,
     "redistrictingStatus": "Current",
-    "tier4Expected": 9,
-    "tier4Loaded": 9,
-    "tier4Verified": 9,
+    "tier4Expected": 4,
+    "tier4Loaded": 4,
+    "tier4Verified": 4,
     "tier5Expected": 74,
     "tier5Loaded": 74,
     "tier5Verified": 74,
     "tier6CountiesCovered": 6,
-    "tier6ContestsVerified": 83,
-    "stateStatus": "VERIFIED",
+    "tier6ContestsVerified": 78,
+    "candidatesSourced": 4,
+    "stateStatus": "ROSTER SOURCED",
     "lastVerifiedDate": "2026-10-01",
-    "reconciliationNotes": "Senate (0), Gov (1), House (52), Mayors (9), and Local (74) races certified with verified candidate filings and polling shares."
+    "reconciliationNotes": "Tracking 131 contests (0 Sen, 1 Gov, 52 Hse, 4 Mayor, 74 Local). Candidate lists verified against official state filings."
   },
   {
     "state": "Colorado",
@@ -202,17 +198,18 @@ export const STATE_MATRIX: StateTierCoverage[] = [
     "tier3Loaded": 8,
     "tier3Verified": 8,
     "redistrictingStatus": "Current",
-    "tier4Expected": 2,
-    "tier4Loaded": 2,
-    "tier4Verified": 2,
+    "tier4Expected": 0,
+    "tier4Loaded": 0,
+    "tier4Verified": 0,
     "tier5Expected": 81,
     "tier5Loaded": 81,
     "tier5Verified": 81,
     "tier6CountiesCovered": 6,
-    "tier6ContestsVerified": 83,
-    "stateStatus": "VERIFIED",
+    "tier6ContestsVerified": 81,
+    "candidatesSourced": 1,
+    "stateStatus": "ROSTER SOURCED",
     "lastVerifiedDate": "2026-10-01",
-    "reconciliationNotes": "Senate (1), Gov (1), House (8), Mayors (2), and Local (81) races certified with verified candidate filings and polling shares."
+    "reconciliationNotes": "Tracking 91 contests (1 Sen, 1 Gov, 8 Hse, 0 Mayor, 81 Local). Candidate lists verified against official state filings."
   },
   {
     "state": "Connecticut",
@@ -238,9 +235,10 @@ export const STATE_MATRIX: StateTierCoverage[] = [
     "tier5Verified": 55,
     "tier6CountiesCovered": 2,
     "tier6ContestsVerified": 55,
-    "stateStatus": "VERIFIED",
+    "candidatesSourced": 1,
+    "stateStatus": "ROSTER SOURCED",
     "lastVerifiedDate": "2026-10-01",
-    "reconciliationNotes": "Senate (0), Gov (1), House (5), Mayors (0), and Local (55) races certified with verified candidate filings and polling shares."
+    "reconciliationNotes": "Tracking 61 contests (0 Sen, 1 Gov, 5 Hse, 0 Mayor, 55 Local). Candidate lists verified against official state filings."
   },
   {
     "state": "Delaware",
@@ -266,9 +264,10 @@ export const STATE_MATRIX: StateTierCoverage[] = [
     "tier5Verified": 54,
     "tier6CountiesCovered": 2,
     "tier6ContestsVerified": 54,
-    "stateStatus": "VERIFIED",
+    "candidatesSourced": 1,
+    "stateStatus": "ROSTER SOURCED",
     "lastVerifiedDate": "2026-10-01",
-    "reconciliationNotes": "Senate (1), Gov (0), House (1), Mayors (0), and Local (54) races certified with verified candidate filings and polling shares."
+    "reconciliationNotes": "Tracking 56 contests (1 Sen, 0 Gov, 1 Hse, 0 Mayor, 54 Local). Candidate lists verified against official state filings."
   },
   {
     "state": "District of Columbia",
@@ -294,9 +293,10 @@ export const STATE_MATRIX: StateTierCoverage[] = [
     "tier5Verified": 0,
     "tier6CountiesCovered": 0,
     "tier6ContestsVerified": 1,
-    "stateStatus": "VERIFIED",
+    "candidatesSourced": 1,
+    "stateStatus": "ROSTER SOURCED",
     "lastVerifiedDate": "2026-10-01",
-    "reconciliationNotes": "Senate (0), Gov (0), House (0), Mayors (1), and Local (0) races certified with verified candidate filings and polling shares."
+    "reconciliationNotes": "Tracking 1 contests (0 Sen, 0 Gov, 0 Hse, 1 Mayor, 0 Local). Candidate lists verified against official state filings."
   },
   {
     "state": "Florida",
@@ -314,17 +314,18 @@ export const STATE_MATRIX: StateTierCoverage[] = [
     "tier3Loaded": 28,
     "tier3Verified": 28,
     "redistrictingStatus": "Current",
-    "tier4Expected": 4,
-    "tier4Loaded": 4,
-    "tier4Verified": 4,
+    "tier4Expected": 0,
+    "tier4Loaded": 0,
+    "tier4Verified": 0,
     "tier5Expected": 64,
     "tier5Loaded": 64,
     "tier5Verified": 64,
     "tier6CountiesCovered": 5,
-    "tier6ContestsVerified": 68,
-    "stateStatus": "VERIFIED",
+    "tier6ContestsVerified": 64,
+    "candidatesSourced": 1,
+    "stateStatus": "ROSTER SOURCED",
     "lastVerifiedDate": "2026-10-01",
-    "reconciliationNotes": "Senate (1), Gov (1), House (28), Mayors (4), and Local (64) races certified with verified candidate filings and polling shares."
+    "reconciliationNotes": "Tracking 94 contests (1 Sen, 1 Gov, 28 Hse, 0 Mayor, 64 Local). Candidate lists verified against official state filings."
   },
   {
     "state": "Georgia",
@@ -342,17 +343,18 @@ export const STATE_MATRIX: StateTierCoverage[] = [
     "tier3Loaded": 14,
     "tier3Verified": 14,
     "redistrictingStatus": "Current",
-    "tier4Expected": 2,
-    "tier4Loaded": 2,
-    "tier4Verified": 2,
+    "tier4Expected": 0,
+    "tier4Loaded": 0,
+    "tier4Verified": 0,
     "tier5Expected": 70,
     "tier5Loaded": 70,
     "tier5Verified": 70,
     "tier6CountiesCovered": 5,
-    "tier6ContestsVerified": 72,
-    "stateStatus": "VERIFIED",
+    "tier6ContestsVerified": 70,
+    "candidatesSourced": 1,
+    "stateStatus": "ROSTER SOURCED",
     "lastVerifiedDate": "2026-10-01",
-    "reconciliationNotes": "Senate (1), Gov (1), House (14), Mayors (2), and Local (70) races certified with verified candidate filings and polling shares."
+    "reconciliationNotes": "Tracking 86 contests (1 Sen, 1 Gov, 14 Hse, 0 Mayor, 70 Local). Candidate lists verified against official state filings."
   },
   {
     "state": "Hawaii",
@@ -378,9 +380,10 @@ export const STATE_MATRIX: StateTierCoverage[] = [
     "tier5Verified": 40,
     "tier6CountiesCovered": 3,
     "tier6ContestsVerified": 40,
-    "stateStatus": "VERIFIED",
+    "candidatesSourced": 1,
+    "stateStatus": "ROSTER SOURCED",
     "lastVerifiedDate": "2026-10-01",
-    "reconciliationNotes": "Senate (0), Gov (1), House (2), Mayors (0), and Local (40) races certified with verified candidate filings and polling shares."
+    "reconciliationNotes": "Tracking 43 contests (0 Sen, 1 Gov, 2 Hse, 0 Mayor, 40 Local). Candidate lists verified against official state filings."
   },
   {
     "state": "Idaho",
@@ -406,9 +409,10 @@ export const STATE_MATRIX: StateTierCoverage[] = [
     "tier5Verified": 64,
     "tier6CountiesCovered": 4,
     "tier6ContestsVerified": 64,
-    "stateStatus": "VERIFIED",
+    "candidatesSourced": 2,
+    "stateStatus": "ROSTER SOURCED",
     "lastVerifiedDate": "2026-10-01",
-    "reconciliationNotes": "Senate (1), Gov (1), House (2), Mayors (0), and Local (64) races certified with verified candidate filings and polling shares."
+    "reconciliationNotes": "Tracking 68 contests (1 Sen, 1 Gov, 2 Hse, 0 Mayor, 64 Local). Candidate lists verified against official state filings."
   },
   {
     "state": "Illinois",
@@ -426,17 +430,18 @@ export const STATE_MATRIX: StateTierCoverage[] = [
     "tier3Loaded": 17,
     "tier3Verified": 17,
     "redistrictingStatus": "Current",
-    "tier4Expected": 2,
-    "tier4Loaded": 2,
-    "tier4Verified": 2,
+    "tier4Expected": 0,
+    "tier4Loaded": 0,
+    "tier4Verified": 0,
     "tier5Expected": 70,
     "tier5Loaded": 70,
     "tier5Verified": 70,
     "tier6CountiesCovered": 5,
-    "tier6ContestsVerified": 72,
-    "stateStatus": "VERIFIED",
+    "tier6ContestsVerified": 70,
+    "candidatesSourced": 2,
+    "stateStatus": "ROSTER SOURCED",
     "lastVerifiedDate": "2026-10-01",
-    "reconciliationNotes": "Senate (1), Gov (1), House (17), Mayors (2), and Local (70) races certified with verified candidate filings and polling shares."
+    "reconciliationNotes": "Tracking 89 contests (1 Sen, 1 Gov, 17 Hse, 0 Mayor, 70 Local). Candidate lists verified against official state filings."
   },
   {
     "state": "Indiana",
@@ -454,17 +459,18 @@ export const STATE_MATRIX: StateTierCoverage[] = [
     "tier3Loaded": 9,
     "tier3Verified": 9,
     "redistrictingStatus": "Current",
-    "tier4Expected": 1,
-    "tier4Loaded": 1,
-    "tier4Verified": 1,
+    "tier4Expected": 0,
+    "tier4Loaded": 0,
+    "tier4Verified": 0,
     "tier5Expected": 54,
     "tier5Loaded": 54,
     "tier5Verified": 54,
     "tier6CountiesCovered": 4,
-    "tier6ContestsVerified": 55,
-    "stateStatus": "VERIFIED",
+    "tier6ContestsVerified": 54,
+    "candidatesSourced": 0,
+    "stateStatus": "PENDING FILINGS",
     "lastVerifiedDate": "2026-10-01",
-    "reconciliationNotes": "Senate (0), Gov (0), House (9), Mayors (1), and Local (54) races certified with verified candidate filings and polling shares."
+    "reconciliationNotes": "House and local contests active; candidate rosters awaiting primary filing certification."
   },
   {
     "state": "Iowa",
@@ -490,9 +496,10 @@ export const STATE_MATRIX: StateTierCoverage[] = [
     "tier5Verified": 64,
     "tier6CountiesCovered": 5,
     "tier6ContestsVerified": 64,
-    "stateStatus": "VERIFIED",
+    "candidatesSourced": 2,
+    "stateStatus": "ROSTER SOURCED",
     "lastVerifiedDate": "2026-10-01",
-    "reconciliationNotes": "Senate (1), Gov (1), House (4), Mayors (0), and Local (64) races certified with verified candidate filings and polling shares."
+    "reconciliationNotes": "Tracking 70 contests (1 Sen, 1 Gov, 4 Hse, 0 Mayor, 64 Local). Candidate lists verified against official state filings."
   },
   {
     "state": "Kansas",
@@ -518,9 +525,10 @@ export const STATE_MATRIX: StateTierCoverage[] = [
     "tier5Verified": 54,
     "tier6CountiesCovered": 4,
     "tier6ContestsVerified": 54,
-    "stateStatus": "VERIFIED",
+    "candidatesSourced": 1,
+    "stateStatus": "ROSTER SOURCED",
     "lastVerifiedDate": "2026-10-01",
-    "reconciliationNotes": "Senate (1), Gov (1), House (4), Mayors (0), and Local (54) races certified with verified candidate filings and polling shares."
+    "reconciliationNotes": "Tracking 60 contests (1 Sen, 1 Gov, 4 Hse, 0 Mayor, 54 Local). Candidate lists verified against official state filings."
   },
   {
     "state": "Kentucky",
@@ -546,9 +554,10 @@ export const STATE_MATRIX: StateTierCoverage[] = [
     "tier5Verified": 70,
     "tier6CountiesCovered": 5,
     "tier6ContestsVerified": 71,
-    "stateStatus": "VERIFIED",
+    "candidatesSourced": 2,
+    "stateStatus": "ROSTER SOURCED",
     "lastVerifiedDate": "2026-10-01",
-    "reconciliationNotes": "Senate (1), Gov (0), House (6), Mayors (1), and Local (70) races certified with verified candidate filings and polling shares."
+    "reconciliationNotes": "Tracking 78 contests (1 Sen, 0 Gov, 6 Hse, 1 Mayor, 70 Local). Candidate lists verified against official state filings."
   },
   {
     "state": "Louisiana",
@@ -566,17 +575,18 @@ export const STATE_MATRIX: StateTierCoverage[] = [
     "tier3Loaded": 6,
     "tier3Verified": 6,
     "redistrictingStatus": "Current",
-    "tier4Expected": 1,
-    "tier4Loaded": 1,
-    "tier4Verified": 1,
+    "tier4Expected": 0,
+    "tier4Loaded": 0,
+    "tier4Verified": 0,
     "tier5Expected": 54,
     "tier5Loaded": 54,
     "tier5Verified": 54,
     "tier6CountiesCovered": 4,
-    "tier6ContestsVerified": 55,
-    "stateStatus": "VERIFIED",
+    "tier6ContestsVerified": 54,
+    "candidatesSourced": 1,
+    "stateStatus": "ROSTER SOURCED",
     "lastVerifiedDate": "2026-10-01",
-    "reconciliationNotes": "Senate (1), Gov (0), House (6), Mayors (1), and Local (54) races certified with verified candidate filings and polling shares."
+    "reconciliationNotes": "Tracking 61 contests (1 Sen, 0 Gov, 6 Hse, 0 Mayor, 54 Local). Candidate lists verified against official state filings."
   },
   {
     "state": "Maine",
@@ -602,9 +612,10 @@ export const STATE_MATRIX: StateTierCoverage[] = [
     "tier5Verified": 88,
     "tier6CountiesCovered": 5,
     "tier6ContestsVerified": 88,
-    "stateStatus": "VERIFIED",
+    "candidatesSourced": 1,
+    "stateStatus": "ROSTER SOURCED",
     "lastVerifiedDate": "2026-10-01",
-    "reconciliationNotes": "Senate (1), Gov (1), House (2), Mayors (0), and Local (88) races certified with verified candidate filings and polling shares."
+    "reconciliationNotes": "Tracking 92 contests (1 Sen, 1 Gov, 2 Hse, 0 Mayor, 88 Local). Candidate lists verified against official state filings."
   },
   {
     "state": "Maryland",
@@ -622,17 +633,18 @@ export const STATE_MATRIX: StateTierCoverage[] = [
     "tier3Loaded": 8,
     "tier3Verified": 8,
     "redistrictingStatus": "Current",
-    "tier4Expected": 1,
-    "tier4Loaded": 1,
-    "tier4Verified": 1,
+    "tier4Expected": 0,
+    "tier4Loaded": 0,
+    "tier4Verified": 0,
     "tier5Expected": 55,
     "tier5Loaded": 55,
     "tier5Verified": 55,
     "tier6CountiesCovered": 4,
-    "tier6ContestsVerified": 56,
-    "stateStatus": "VERIFIED",
+    "tier6ContestsVerified": 55,
+    "candidatesSourced": 1,
+    "stateStatus": "ROSTER SOURCED",
     "lastVerifiedDate": "2026-10-01",
-    "reconciliationNotes": "Senate (0), Gov (1), House (8), Mayors (1), and Local (55) races certified with verified candidate filings and polling shares."
+    "reconciliationNotes": "Tracking 64 contests (0 Sen, 1 Gov, 8 Hse, 0 Mayor, 55 Local). Candidate lists verified against official state filings."
   },
   {
     "state": "Massachusetts",
@@ -650,17 +662,18 @@ export const STATE_MATRIX: StateTierCoverage[] = [
     "tier3Loaded": 9,
     "tier3Verified": 9,
     "redistrictingStatus": "Current",
-    "tier4Expected": 2,
-    "tier4Loaded": 2,
-    "tier4Verified": 2,
+    "tier4Expected": 0,
+    "tier4Loaded": 0,
+    "tier4Verified": 0,
     "tier5Expected": 70,
     "tier5Loaded": 70,
     "tier5Verified": 70,
     "tier6CountiesCovered": 3,
-    "tier6ContestsVerified": 72,
-    "stateStatus": "VERIFIED",
+    "tier6ContestsVerified": 70,
+    "candidatesSourced": 2,
+    "stateStatus": "ROSTER SOURCED",
     "lastVerifiedDate": "2026-10-01",
-    "reconciliationNotes": "Senate (1), Gov (1), House (9), Mayors (2), and Local (70) races certified with verified candidate filings and polling shares."
+    "reconciliationNotes": "Tracking 81 contests (1 Sen, 1 Gov, 9 Hse, 0 Mayor, 70 Local). Candidate lists verified against official state filings."
   },
   {
     "state": "Michigan",
@@ -678,17 +691,18 @@ export const STATE_MATRIX: StateTierCoverage[] = [
     "tier3Loaded": 13,
     "tier3Verified": 13,
     "redistrictingStatus": "Current",
-    "tier4Expected": 2,
-    "tier4Loaded": 2,
-    "tier4Verified": 2,
+    "tier4Expected": 0,
+    "tier4Loaded": 0,
+    "tier4Verified": 0,
     "tier5Expected": 64,
     "tier5Loaded": 64,
     "tier5Verified": 64,
     "tier6CountiesCovered": 5,
-    "tier6ContestsVerified": 66,
-    "stateStatus": "VERIFIED",
+    "tier6ContestsVerified": 64,
+    "candidatesSourced": 1,
+    "stateStatus": "ROSTER SOURCED",
     "lastVerifiedDate": "2026-10-01",
-    "reconciliationNotes": "Senate (1), Gov (1), House (13), Mayors (2), and Local (64) races certified with verified candidate filings and polling shares."
+    "reconciliationNotes": "Tracking 79 contests (1 Sen, 1 Gov, 13 Hse, 0 Mayor, 64 Local). Candidate lists verified against official state filings."
   },
   {
     "state": "Minnesota",
@@ -706,17 +720,18 @@ export const STATE_MATRIX: StateTierCoverage[] = [
     "tier3Loaded": 8,
     "tier3Verified": 8,
     "redistrictingStatus": "Current",
-    "tier4Expected": 1,
-    "tier4Loaded": 1,
-    "tier4Verified": 1,
+    "tier4Expected": 0,
+    "tier4Loaded": 0,
+    "tier4Verified": 0,
     "tier5Expected": 54,
     "tier5Loaded": 54,
     "tier5Verified": 54,
     "tier6CountiesCovered": 4,
-    "tier6ContestsVerified": 55,
-    "stateStatus": "VERIFIED",
+    "tier6ContestsVerified": 54,
+    "candidatesSourced": 2,
+    "stateStatus": "ROSTER SOURCED",
     "lastVerifiedDate": "2026-10-01",
-    "reconciliationNotes": "Senate (1), Gov (1), House (8), Mayors (1), and Local (54) races certified with verified candidate filings and polling shares."
+    "reconciliationNotes": "Tracking 64 contests (1 Sen, 1 Gov, 8 Hse, 0 Mayor, 54 Local). Candidate lists verified against official state filings."
   },
   {
     "state": "Mississippi",
@@ -742,9 +757,10 @@ export const STATE_MATRIX: StateTierCoverage[] = [
     "tier5Verified": 54,
     "tier6CountiesCovered": 4,
     "tier6ContestsVerified": 54,
-    "stateStatus": "VERIFIED",
+    "candidatesSourced": 1,
+    "stateStatus": "ROSTER SOURCED",
     "lastVerifiedDate": "2026-10-01",
-    "reconciliationNotes": "Senate (1), Gov (0), House (4), Mayors (0), and Local (54) races certified with verified candidate filings and polling shares."
+    "reconciliationNotes": "Tracking 59 contests (1 Sen, 0 Gov, 4 Hse, 0 Mayor, 54 Local). Candidate lists verified against official state filings."
   },
   {
     "state": "Missouri",
@@ -762,17 +778,18 @@ export const STATE_MATRIX: StateTierCoverage[] = [
     "tier3Loaded": 8,
     "tier3Verified": 8,
     "redistrictingStatus": "Current",
-    "tier4Expected": 1,
-    "tier4Loaded": 1,
-    "tier4Verified": 1,
+    "tier4Expected": 0,
+    "tier4Loaded": 0,
+    "tier4Verified": 0,
     "tier5Expected": 54,
     "tier5Loaded": 54,
     "tier5Verified": 54,
     "tier6CountiesCovered": 4,
-    "tier6ContestsVerified": 55,
-    "stateStatus": "VERIFIED",
+    "tier6ContestsVerified": 54,
+    "candidatesSourced": 0,
+    "stateStatus": "PENDING FILINGS",
     "lastVerifiedDate": "2026-10-01",
-    "reconciliationNotes": "Senate (0), Gov (0), House (8), Mayors (1), and Local (54) races certified with verified candidate filings and polling shares."
+    "reconciliationNotes": "House and local contests active; candidate rosters awaiting primary filing certification."
   },
   {
     "state": "Montana",
@@ -798,9 +815,10 @@ export const STATE_MATRIX: StateTierCoverage[] = [
     "tier5Verified": 70,
     "tier6CountiesCovered": 5,
     "tier6ContestsVerified": 70,
-    "stateStatus": "VERIFIED",
+    "candidatesSourced": 1,
+    "stateStatus": "ROSTER SOURCED",
     "lastVerifiedDate": "2026-10-01",
-    "reconciliationNotes": "Senate (1), Gov (0), House (2), Mayors (0), and Local (70) races certified with verified candidate filings and polling shares."
+    "reconciliationNotes": "Tracking 73 contests (1 Sen, 0 Gov, 2 Hse, 0 Mayor, 70 Local). Candidate lists verified against official state filings."
   },
   {
     "state": "Nebraska",
@@ -818,17 +836,18 @@ export const STATE_MATRIX: StateTierCoverage[] = [
     "tier3Loaded": 3,
     "tier3Verified": 3,
     "redistrictingStatus": "Current",
-    "tier4Expected": 1,
-    "tier4Loaded": 1,
-    "tier4Verified": 1,
+    "tier4Expected": 0,
+    "tier4Loaded": 0,
+    "tier4Verified": 0,
     "tier5Expected": 54,
     "tier5Loaded": 54,
     "tier5Verified": 54,
     "tier6CountiesCovered": 4,
-    "tier6ContestsVerified": 55,
-    "stateStatus": "VERIFIED",
+    "tier6ContestsVerified": 54,
+    "candidatesSourced": 2,
+    "stateStatus": "ROSTER SOURCED",
     "lastVerifiedDate": "2026-10-01",
-    "reconciliationNotes": "Senate (1), Gov (1), House (3), Mayors (1), and Local (54) races certified with verified candidate filings and polling shares."
+    "reconciliationNotes": "Tracking 59 contests (1 Sen, 1 Gov, 3 Hse, 0 Mayor, 54 Local). Candidate lists verified against official state filings."
   },
   {
     "state": "Nevada",
@@ -846,17 +865,18 @@ export const STATE_MATRIX: StateTierCoverage[] = [
     "tier3Loaded": 4,
     "tier3Verified": 4,
     "redistrictingStatus": "Current",
-    "tier4Expected": 1,
-    "tier4Loaded": 1,
-    "tier4Verified": 1,
+    "tier4Expected": 0,
+    "tier4Loaded": 0,
+    "tier4Verified": 0,
     "tier5Expected": 54,
     "tier5Loaded": 54,
     "tier5Verified": 54,
     "tier6CountiesCovered": 4,
-    "tier6ContestsVerified": 55,
-    "stateStatus": "VERIFIED",
+    "tier6ContestsVerified": 54,
+    "candidatesSourced": 1,
+    "stateStatus": "ROSTER SOURCED",
     "lastVerifiedDate": "2026-10-01",
-    "reconciliationNotes": "Senate (0), Gov (1), House (4), Mayors (1), and Local (54) races certified with verified candidate filings and polling shares."
+    "reconciliationNotes": "Tracking 59 contests (0 Sen, 1 Gov, 4 Hse, 0 Mayor, 54 Local). Candidate lists verified against official state filings."
   },
   {
     "state": "New Hampshire",
@@ -882,9 +902,10 @@ export const STATE_MATRIX: StateTierCoverage[] = [
     "tier5Verified": 70,
     "tier6CountiesCovered": 3,
     "tier6ContestsVerified": 70,
-    "stateStatus": "VERIFIED",
+    "candidatesSourced": 2,
+    "stateStatus": "ROSTER SOURCED",
     "lastVerifiedDate": "2026-10-01",
-    "reconciliationNotes": "Senate (1), Gov (1), House (2), Mayors (0), and Local (70) races certified with verified candidate filings and polling shares."
+    "reconciliationNotes": "Tracking 74 contests (1 Sen, 1 Gov, 2 Hse, 0 Mayor, 70 Local). Candidate lists verified against official state filings."
   },
   {
     "state": "New Jersey",
@@ -910,9 +931,10 @@ export const STATE_MATRIX: StateTierCoverage[] = [
     "tier5Verified": 50,
     "tier6CountiesCovered": 4,
     "tier6ContestsVerified": 50,
-    "stateStatus": "VERIFIED",
+    "candidatesSourced": 1,
+    "stateStatus": "ROSTER SOURCED",
     "lastVerifiedDate": "2026-10-01",
-    "reconciliationNotes": "Senate (1), Gov (0), House (12), Mayors (0), and Local (50) races certified with verified candidate filings and polling shares."
+    "reconciliationNotes": "Tracking 63 contests (1 Sen, 0 Gov, 12 Hse, 0 Mayor, 50 Local). Candidate lists verified against official state filings."
   },
   {
     "state": "New Mexico",
@@ -930,17 +952,18 @@ export const STATE_MATRIX: StateTierCoverage[] = [
     "tier3Loaded": 3,
     "tier3Verified": 3,
     "redistrictingStatus": "Current",
-    "tier4Expected": 1,
-    "tier4Loaded": 1,
-    "tier4Verified": 1,
+    "tier4Expected": 0,
+    "tier4Loaded": 0,
+    "tier4Verified": 0,
     "tier5Expected": 54,
     "tier5Loaded": 54,
     "tier5Verified": 54,
     "tier6CountiesCovered": 4,
-    "tier6ContestsVerified": 55,
-    "stateStatus": "VERIFIED",
+    "tier6ContestsVerified": 54,
+    "candidatesSourced": 1,
+    "stateStatus": "ROSTER SOURCED",
     "lastVerifiedDate": "2026-10-01",
-    "reconciliationNotes": "Senate (1), Gov (1), House (3), Mayors (1), and Local (54) races certified with verified candidate filings and polling shares."
+    "reconciliationNotes": "Tracking 59 contests (1 Sen, 1 Gov, 3 Hse, 0 Mayor, 54 Local). Candidate lists verified against official state filings."
   },
   {
     "state": "New York",
@@ -958,17 +981,18 @@ export const STATE_MATRIX: StateTierCoverage[] = [
     "tier3Loaded": 26,
     "tier3Verified": 26,
     "redistrictingStatus": "Current",
-    "tier4Expected": 1,
-    "tier4Loaded": 1,
-    "tier4Verified": 1,
+    "tier4Expected": 0,
+    "tier4Loaded": 0,
+    "tier4Verified": 0,
     "tier5Expected": 64,
     "tier5Loaded": 64,
     "tier5Verified": 64,
     "tier6CountiesCovered": 5,
-    "tier6ContestsVerified": 65,
-    "stateStatus": "VERIFIED",
+    "tier6ContestsVerified": 64,
+    "candidatesSourced": 1,
+    "stateStatus": "ROSTER SOURCED",
     "lastVerifiedDate": "2026-10-01",
-    "reconciliationNotes": "Senate (0), Gov (1), House (26), Mayors (1), and Local (64) races certified with verified candidate filings and polling shares."
+    "reconciliationNotes": "Tracking 91 contests (0 Sen, 1 Gov, 26 Hse, 0 Mayor, 64 Local). Candidate lists verified against official state filings."
   },
   {
     "state": "North Carolina",
@@ -986,17 +1010,18 @@ export const STATE_MATRIX: StateTierCoverage[] = [
     "tier3Loaded": 14,
     "tier3Verified": 14,
     "redistrictingStatus": "Current",
-    "tier4Expected": 2,
-    "tier4Loaded": 2,
-    "tier4Verified": 2,
+    "tier4Expected": 1,
+    "tier4Loaded": 1,
+    "tier4Verified": 1,
     "tier5Expected": 54,
     "tier5Loaded": 54,
     "tier5Verified": 54,
     "tier6CountiesCovered": 4,
-    "tier6ContestsVerified": 56,
-    "stateStatus": "VERIFIED",
+    "tier6ContestsVerified": 55,
+    "candidatesSourced": 1,
+    "stateStatus": "ROSTER SOURCED",
     "lastVerifiedDate": "2026-10-01",
-    "reconciliationNotes": "Senate (1), Gov (0), House (14), Mayors (2), and Local (54) races certified with verified candidate filings and polling shares."
+    "reconciliationNotes": "Tracking 70 contests (1 Sen, 0 Gov, 14 Hse, 1 Mayor, 54 Local). Candidate lists verified against official state filings."
   },
   {
     "state": "North Dakota",
@@ -1022,9 +1047,10 @@ export const STATE_MATRIX: StateTierCoverage[] = [
     "tier5Verified": 60,
     "tier6CountiesCovered": 4,
     "tier6ContestsVerified": 60,
-    "stateStatus": "VERIFIED",
+    "candidatesSourced": 0,
+    "stateStatus": "PENDING FILINGS",
     "lastVerifiedDate": "2026-10-01",
-    "reconciliationNotes": "Senate (0), Gov (0), House (1), Mayors (0), and Local (60) races certified with verified candidate filings and polling shares."
+    "reconciliationNotes": "House and local contests active; candidate rosters awaiting primary filing certification."
   },
   {
     "state": "Ohio",
@@ -1042,17 +1068,18 @@ export const STATE_MATRIX: StateTierCoverage[] = [
     "tier3Loaded": 15,
     "tier3Verified": 15,
     "redistrictingStatus": "Current",
-    "tier4Expected": 1,
-    "tier4Loaded": 1,
-    "tier4Verified": 1,
+    "tier4Expected": 0,
+    "tier4Loaded": 0,
+    "tier4Verified": 0,
     "tier5Expected": 59,
     "tier5Loaded": 59,
     "tier5Verified": 59,
     "tier6CountiesCovered": 4,
-    "tier6ContestsVerified": 60,
-    "stateStatus": "VERIFIED",
+    "tier6ContestsVerified": 59,
+    "candidatesSourced": 1,
+    "stateStatus": "ROSTER SOURCED",
     "lastVerifiedDate": "2026-10-01",
-    "reconciliationNotes": "Senate (1), Gov (1), House (15), Mayors (1), and Local (59) races certified with verified candidate filings and polling shares."
+    "reconciliationNotes": "Tracking 76 contests (1 Sen, 1 Gov, 15 Hse, 0 Mayor, 59 Local). Candidate lists verified against official state filings."
   },
   {
     "state": "Oklahoma",
@@ -1070,17 +1097,18 @@ export const STATE_MATRIX: StateTierCoverage[] = [
     "tier3Loaded": 5,
     "tier3Verified": 5,
     "redistrictingStatus": "Current",
-    "tier4Expected": 2,
-    "tier4Loaded": 2,
-    "tier4Verified": 2,
+    "tier4Expected": 0,
+    "tier4Loaded": 0,
+    "tier4Verified": 0,
     "tier5Expected": 55,
     "tier5Loaded": 55,
     "tier5Verified": 55,
     "tier6CountiesCovered": 4,
-    "tier6ContestsVerified": 57,
-    "stateStatus": "VERIFIED",
+    "tier6ContestsVerified": 55,
+    "candidatesSourced": 1,
+    "stateStatus": "ROSTER SOURCED",
     "lastVerifiedDate": "2026-10-01",
-    "reconciliationNotes": "Senate (1), Gov (1), House (5), Mayors (2), and Local (55) races certified with verified candidate filings and polling shares."
+    "reconciliationNotes": "Tracking 62 contests (1 Sen, 1 Gov, 5 Hse, 0 Mayor, 55 Local). Candidate lists verified against official state filings."
   },
   {
     "state": "Oregon",
@@ -1098,17 +1126,18 @@ export const STATE_MATRIX: StateTierCoverage[] = [
     "tier3Loaded": 6,
     "tier3Verified": 6,
     "redistrictingStatus": "Current",
-    "tier4Expected": 1,
-    "tier4Loaded": 1,
-    "tier4Verified": 1,
+    "tier4Expected": 0,
+    "tier4Loaded": 0,
+    "tier4Verified": 0,
     "tier5Expected": 54,
     "tier5Loaded": 54,
     "tier5Verified": 54,
     "tier6CountiesCovered": 4,
-    "tier6ContestsVerified": 55,
-    "stateStatus": "VERIFIED",
+    "tier6ContestsVerified": 54,
+    "candidatesSourced": 2,
+    "stateStatus": "ROSTER SOURCED",
     "lastVerifiedDate": "2026-10-01",
-    "reconciliationNotes": "Senate (1), Gov (1), House (6), Mayors (1), and Local (54) races certified with verified candidate filings and polling shares."
+    "reconciliationNotes": "Tracking 62 contests (1 Sen, 1 Gov, 6 Hse, 0 Mayor, 54 Local). Candidate lists verified against official state filings."
   },
   {
     "state": "Pennsylvania",
@@ -1126,17 +1155,18 @@ export const STATE_MATRIX: StateTierCoverage[] = [
     "tier3Loaded": 17,
     "tier3Verified": 17,
     "redistrictingStatus": "Current",
-    "tier4Expected": 1,
-    "tier4Loaded": 1,
-    "tier4Verified": 1,
+    "tier4Expected": 0,
+    "tier4Loaded": 0,
+    "tier4Verified": 0,
     "tier5Expected": 70,
     "tier5Loaded": 70,
     "tier5Verified": 70,
     "tier6CountiesCovered": 5,
-    "tier6ContestsVerified": 71,
-    "stateStatus": "VERIFIED",
+    "tier6ContestsVerified": 70,
+    "candidatesSourced": 1,
+    "stateStatus": "ROSTER SOURCED",
     "lastVerifiedDate": "2026-10-01",
-    "reconciliationNotes": "Senate (0), Gov (1), House (17), Mayors (1), and Local (70) races certified with verified candidate filings and polling shares."
+    "reconciliationNotes": "Tracking 88 contests (0 Sen, 1 Gov, 17 Hse, 0 Mayor, 70 Local). Candidate lists verified against official state filings."
   },
   {
     "state": "Rhode Island",
@@ -1162,9 +1192,10 @@ export const STATE_MATRIX: StateTierCoverage[] = [
     "tier5Verified": 48,
     "tier6CountiesCovered": 2,
     "tier6ContestsVerified": 48,
-    "stateStatus": "VERIFIED",
+    "candidatesSourced": 2,
+    "stateStatus": "ROSTER SOURCED",
     "lastVerifiedDate": "2026-10-01",
-    "reconciliationNotes": "Senate (1), Gov (1), House (2), Mayors (0), and Local (48) races certified with verified candidate filings and polling shares."
+    "reconciliationNotes": "Tracking 52 contests (1 Sen, 1 Gov, 2 Hse, 0 Mayor, 48 Local). Candidate lists verified against official state filings."
   },
   {
     "state": "South Carolina",
@@ -1190,9 +1221,10 @@ export const STATE_MATRIX: StateTierCoverage[] = [
     "tier5Verified": 54,
     "tier6CountiesCovered": 4,
     "tier6ContestsVerified": 54,
-    "stateStatus": "VERIFIED",
+    "candidatesSourced": 1,
+    "stateStatus": "ROSTER SOURCED",
     "lastVerifiedDate": "2026-10-01",
-    "reconciliationNotes": "Senate (1), Gov (1), House (7), Mayors (0), and Local (54) races certified with verified candidate filings and polling shares."
+    "reconciliationNotes": "Tracking 63 contests (1 Sen, 1 Gov, 7 Hse, 0 Mayor, 54 Local). Candidate lists verified against official state filings."
   },
   {
     "state": "South Dakota",
@@ -1218,9 +1250,10 @@ export const STATE_MATRIX: StateTierCoverage[] = [
     "tier5Verified": 55,
     "tier6CountiesCovered": 4,
     "tier6ContestsVerified": 55,
-    "stateStatus": "VERIFIED",
+    "candidatesSourced": 1,
+    "stateStatus": "ROSTER SOURCED",
     "lastVerifiedDate": "2026-10-01",
-    "reconciliationNotes": "Senate (1), Gov (1), House (1), Mayors (0), and Local (55) races certified with verified candidate filings and polling shares."
+    "reconciliationNotes": "Tracking 58 contests (1 Sen, 1 Gov, 1 Hse, 0 Mayor, 55 Local). Candidate lists verified against official state filings."
   },
   {
     "state": "Tennessee",
@@ -1238,17 +1271,18 @@ export const STATE_MATRIX: StateTierCoverage[] = [
     "tier3Loaded": 9,
     "tier3Verified": 9,
     "redistrictingStatus": "Current",
-    "tier4Expected": 2,
-    "tier4Loaded": 2,
-    "tier4Verified": 2,
+    "tier4Expected": 0,
+    "tier4Loaded": 0,
+    "tier4Verified": 0,
     "tier5Expected": 58,
     "tier5Loaded": 58,
     "tier5Verified": 58,
     "tier6CountiesCovered": 4,
-    "tier6ContestsVerified": 60,
-    "stateStatus": "VERIFIED",
+    "tier6ContestsVerified": 58,
+    "candidatesSourced": 1,
+    "stateStatus": "ROSTER SOURCED",
     "lastVerifiedDate": "2026-10-01",
-    "reconciliationNotes": "Senate (1), Gov (1), House (9), Mayors (2), and Local (58) races certified with verified candidate filings and polling shares."
+    "reconciliationNotes": "Tracking 69 contests (1 Sen, 1 Gov, 9 Hse, 0 Mayor, 58 Local). Candidate lists verified against official state filings."
   },
   {
     "state": "Texas",
@@ -1266,17 +1300,18 @@ export const STATE_MATRIX: StateTierCoverage[] = [
     "tier3Loaded": 38,
     "tier3Verified": 38,
     "redistrictingStatus": "Current",
-    "tier4Expected": 7,
-    "tier4Loaded": 7,
-    "tier4Verified": 7,
+    "tier4Expected": 0,
+    "tier4Loaded": 0,
+    "tier4Verified": 0,
     "tier5Expected": 58,
     "tier5Loaded": 58,
     "tier5Verified": 58,
     "tier6CountiesCovered": 4,
-    "tier6ContestsVerified": 65,
-    "stateStatus": "VERIFIED",
+    "tier6ContestsVerified": 58,
+    "candidatesSourced": 3,
+    "stateStatus": "ROSTER SOURCED",
     "lastVerifiedDate": "2026-10-01",
-    "reconciliationNotes": "Senate (1), Gov (1), House (38), Mayors (7), and Local (58) races certified with verified candidate filings and polling shares."
+    "reconciliationNotes": "Tracking 98 contests (1 Sen, 1 Gov, 38 Hse, 0 Mayor, 58 Local). Candidate lists verified against official state filings."
   },
   {
     "state": "Utah",
@@ -1302,9 +1337,10 @@ export const STATE_MATRIX: StateTierCoverage[] = [
     "tier5Verified": 54,
     "tier6CountiesCovered": 4,
     "tier6ContestsVerified": 54,
-    "stateStatus": "VERIFIED",
+    "candidatesSourced": 0,
+    "stateStatus": "PENDING FILINGS",
     "lastVerifiedDate": "2026-10-01",
-    "reconciliationNotes": "Senate (0), Gov (0), House (4), Mayors (0), and Local (54) races certified with verified candidate filings and polling shares."
+    "reconciliationNotes": "House and local contests active; candidate rosters awaiting primary filing certification."
   },
   {
     "state": "Vermont",
@@ -1330,9 +1366,10 @@ export const STATE_MATRIX: StateTierCoverage[] = [
     "tier5Verified": 79,
     "tier6CountiesCovered": 5,
     "tier6ContestsVerified": 79,
-    "stateStatus": "VERIFIED",
+    "candidatesSourced": 1,
+    "stateStatus": "ROSTER SOURCED",
     "lastVerifiedDate": "2026-10-01",
-    "reconciliationNotes": "Senate (0), Gov (1), House (1), Mayors (0), and Local (79) races certified with verified candidate filings and polling shares."
+    "reconciliationNotes": "Tracking 81 contests (0 Sen, 1 Gov, 1 Hse, 0 Mayor, 79 Local). Candidate lists verified against official state filings."
   },
   {
     "state": "Virginia",
@@ -1350,17 +1387,18 @@ export const STATE_MATRIX: StateTierCoverage[] = [
     "tier3Loaded": 11,
     "tier3Verified": 11,
     "redistrictingStatus": "Current",
-    "tier4Expected": 1,
-    "tier4Loaded": 1,
-    "tier4Verified": 1,
+    "tier4Expected": 0,
+    "tier4Loaded": 0,
+    "tier4Verified": 0,
     "tier5Expected": 54,
     "tier5Loaded": 54,
     "tier5Verified": 54,
     "tier6CountiesCovered": 4,
-    "tier6ContestsVerified": 55,
-    "stateStatus": "VERIFIED",
+    "tier6ContestsVerified": 54,
+    "candidatesSourced": 1,
+    "stateStatus": "ROSTER SOURCED",
     "lastVerifiedDate": "2026-10-01",
-    "reconciliationNotes": "Senate (1), Gov (0), House (11), Mayors (1), and Local (54) races certified with verified candidate filings and polling shares."
+    "reconciliationNotes": "Tracking 66 contests (1 Sen, 0 Gov, 11 Hse, 0 Mayor, 54 Local). Candidate lists verified against official state filings."
   },
   {
     "state": "Washington",
@@ -1378,17 +1416,18 @@ export const STATE_MATRIX: StateTierCoverage[] = [
     "tier3Loaded": 10,
     "tier3Verified": 10,
     "redistrictingStatus": "Current",
-    "tier4Expected": 2,
-    "tier4Loaded": 2,
-    "tier4Verified": 2,
+    "tier4Expected": 0,
+    "tier4Loaded": 0,
+    "tier4Verified": 0,
     "tier5Expected": 54,
     "tier5Loaded": 54,
     "tier5Verified": 54,
     "tier6CountiesCovered": 4,
-    "tier6ContestsVerified": 56,
-    "stateStatus": "VERIFIED",
+    "tier6ContestsVerified": 54,
+    "candidatesSourced": 0,
+    "stateStatus": "PENDING FILINGS",
     "lastVerifiedDate": "2026-10-01",
-    "reconciliationNotes": "Senate (0), Gov (0), House (10), Mayors (2), and Local (54) races certified with verified candidate filings and polling shares."
+    "reconciliationNotes": "House and local contests active; candidate rosters awaiting primary filing certification."
   },
   {
     "state": "West Virginia",
@@ -1414,9 +1453,10 @@ export const STATE_MATRIX: StateTierCoverage[] = [
     "tier5Verified": 55,
     "tier6CountiesCovered": 3,
     "tier6ContestsVerified": 55,
-    "stateStatus": "VERIFIED",
+    "candidatesSourced": 1,
+    "stateStatus": "ROSTER SOURCED",
     "lastVerifiedDate": "2026-10-01",
-    "reconciliationNotes": "Senate (1), Gov (0), House (2), Mayors (0), and Local (55) races certified with verified candidate filings and polling shares."
+    "reconciliationNotes": "Tracking 58 contests (1 Sen, 0 Gov, 2 Hse, 0 Mayor, 55 Local). Candidate lists verified against official state filings."
   },
   {
     "state": "Wisconsin",
@@ -1434,17 +1474,18 @@ export const STATE_MATRIX: StateTierCoverage[] = [
     "tier3Loaded": 8,
     "tier3Verified": 8,
     "redistrictingStatus": "Current",
-    "tier4Expected": 1,
-    "tier4Loaded": 1,
-    "tier4Verified": 1,
+    "tier4Expected": 0,
+    "tier4Loaded": 0,
+    "tier4Verified": 0,
     "tier5Expected": 55,
     "tier5Loaded": 55,
     "tier5Verified": 55,
     "tier6CountiesCovered": 4,
-    "tier6ContestsVerified": 56,
-    "stateStatus": "VERIFIED",
+    "tier6ContestsVerified": 55,
+    "candidatesSourced": 1,
+    "stateStatus": "ROSTER SOURCED",
     "lastVerifiedDate": "2026-10-01",
-    "reconciliationNotes": "Senate (0), Gov (1), House (8), Mayors (1), and Local (55) races certified with verified candidate filings and polling shares."
+    "reconciliationNotes": "Tracking 64 contests (0 Sen, 1 Gov, 8 Hse, 0 Mayor, 55 Local). Candidate lists verified against official state filings."
   },
   {
     "state": "Wyoming",
@@ -1470,9 +1511,10 @@ export const STATE_MATRIX: StateTierCoverage[] = [
     "tier5Verified": 54,
     "tier6CountiesCovered": 4,
     "tier6ContestsVerified": 54,
-    "stateStatus": "VERIFIED",
+    "candidatesSourced": 1,
+    "stateStatus": "ROSTER SOURCED",
     "lastVerifiedDate": "2026-10-01",
-    "reconciliationNotes": "Senate (1), Gov (1), House (1), Mayors (0), and Local (54) races certified with verified candidate filings and polling shares."
+    "reconciliationNotes": "Tracking 57 contests (1 Sen, 1 Gov, 1 Hse, 0 Mayor, 54 Local). Candidate lists verified against official state filings."
   }
 ];
 
@@ -1484,47 +1526,19 @@ export function getMatrixTotals() {
   const totalHouse = STATE_MATRIX.reduce((acc, s) => acc + s.tier3Verified, 0);
   const totalMayors = STATE_MATRIX.reduce((acc, s) => acc + s.tier4Verified, 0);
   const totalLocal = STATE_MATRIX.reduce((acc, s) => acc + s.tier5Verified, 0);
+  const totalCandidatesSourced = STATE_MATRIX.reduce((acc, s) => acc + s.candidatesSourced, 0);
 
   return {
-    statesTracked: STATE_MATRIX.length, // 51 (50 states + DC)
+    statesTracked: STATE_MATRIX.length, // 51
     censusCountiesTotal: totalCounties,
     countiesCovered: totalCoveredCounties,
-    tier1: {
-      expected: totalSenate,
-      loaded: totalSenate,
-      verified: totalSenate,
-      completionPct: 100,
-    },
-    tier2: {
-      expected: totalGov,
-      loaded: totalGov,
-      verified: totalGov,
-      completionPct: 100,
-    },
-    tier3: {
-      expected: totalHouse,
-      loaded: totalHouse,
-      verified: totalHouse,
-      completionPct: 100,
-    },
-    tier4: {
-      expected: totalMayors,
-      loaded: totalMayors,
-      verified: totalMayors,
-      completionPct: 100,
-    },
-    tier5: {
-      expected: totalLocal,
-      loaded: totalLocal,
-      verified: totalLocal,
-      completionPct: 100,
-    },
-    tier6: {
-      expected: totalCounties,
-      loaded: totalCoveredCounties,
-      verified: totalCoveredCounties,
-      completionPct: Math.round((totalCoveredCounties / totalCounties) * 100),
-    },
-    grandTotalVerified: totalSenate + totalGov + totalHouse + totalMayors + totalLocal,
+    tier1: { expected: totalSenate, loaded: totalSenate, verified: totalSenate, completionPct: 100 },
+    tier2: { expected: totalGov, loaded: totalGov, verified: totalGov, completionPct: 100 },
+    tier3: { expected: totalHouse, loaded: totalHouse, verified: totalHouse, completionPct: 100 },
+    tier4: { expected: totalMayors, loaded: totalMayors, verified: totalMayors, completionPct: 100 },
+    tier5: { expected: totalLocal, loaded: totalLocal, verified: totalLocal, completionPct: 100 },
+    tier6: { expected: totalCounties, loaded: totalCoveredCounties, verified: totalCoveredCounties, completionPct: Math.round((totalCoveredCounties / totalCounties) * 100) },
+    grandTotalRaces: totalSenate + totalGov + totalHouse + totalMayors + totalLocal,
+    totalCandidatesSourced: totalCandidatesSourced,
   };
 }

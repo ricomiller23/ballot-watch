@@ -25,7 +25,7 @@ export default function SenateControlPage() {
         <div className="bg-[#FFFFFF] border border-[#E4E9F0] p-5 rounded-xl shadow-xs space-y-3">
           <strong className="text-sm text-[#0B1220] block uppercase">US Senate (100 Seats)</strong>
           <div className="space-y-1.5 text-[#5B6779]">
-            <div className="flex justify-between"><span>Total Seats Up in 2026:</span><strong className="text-[#0B1220]">33 Seats (Class II)</strong></div>
+            <div className="flex justify-between"><span>Total Seats Up in 2026:</span><strong className="text-[#0B1220]">35 Seats (33 Class II + 2 Specials)</strong></div>
             <div className="flex justify-between"><span>Democratic-Held Baseline:</span><strong className="text-[#0E63C4]">{control.senate.demHeld}</strong></div>
             <div className="flex justify-between"><span>Republican-Held Baseline:</span><strong className="text-[#B42318]">{control.senate.repHeld}</strong></div>
             <div className="flex justify-between"><span>Toss-Ups / In Play:</span><strong className="text-[#8A6100]">{control.senate.tossUps}</strong></div>

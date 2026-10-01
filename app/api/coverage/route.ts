@@ -11,7 +11,8 @@ export async function GET() {
   return NextResponse.json({
     summary: {
       statesTracked: totals.statesTracked,
-      grandTotalVerified: totals.grandTotalVerified,
+      grandTotalRaces: totals.grandTotalRaces,
+      totalCandidatesSourced: totals.totalCandidatesSourced,
       censusCountiesTotal: totals.censusCountiesTotal,
       countiesCovered: totals.countiesCovered,
       tiers: report.tiers,
