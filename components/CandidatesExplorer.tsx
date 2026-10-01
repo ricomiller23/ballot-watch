@@ -713,8 +713,8 @@ export default function CandidatesExplorer() {
                 </strong>
               </div>
               <div className="bg-white/10 backdrop-blur-xs border border-white/20 rounded-xl px-3 py-2 text-white">
-                <span className="text-[#94A3B8] text-[10px] block uppercase font-mono">Source Audited</span>
-                <strong className="text-lg font-bold font-mono text-[#34D399]">100%</strong>
+                <span className="text-[#94A3B8] text-[10px] block uppercase font-mono">Sourced</span>
+                <strong className="text-lg font-bold font-mono text-[#34D399]">Direct URL</strong>
               </div>
             </div>
           </div>

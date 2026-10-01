@@ -5,9 +5,13 @@ import { getRaceById } from '@/lib/coverage';
 import { ratingBgClass, ratingLabel, confidenceBadge, partyColor } from '@/lib/utils';
 
 export function generateStaticParams() {
-  return SENATE_2026.map(r => ({
-    id: r.raceId,
-  }));
+  const ids: { id: string }[] = [];
+  for (const r of SENATE_2026) {
+    ids.push({ id: r.raceId });
+    ids.push({ id: r.stateAbbr.toLowerCase() });
+    ids.push({ id: `senate-${r.stateAbbr.toLowerCase()}` });
+  }
+  return ids;
 }
 
 export default async function SenateRaceDetailPage({

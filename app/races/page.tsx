@@ -2,15 +2,15 @@
 
 import React, { useState } from 'react';
 import CandidatesExplorer from '@/components/CandidatesExplorer';
-import { SEED_RACES, SEED_POLLS } from '@/lib/fallback-data';
-import { calculatePollingAverage } from '@/lib/average';
+import { getAllRaces } from '@/lib/races';
 import { Layers, AlertTriangle, BarChart2, ShieldCheck, Filter } from 'lucide-react';
 
 export default function RacesPage() {
   const [activeTab, setActiveTab] = useState<'all_races' | 'polling_invariants'>('all_races');
+  const races = getAllRaces();
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 font-mono">
       {/* Tab Switcher Header */}
       <div className="bg-[#FFFFFF] border border-[#E4E9F0] p-4 rounded-xl shadow-xs flex flex-wrap items-center justify-between gap-4">
         <div>
@@ -21,7 +21,7 @@ export default function RacesPage() {
             </h1>
           </div>
           <p className="text-xs text-[#5B6779] mt-0.5">
-            Every electable contest in the United States — from U.S. Senate and Governors down to County Treasurers, School Boards, and Town Dog Catchers (Pop. ≥ 1,000).
+            Tracking U.S. Senate (35), Governors (36), U.S. House (435), and 2026 Mayoral elections (31).
           </p>
         </div>
 
@@ -44,7 +44,7 @@ export default function RacesPage() {
                 : 'text-[#5B6779] hover:text-[#0B1220]'
             }`}
           >
-            Polling Average Threshold Guards (&lt;3 Polls)
+            Polling Average Threshold Guards (&lt;2 Polls)
           </button>
         </div>
       </div>
@@ -52,20 +52,19 @@ export default function RacesPage() {
       {activeTab === 'all_races' ? (
         <CandidatesExplorer />
       ) : (
-        <div className="space-y-4 font-mono">
+        <div className="space-y-4">
           <div className="bg-[#F0FDF4] border border-[#BBF7D0] p-4 rounded-xl text-xs text-[#166534]">
             <strong className="block text-sm font-bold flex items-center gap-2 text-[#15803D]">
               <ShieldCheck className="w-4 h-4" /> Polling Math Invariant Rule
             </strong>
             <p className="mt-1">
-              Any race with ≥3 qualifying surveys renders a certified, published exponential decay mathematical average. Races with fewer than 3 surveys strictly suppress averaging to prevent synthetic bias.
+              Any race with ≥2 qualifying surveys renders a published inverse-variance mathematical average. Races with fewer than 2 surveys strictly suppress averaging to prevent synthetic bias.
             </p>
           </div>
 
           <div className="space-y-4">
-            {SEED_RACES.map((race) => {
-              const avg = calculatePollingAverage(race.id, SEED_POLLS);
-              const hasAvg = avg.status === 'published';
+            {races.filter(r => r.tier <= 2 || r.is_featured).map((race) => {
+              const hasAvg = Boolean(race.polling_average);
 
               return (
                 <div key={race.id} className="bg-[#FFFFFF] border border-[#E4E9F0] rounded-xl p-5 shadow-xs text-xs space-y-3">
@@ -75,21 +74,21 @@ export default function RacesPage() {
                         {race.id} · {race.office.toUpperCase()}
                       </span>
                       <strong className="text-sm text-[#0B1220] block mt-1">
-                        {race.state} {race.district ? `District ${race.district}` : ''}
+                        {race.state_name} {race.district ? `District ${race.district}` : ''}
                       </strong>
                     </div>
-                    <span className="text-xs text-[#5B6779]">Historical 2024 Baseline: +{race.margin_2024}%</span>
+                    <span className="text-xs text-[#5B6779]">Tier {race.tier} Contest</span>
                   </div>
 
                   {/* Polling Average Status */}
-                  {hasAvg && avg.averages ? (
+                  {hasAvg && race.polling_average?.averages ? (
                     <div className="p-3 rounded-lg bg-[#F0FDF4] border border-[#BBF0CC] space-y-1">
                       <div className="flex justify-between items-center font-bold text-[#067647]">
-                        <span>QUALIFYING AVERAGE PUBLISHED ({avg.methodBlock.qualifyingPollCount} surveys)</span>
-                        <span>Status: Validated</span>
+                        <span>QUALIFYING AVERAGE PUBLISHED ({race.polling_average.qualifying_polls_count} surveys)</span>
+                        <span>Leader: {race.polling_average.leader} (+{race.polling_average.spread}%)</span>
                       </div>
                       <div className="text-xs font-bold text-[#0B1220] flex gap-4 pt-1">
-                        {Object.entries(avg.averages).map(([cand, pct]) => (
+                        {Object.entries(race.polling_average.averages).map(([cand, pct]) => (
                           <span key={cand}>{cand}: {pct}%</span>
                         ))}
                       </div>
@@ -98,10 +97,10 @@ export default function RacesPage() {
                     <div className="p-3 rounded-lg bg-[#FFFBEB] border border-[#FCE8A5] space-y-1">
                       <div className="flex items-center gap-1.5 font-bold text-[#8A6100]">
                         <AlertTriangle className="w-4 h-4" />
-                        <span>INSUFFICIENT POLLS FOR AN AVERAGE ({avg.methodBlock.qualifyingPollCount} qualifying surveys)</span>
+                        <span>INSUFFICIENT POLLS FOR AN AVERAGE ({race.polls.length} qualifying surveys)</span>
                       </div>
                       <p className="text-[#5B6779] text-[11px]">
-                        No averaging method is applied below three qualifying independent surveys. Displaying raw poll points only to prevent synthetic bias.
+                        No averaging method is applied below two qualifying independent surveys. Displaying raw poll points only to prevent synthetic bias.
                       </p>
                     </div>
                   )}

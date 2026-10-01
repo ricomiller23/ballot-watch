@@ -1,16 +1,17 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { SEED_POLLS } from '@/lib/fallback-data';
-import { calculatePollingAverage } from '@/lib/average';
+import { getRaceById } from '@/lib/races';
 
 export const revalidate = 60;
 
 export async function GET(request: NextRequest) {
   const { searchParams } = new URL(request.url);
-  const race = searchParams.get('race') || '2026-SEN-TX';
+  const raceId = searchParams.get('race') || 'senate-tx';
 
-  const avgResult = calculatePollingAverage(race, SEED_POLLS);
+  const race = getRaceById(raceId);
+  const avgResult = race?.polling_average || null;
 
   return NextResponse.json({
+    raceId,
     average: avgResult,
     asOf: new Date().toISOString(),
   });

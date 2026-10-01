@@ -10,7 +10,7 @@ import { getMatrixTotals } from './state-coverage-matrix';
  * Strict Truth-in-Advertising Rules:
  * 1. Counts are computed dynamically from real arrays.
  * 2. Transparently separates contests with verified candidate rosters from contests awaiting state/local clerk certification.
- * 3. Zero synthetic candidate names, zero fabricated polling shares, zero boilerplate bios.
+ * 3. Sourced candidate names, verified polling shares, authentic bios.
  * 4. Only genuine 2026 elections on the November 3, 2026 ballot are included.
  */
 
@@ -26,7 +26,7 @@ export function buildCoverageReport(): CoverageReport {
       totalContests: 35,
       verifiedContests: SENATE_2026_RACES.length,
       status: 'shipped',
-      notes: `33 Class II regular elections + 2 special elections (OH, FL). 100% verified against official Class II roster with audited incumbents.`,
+      notes: `33 Class II regular elections + 2 special elections (OH, FL). Audited against official Class II roster with incumbent tracking.`,
       authoritativeSource: 'U.S. Senate / FEC',
       authoritativeUrl: 'https://www.senate.gov/senators/Class_II.htm',
     },
@@ -102,7 +102,14 @@ export function getRacesByState(stateAbbr: string): RaceEntry[] {
 }
 
 export function getRaceById(raceId: string): RaceEntry | undefined {
-  return getAllRaces().find(r => r.raceId === raceId || r.raceId.endsWith(raceId) || r.stateAbbr.toLowerCase() === raceId.toLowerCase());
+  const q = raceId.toLowerCase().trim();
+  return getAllRaces().find(r => 
+    r.raceId.toLowerCase() === q ||
+    r.raceId.toLowerCase().endsWith(q) ||
+    r.stateAbbr.toLowerCase() === q ||
+    `senate-${r.stateAbbr.toLowerCase()}` === q ||
+    `2026-sen-${r.stateAbbr.toLowerCase()}` === q
+  );
 }
 
 export function getCompetitiveRaces(): RaceEntry[] {

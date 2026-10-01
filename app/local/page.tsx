@@ -4,7 +4,7 @@ import LocalRacesExplorer from "@/components/LocalRacesExplorer";
 
 export const metadata: Metadata = {
   title: "Local Races Directory — From Treasurer Down to Dog Catcher (Pop. ≥ 1,000) | BALLOT.WATCH",
-  description: "Exhaustive directory tracking local offices in the United States from city/county Treasurer down to town Dog Catcher for populations over 1,000 people. Zero synthetic data.",
+  description: "Directory tracking local offices on the November 3, 2026 general election ballot.",
 };
 
 export default function LocalRacesPage() {

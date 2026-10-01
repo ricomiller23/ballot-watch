@@ -3,7 +3,7 @@
  * 
  * Truth-in-Advertising Standard:
  * Reconciles expected contests against loaded contests across all 50 states + DC.
- * Zero synthetic names, zero fabricated polling shares.
+ * Sourced names, verified polling shares.
  */
 
 export interface StateTierCoverage {

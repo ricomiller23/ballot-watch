@@ -1,11 +1,18 @@
 import { NextResponse } from 'next/server';
-import { SEED_FORECASTS } from '@/lib/fallback-data';
+import { getAllRatings, getSenateRaces, getGovernorRaces } from '@/lib/races';
 
 export const revalidate = 60;
 
 export async function GET() {
+  const ratings = getAllRatings();
+  const senate = getSenateRaces();
+  const gov = getGovernorRaces();
+
   return NextResponse.json({
-    items: SEED_FORECASTS,
+    totalRatings: ratings.length,
+    senateContestsTracked: senate.length,
+    govContestsTracked: gov.length,
+    ratings: ratings.slice(0, 50),
     asOf: new Date().toISOString(),
   });
 }

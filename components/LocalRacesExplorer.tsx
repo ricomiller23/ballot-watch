@@ -618,7 +618,7 @@ export default function LocalRacesExplorer() {
                           <span>Office on 3 Nov 2026 Ballot</span>
                         </div>
                         <div className="text-[10px] text-[#5B6779]">
-                          Candidate filing period pending official clerk canvas. Zero synthetic data.
+                          Candidate filing period pending official clerk canvas. Official list only.
                         </div>
                       </div>
                     ) : (
@@ -796,7 +796,7 @@ export default function LocalRacesExplorer() {
                     <h4 className="font-bold text-sm text-[#0B1220]">Official Candidate Filing Pending</h4>
                     <p className="text-xs text-[#5B6779] max-w-md mx-auto">
                       This office is verified on the November 3, 2026 ballot for {selectedRace.municipality || selectedRace.county || selectedRace.state}.
-                      Candidate names will be published strictly following official certification by the local municipal clerk. Zero synthetic data generated.
+                      Candidate names will be published strictly following official certification by the local municipal clerk.
                     </p>
                   </div>
                 ) : (
@@ -851,7 +851,7 @@ export default function LocalRacesExplorer() {
                 <div className="bg-[#F0FDF4] border border-[#BBF7D0] p-4 rounded-xl text-xs space-y-2">
                   <div className="flex justify-between items-center">
                     <strong className="text-sm font-bold text-[#166534] flex items-center gap-1.5">
-                      <TrendingUp className="w-4 h-4" /> Certified Polling Average
+                      <TrendingUp className="w-4 h-4" /> Polling Average
                     </strong>
                     <span className="font-bold text-[#0E63C4] bg-[#EBF3FD] px-2 py-0.5 rounded">
                       {selectedRace.pollAverage || 'Baseline Average Published'}

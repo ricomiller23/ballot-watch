@@ -1,12 +1,13 @@
 import { NextResponse } from 'next/server';
-import { SEED_RATINGS } from '@/lib/fallback-data';
+import { getAllRatings } from '@/lib/races';
 
 export const revalidate = 60;
 
 export async function GET() {
+  const items = getAllRatings();
   return NextResponse.json({
-    items: SEED_RATINGS,
-    total: SEED_RATINGS.length,
+    items,
+    total: items.length,
     asOf: new Date().toISOString(),
   });
 }
