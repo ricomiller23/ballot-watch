@@ -1,0 +1,359 @@
+[
+  {
+    "state": "Alabama",
+    "stateAbbr": "AL",
+    "officialPortal": "https://www.sos.alabama.gov/alabama-votes",
+    "votingSystem": "Standard",
+    "censusCounties": 67
+  },
+  {
+    "state": "Alaska",
+    "stateAbbr": "AK",
+    "officialPortal": "https://www.elections.alaska.gov/",
+    "votingSystem": "Ranked-Choice",
+    "censusCounties": 30
+  },
+  {
+    "state": "Arizona",
+    "stateAbbr": "AZ",
+    "officialPortal": "https://azsos.gov/elections",
+    "votingSystem": "Standard",
+    "censusCounties": 15
+  },
+  {
+    "state": "Arkansas",
+    "stateAbbr": "AR",
+    "officialPortal": "https://www.sos.arkansas.gov/elections",
+    "votingSystem": "Standard",
+    "censusCounties": 75
+  },
+  {
+    "state": "California",
+    "stateAbbr": "CA",
+    "officialPortal": "https://www.sos.ca.gov/elections",
+    "votingSystem": "Top-Two Primary",
+    "censusCounties": 58
+  },
+  {
+    "state": "Colorado",
+    "stateAbbr": "CO",
+    "officialPortal": "https://www.sos.state.co.us/pubs/elections/",
+    "votingSystem": "Standard",
+    "censusCounties": 64
+  },
+  {
+    "state": "Connecticut",
+    "stateAbbr": "CT",
+    "officialPortal": "https://portal.ct.gov/sots/election-services",
+    "votingSystem": "Standard",
+    "censusCounties": 8
+  },
+  {
+    "state": "Delaware",
+    "stateAbbr": "DE",
+    "officialPortal": "https://elections.delaware.gov/",
+    "votingSystem": "Standard",
+    "censusCounties": 3
+  },
+  {
+    "state": "District of Columbia",
+    "stateAbbr": "DC",
+    "officialPortal": "https://dcboe.org/",
+    "votingSystem": "Standard",
+    "censusCounties": 1
+  },
+  {
+    "state": "Florida",
+    "stateAbbr": "FL",
+    "officialPortal": "https://dos.myflorida.com/elections/",
+    "votingSystem": "Standard",
+    "censusCounties": 67
+  },
+  {
+    "state": "Georgia",
+    "stateAbbr": "GA",
+    "officialPortal": "https://sos.ga.gov/elections-division",
+    "votingSystem": "Majority/Runoff",
+    "censusCounties": 159
+  },
+  {
+    "state": "Hawaii",
+    "stateAbbr": "HI",
+    "officialPortal": "https://elections.hawaii.gov/",
+    "votingSystem": "Standard",
+    "censusCounties": 5
+  },
+  {
+    "state": "Idaho",
+    "stateAbbr": "ID",
+    "officialPortal": "https://voteidaho.gov/",
+    "votingSystem": "Standard",
+    "censusCounties": 44
+  },
+  {
+    "state": "Illinois",
+    "stateAbbr": "IL",
+    "officialPortal": "https://www.elections.il.gov/",
+    "votingSystem": "Standard",
+    "censusCounties": 102
+  },
+  {
+    "state": "Indiana",
+    "stateAbbr": "IN",
+    "officialPortal": "https://www.in.gov/sos/elections/",
+    "votingSystem": "Standard",
+    "censusCounties": 92
+  },
+  {
+    "state": "Iowa",
+    "stateAbbr": "IA",
+    "officialPortal": "https://sos.iowa.gov/elections/",
+    "votingSystem": "Standard",
+    "censusCounties": 99
+  },
+  {
+    "state": "Kansas",
+    "stateAbbr": "KS",
+    "officialPortal": "https://sos.ks.gov/elections/elections.html",
+    "votingSystem": "Standard",
+    "censusCounties": 105
+  },
+  {
+    "state": "Kentucky",
+    "stateAbbr": "KY",
+    "officialPortal": "https://elect.ky.gov/",
+    "votingSystem": "Standard",
+    "censusCounties": 120
+  },
+  {
+    "state": "Louisiana",
+    "stateAbbr": "LA",
+    "officialPortal": "https://www.sos.la.gov/ElectionsAndVoting/",
+    "votingSystem": "Majority/Runoff",
+    "censusCounties": 64
+  },
+  {
+    "state": "Maine",
+    "stateAbbr": "ME",
+    "officialPortal": "https://www.maine.gov/sos/cec/elec/",
+    "votingSystem": "Ranked-Choice",
+    "censusCounties": 16
+  },
+  {
+    "state": "Maryland",
+    "stateAbbr": "MD",
+    "officialPortal": "https://elections.maryland.gov/",
+    "votingSystem": "Standard",
+    "censusCounties": 24
+  },
+  {
+    "state": "Massachusetts",
+    "stateAbbr": "MA",
+    "officialPortal": "https://www.sec.state.ma.us/ele/",
+    "votingSystem": "Standard",
+    "censusCounties": 14
+  },
+  {
+    "state": "Michigan",
+    "stateAbbr": "MI",
+    "officialPortal": "https://www.michigan.gov/sos/elections",
+    "votingSystem": "Standard",
+    "censusCounties": 83
+  },
+  {
+    "state": "Minnesota",
+    "stateAbbr": "MN",
+    "officialPortal": "https://www.sos.state.mn.us/elections-voting/",
+    "votingSystem": "Standard",
+    "censusCounties": 87
+  },
+  {
+    "state": "Mississippi",
+    "stateAbbr": "MS",
+    "officialPortal": "https://www.sos.ms.gov/elections-voting",
+    "votingSystem": "Majority/Runoff",
+    "censusCounties": 82
+  },
+  {
+    "state": "Missouri",
+    "stateAbbr": "MO",
+    "officialPortal": "https://www.sos.mo.gov/elections",
+    "votingSystem": "Standard",
+    "censusCounties": 115
+  },
+  {
+    "state": "Montana",
+    "stateAbbr": "MT",
+    "officialPortal": "https://sosmt.gov/elections/",
+    "votingSystem": "Standard",
+    "censusCounties": 56
+  },
+  {
+    "state": "Nebraska",
+    "stateAbbr": "NE",
+    "officialPortal": "https://sos.nebraska.gov/elections",
+    "votingSystem": "Standard",
+    "censusCounties": 93
+  },
+  {
+    "state": "Nevada",
+    "stateAbbr": "NV",
+    "officialPortal": "https://www.nvsos.gov/sos/elections",
+    "votingSystem": "Standard",
+    "censusCounties": 17
+  },
+  {
+    "state": "New Hampshire",
+    "stateAbbr": "NH",
+    "officialPortal": "https://www.sos.nh.gov/elections",
+    "votingSystem": "Standard",
+    "censusCounties": 10
+  },
+  {
+    "state": "New Jersey",
+    "stateAbbr": "NJ",
+    "officialPortal": "https://nj.gov/state/elections/",
+    "votingSystem": "Standard",
+    "censusCounties": 21
+  },
+  {
+    "state": "New Mexico",
+    "stateAbbr": "NM",
+    "officialPortal": "https://www.sos.nm.gov/voting-and-elections/",
+    "votingSystem": "Standard",
+    "censusCounties": 33
+  },
+  {
+    "state": "New York",
+    "stateAbbr": "NY",
+    "officialPortal": "https://www.elections.ny.gov/",
+    "votingSystem": "Standard",
+    "censusCounties": 62
+  },
+  {
+    "state": "North Carolina",
+    "stateAbbr": "NC",
+    "officialPortal": "https://www.ncsbe.gov/",
+    "votingSystem": "Standard",
+    "censusCounties": 100
+  },
+  {
+    "state": "North Dakota",
+    "stateAbbr": "ND",
+    "officialPortal": "https://vip.sos.nd.gov/",
+    "votingSystem": "Standard",
+    "censusCounties": 53
+  },
+  {
+    "state": "Ohio",
+    "stateAbbr": "OH",
+    "officialPortal": "https://www.ohiosos.gov/elections/",
+    "votingSystem": "Standard",
+    "censusCounties": 88
+  },
+  {
+    "state": "Oklahoma",
+    "stateAbbr": "OK",
+    "officialPortal": "https://oklahoma.gov/elections.html",
+    "votingSystem": "Standard",
+    "censusCounties": 77
+  },
+  {
+    "state": "Oregon",
+    "stateAbbr": "OR",
+    "officialPortal": "https://sos.oregon.gov/voting-elections/",
+    "votingSystem": "Standard",
+    "censusCounties": 36
+  },
+  {
+    "state": "Pennsylvania",
+    "stateAbbr": "PA",
+    "officialPortal": "https://www.vote.pa.gov/",
+    "votingSystem": "Standard",
+    "censusCounties": 67
+  },
+  {
+    "state": "Rhode Island",
+    "stateAbbr": "RI",
+    "officialPortal": "https://vote.sos.ri.gov/",
+    "votingSystem": "Standard",
+    "censusCounties": 5
+  },
+  {
+    "state": "South Carolina",
+    "stateAbbr": "SC",
+    "officialPortal": "https://scvotes.gov/",
+    "votingSystem": "Standard",
+    "censusCounties": 46
+  },
+  {
+    "state": "South Dakota",
+    "stateAbbr": "SD",
+    "officialPortal": "https://sdsos.gov/elections-voting/",
+    "votingSystem": "Standard",
+    "censusCounties": 66
+  },
+  {
+    "state": "Tennessee",
+    "stateAbbr": "TN",
+    "officialPortal": "https://sos.tn.gov/elections",
+    "votingSystem": "Standard",
+    "censusCounties": 95
+  },
+  {
+    "state": "Texas",
+    "stateAbbr": "TX",
+    "officialPortal": "https://www.sos.state.tx.us/elections/",
+    "votingSystem": "Majority/Runoff",
+    "censusCounties": 254
+  },
+  {
+    "state": "Utah",
+    "stateAbbr": "UT",
+    "officialPortal": "https://vote.utah.gov/",
+    "votingSystem": "Standard",
+    "censusCounties": 29
+  },
+  {
+    "state": "Vermont",
+    "stateAbbr": "VT",
+    "officialPortal": "https://sos.vermont.gov/elections/",
+    "votingSystem": "Standard",
+    "censusCounties": 14
+  },
+  {
+    "state": "Virginia",
+    "stateAbbr": "VA",
+    "officialPortal": "https://www.elections.virginia.gov/",
+    "votingSystem": "Standard",
+    "censusCounties": 133
+  },
+  {
+    "state": "Washington",
+    "stateAbbr": "WA",
+    "officialPortal": "https://www.sos.wa.gov/elections",
+    "votingSystem": "Top-Two Primary",
+    "censusCounties": 39
+  },
+  {
+    "state": "West Virginia",
+    "stateAbbr": "WV",
+    "officialPortal": "https://sos.wv.gov/elections/",
+    "votingSystem": "Standard",
+    "censusCounties": 55
+  },
+  {
+    "state": "Wisconsin",
+    "stateAbbr": "WI",
+    "officialPortal": "https://elections.wi.gov/",
+    "votingSystem": "Standard",
+    "censusCounties": 72
+  },
+  {
+    "state": "Wyoming",
+    "stateAbbr": "WY",
+    "officialPortal": "https://sos.wyo.gov/Elections/",
+    "votingSystem": "Standard",
+    "censusCounties": 23
+  }
+]

@@ -13,7 +13,7 @@ export const SEED_RACES: Race[] = [
     needed_for_control: true,
     election_date: "2026-11-03",
     candidates: [
-      { name: "Ken Paxton", party: "REP", is_incumbent: true },
+      { name: "John Cornyn", party: "REP", is_incumbent: true },
       { name: "James Talarico", party: "DEM", is_incumbent: false },
     ],
   },
@@ -24,13 +24,13 @@ export const SEED_RACES: Race[] = [
     state: "Michigan",
     seat_class: "Class II",
     incumbent_party: "DEM",
-    open_seat: true,
-    margin_2024: 0.8,
+    open_seat: false,
+    margin_2024: 1.7,
     needed_for_control: true,
     election_date: "2026-11-03",
     candidates: [
+      { name: "Gary Peters", party: "DEM", is_incumbent: true },
       { name: "Mike Rogers", party: "REP", is_incumbent: false },
-      { name: "Abdul El-Sayed", party: "DEM", is_incumbent: false },
     ],
   },
   {

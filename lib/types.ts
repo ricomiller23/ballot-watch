@@ -1,7 +1,7 @@
 export type Office = 'senate' | 'house' | 'governor' | 'state_leg';
 export type PopulationType = 'LV' | 'RV' | 'A';
 export type PollMethod = 'live_caller' | 'ivr' | 'online' | 'text' | 'mixed' | 'unknown';
-export type RatingValue = 'toss_up' | 'lean_d' | 'lean_r' | 'likely_d' | 'likely_r' | 'solid_d' | 'solid_r';
+export type RatingValue = 'toss_up' | 'lean_d' | 'lean_r' | 'likely_d' | 'likely_r' | 'solid_d' | 'solid_r' | 'safe_d' | 'safe_r';
 
 export interface CandidateResult {
   candidate: string;
@@ -78,4 +78,71 @@ export interface Race {
   needed_for_control: boolean;
   election_date: string;
   candidates: Array<{ name: string; party: string; is_incumbent: boolean }>;
+}
+
+// ── Coverage & Tier Reporting Types ─────────────────────────────────────────
+
+export type TierLevel = 1 | 2 | 3 | 4 | 5 | 6;
+export type DataConfidence = 'verified' | 'provisional' | 'placeholder';
+
+export interface SourceCitation {
+  label: string;
+  url: string;
+  accessDate: string;
+}
+
+export interface RatingSnapshot {
+  rater: 'cook' | 'sabato' | 'inside_elections';
+  value: RatingValue;
+  verbatimLabel: string;
+  asOfDate: string;
+  sourceUrl: string;
+}
+
+export interface RaceEntry {
+  raceId: string;
+  tier: TierLevel;
+  level: 'federal' | 'state' | 'county' | 'municipal' | 'special_district' | 'judicial';
+  office: string;
+  state: string;
+  stateAbbr: string;
+  district?: string;
+  county?: string;
+  municipality?: string;
+  electionDate: string;
+  isSpecialElection: boolean;
+  isPartisan: boolean;
+  seatClass?: string;
+  candidates: Array<{
+    name: string;
+    party: string;
+    status: string;
+    incumbent: boolean;
+    priorOffice?: string;
+    age?: number;
+    hometown?: string;
+    website?: string;
+  }>;
+  ratings: RatingSnapshot[];
+  confidence: DataConfidence;
+  notes?: string;
+  lastVerified: string;
+  sources: SourceCitation[];
+}
+
+export interface CoverageTier {
+  tier: TierLevel;
+  label: string;
+  totalContests: number | null;
+  verifiedContests: number;
+  status: 'shipped' | 'in_progress' | 'planned';
+  notes: string;
+  authoritativeSource: string;
+  authoritativeUrl: string;
+}
+
+export interface CoverageReport {
+  tiers: CoverageTier[];
+  generatedAt: string;
+  disclaimer: string;
 }

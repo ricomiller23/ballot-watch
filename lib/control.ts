@@ -24,7 +24,7 @@ export function calculateControlArithmetic(): { house: ChamberControlArithmetic;
       totalSeats: 100,
       neededForMajority: 51, // or 50 with VP tie-breaker
       demHeld: 47,
-      repHeld: 49,
+      repHeld: 53,
       tossUps: 4,
       note: '51 seats required for outright control (or 50 with Vice President breaking ties).',
     },

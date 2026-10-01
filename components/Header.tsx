@@ -16,6 +16,7 @@ export default function Header() {
     { name: 'All Offices', href: '/offices', icon: Building2 },
     { name: 'Polls', href: '/polls', icon: BarChart2 },
     { name: 'Chamber Control', href: '/senate', icon: TrendingUp },
+    { name: 'Coverage Matrix', href: '/coverage', icon: Layers },
     { name: 'Rating Moves', href: '/rating-changes', icon: CheckCircle2 },
     { name: 'Sources & Methods', href: '/sources', icon: BookOpen },
     { name: 'Admin', href: '/admin', icon: Shield },
