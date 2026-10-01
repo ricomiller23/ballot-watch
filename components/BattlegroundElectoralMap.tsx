@@ -193,7 +193,7 @@ export function BattlegroundElectoralMap() {
               All United States Federal, State & Local Elections Heatmap
             </h2>
             <p className="text-xs text-[#667085] font-sans">
-              Dynamic cartographic telemetry covering all 50 states, 435 House districts, 35 Senate seats (33 Regular + 2 Specials), and certified polling averages.
+              Dynamic cartographic telemetry covering all 50 states, 435 House districts, 35 Senate seats (33 Regular + 2 Specials), and official polling averages.
             </p>
           </div>
 
@@ -498,7 +498,7 @@ export function BattlegroundElectoralMap() {
 
             <div className="bg-[#F6F8FB] border border-[#E4E9F0] p-3 rounded-lg">
               <span className="text-[10px] text-[#667085] uppercase tracking-wider block font-semibold">
-                Certified Polling Spread
+                Polling Spread
               </span>
               <strong className={`text-sm block mt-0.5 ${
                 selectedOffice.leadingParty === 'DEM' ? 'text-[#0E63C4]' : 'text-[#B42318]'
@@ -848,7 +848,7 @@ export function BattlegroundElectoralMap() {
           </div>
         )}
 
-        {/* Tab 7: Verified Polling Surveys Ledger */}
+        {/* Tab 7: Sourced Polling Surveys Ledger */}
         {activeTab === 'polls' && (
           <div className="pt-4 overflow-x-auto">
             <table className="w-full text-left border-collapse text-xs">

@@ -231,7 +231,7 @@ export default function ControlBoardPage() {
               Competitive Battleground Spotlight Contests
             </h2>
             <p className="text-xs text-[#5B6779] mt-0.5">
-              Verified nominees across Michigan, New Hampshire, North Carolina, Maine, Ohio, and Georgia.
+              Sourced nominees across Michigan, New Hampshire, North Carolina, Maine, Ohio, and Georgia.
             </p>
           </div>
           <Link

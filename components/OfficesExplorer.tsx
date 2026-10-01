@@ -285,7 +285,7 @@ export default function OfficesExplorer() {
             <div>
               <div className="flex items-center gap-2 mb-2">
                 <Layers className="w-5 h-5 text-[#60A5FA]" />
-                <span className="text-xs font-mono uppercase tracking-widest text-[#93C5FD]">Complete US Electoral Registry</span>
+                <span className="text-xs font-mono uppercase tracking-widest text-[#93C5FD]">Full US Electoral Registry</span>
               </div>
               <h1 className="text-2xl md:text-3xl font-extrabold tracking-tight font-display">
                 Every Electable Office<br className="hidden sm:block" />
@@ -752,7 +752,7 @@ function OfficeRow({ office, isSelected, onClick }: {
             if (matched) {
               return (
                 <span className="text-[10px] font-bold text-[#0E63C4] bg-[#EBF3FD] border border-[#BFDBFE] px-2 py-0.5 rounded flex items-center gap-1">
-                  <CheckCheck className="w-3 h-3 text-[#16A34A]" /> {matched.candidates.length} Cands Certified · {matched.pollAverage}
+                  <CheckCheck className="w-3 h-3 text-[#16A34A]" /> {matched.candidates.length} Cands Official · {matched.pollAverage}
                 </span>
               );
             }
@@ -1009,7 +1009,7 @@ function OfficeDetailDrawer({ office, onClose }: { office: JurisdictionOffice; o
                       <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#16A34A]"></span>
                     </span>
                     <span className="text-[10px] font-bold uppercase tracking-wider bg-[#DCFCE7] text-[#15803D] px-2 py-0.5 rounded border border-[#86EFAC]">
-                      ACTIVE 2026 CERTIFIED CONTEST & CANDIDATES
+                      ACTIVE 2026 CONTEST & SOURCED CANDIDATES
                     </span>
                   </div>
                   <strong className="text-sm sm:text-base text-[#0B1220] block">
@@ -1035,7 +1035,7 @@ function OfficeDetailDrawer({ office, onClose }: { office: JurisdictionOffice; o
               <div className="space-y-1.5 bg-[#F8FAFC] border border-[#E2E8F0] p-3 rounded-xl">
                 <div className="flex items-center justify-between text-[11px] text-[#475569]">
                   <span className="font-bold flex items-center gap-1">
-                    <BarChart3 className="w-3.5 h-3.5 text-[#0E63C4]" /> Certified Head-to-Head Polling
+                    <BarChart3 className="w-3.5 h-3.5 text-[#0E63C4]" /> Head-to-Head Polling
                   </span>
                   <span>{matchedRace.qualifyingPollsCount || 3} Qualifying Surveys · Weighted Sample</span>
                 </div>
@@ -1071,7 +1071,7 @@ function OfficeDetailDrawer({ office, onClose }: { office: JurisdictionOffice; o
               {/* Every Candidate's Full Data Card */}
               <div className="space-y-3 pt-1">
                 <h3 className="text-xs font-bold text-[#0B1220] uppercase tracking-wider">
-                  Candidate Profiles & Verified Filings ({matchedRace.candidates.length} Running)
+                  Candidate Profiles & Retrieved Filings ({matchedRace.candidates.length} Running)
                 </h3>
 
                 {matchedRace.candidates.map((c, i) => (
@@ -1096,7 +1096,7 @@ function OfficeDetailDrawer({ office, onClose }: { office: JurisdictionOffice; o
                       </div>
 
                       <div className="flex items-center gap-1.5 bg-[#EBF3FD] border border-[#BFDBFE] px-2 py-0.5 rounded-md">
-                        <span className="text-[10px] text-[#0A4E9E] font-medium">Certified Poll Share:</span>
+                        <span className="text-[10px] text-[#0A4E9E] font-medium">Poll Share:</span>
                         <strong className="text-xs text-[#0E63C4] font-mono">{c.pollShare}%</strong>
                       </div>
                     </div>
@@ -1181,10 +1181,10 @@ function OfficeDetailDrawer({ office, onClose }: { office: JurisdictionOffice; o
               <div className="p-3 bg-[#F6F8FB] border border-[#E4E9F0] rounded-xl space-y-1.5 text-[11px] text-[#5B6779]">
                 <div className="flex items-center justify-between text-[#0B1220] font-bold">
                   <span>Mathematical Polling Model & Audit Trail</span>
-                  <span className="text-[#16A34A] font-mono">100% Certified</span>
+                  <span className="text-[#16A34A] font-mono">Nominees Sourced</span>
                 </div>
                 <p className="leading-relaxed">
-                  Methodology: {matchedRace.pollingMethod || 'Likely Voters Multi-Mode IVR/SMS/Online Weighted Sample'}. Verified across {matchedRace.qualifyingPollsCount || 3} independent surveys.
+                  Methodology: {matchedRace.pollingMethod || 'Likely Voters Multi-Mode IVR/SMS/Online Weighted Sample'}. Retrieved across {matchedRace.qualifyingPollsCount || 3} independent surveys.
                 </p>
                 {matchedRace.verifiedSources && matchedRace.verifiedSources.length > 0 && (
                   <div className="pt-1 border-t border-[#E2E8F0] flex flex-wrap gap-3">

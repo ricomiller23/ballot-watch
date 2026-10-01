@@ -113,7 +113,7 @@ export default async function SenateRaceDetailPage({
       <div className="space-y-4">
         <h2 className="text-xl font-bold text-white tracking-tight">Official Candidate Roster</h2>
         <p className="text-xs text-slate-400">
-          Candidates sourced exclusively from official Federal Election Commission filings and state Secretary of State certified lists.
+          Candidates sourced exclusively from official Federal Election Commission filings and state Secretary of State official lists.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -178,7 +178,7 @@ export default async function SenateRaceDetailPage({
                 <div className="text-[11px] font-mono text-slate-500 mt-0.5 truncate max-w-md">{s.url}</div>
               </div>
               <div className="text-right flex items-center gap-3">
-                <span className="text-slate-500 text-[11px]">Verified {s.accessDate}</span>
+                <span className="text-slate-500 text-[11px]">Retrieved {s.accessDate}</span>
                 <a
                   href={s.url}
                   target="_blank"

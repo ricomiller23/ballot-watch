@@ -17,7 +17,7 @@ export async function GET(request: NextRequest) {
       cycle: 2026,
       election_date: '2026-11-03',
     },
-    message: 'Daily electoral intelligence digest compiled from verified candidate rosters and handicappers.',
+    message: 'Daily electoral intelligence digest compiled from retrieved candidate rosters and handicappers.',
   });
 }
 

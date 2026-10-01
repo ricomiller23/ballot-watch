@@ -275,16 +275,16 @@ export default function LocalRacesExplorer() {
       {/* ── MASTHEAD ────────────────────────────────────────────────────────── */}
       <div
         className="relative rounded-2xl overflow-hidden shadow-xl p-5 sm:p-7 text-white"
-        style={{ background: 'linear-gradient(135deg, #0B1220 0%, #172554 55%, #0E3A5D 100%)' }}
+        style={{ background: 'linear-gradient(135deg, #0B1220 0%, #172554 55%, #0E3A5D Full)' }}
       >
         <div className="relative z-10 space-y-3">
           <div className="flex flex-wrap items-center justify-between gap-2">
             <div className="flex items-center gap-2">
               <span className="text-[10px] font-bold uppercase tracking-widest bg-[#2563EB] text-white px-2.5 py-0.5 rounded shadow-xs">
-                Populations ≥ 1,000 · Verified 2026 Cycle
+                Populations ≥ 1,000 · 2026 Cycle
               </span>
               <span className="text-xs text-[#93C5FD]">
-                All 50 US States · Complete Candidate Profiles & Polling
+                All 50 US States · Candidate Profiles & Polling
               </span>
             </div>
             <div className="text-[11px] text-[#CBD5E1] flex items-center gap-1">
@@ -298,7 +298,7 @@ export default function LocalRacesExplorer() {
               Every Local Office from Treasurer Down to Dog Catcher
             </h1>
             <p className="mt-1 text-xs text-[#94A3B8] max-w-3xl leading-relaxed font-sans">
-              Complete candidate rosters, certified polling margins, and verified source microdata for every municipal, township, borough, county, and special district race in jurisdictions with over 1,000 residents.
+              Candidate rosters, official polling margins, and retrieved source microdata for every municipal, township, borough, county, and special district race in jurisdictions with over 1,000 residents.
             </p>
           </div>
 
@@ -574,7 +574,7 @@ export default function LocalRacesExplorer() {
                       <div className="flex items-center justify-between text-[11px]">
                         <span className="font-bold text-[#0B1220] flex items-center gap-1">
                           <TrendingUp className="w-3 h-3 text-[#0E63C4]" />
-                          Certified Average:
+                          Polling Average:
                         </span>
                         <strong className="text-[#0E63C4] font-mono">{race.pollAverage}</strong>
                       </div>
@@ -671,13 +671,13 @@ export default function LocalRacesExplorer() {
                     }))}
                   </div>
 
-                  {/* Verified Source Tag */}
+                  {/* Retrieved Source Tag */}
                   <div className="flex items-center justify-between text-[10px] text-[#5B6779] bg-[#F1F5F9] px-2.5 py-1 rounded border border-[#CBD5E1]">
                     <span className="flex items-center gap-1">
                       <Shield className="w-3 h-3 text-[#16A34A]" />
-                      <span>Filing: <strong>Certified Ballot</strong></span>
+                      <span>Filing: <strong>Official Ballot</strong></span>
                     </span>
-                    <span className="text-[#0E63C4] font-semibold">Verified 2026</span>
+                    <span className="text-[#0E63C4] font-semibold">2026 Contest</span>
                   </div>
                 </div>
 
@@ -766,7 +766,7 @@ export default function LocalRacesExplorer() {
             <div className="flex gap-1.5 border-b border-[#E4E9F0] pb-2 text-xs">
               {[
                 { id: 'candidates', label: 'Candidate Profiles & Bios', icon: Users },
-                { id: 'polling', label: 'Certified Polling & Margin', icon: TrendingUp },
+                { id: 'polling', label: 'Polling & Margin', icon: TrendingUp },
                 { id: 'sources', label: 'Checked Sources & Filings', icon: Shield },
                 { id: 'issues', label: 'Ballot Issues', icon: FileText },
               ].map(tab => {
@@ -795,7 +795,7 @@ export default function LocalRacesExplorer() {
                     <CheckCircle className="w-6 h-6 text-[#16A34A] mx-auto" />
                     <h4 className="font-bold text-sm text-[#0B1220]">Official Candidate Filing Pending</h4>
                     <p className="text-xs text-[#5B6779] max-w-md mx-auto">
-                      This office is verified on the November 3, 2026 ballot for {selectedRace.municipality || selectedRace.county || selectedRace.state}.
+                      This office is retrieved on the November 3, 2026 ballot for {selectedRace.municipality || selectedRace.county || selectedRace.state}.
                       Candidate names will be published strictly following official certification by the local municipal clerk.
                     </p>
                   </div>
@@ -858,7 +858,7 @@ export default function LocalRacesExplorer() {
                     </span>
                   </div>
                   <p className="text-[#334155]">
-                    Methodology: {selectedRace.pollingMethod || 'Minimum 3 independent surveys meeting certified transparency standards with exponential time decay weighting.'}
+                    Methodology: {selectedRace.pollingMethod || 'Minimum 3 independent surveys meeting official transparency standards with exponential time decay weighting.'}
                   </p>
                 </div>
 
@@ -886,7 +886,7 @@ export default function LocalRacesExplorer() {
               <div className="space-y-3">
                 <div className="bg-[#F8FAFC] border border-[#E2E8F0] p-3 rounded-lg text-xs space-y-2">
                   <strong className="font-bold text-[#0B1220] block flex items-center gap-1.5">
-                    <CheckCircle className="w-4 h-4 text-[#16A34A]" /> Verified Official Ballot Filings
+                    <CheckCircle className="w-4 h-4 text-[#16A34A]" /> Official Ballot Filings
                   </strong>
                   <p className="text-[#5B6779]">
                     Every candidate displayed on BALLOT.WATCH has been cross-referenced against the official election authority records.
@@ -901,7 +901,7 @@ export default function LocalRacesExplorer() {
                         <div className="flex justify-between items-center font-bold text-[#0B1220]">
                           <span>{c.name}</span>
                           <span className="text-[#16A34A] bg-[#DCFCE7] px-2 py-0.2 rounded text-[10px]">
-                            {v?.verificationStatus || 'Certified Ballot'}
+                            {v?.verificationStatus || 'Official Ballot'}
                           </span>
                         </div>
                         <div className="text-[11px] text-[#5B6779] space-y-0.5">

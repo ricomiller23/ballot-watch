@@ -17,7 +17,7 @@ export default function PollsPage() {
           </h1>
         </div>
         <p className="text-xs text-[#5B6779]">
-          Every poll record requires a verified pollster, field dates, sample size, population type (LV/RV), and direct source URL.
+          Every poll record requires a retrieved pollster, field dates, sample size, population type (LV/RV), and direct source URL.
         </p>
       </div>
 

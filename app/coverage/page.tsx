@@ -36,7 +36,7 @@ export default function CoveragePage() {
               Nationwide Coverage & Sourced Registry Metrics
             </h1>
             <p className="text-xs text-[#5B6779] mt-1 max-w-3xl leading-relaxed">
-              Every displayed candidate requires a direct source URL. Counts are computed dynamically from data/races.json. Races without a verified nominee display as pending.
+              Every displayed candidate requires a direct source URL. Counts are computed dynamically from data/races.json. Races without a retrieved nominee display as pending.
             </p>
           </div>
           <div className="flex gap-2">

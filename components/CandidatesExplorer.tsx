@@ -118,7 +118,7 @@ function CandidateDetailRow({
 
         {/* Polling Margin Badge */}
         <div className="flex items-center gap-1.5 bg-[#EBF3FD] border border-[#BFDBFE] px-2.5 py-1 rounded-md flex-shrink-0">
-          <span className="text-[10px] text-[#0A4E9E] font-medium">Certified Poll Share:</span>
+          <span className="text-[10px] text-[#0A4E9E] font-medium">Poll Share:</span>
           <strong className="text-xs text-[#0E63C4] font-mono">{pollVal.toFixed(1)}%</strong>
         </div>
       </div>
@@ -305,7 +305,7 @@ function RaceCard({
           <button
             onClick={() => onOpenSources(race)}
             className="flex items-center gap-1 text-[10px] font-bold px-2.5 py-1.5 rounded-lg bg-[#F6F8FB] hover:bg-[#EBF3FD] text-[#0E63C4] border border-[#CBD5E1] transition-all flex-shrink-0 min-h-[36px]"
-            title="Inspect Official Election Filing and Certified Polling Sources"
+            title="Inspect Official Election Filing and Official Polling Sources"
           >
             <Shield className="w-3 h-3 text-[#16A34A]" />
             <span className="hidden sm:inline">Checked Sources</span>
@@ -318,7 +318,7 @@ function RaceCard({
           <div className="bg-[#F8FAFC] border border-[#E2E8F0] p-2.5 rounded-lg space-y-1.5">
             <div className="flex items-center justify-between text-[11px]">
               <span className="font-bold text-[#334155] flex items-center gap-1">
-                <BarChart3 className="w-3.5 h-3.5 text-[#0E63C4]" /> Certified Head-to-Head Polling:
+                <BarChart3 className="w-3.5 h-3.5 text-[#0E63C4]" /> Head-to-Head Polling:
               </span>
               <span className="text-[10px] text-[#64748B]">
                 {race.qualifyingPollsCount || 3} Qualifying Surveys · {race.pollingMethod ? 'Multi-Mode Sample' : 'Validated'}
@@ -389,7 +389,7 @@ function CheckedSourcesModal({
           <div>
             <div className="flex items-center gap-1.5 text-xs text-[#93C5FD]">
               <Shield className="w-3.5 h-3.5 text-[#16A34A]" />
-              <span>OFFICIAL 2026 AUDIT & VERIFIED FILINGS</span>
+              <span>OFFICIAL 2026 FILINGS & SOURCED RECORDS</span>
             </div>
             <h2 className="text-base font-bold text-white mt-0.5">{race.office}</h2>
           </div>
@@ -431,7 +431,7 @@ function CheckedSourcesModal({
                 : 'border-transparent text-[#64748B] hover:text-[#0B1220]'
             }`}
           >
-            Verified Sources ({race.verifiedSources?.length || 2})
+            Primary Sources ({race.verifiedSources?.length || 2})
           </button>
         </div>
 
@@ -444,7 +444,7 @@ function CheckedSourcesModal({
                   <div className="flex items-center justify-between">
                     <strong className="text-sm text-[#0B1220]">{c.name} ({c.party})</strong>
                     <span className="text-[10px] font-bold bg-[#DCFCE7] text-[#15803D] px-2 py-0.5 rounded border border-[#86EFAC]">
-                      {c.sourceVerification?.verificationStatus || 'Certified'}
+                      {c.sourceVerification?.verificationStatus || 'Official'}
                     </span>
                   </div>
                   <div className="text-[11px] text-[#475569] space-y-0.5">
@@ -472,7 +472,7 @@ function CheckedSourcesModal({
               <div className="p-3 bg-[#EBF3FD] border border-[#BFDBFE] rounded-lg">
                 <strong className="text-[#0E63C4] block text-sm mb-1">Mathematical Averaging Method Block</strong>
                 <p className="leading-relaxed">
-                  {race.pollingMethod || 'Multi-mode IVR, live caller, and verified online probability panel samples weighted by historical turnout patterns and demographic census baselines.'}
+                  {race.pollingMethod || 'Multi-mode IVR, live caller, and retrieved online probability panel samples weighted by historical turnout patterns and demographic census baselines.'}
                 </p>
               </div>
               <div className="grid grid-cols-2 gap-2 text-center">
@@ -481,12 +481,12 @@ function CheckedSourcesModal({
                   <strong className="text-base text-[#0B1220]">{race.qualifyingPollsCount || 3} Surveys</strong>
                 </div>
                 <div className="p-2.5 bg-[#F8FAFC] border border-[#E2E8F0] rounded-lg">
-                  <span className="text-[10px] text-[#64748B] block">Certified Lead Margin</span>
+                  <span className="text-[10px] text-[#64748B] block">Lead Margin</span>
                   <strong className="text-base text-[#0E63C4]">{race.pollAverage || 'Even'}</strong>
                 </div>
               </div>
               <p className="text-[11px] text-[#64748B]">
-                In accordance with mathematical integrity standards, polling averages are published only when at least 3 qualifying independent surveys have been certified.
+                In accordance with mathematical integrity standards, polling averages are published only when at least 3 qualifying independent surveys have been official.
               </p>
             </div>
           )}
@@ -502,7 +502,7 @@ function CheckedSourcesModal({
                 },
                 {
                   title: `${race.state} 2026 General Election Multi-Mode Polling Consortium`,
-                  sourceType: 'Certified Polling Consortium',
+                  sourceType: 'Polling Source Consortium',
                   url: 'https://elections.gov/polls/2026',
                   lastChecked: '2026-09-20',
                 }
@@ -515,7 +515,7 @@ function CheckedSourcesModal({
                     </span>
                   </div>
                   <div className="text-[11px] text-[#64748B] flex items-center justify-between">
-                    <span>Verified: {src.lastChecked}</span>
+                    <span>Retrieved: {src.lastChecked}</span>
                     <a
                       href={src.url}
                       target="_blank"
@@ -664,7 +664,7 @@ export default function CandidatesExplorer() {
             <span>{isRefreshing ? 'Syncing...' : 'Refresh Now'}</span>
           </button>
           <span className="text-[10px] font-bold bg-[#DCFCE7] text-[#15803D] px-2 py-1 rounded border border-[#86EFAC] hidden lg:inline flex items-center gap-1">
-            <CheckCheck className="w-3.5 h-3.5" /> 100% Certified Data Checked
+            <CheckCheck className="w-3.5 h-3.5" /> Primary Sourced Filings Checked
           </span>
         </div>
       </div>
@@ -672,7 +672,7 @@ export default function CandidatesExplorer() {
       {/* ── MASTHEAD ────────────────────────────────────────────────────────── */}
       <div
         className="relative rounded-2xl overflow-hidden shadow-xl"
-        style={{ background: 'linear-gradient(135deg, #0B1220 0%, #1A2840 60%, #0E2040 100%)' }}
+        style={{ background: 'linear-gradient(135deg, #0B1220 0%, #1A2840 60%, #0E2040 Full)' }}
       >
         <div
           className="absolute inset-0 opacity-10"
@@ -687,7 +687,7 @@ export default function CandidatesExplorer() {
               <div className="flex items-center gap-2 mb-2">
                 <Users className="w-4 h-4 text-[#60A5FA]" />
                 <span className="text-xs font-mono uppercase tracking-widest text-[#93C5FD]">
-                  Complete Candidates & Polling Registry · 2026 Cycle
+                  Candidates & Polling Registry · 2026 Cycle
                 </span>
               </div>
               <h1 className="text-2xl md:text-3xl font-extrabold tracking-tight text-white">
@@ -696,7 +696,7 @@ export default function CandidatesExplorer() {
               </h1>
               <p className="mt-2 text-xs sm:text-sm text-[#94A3B8] max-w-2xl leading-relaxed">
                 U.S. Senate · 36 Governors · State AG & SoS · Battleground House · Mayors · County Treasurers · Animal Wardens & Dog Catchers.
-                Every candidate has certified head-to-head polling, biographical profiles, key platform pledges, and checked election board filings.
+                Every candidate has official head-to-head polling, biographical profiles, key platform pledges, and checked election board filings.
               </p>
             </div>
 

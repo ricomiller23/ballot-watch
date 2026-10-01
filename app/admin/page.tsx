@@ -36,7 +36,7 @@ export default function AdminPage() {
           </button>
         </div>
         <p className="text-[#5B6779] text-[11px] leading-relaxed">
-          When active, third-party projection calls and exit polls are quarantined. Only certified or official precinct-reported vote tallies enter the results stream.
+          When active, third-party projection calls and exit polls are quarantined. Only official or official precinct-reported vote tallies enter the results stream.
         </p>
       </div>
 
