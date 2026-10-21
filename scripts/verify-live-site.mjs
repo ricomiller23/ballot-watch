@@ -13,6 +13,7 @@ const BASE_URL = 'https://ballot-watch.vercel.app';
 // Routes to test with cache-busting
 const routes = [
   { path: '/', expectInBody: ['Ken Paxton', 'James Talarico'] },
+  { path: '/map', expectInBody: ['TACTICAL RADAR', 'Texas'] },
   { path: '/senate', expectInBody: ['Senate', 'Majority'] },
   { path: '/senate/2026-SEN-TX', expectInBody: ['Ken Paxton', 'James Talarico', 'John Cornyn'] },
   { path: '/coverage', expectInBody: ['35', '36', '435'] },

@@ -13,8 +13,9 @@ import {
 import { 
   Vote, TrendingUp, BarChart2, ExternalLink, 
   Layers, Users, MapPin, Calendar, Clock, ChevronRight,
-  Swords, ShieldAlert, Sparkles, Trophy, Zap
+  Swords, ShieldAlert, Sparkles, Trophy, Zap, Compass
 } from 'lucide-react';
+import { TacticalElectoralMap } from '@/components/TacticalElectoralMap';
 
 export default function ControlBoardPage() {
   const races = getAllRaces();
@@ -460,6 +461,29 @@ export default function ControlBoardPage() {
             );
           })}
         </div>
+      </div>
+      {/* ── 6. TACTICAL RADAR: NATIONAL & STATE JURISDICTION DRILLDOWN ── */}
+      <div className="space-y-4 pt-6 border-t-2 border-[#2D2264]">
+        <div className="flex flex-wrap items-center justify-between gap-4 border-b-2 border-[#2D2264] pb-3">
+          <div>
+            <h2 className="font-arcade text-base sm:text-lg text-[#FFE600] flex items-center gap-2 arcade-text-glow-yellow">
+              <Compass className="w-5 h-5 text-[#39FF14] animate-spin-slow" />
+              <span>TACTICAL RADAR: NATIONAL &amp; STATE JURISDICTIONS</span>
+            </h2>
+            <p className="text-xs font-crt text-[16px] text-[#A5B4FC] mt-0.5">
+              Vector zoom from national US map into state jurisdictions, congressional districts, and municipal cities with clickable sub-races.
+            </p>
+          </div>
+          <Link
+            href="/map"
+            className="arcade-btn bg-[#39FF14] hover:bg-[#2ECC10] text-[#080616] text-[9px] font-arcade px-3 py-2 rounded-lg border border-white flex items-center gap-1.5 shadow-[0_0_10px_rgba(57,255,20,0.5)] font-bold"
+          >
+            <span>FULL COCKPIT RADAR</span>
+            <ExternalLink className="w-3 h-3" />
+          </Link>
+        </div>
+
+        <TacticalElectoralMap />
       </div>
     </div>
   );

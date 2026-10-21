@@ -3,13 +3,14 @@
 import React from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Vote, BarChart2, TrendingUp, Layers, CheckCircle2, BookOpen, Shield, Building2, Users, MapPin, Gamepad2 } from 'lucide-react';
+import { Vote, BarChart2, TrendingUp, Layers, CheckCircle2, BookOpen, Shield, Building2, Users, MapPin, Gamepad2, Compass } from 'lucide-react';
 
 export default function Header() {
   const pathname = usePathname();
 
   const links = [
     { name: 'Control Board', href: '/', icon: Vote, color: '#00F0FF' },
+    { name: 'Tactical Map', href: '/map', icon: Compass, color: '#39FF14' },
     { name: 'Local Contests', href: '/local', icon: MapPin, color: '#FF5500' },
     { name: 'All 537 Races', href: '/races', icon: Layers, color: '#FFE600' },
     { name: 'Candidates', href: '/candidates', icon: Users, color: '#39FF14' },
