@@ -3,7 +3,7 @@ import racesDataset from '../data/races.json';
 export interface Candidate {
   name: string;
   party: string;
-  status: 'nominee' | 'incumbent-not-running' | 'primary-pending' | 'runoff';
+  status: 'nominee' | 'incumbent-not-running' | 'primary-pending' | 'runoff' | 'incumbent-defeated-in-primary-runoff';
   is_incumbent?: boolean;
   fec_id?: string | null;
   source_url: string;

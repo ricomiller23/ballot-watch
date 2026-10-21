@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-10-01T12:47:00Z",
+    "generated_at": "2026-10-21T03:16:31.140Z",
     "cycle": 2026,
     "election_date": "2026-11-03",
     "total_races": 537,
@@ -12,8 +12,8 @@
     },
     "total_candidates": 116,
     "total_sourced_nominees": 91,
-    "total_polls": 11,
-    "total_ratings": 74
+    "total_polls": 12,
+    "total_ratings": 82
   },
   "races": [
     {
@@ -49,83 +49,84 @@
         {
           "name": "John Cornyn",
           "party": "REP",
-          "status": "incumbent-not-running",
+          "status": "incumbent-defeated-in-primary-runoff",
           "is_incumbent": true,
           "fec_id": "S2TX00106",
-          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_Texas,_2026",
-          "verified_at": "2026-10-01"
+          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_Texas,_2026_(May_26_Republican_primary_runoff)",
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [
         {
           "rater": "Cook Political Report",
           "verbatim_label": "Toss Up",
-          "rater_date": "2026-09-24",
+          "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
         },
         {
           "rater": "Sabato's Crystal Ball",
           "verbatim_label": "Toss Up",
-          "rater_date": "2026-09-18",
+          "rater_date": "2026-10-14",
           "source_url": "https://centerforpolitics.org/crystalball/2026-senate/"
         },
         {
           "rater": "Inside Elections",
-          "verbatim_label": "Tilt Republican",
-          "rater_date": "2026-09-15",
+          "verbatim_label": "Toss-up",
+          "rater_date": "2026-10-01",
           "source_url": "https://www.insideelections.com/ratings/senate"
         }
       ],
       "polls": [
         {
-          "pollster": "University of Texas / Texas Politics Project",
-          "field_dates": "2026-09-12 - 2026-09-21",
-          "sample_size": 1200,
+          "pollster": "University of Houston Hobby School / HPM",
+          "field_dates": "2026-10-10 - 2026-10-16",
+          "sample_size": 1320,
           "sample_type": "lv",
           "results": {
-            "Ken Paxton": 47.4,
-            "James Talarico": 46.1,
-            "Undecided": 6.5
+            "James Talarico": 48,
+            "Ken Paxton": 46,
+            "Ted Brown": 3,
+            "Undecided": 3
           },
-          "source_url": "https://texaspolitics.utexas.edu/polling",
-          "sponsor": null
+          "source_url": "https://www.houstonpublicmedia.org/articles/news/politics/election-2026/2026/10/18/564673/talarico-holds-slight-edge-over-paxton-in-u-s-senate-race-on-cusp-of-election-poll-shows/",
+          "sponsor": "Houston Public Media"
         },
         {
           "pollster": "Marist College Poll",
-          "field_dates": "2026-09-18 - 2026-09-25",
-          "sample_size": 1150,
+          "field_dates": "2026-10-08 - 2026-10-11",
+          "sample_size": 1186,
           "sample_type": "lv",
           "results": {
-            "Ken Paxton": 48.2,
-            "James Talarico": 45.8,
-            "Undecided": 6
+            "James Talarico": 47,
+            "Ken Paxton": 45,
+            "Undecided": 8
           },
-          "source_url": "https://maristpoll.marist.edu/polls/",
+          "source_url": "https://maristpoll.marist.edu/polls/2026-midterm-elections-in-texas-october-2026/",
           "sponsor": null
         },
         {
-          "pollster": "YouGov / Texas Tribune",
-          "field_dates": "2026-09-05 - 2026-09-14",
-          "sample_size": 1400,
-          "sample_type": "rv",
+          "pollster": "University of Texas / Texas Politics Project",
+          "field_dates": "2026-10-02 - 2026-10-11",
+          "sample_size": 1200,
+          "sample_type": "lv",
           "results": {
-            "Ken Paxton": 46.8,
-            "James Talarico": 45.2,
-            "Undecided": 8
+            "James Talarico": 50,
+            "Ken Paxton": 47,
+            "Undecided": 3
           },
-          "source_url": "https://www.texastribune.org/polling/",
-          "sponsor": "Texas Tribune"
+          "source_url": "https://texaspolitics.utexas.edu/blog/latest-ut-texas-politics-poll-finds-historic-levels-of-competition-in-texas-midterm-elections",
+          "sponsor": null
         }
       ],
       "polling_average": {
-        "leader": "Ken Paxton",
-        "spread": 1.5,
+        "leader": "James Talarico",
+        "spread": 2.3,
         "averages": {
-          "Ken Paxton": 47.5,
-          "James Talarico": 46
+          "James Talarico": 48.3,
+          "Ken Paxton": 46
         },
         "qualifying_polls_count": 3,
-        "method": "Recency-weighted inverse-variance average of 3 qualifying non-partisan surveys"
+        "method": "Recency-weighted inverse-variance average of 3 qualifying non-partisan surveys (October 2026)"
       }
     },
     {
@@ -171,15 +172,21 @@
       "ratings": [
         {
           "rater": "Cook Political Report",
-          "verbatim_label": "Toss Up",
-          "rater_date": "2026-09-20",
+          "verbatim_label": "Lean Democrat",
+          "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
         },
         {
           "rater": "Sabato's Crystal Ball",
-          "verbatim_label": "Toss Up",
-          "rater_date": "2026-09-18",
+          "verbatim_label": "Leans Democratic",
+          "rater_date": "2026-09-22",
           "source_url": "https://centerforpolitics.org/crystalball/2026-senate/"
+        },
+        {
+          "rater": "Inside Elections",
+          "verbatim_label": "Tilt Democrat",
+          "rater_date": "2026-10-01",
+          "source_url": "https://www.insideelections.com/ratings/senate"
         }
       ],
       "polls": [
@@ -265,8 +272,14 @@
         {
           "rater": "Cook Political Report",
           "verbatim_label": "Lean Democrat",
-          "rater_date": "2026-09-12",
+          "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+        },
+        {
+          "rater": "Sabato's Crystal Ball",
+          "verbatim_label": "Leans Democratic",
+          "rater_date": "2026-10-14",
+          "source_url": "https://centerforpolitics.org/crystalball/2026-senate/"
         }
       ],
       "polls": [
@@ -329,9 +342,21 @@
       "ratings": [
         {
           "rater": "Cook Political Report",
-          "verbatim_label": "Toss Up",
-          "rater_date": "2026-09-22",
+          "verbatim_label": "Likely Democrat",
+          "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+        },
+        {
+          "rater": "Sabato's Crystal Ball",
+          "verbatim_label": "Leans Democratic",
+          "rater_date": "2026-10-14",
+          "source_url": "https://centerforpolitics.org/crystalball/2026-senate/"
+        },
+        {
+          "rater": "Inside Elections",
+          "verbatim_label": "Tilt Democrat",
+          "rater_date": "2026-10-01",
+          "source_url": "https://www.insideelections.com/ratings/senate"
         }
       ],
       "polls": [
@@ -408,8 +433,14 @@
         {
           "rater": "Cook Political Report",
           "verbatim_label": "Toss Up",
-          "rater_date": "2026-09-18",
+          "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+        },
+        {
+          "rater": "Sabato's Crystal Ball",
+          "verbatim_label": "Toss Up",
+          "rater_date": "2026-10-14",
+          "source_url": "https://centerforpolitics.org/crystalball/2026-senate/"
         }
       ],
       "polls": [
@@ -463,9 +494,21 @@
       "ratings": [
         {
           "rater": "Cook Political Report",
-          "verbatim_label": "Lean Republican",
-          "rater_date": "2026-09-24",
+          "verbatim_label": "Toss Up",
+          "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+        },
+        {
+          "rater": "Sabato's Crystal Ball",
+          "verbatim_label": "Toss Up",
+          "rater_date": "2026-10-14",
+          "source_url": "https://centerforpolitics.org/crystalball/2026-senate/"
+        },
+        {
+          "rater": "Inside Elections",
+          "verbatim_label": "Toss-up",
+          "rater_date": "2026-09-03",
+          "source_url": "https://www.insideelections.com/ratings/senate"
         }
       ],
       "polls": [
@@ -1764,11 +1807,31 @@
         {
           "rater": "Cook Political Report",
           "verbatim_label": "Toss Up",
-          "rater_date": "2026-09-15",
+          "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+        },
+        {
+          "rater": "Sabato's Crystal Ball",
+          "verbatim_label": "Toss Up",
+          "rater_date": "2026-10-14",
+          "source_url": "https://centerforpolitics.org/crystalball/2026-governor/"
         }
       ],
-      "polls": [],
+      "polls": [
+        {
+          "pollster": "Atlanta Journal-Constitution / UGA",
+          "field_dates": "2026-10-07 - 2026-10-16",
+          "sample_size": 1000,
+          "sample_type": "lv",
+          "results": {
+            "Rick Jackson": 46,
+            "Keisha Lance Bottoms": 45,
+            "Undecided": 9
+          },
+          "source_url": "https://www.wsbtv.com/news/local/ajcuga-poll-bottoms-jackson-dead-heat-georgia-governor-race/76TN3NROXRG4HDILVYDUMJS4RQ/",
+          "sponsor": "AJC"
+        }
+      ],
       "polling_average": null
     },
     {

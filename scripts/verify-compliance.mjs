@@ -24,7 +24,7 @@ if (!Array.isArray(races) || races.length === 0) {
 }
 
 // ── RULE 2, 4, 11: CANDIDATE SCHEMA, RECEIPTS & PLACEHOLDER PROHIBITION ───────
-const VALID_STATUSES = new Set(['nominee', 'incumbent-not-running', 'primary-pending', 'runoff']);
+const VALID_STATUSES = new Set(['nominee', 'incumbent-not-running', 'primary-pending', 'runoff', 'incumbent-defeated-in-primary-runoff']);
 const KNOWN_PLACEHOLDERS = [
   'steven martin', 'gary williams', 'richard lee', 'gary rodriguez',
   'mary johnson', 'william carter', 'david green', 'tbd', 'placeholder',
@@ -153,7 +153,7 @@ console.log(`  ✓ Scope & Calendar: 35 Senate, 36 Gov, 435 House, 31 Mayoral (2
 const txSenate = senateRaces.find(r => r.state === 'TX');
 const paxton = txSenate?.candidates.find(c => c.name === 'Ken Paxton' && c.party === 'REP' && c.status === 'nominee');
 const talarico = txSenate?.candidates.find(c => c.name === 'James Talarico' && c.party === 'DEM' && c.status === 'nominee');
-const cornyn = txSenate?.candidates.find(c => c.name === 'John Cornyn' && c.status === 'incumbent-not-running');
+const cornyn = txSenate?.candidates.find(c => c.name === 'John Cornyn' && (c.status === 'incumbent-defeated-in-primary-runoff' || c.status === 'incumbent-not-running'));
 if (!paxton || !talarico || !cornyn) {
   console.error('❌ [Rule 5] TX Senate assertion failed: Paxton(REP, Nominee) vs Talarico(DEM, Nominee) + Cornyn(not-running) required!');
   process.exit(1);

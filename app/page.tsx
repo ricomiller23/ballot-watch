@@ -1,17 +1,19 @@
-import React from 'react';
+'use client';
+
+import React, { useState, useMemo } from 'react';
 import Link from 'next/link';
 import { 
   getAllRaces, 
   getRaceById, 
   computeSenateControl, 
-  getCoverageMetrics 
+  getCoverageMetrics,
+  Race,
+  Candidate
 } from '@/lib/races';
 import { 
   Vote, TrendingUp, BarChart2, ExternalLink, 
-  Layers, Users, MapPin, Calendar, Clock 
+  Layers, Users, MapPin, Calendar, Clock, ChevronRight
 } from 'lucide-react';
-
-export const revalidate = 60;
 
 export default function ControlBoardPage() {
   const races = getAllRaces();
@@ -21,7 +23,9 @@ export default function ControlBoardPage() {
   // Sourced Featured Race: Texas Senate (Paxton vs Talarico)
   const txRace = getRaceById('senate-tx') || races[0];
   const txNominees = txRace.candidates.filter(c => c.status === 'nominee');
-  const txDefeatedIncumbent = txRace.candidates.find(c => c.status === 'incumbent-not-running');
+  const txDefeatedIncumbent = txRace.candidates.find(
+    c => c.status === 'incumbent-defeated-in-primary-runoff' || c.status === 'incumbent-not-running'
+  );
 
   // Competitive Battleground Spotlight Races
   const battlegroundIds = ['senate-tx', 'senate-mi', 'senate-nh', 'senate-nc', 'senate-me', 'senate-oh', 'gov-ga'];
@@ -30,6 +34,13 @@ export default function ControlBoardPage() {
   const electionDate = new Date('2026-11-03T07:00:00-05:00').getTime();
   const now = Date.now();
   const daysToElection = Math.max(0, Math.ceil((electionDate - now) / (1000 * 60 * 60 * 24)));
+
+  const formatStatus = (s: string) => {
+    if (s === 'incumbent-defeated-in-primary-runoff') return 'Defeated in Primary Runoff';
+    if (s === 'nominee') return 'Nominee';
+    if (s === 'incumbent-not-running') return 'Incumbent (Retiring)';
+    return s;
+  };
 
   return (
     <div className="space-y-6 font-mono">
@@ -42,7 +53,7 @@ export default function ControlBoardPage() {
                 {daysToElection} DAYS TO NOV 3, 2026 GENERAL ELECTION
               </span>
               <span className="text-xs text-[#5B6779]">
-                {metrics.senateTotal} Senate Contests · {metrics.govTotal} Governor Races · {metrics.houseTotal} House Districts · {metrics.mayorTotal} 2026 Mayoral Contests
+                {metrics.senateTotal} Senate Contests · {metrics.govTotal} Governor Races · {metrics.houseTotal} House Districts · {metrics.mayorTotal} Monitored Mayoral Contests
               </span>
             </div>
             <h1 className="text-2xl font-extrabold text-[#0B1220] tracking-tight font-display">
@@ -63,8 +74,8 @@ export default function ControlBoardPage() {
         </div>
       </div>
 
-      {/* Sourced Coverage Metrics Banner */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+      {/* Sourced Coverage Metrics Banner (Reconciled Sourced Nominee Total: 34 + 21 + 1 + 26 = 82) */}
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
         <div className="p-3.5 bg-white border border-[#E4E9F0] rounded-xl">
           <div className="text-[10px] uppercase text-[#64748B]">Total Races Tracked</div>
           <div className="text-xl font-bold text-[#0B1220] mt-0.5">{metrics.totalRaces}</div>
@@ -84,9 +95,15 @@ export default function ControlBoardPage() {
         </div>
 
         <div className="p-3.5 bg-white border border-[#E4E9F0] rounded-xl">
-          <div className="text-[10px] uppercase text-[#64748B]">2026 Mayoral Contests</div>
+          <div className="text-[10px] uppercase text-[#64748B]">House Districts</div>
+          <div className="text-xl font-bold text-[#0B1220] mt-0.5">{metrics.houseSourced} of {metrics.houseTotal}</div>
+          <div className="text-[11px] text-[#64748B] mt-0.5">CA-13 Spotlight</div>
+        </div>
+
+        <div className="p-3.5 bg-white border border-[#E4E9F0] rounded-xl">
+          <div className="text-[10px] uppercase text-[#64748B]">Monitored Mayoral</div>
           <div className="text-xl font-bold text-[#0B1220] mt-0.5">{metrics.mayorSourced} of {metrics.mayorTotal}</div>
-          <div className="text-[11px] text-[#64748B] mt-0.5">Ballotpedia 2026 Calendar</div>
+          <div className="text-[11px] text-[#64748B] mt-0.5">31 Contests (AZ, CA, NV, TX)</div>
         </div>
       </div>
 
@@ -112,7 +129,7 @@ export default function ControlBoardPage() {
           <div className="p-3 rounded-lg bg-[#EFF6FF] border border-[#BFDBFE]">
             <div className="text-xs text-[#1E40AF] font-bold">Democratic Holdovers</div>
             <div className="text-2xl font-extrabold text-[#1D4ED8] mt-1">{control.demHoldovers}</div>
-            <div className="text-[10px] text-[#3B82F6] mt-0.5">Needs {control.majorityThreshold - control.demHoldovers} of 35 seats to flip</div>
+            <div className="text-[10px] text-[#3B82F6] mt-0.5">Needs {control.majorityThreshold - control.demHoldovers} of 35 contests to win (13 holds + 4 net flips)</div>
           </div>
 
           <div className="p-3 rounded-lg bg-[#F8FAFC] border border-[#E2E8F0]">
@@ -124,7 +141,7 @@ export default function ControlBoardPage() {
           <div className="p-3 rounded-lg bg-[#FEF2F2] border border-[#FECACA]">
             <div className="text-xs text-[#991B1B] font-bold">Republican Holdovers</div>
             <div className="text-2xl font-extrabold text-[#DC2626] mt-1">{control.repHoldovers}</div>
-            <div className="text-[10px] text-[#EF4444] mt-0.5">Needs {control.majorityThreshold - control.repHoldovers} of 35 seats to hold</div>
+            <div className="text-[10px] text-[#EF4444] mt-0.5">Needs {control.majorityThreshold - control.repHoldovers} of 35 contests to hold (maintain 51 seats)</div>
           </div>
         </div>
       </div>
@@ -141,12 +158,12 @@ export default function ControlBoardPage() {
             </h2>
             {txDefeatedIncumbent && (
               <span className="text-[11px] text-[#64748B] block mt-0.5">
-                Note: Incumbent Senator John Cornyn was defeated in primary/runoff.
+                Note: Incumbent Senator John Cornyn was defeated in the May 26 primary runoff.
               </span>
             )}
           </div>
           <span className="text-xs font-bold bg-[#FFFBEB] text-[#8A6100] border border-[#FCE8A5] px-2.5 py-0.5 rounded">
-            Rating: Toss Up (Cook / Sabato)
+            Rating: Toss Up (Cook / Sabato / Inside Elections)
           </span>
         </div>
 
@@ -164,11 +181,11 @@ export default function ControlBoardPage() {
             </div>
 
             <div className="flex items-center gap-4 text-sm font-bold">
-              <div className="text-[#DC2626]">
-                Ken Paxton (REP): {txRace.polling_average.averages?.['Ken Paxton']}%
-              </div>
               <div className="text-[#0E63C4]">
                 James Talarico (DEM): {txRace.polling_average.averages?.['James Talarico']}%
+              </div>
+              <div className="text-[#DC2626]">
+                Ken Paxton (REP): {txRace.polling_average.averages?.['Ken Paxton']}%
               </div>
             </div>
 
@@ -208,7 +225,7 @@ export default function ControlBoardPage() {
           {txRace.candidates.map((c, i) => (
             <div key={i} className="flex items-center gap-1.5">
               <span className="font-bold text-[#0B1220]">{c.name}</span>
-              <span className="text-[10px] text-[#64748B]">({c.party}, {c.status})</span>
+              <span className="text-[10px] text-[#64748B]">({c.party}, {formatStatus(c.status)})</span>
               <a
                 href={c.source_url}
                 target="_blank"
@@ -231,7 +248,7 @@ export default function ControlBoardPage() {
               Competitive Battleground Spotlight Contests
             </h2>
             <p className="text-xs text-[#5B6779] mt-0.5">
-              Sourced nominees across Michigan, New Hampshire, North Carolina, Maine, Ohio, and Georgia.
+              Sourced nominees across Michigan, New Hampshire, North Carolina, Maine, Ohio, and Georgia with unblended forecaster ratings.
             </p>
           </div>
           <Link
@@ -246,43 +263,70 @@ export default function ControlBoardPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {battlegroundRaces.map((r) => {
             const nominees = r.candidates.filter(c => c.status === 'nominee');
-            const rating = r.ratings[0]?.verbatim_label || 'In Review';
+            const primaryRating = r.ratings[0]?.verbatim_label || 'In Review';
 
             return (
-              <div key={r.id} className="p-4 rounded-xl bg-white border border-[#E4E9F0] shadow-xs space-y-3">
-                <div className="flex items-center justify-between border-b border-[#E4E9F0] pb-2">
-                  <div>
-                    <span className="text-[10px] font-bold text-[#0E63C4] uppercase">{r.state} · Tier {r.tier}</span>
-                    <h3 className="text-sm font-bold text-[#0B1220]">{r.office}</h3>
+              <div key={r.id} className="p-4 rounded-xl bg-white border border-[#E4E9F0] shadow-xs space-y-3 flex flex-col justify-between">
+                <div className="space-y-2">
+                  <div className="flex items-center justify-between border-b border-[#E4E9F0] pb-2">
+                    <div>
+                      <span className="text-[10px] font-bold text-[#0E63C4] uppercase">{r.state} · Tier {r.tier}</span>
+                      <h3 className="text-sm font-bold text-[#0B1220]">{r.office}</h3>
+                    </div>
+                    <span className="text-[10px] font-bold px-2 py-0.5 rounded bg-[#FFFBEB] text-[#B45309] border border-[#FCE8A5]">
+                      {primaryRating}
+                    </span>
                   </div>
-                  <span className="text-[10px] font-bold px-2 py-0.5 rounded bg-[#FFFBEB] text-[#B45309] border border-[#FCE8A5]">
-                    {rating}
-                  </span>
-                </div>
 
-                <div className="space-y-1.5 text-xs">
-                  {nominees.length > 0 ? (
-                    nominees.map((c, i) => (
-                      <div key={i} className="flex items-center justify-between">
-                        <span className="font-semibold text-[#0B1220]">{c.name}</span>
-                        <span className={`text-[10px] font-bold px-1.5 py-0.5 rounded border ${
-                          c.party === 'REP' ? 'bg-[#FEF2F2] text-[#DC2626] border-[#FECACA]' :
-                          c.party === 'DEM' ? 'bg-[#EFF6FF] text-[#2563EB] border-[#BFDBFE]' :
-                          'bg-[#F0FDF4] text-[#16A34A] border-[#BBF7D0]'
-                        }`}>
-                          {c.party}
-                        </span>
+                  {/* Nominees */}
+                  <div className="space-y-1.5 text-xs">
+                    {nominees.length > 0 ? (
+                      nominees.map((c, i) => (
+                        <div key={i} className="flex items-center justify-between">
+                          <span className="font-semibold text-[#0B1220]">{c.name}</span>
+                          <span className={`text-[10px] font-bold px-1.5 py-0.5 rounded border ${
+                            c.party === 'REP' ? 'bg-[#FEF2F2] text-[#DC2626] border-[#FECACA]' :
+                            c.party === 'DEM' ? 'bg-[#EFF6FF] text-[#2563EB] border-[#BFDBFE]' :
+                            'bg-[#F0FDF4] text-[#16A34A] border-[#BBF7D0]'
+                          }`}>
+                            {c.party}
+                          </span>
+                        </div>
+                      ))
+                    ) : (
+                      <div className="text-xs text-[#64748B] italic">Nominee not yet sourced</div>
+                    )}
+                  </div>
+
+                  {/* Unblended Forecaster Ratings Spread */}
+                  {r.ratings.length > 0 && (
+                    <div className="pt-2 border-t border-[#F1F5F9] space-y-1 text-[10px]">
+                      <span className="text-[#64748B] uppercase font-bold block">Forecaster Spread:</span>
+                      <div className="space-y-1">
+                        {r.ratings.map((rt, idx) => (
+                          <div key={idx} className="flex items-center justify-between bg-[#F8FAFC] px-2 py-0.5 rounded border border-[#E2E8F0]">
+                            <span className="text-[#475569]">{rt.rater.replace(' Political Report', '').replace("'s Crystal Ball", '')}:</span>
+                            <span className="font-bold text-[#0B1220]">{rt.verbatim_label} <span className="text-[#94A3B8] font-normal">({rt.rater_date})</span></span>
+                          </div>
+                        ))}
                       </div>
-                    ))
-                  ) : (
-                    <div className="text-xs text-[#64748B] italic">Nominee not yet sourced</div>
+                    </div>
+                  )}
+
+                  {/* Latest Survey (e.g. GA Gov AJC/UGA Poll) */}
+                  {r.polls && r.polls.length > 0 && (
+                    <div className="text-[10px] text-[#475569] bg-[#F1F5F9] p-1.5 rounded border border-[#E2E8F0]">
+                      <span className="font-bold text-[#0B1220]">Latest Poll:</span> {r.polls[0].pollster} ({r.polls[0].field_dates}):{' '}
+                      {Object.entries(r.polls[0].results).map(([k, v]) => `${k} ${v}%`).join(', ')}
+                    </div>
                   )}
                 </div>
 
                 <div className="pt-2 border-t border-[#E4E9F0] flex items-center justify-between text-[10px] text-[#64748B]">
                   <span>Status: {r.status}</span>
-                  <Link href={`/races#${r.id}`} className="text-[#0E63C4] hover:underline">
-                    Details →
+                  <Link href={`/races#${r.id}`} className="text-[#0E63C4] hover:underline font-bold flex items-center gap-0.5">
+                    <span>Details</span>
+                    <ChevronRight className="w-3 h-3" />
                   </Link>
                 </div>
               </div>

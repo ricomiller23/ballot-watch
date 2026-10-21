@@ -4,9 +4,12 @@ import FreshnessBar from '@/components/FreshnessBar';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+
 export const metadata: Metadata = {
   title: 'BALLOT.WATCH 2026 — US Midterm Elections Tracker',
-  description: 'Neutral, method-first 2026 midterm election monitor tracking all 435 House seats, 33 Senate seats, polling averages with published methodology, and unblended forecaster ratings.',
+  description: 'Neutral, method-first 2026 midterm election monitor tracking all 435 House seats, 35 Senate seats, polling averages with published methodology, and unblended forecaster ratings.',
 };
 
 export const viewport: Viewport = {
