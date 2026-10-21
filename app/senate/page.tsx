@@ -14,7 +14,7 @@ export default function SenateControlPage() {
         <div className="flex items-center gap-2 mb-1">
           <TrendingUp className="w-5 h-5 text-[#FFE600]" />
           <h1 className="font-arcade text-base sm:text-lg text-[#FFE600] arcade-text-glow-yellow tracking-tight">
-            CHAMBER MAJORITY ARITHMETIC &amp; CLASS DYNAMICS
+            Chamber Majority Arithmetic &amp; Class Dynamics
           </h1>
         </div>
         <p className="text-xs font-crt text-[16px] text-[#C7D2FE]">
