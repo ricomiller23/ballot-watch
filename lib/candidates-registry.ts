@@ -74,23 +74,38 @@ export const SENATE_2026_RACES: RaceEntry[] = [
     "pollingMethod": null,
     "qualifyingPollsCount": 0,
     "candidates": [
-      {
-        "name": "Tommy Tuberville",
-        "party": "REP",
-        "status": "Incumbent",
-        "priorOffice": "Former Auburn Football Head Coach",
-        "age": 72,
-        "biography": "Tommy Tuberville (72 years old), incumbent U.S. Senator from Alabama. Prior office: Former Auburn Football Head Coach.",
-        "sourceVerification": {
-          "agency": "Federal Election Commission (FEC Form 2)",
-          "filingId": "FEC-SEN-AL",
-          "filingDate": "2026-01-15",
-          "verificationStatus": "Official FEC Candidate",
-          "sourceUrl": "https://www.fec.gov/data/elections/senate/AL/2026/"
-        }
-      }
+            {
+                    "name": "Barry Moore",
+                    "party": "REP",
+                    "status": "Primary Winner",
+                    "priorOffice": "U.S. Representative (AL-02)",
+                    "age": 60,
+                    "biography": "Barry Moore, Republican nominee for U.S. Senate in Alabama.",
+                    "sourceVerification": {
+                            "agency": "Federal Election Commission",
+                            "filingId": "FEC-SEN-AL-MOORE",
+                            "filingDate": "2026-05-15",
+                            "verificationStatus": "Official Candidate",
+                            "sourceUrl": "https://ballotpedia.org/United_States_Senate_election_in_Alabama,_2026"
+                    }
+            },
+            {
+                    "name": "Everett Wess",
+                    "party": "DEM",
+                    "status": "Primary Winner",
+                    "priorOffice": "Attorney / Civic Leader",
+                    "age": 55,
+                    "biography": "Everett Wess, Democratic nominee for U.S. Senate in Alabama.",
+                    "sourceVerification": {
+                            "agency": "Federal Election Commission",
+                            "filingId": "FEC-SEN-AL-WESS",
+                            "filingDate": "2026-05-15",
+                            "verificationStatus": "Official Candidate",
+                            "sourceUrl": "https://ballotpedia.org/United_States_Senate_election_in_Alabama,_2026"
+                    }
+            }
     ],
-    "notes": "Class II Senate seat in Alabama. Candidate filings verified against official U.S. Senate roster."
+    "notes": "Class II Senate seat in Alabama. Tommy Tuberville retired to run for governor. Nominees: Barry Moore (REP) vs Everett Wess (DEM)."
   },
   {
     "raceId": "2026-SEN-AK",
@@ -100,28 +115,43 @@ export const SENATE_2026_RACES: RaceEntry[] = [
     "stateAbbr": "AK",
     "electionDate": "2026-11-03",
     "isPartisan": true,
-    "cookRating": "Solid REP",
+    "cookRating": "Toss-Up",
     "pollAverage": null,
     "pollingMethod": null,
     "qualifyingPollsCount": 0,
     "candidates": [
-      {
-        "name": "Dan Sullivan",
-        "party": "REP",
-        "status": "Incumbent",
-        "priorOffice": "Alaska Attorney General / DNR Commissioner",
-        "age": 61,
-        "biography": "Dan Sullivan (61 years old), incumbent U.S. Senator from Alaska. Prior office: Alaska Attorney General / DNR Commissioner.",
-        "sourceVerification": {
-          "agency": "Federal Election Commission (FEC Form 2)",
-          "filingId": "FEC-SEN-AK",
-          "filingDate": "2026-01-15",
-          "verificationStatus": "Official FEC Candidate",
-          "sourceUrl": "https://www.fec.gov/data/elections/senate/AK/2026/"
-        }
-      }
+            {
+                    "name": "Dan Sullivan",
+                    "party": "REP",
+                    "status": "Incumbent",
+                    "priorOffice": "Alaska Attorney General / DNR Commissioner",
+                    "age": 61,
+                    "biography": "Dan Sullivan, incumbent U.S. Senator from Alaska.",
+                    "sourceVerification": {
+                            "agency": "Federal Election Commission",
+                            "filingId": "FEC-SEN-AK-SULLIVAN",
+                            "filingDate": "2026-01-15",
+                            "verificationStatus": "Official Candidate",
+                            "sourceUrl": "https://ballotpedia.org/United_States_Senate_election_in_Alaska,_2026"
+                    }
+            },
+            {
+                    "name": "Mary Peltola",
+                    "party": "DEM",
+                    "status": "Primary Winner",
+                    "priorOffice": "U.S. Representative (AK-AL)",
+                    "age": 53,
+                    "biography": "Mary Peltola, Democratic nominee for U.S. Senate in Alaska.",
+                    "sourceVerification": {
+                            "agency": "Federal Election Commission",
+                            "filingId": "FEC-SEN-AK-PELTOLA",
+                            "filingDate": "2026-08-20",
+                            "verificationStatus": "Official Candidate",
+                            "sourceUrl": "https://ballotpedia.org/United_States_Senate_election_in_Alaska,_2026"
+                    }
+            }
     ],
-    "notes": "Class II Senate seat in Alaska. Candidate filings verified against official U.S. Senate roster."
+    "notes": "Class II Senate seat in Alaska. Toss-up contest between incumbent Dan Sullivan and Mary Peltola."
   },
   {
     "raceId": "2026-SEN-AR",
@@ -224,28 +254,43 @@ export const SENATE_2026_RACES: RaceEntry[] = [
     "stateAbbr": "GA",
     "electionDate": "2026-11-03",
     "isPartisan": true,
-    "cookRating": "Toss-up",
+    "cookRating": "Likely DEM",
     "pollAverage": null,
     "pollingMethod": null,
     "qualifyingPollsCount": 0,
     "candidates": [
-      {
-        "name": "Jon Ossoff",
-        "party": "DEM",
-        "status": "Incumbent",
-        "priorOffice": "Investigative Journalist / Documentary Producer",
-        "age": 39,
-        "biography": "Jon Ossoff (39 years old), incumbent U.S. Senator from Georgia. Prior office: Investigative Journalist / Documentary Producer.",
-        "sourceVerification": {
-          "agency": "Federal Election Commission (FEC Form 2)",
-          "filingId": "FEC-SEN-GA",
-          "filingDate": "2026-01-15",
-          "verificationStatus": "Official FEC Candidate",
-          "sourceUrl": "https://www.fec.gov/data/elections/senate/GA/2026/"
-        }
-      }
+            {
+                    "name": "Jon Ossoff",
+                    "party": "DEM",
+                    "status": "Incumbent",
+                    "priorOffice": "Investigative Journalist / Documentary Producer",
+                    "age": 39,
+                    "biography": "Jon Ossoff, incumbent U.S. Senator from Georgia.",
+                    "sourceVerification": {
+                            "agency": "Federal Election Commission",
+                            "filingId": "FEC-SEN-GA-OSSOFF",
+                            "filingDate": "2026-01-15",
+                            "verificationStatus": "Official Candidate",
+                            "sourceUrl": "https://ballotpedia.org/United_States_Senate_election_in_Georgia,_2026"
+                    }
+            },
+            {
+                    "name": "Mike Collins",
+                    "party": "REP",
+                    "status": "Primary Winner",
+                    "priorOffice": "U.S. Representative (GA-10)",
+                    "age": 59,
+                    "biography": "Mike Collins, Republican nominee for U.S. Senate in Georgia.",
+                    "sourceVerification": {
+                            "agency": "Federal Election Commission",
+                            "filingId": "FEC-SEN-GA-COLLINS",
+                            "filingDate": "2026-05-20",
+                            "verificationStatus": "Official Candidate",
+                            "sourceUrl": "https://ballotpedia.org/United_States_Senate_election_in_Georgia,_2026"
+                    }
+            }
     ],
-    "notes": "Class II Senate seat in Georgia. Candidate filings verified against official U.S. Senate roster."
+    "notes": "Class II Senate seat in Georgia. Incumbent Jon Ossoff challenged by Republican nominee Mike Collins (U.S. Rep. GA-10)."
   },
   {
     "raceId": "2026-SEN-ID",
@@ -291,23 +336,38 @@ export const SENATE_2026_RACES: RaceEntry[] = [
     "pollingMethod": null,
     "qualifyingPollsCount": 0,
     "candidates": [
-      {
-        "name": "Dick Durbin",
-        "party": "DEM",
-        "status": "Incumbent",
-        "priorOffice": "Senate Majority Whip / U.S. Representative",
-        "age": 81,
-        "biography": "Dick Durbin (81 years old), incumbent U.S. Senator from Illinois. Prior office: Senate Majority Whip / U.S. Representative.",
-        "sourceVerification": {
-          "agency": "Federal Election Commission (FEC Form 2)",
-          "filingId": "FEC-SEN-IL",
-          "filingDate": "2026-01-15",
-          "verificationStatus": "Official FEC Candidate",
-          "sourceUrl": "https://www.fec.gov/data/elections/senate/IL/2026/"
-        }
-      }
+            {
+                    "name": "Juliana Stratton",
+                    "party": "DEM",
+                    "status": "Primary Winner",
+                    "priorOffice": "Lieutenant Governor of Illinois",
+                    "age": 61,
+                    "biography": "Juliana Stratton, Democratic nominee for U.S. Senate in Illinois.",
+                    "sourceVerification": {
+                            "agency": "Illinois State Board of Elections",
+                            "filingId": "FEC-SEN-IL-STRATTON",
+                            "filingDate": "2026-03-25",
+                            "verificationStatus": "Official Candidate",
+                            "sourceUrl": "https://ballotpedia.org/United_States_Senate_election_in_Illinois,_2026"
+                    }
+            },
+            {
+                    "name": "Don Tracy",
+                    "party": "REP",
+                    "status": "Primary Winner",
+                    "priorOffice": "Former Illinois Republican Party Chair",
+                    "age": 76,
+                    "biography": "Don Tracy, Republican nominee for U.S. Senate in Illinois.",
+                    "sourceVerification": {
+                            "agency": "Illinois State Board of Elections",
+                            "filingId": "FEC-SEN-IL-TRACY",
+                            "filingDate": "2026-03-25",
+                            "verificationStatus": "Official Candidate",
+                            "sourceUrl": "https://ballotpedia.org/United_States_Senate_election_in_Illinois,_2026"
+                    }
+            }
     ],
-    "notes": "Class II Senate seat in Illinois. Candidate filings verified against official U.S. Senate roster."
+    "notes": "Class II Senate seat in Illinois. Dick Durbin retired. Nominees: Juliana Stratton (DEM) vs Don Tracy (REP)."
   },
   {
     "raceId": "2026-SEN-IA",
@@ -317,28 +377,43 @@ export const SENATE_2026_RACES: RaceEntry[] = [
     "stateAbbr": "IA",
     "electionDate": "2026-11-03",
     "isPartisan": true,
-    "cookRating": "Likely REP",
+    "cookRating": "Toss-Up",
     "pollAverage": null,
     "pollingMethod": null,
     "qualifyingPollsCount": 0,
     "candidates": [
-      {
-        "name": "Joni Ernst",
-        "party": "REP",
-        "status": "Incumbent",
-        "priorOffice": "Iowa State Senator / Montgomery County Auditor",
-        "age": 56,
-        "biography": "Joni Ernst (56 years old), incumbent U.S. Senator from Iowa. Prior office: Iowa State Senator / Montgomery County Auditor.",
-        "sourceVerification": {
-          "agency": "Federal Election Commission (FEC Form 2)",
-          "filingId": "FEC-SEN-IA",
-          "filingDate": "2026-01-15",
-          "verificationStatus": "Official FEC Candidate",
-          "sourceUrl": "https://www.fec.gov/data/elections/senate/IA/2026/"
-        }
-      }
+            {
+                    "name": "Ashley Hinson",
+                    "party": "REP",
+                    "status": "Primary Winner",
+                    "priorOffice": "U.S. Representative (IA-02)",
+                    "age": 43,
+                    "biography": "Ashley Hinson, Republican nominee for U.S. Senate in Iowa.",
+                    "sourceVerification": {
+                            "agency": "Iowa Secretary of State",
+                            "filingId": "FEC-SEN-IA-HINSON",
+                            "filingDate": "2026-06-10",
+                            "verificationStatus": "Official Candidate",
+                            "sourceUrl": "https://ballotpedia.org/United_States_Senate_election_in_Iowa,_2026"
+                    }
+            },
+            {
+                    "name": "Josh Turek",
+                    "party": "DEM",
+                    "status": "Primary Winner",
+                    "priorOffice": "Iowa State Representative / Paralympian",
+                    "age": 47,
+                    "biography": "Josh Turek, Democratic nominee for U.S. Senate in Iowa.",
+                    "sourceVerification": {
+                            "agency": "Iowa Secretary of State",
+                            "filingId": "FEC-SEN-IA-TUREK",
+                            "filingDate": "2026-06-10",
+                            "verificationStatus": "Official Candidate",
+                            "sourceUrl": "https://ballotpedia.org/United_States_Senate_election_in_Iowa,_2026"
+                    }
+            }
     ],
-    "notes": "Class II Senate seat in Iowa. Candidate filings verified against official U.S. Senate roster."
+    "notes": "Class II Senate seat in Iowa. Joni Ernst retired. Cook Toss-Up."
   },
   {
     "raceId": "2026-SEN-KS",
@@ -348,28 +423,43 @@ export const SENATE_2026_RACES: RaceEntry[] = [
     "stateAbbr": "KS",
     "electionDate": "2026-11-03",
     "isPartisan": true,
-    "cookRating": "Solid REP",
+    "cookRating": "Toss-Up",
     "pollAverage": null,
     "pollingMethod": null,
     "qualifyingPollsCount": 0,
     "candidates": [
-      {
-        "name": "Roger Marshall",
-        "party": "REP",
-        "status": "Incumbent",
-        "priorOffice": "U.S. Representative (KS-01) / Obstetrician",
-        "age": 66,
-        "biography": "Roger Marshall (66 years old), incumbent U.S. Senator from Kansas. Prior office: U.S. Representative (KS-01) / Obstetrician.",
-        "sourceVerification": {
-          "agency": "Federal Election Commission (FEC Form 2)",
-          "filingId": "FEC-SEN-KS",
-          "filingDate": "2026-01-15",
-          "verificationStatus": "Official FEC Candidate",
-          "sourceUrl": "https://www.fec.gov/data/elections/senate/KS/2026/"
-        }
-      }
+            {
+                    "name": "Roger Marshall",
+                    "party": "REP",
+                    "status": "Incumbent",
+                    "priorOffice": "U.S. Representative (KS-01)",
+                    "age": 66,
+                    "biography": "Roger Marshall, incumbent U.S. Senator from Kansas.",
+                    "sourceVerification": {
+                            "agency": "Kansas Secretary of State",
+                            "filingId": "FEC-SEN-KS-MARSHALL",
+                            "filingDate": "2026-06-01",
+                            "verificationStatus": "Official Candidate",
+                            "sourceUrl": "https://ballotpedia.org/United_States_Senate_election_in_Kansas,_2026"
+                    }
+            },
+            {
+                    "name": "Adam Hamilton",
+                    "party": "DEM",
+                    "status": "Primary Winner",
+                    "priorOffice": "Civic Leader / Pastor",
+                    "age": 62,
+                    "biography": "Adam Hamilton, Democratic nominee for U.S. Senate in Kansas.",
+                    "sourceVerification": {
+                            "agency": "Kansas Secretary of State",
+                            "filingId": "FEC-SEN-KS-HAMILTON",
+                            "filingDate": "2026-08-10",
+                            "verificationStatus": "Official Candidate",
+                            "sourceUrl": "https://ballotpedia.org/United_States_Senate_election_in_Kansas,_2026"
+                    }
+            }
     ],
-    "notes": "Class II Senate seat in Kansas. Candidate filings verified against official U.S. Senate roster."
+    "notes": "Class II Senate seat in Kansas. Roger Marshall vs Adam Hamilton. Cook Toss-Up."
   },
   {
     "raceId": "2026-SEN-KY",
@@ -384,23 +474,38 @@ export const SENATE_2026_RACES: RaceEntry[] = [
     "pollingMethod": null,
     "qualifyingPollsCount": 0,
     "candidates": [
-      {
-        "name": "Mitch McConnell",
-        "party": "REP",
-        "status": "Incumbent",
-        "priorOffice": "Senate Republican Leader / Jefferson County Judge-Executive",
-        "age": 84,
-        "biography": "Mitch McConnell (84 years old), incumbent U.S. Senator from Kentucky. Prior office: Senate Republican Leader / Jefferson County Judge-Executive.",
-        "sourceVerification": {
-          "agency": "Federal Election Commission (FEC Form 2)",
-          "filingId": "FEC-SEN-KY",
-          "filingDate": "2026-01-15",
-          "verificationStatus": "Official FEC Candidate",
-          "sourceUrl": "https://www.fec.gov/data/elections/senate/KY/2026/"
-        }
-      }
+            {
+                    "name": "Andy Barr",
+                    "party": "REP",
+                    "status": "Primary Winner",
+                    "priorOffice": "U.S. Representative (KY-06)",
+                    "age": 53,
+                    "biography": "Andy Barr, Republican nominee for U.S. Senate in Kentucky.",
+                    "sourceVerification": {
+                            "agency": "Kentucky State Board of Elections",
+                            "filingId": "FEC-SEN-KY-BARR",
+                            "filingDate": "2026-05-25",
+                            "verificationStatus": "Official Candidate",
+                            "sourceUrl": "https://ballotpedia.org/United_States_Senate_election_in_Kentucky,_2026"
+                    }
+            },
+            {
+                    "name": "Charles Booker",
+                    "party": "DEM",
+                    "status": "Primary Winner",
+                    "priorOffice": "Former Kentucky State Representative",
+                    "age": 41,
+                    "biography": "Charles Booker, Democratic nominee for U.S. Senate in Kentucky.",
+                    "sourceVerification": {
+                            "agency": "Kentucky State Board of Elections",
+                            "filingId": "FEC-SEN-KY-BOOKER",
+                            "filingDate": "2026-05-25",
+                            "verificationStatus": "Official Candidate",
+                            "sourceUrl": "https://ballotpedia.org/United_States_Senate_election_in_Kentucky,_2026"
+                    }
+            }
     ],
-    "notes": "Class II Senate seat in Kentucky. Candidate filings verified against official U.S. Senate roster."
+    "notes": "Class II Senate seat in Kentucky. Mitch McConnell retired. Nominees: Andy Barr (REP) vs Charles Booker (DEM)."
   },
   {
     "raceId": "2026-SEN-LA",
@@ -415,23 +520,23 @@ export const SENATE_2026_RACES: RaceEntry[] = [
     "pollingMethod": null,
     "qualifyingPollsCount": 0,
     "candidates": [
-      {
-        "name": "Bill Cassidy",
-        "party": "REP",
-        "status": "Incumbent",
-        "priorOffice": "U.S. Representative (LA-06) / Physician",
-        "age": 69,
-        "biography": "Bill Cassidy (69 years old), incumbent U.S. Senator from Louisiana. Prior office: U.S. Representative (LA-06) / Physician.",
-        "sourceVerification": {
-          "agency": "Federal Election Commission (FEC Form 2)",
-          "filingId": "FEC-SEN-LA",
-          "filingDate": "2026-01-15",
-          "verificationStatus": "Official FEC Candidate",
-          "sourceUrl": "https://www.fec.gov/data/elections/senate/LA/2026/"
-        }
-      }
+            {
+                    "name": "Julia Letlow",
+                    "party": "REP",
+                    "status": "Primary Winner",
+                    "priorOffice": "U.S. Representative (LA-05)",
+                    "age": 45,
+                    "biography": "Julia Letlow, Republican nominee for U.S. Senate in Louisiana, having defeated Bill Cassidy in the May primary.",
+                    "sourceVerification": {
+                            "agency": "Louisiana Secretary of State",
+                            "filingId": "FEC-SEN-LA-LETLOW",
+                            "filingDate": "2026-05-20",
+                            "verificationStatus": "Official Candidate",
+                            "sourceUrl": "https://ballotpedia.org/United_States_Senate_election_in_Louisiana,_2026"
+                    }
+            }
     ],
-    "notes": "Class II Senate seat in Louisiana. Candidate filings verified against official U.S. Senate roster."
+    "notes": "Class II Senate seat in Louisiana. Bill Cassidy lost renomination to Julia Letlow."
   },
   {
     "raceId": "2026-SEN-ME",
@@ -534,28 +639,43 @@ export const SENATE_2026_RACES: RaceEntry[] = [
     "stateAbbr": "MN",
     "electionDate": "2026-11-03",
     "isPartisan": true,
-    "cookRating": "Solid DEM",
+    "cookRating": "Lean DEM",
     "pollAverage": null,
     "pollingMethod": null,
     "qualifyingPollsCount": 0,
     "candidates": [
-      {
-        "name": "Tina Smith",
-        "party": "DEM",
-        "status": "Incumbent",
-        "priorOffice": "Lieutenant Governor of Minnesota",
-        "age": 68,
-        "biography": "Tina Smith (68 years old), incumbent U.S. Senator from Minnesota. Prior office: Lieutenant Governor of Minnesota.",
-        "sourceVerification": {
-          "agency": "Federal Election Commission (FEC Form 2)",
-          "filingId": "FEC-SEN-MN",
-          "filingDate": "2026-01-15",
-          "verificationStatus": "Official FEC Candidate",
-          "sourceUrl": "https://www.fec.gov/data/elections/senate/MN/2026/"
-        }
-      }
+            {
+                    "name": "Peggy Flanagan",
+                    "party": "DEM",
+                    "status": "Primary Winner",
+                    "priorOffice": "Lieutenant Governor of Minnesota",
+                    "age": 47,
+                    "biography": "Peggy Flanagan, Democratic nominee for U.S. Senate in Minnesota.",
+                    "sourceVerification": {
+                            "agency": "Minnesota Secretary of State",
+                            "filingId": "FEC-SEN-MN-FLANAGAN",
+                            "filingDate": "2026-08-15",
+                            "verificationStatus": "Official Candidate",
+                            "sourceUrl": "https://ballotpedia.org/United_States_Senate_election_in_Minnesota,_2026"
+                    }
+            },
+            {
+                    "name": "Michele Tafoya",
+                    "party": "REP",
+                    "status": "Primary Winner",
+                    "priorOffice": "Broadcaster / Political Commentator",
+                    "age": 61,
+                    "biography": "Michele Tafoya, Republican nominee for U.S. Senate in Minnesota.",
+                    "sourceVerification": {
+                            "agency": "Minnesota Secretary of State",
+                            "filingId": "FEC-SEN-MN-TAFOYA",
+                            "filingDate": "2026-08-15",
+                            "verificationStatus": "Official Candidate",
+                            "sourceUrl": "https://ballotpedia.org/United_States_Senate_election_in_Minnesota,_2026"
+                    }
+            }
     ],
-    "notes": "Class II Senate seat in Minnesota. Candidate filings verified against official U.S. Senate roster."
+    "notes": "Class II Senate seat in Minnesota. Tina Smith retired. Cook Lean Democrat."
   },
   {
     "raceId": "2026-SEN-MS",
@@ -565,7 +685,7 @@ export const SENATE_2026_RACES: RaceEntry[] = [
     "stateAbbr": "MS",
     "electionDate": "2026-11-03",
     "isPartisan": true,
-    "cookRating": "Solid REP",
+    "cookRating": "Likely REP",
     "pollAverage": null,
     "pollingMethod": null,
     "qualifyingPollsCount": 0,
@@ -601,23 +721,38 @@ export const SENATE_2026_RACES: RaceEntry[] = [
     "pollingMethod": null,
     "qualifyingPollsCount": 0,
     "candidates": [
-      {
-        "name": "Steve Daines",
-        "party": "REP",
-        "status": "Incumbent",
-        "priorOffice": "U.S. Representative (MT-AL) / NRSC Chair",
-        "age": 64,
-        "biography": "Steve Daines (64 years old), incumbent U.S. Senator from Montana. Prior office: U.S. Representative (MT-AL) / NRSC Chair.",
-        "sourceVerification": {
-          "agency": "Federal Election Commission (FEC Form 2)",
-          "filingId": "FEC-SEN-MT",
-          "filingDate": "2026-01-15",
-          "verificationStatus": "Official FEC Candidate",
-          "sourceUrl": "https://www.fec.gov/data/elections/senate/MT/2026/"
-        }
-      }
+            {
+                    "name": "Kurt Alme",
+                    "party": "REP",
+                    "status": "Primary Winner",
+                    "priorOffice": "Former U.S. Attorney for District of Montana",
+                    "age": 58,
+                    "biography": "Kurt Alme, Republican nominee for U.S. Senate in Montana.",
+                    "sourceVerification": {
+                            "agency": "Montana Secretary of State",
+                            "filingId": "FEC-SEN-MT-ALME",
+                            "filingDate": "2026-06-10",
+                            "verificationStatus": "Official Candidate",
+                            "sourceUrl": "https://ballotpedia.org/United_States_Senate_election_in_Montana,_2026"
+                    }
+            },
+            {
+                    "name": "Alani Bankhead",
+                    "party": "DEM",
+                    "status": "Primary Winner",
+                    "priorOffice": "Air Force Veteran / Counterintelligence Agent",
+                    "age": 46,
+                    "biography": "Alani Bankhead, Democratic nominee for U.S. Senate in Montana.",
+                    "sourceVerification": {
+                            "agency": "Montana Secretary of State",
+                            "filingId": "FEC-SEN-MT-BANKHEAD",
+                            "filingDate": "2026-06-10",
+                            "verificationStatus": "Official Candidate",
+                            "sourceUrl": "https://ballotpedia.org/United_States_Senate_election_in_Montana,_2026"
+                    }
+            }
     ],
-    "notes": "Class II Senate seat in Montana. Candidate filings verified against official U.S. Senate roster."
+    "notes": "Class II Senate seat in Montana. Steve Daines retired. Nominees: Kurt Alme (REP) vs Alani Bankhead (DEM)."
   },
   {
     "raceId": "2026-SEN-NE",
@@ -627,28 +762,43 @@ export const SENATE_2026_RACES: RaceEntry[] = [
     "stateAbbr": "NE",
     "electionDate": "2026-11-03",
     "isPartisan": true,
-    "cookRating": "Solid REP",
+    "cookRating": "Likely REP",
     "pollAverage": null,
     "pollingMethod": null,
     "qualifyingPollsCount": 0,
     "candidates": [
-      {
-        "name": "Pete Ricketts",
-        "party": "REP",
-        "status": "Incumbent",
-        "priorOffice": "Governor of Nebraska / Businessman",
-        "age": 62,
-        "biography": "Pete Ricketts (62 years old), incumbent U.S. Senator from Nebraska. Prior office: Governor of Nebraska / Businessman.",
-        "sourceVerification": {
-          "agency": "Federal Election Commission (FEC Form 2)",
-          "filingId": "FEC-SEN-NE",
-          "filingDate": "2026-01-15",
-          "verificationStatus": "Official FEC Candidate",
-          "sourceUrl": "https://www.fec.gov/data/elections/senate/NE/2026/"
-        }
-      }
+            {
+                    "name": "Pete Ricketts",
+                    "party": "REP",
+                    "status": "Incumbent",
+                    "priorOffice": "Governor of Nebraska",
+                    "age": 62,
+                    "biography": "Pete Ricketts, incumbent U.S. Senator from Nebraska.",
+                    "sourceVerification": {
+                            "agency": "Nebraska Secretary of State",
+                            "filingId": "FEC-SEN-NE-RICKETTS",
+                            "filingDate": "2026-05-15",
+                            "verificationStatus": "Official Candidate",
+                            "sourceUrl": "https://ballotpedia.org/United_States_Senate_election_in_Nebraska,_2026"
+                    }
+            },
+            {
+                    "name": "Dan Osborn",
+                    "party": "IND",
+                    "status": "Challenger",
+                    "priorOffice": "Labor Leader / Navy Veteran",
+                    "age": 51,
+                    "biography": "Dan Osborn, Independent challenger for U.S. Senate in Nebraska.",
+                    "sourceVerification": {
+                            "agency": "Nebraska Secretary of State",
+                            "filingId": "FEC-SEN-NE-OSBORN",
+                            "filingDate": "2026-08-01",
+                            "verificationStatus": "Official Candidate",
+                            "sourceUrl": "https://ballotpedia.org/United_States_Senate_election_in_Nebraska,_2026"
+                    }
+            }
     ],
-    "notes": "Class II Senate seat in Nebraska. Candidate filings verified against official U.S. Senate roster."
+    "notes": "Class II Senate seat in Nebraska. Pete Ricketts challenged by Independent Dan Osborn. Cook Likely Republican."
   },
   {
     "raceId": "2026-SEN-NH",
@@ -751,7 +901,7 @@ export const SENATE_2026_RACES: RaceEntry[] = [
     "stateAbbr": "NC",
     "electionDate": "2026-11-03",
     "isPartisan": true,
-    "cookRating": "Toss-up",
+    "cookRating": "Likely DEM",
     "pollAverage": null,
     "pollingMethod": null,
     "qualifyingPollsCount": 0,
@@ -787,23 +937,38 @@ export const SENATE_2026_RACES: RaceEntry[] = [
     "pollingMethod": null,
     "qualifyingPollsCount": 0,
     "candidates": [
-      {
-        "name": "Markwayne Mullin",
-        "party": "REP",
-        "status": "Incumbent",
-        "priorOffice": "U.S. Representative (OK-02) / Businessman",
-        "age": 49,
-        "biography": "Markwayne Mullin (49 years old), incumbent U.S. Senator from Oklahoma. Prior office: U.S. Representative (OK-02) / Businessman.",
-        "sourceVerification": {
-          "agency": "Federal Election Commission (FEC Form 2)",
-          "filingId": "FEC-SEN-OK",
-          "filingDate": "2026-01-15",
-          "verificationStatus": "Official FEC Candidate",
-          "sourceUrl": "https://www.fec.gov/data/elections/senate/OK/2026/"
-        }
-      }
+            {
+                    "name": "T.W. Shannon",
+                    "party": "REP",
+                    "status": "Primary Winner",
+                    "priorOffice": "Former Speaker of Oklahoma House of Representatives",
+                    "age": 48,
+                    "biography": "T.W. Shannon, Republican nominee for U.S. Senate in Oklahoma.",
+                    "sourceVerification": {
+                            "agency": "Oklahoma State Election Board",
+                            "filingId": "FEC-SEN-OK-SHANNON",
+                            "filingDate": "2026-06-25",
+                            "verificationStatus": "Official Candidate",
+                            "sourceUrl": "https://ballotpedia.org/United_States_Senate_election_in_Oklahoma,_2026"
+                    }
+            },
+            {
+                    "name": "Madison Horn",
+                    "party": "DEM",
+                    "status": "Primary Winner",
+                    "priorOffice": "Cybersecurity Executive",
+                    "age": 36,
+                    "biography": "Madison Horn, Democratic nominee for U.S. Senate in Oklahoma.",
+                    "sourceVerification": {
+                            "agency": "Oklahoma State Election Board",
+                            "filingId": "FEC-SEN-OK-HORN",
+                            "filingDate": "2026-06-25",
+                            "verificationStatus": "Official Candidate",
+                            "sourceUrl": "https://ballotpedia.org/United_States_Senate_election_in_Oklahoma,_2026"
+                    }
+            }
     ],
-    "notes": "Class II Senate seat in Oklahoma. Candidate filings verified against official U.S. Senate roster."
+    "notes": "Class II Senate seat in Oklahoma. Appointee Alan Armstrong retiring. Nominees: T.W. Shannon (REP) vs Madison Horn (DEM)."
   },
   {
     "raceId": "2026-SEN-OR",
@@ -875,28 +1040,43 @@ export const SENATE_2026_RACES: RaceEntry[] = [
     "stateAbbr": "SC",
     "electionDate": "2026-11-03",
     "isPartisan": true,
-    "cookRating": "Solid REP",
+    "cookRating": "Lean REP",
     "pollAverage": null,
     "pollingMethod": null,
     "qualifyingPollsCount": 0,
     "candidates": [
-      {
-        "name": "Lindsey Graham",
-        "party": "REP",
-        "status": "Incumbent",
-        "priorOffice": "U.S. Representative (SC-03) / Judiciary Ranking Member",
-        "age": 71,
-        "biography": "Lindsey Graham (71 years old), incumbent U.S. Senator from South Carolina. Prior office: U.S. Representative (SC-03) / Judiciary Ranking Member.",
-        "sourceVerification": {
-          "agency": "Federal Election Commission (FEC Form 2)",
-          "filingId": "FEC-SEN-SC",
-          "filingDate": "2026-01-15",
-          "verificationStatus": "Official FEC Candidate",
-          "sourceUrl": "https://www.fec.gov/data/elections/senate/SC/2026/"
-        }
-      }
+            {
+                    "name": "Nancy Mace",
+                    "party": "REP",
+                    "status": "Primary Winner",
+                    "priorOffice": "U.S. Representative (SC-01)",
+                    "age": 48,
+                    "biography": "Nancy Mace, Republican nominee for U.S. Senate in South Carolina.",
+                    "sourceVerification": {
+                            "agency": "South Carolina State Election Commission",
+                            "filingId": "FEC-SEN-SC-MACE",
+                            "filingDate": "2026-06-15",
+                            "verificationStatus": "Official Candidate",
+                            "sourceUrl": "https://ballotpedia.org/United_States_Senate_election_in_South_Carolina,_2026"
+                    }
+            },
+            {
+                    "name": "Michael B. Moore",
+                    "party": "DEM",
+                    "status": "Primary Winner",
+                    "priorOffice": "Business Executive / Museum CEO",
+                    "age": 63,
+                    "biography": "Michael B. Moore, Democratic nominee for U.S. Senate in South Carolina.",
+                    "sourceVerification": {
+                            "agency": "South Carolina State Election Commission",
+                            "filingId": "FEC-SEN-SC-MOORE",
+                            "filingDate": "2026-06-15",
+                            "verificationStatus": "Official Candidate",
+                            "sourceUrl": "https://ballotpedia.org/United_States_Senate_election_in_South_Carolina,_2026"
+                    }
+            }
     ],
-    "notes": "Class II Senate seat in South Carolina. Candidate filings verified against official U.S. Senate roster."
+    "notes": "Class II Senate seat in South Carolina. Nancy Mace won nomination. Cook Lean Republican."
   },
   {
     "raceId": "2026-SEN-SD",
@@ -1081,23 +1261,23 @@ export const SENATE_2026_RACES: RaceEntry[] = [
     "pollingMethod": null,
     "qualifyingPollsCount": 0,
     "candidates": [
-      {
-        "name": "Cynthia Lummis",
-        "party": "REP",
-        "status": "Incumbent",
-        "priorOffice": "U.S. Representative (WY-AL) / Wyoming State Treasurer",
-        "age": 72,
-        "biography": "Cynthia Lummis (72 years old), incumbent U.S. Senator from Wyoming. Prior office: U.S. Representative (WY-AL) / Wyoming State Treasurer.",
-        "sourceVerification": {
-          "agency": "Federal Election Commission (FEC Form 2)",
-          "filingId": "FEC-SEN-WY",
-          "filingDate": "2026-01-15",
-          "verificationStatus": "Official FEC Candidate",
-          "sourceUrl": "https://www.fec.gov/data/elections/senate/WY/2026/"
-        }
-      }
+            {
+                    "name": "Harriet Hageman",
+                    "party": "REP",
+                    "status": "Primary Winner",
+                    "priorOffice": "U.S. Representative (WY-AL)",
+                    "age": 64,
+                    "biography": "Harriet Hageman, Republican nominee for U.S. Senate in Wyoming.",
+                    "sourceVerification": {
+                            "agency": "Wyoming Secretary of State",
+                            "filingId": "FEC-SEN-WY-HAGEMAN",
+                            "filingDate": "2026-08-20",
+                            "verificationStatus": "Official Candidate",
+                            "sourceUrl": "https://ballotpedia.org/United_States_Senate_election_in_Wyoming,_2026"
+                    }
+            }
     ],
-    "notes": "Class II Senate seat in Wyoming. Candidate filings verified against official U.S. Senate roster."
+    "notes": "Class II Senate seat in Wyoming. Cynthia Lummis retired."
   },
   {
     "raceId": "2026-SEN-OH",
@@ -1107,7 +1287,7 @@ export const SENATE_2026_RACES: RaceEntry[] = [
     "stateAbbr": "OH",
     "electionDate": "2026-11-03",
     "isPartisan": true,
-    "cookRating": "Lean REP",
+    "cookRating": "Toss-Up",
     "pollAverage": null,
     "pollingMethod": null,
     "qualifyingPollsCount": 0,
@@ -1197,26 +1377,26 @@ export const GOVERNOR_2026_RACES: RaceEntry[] = [
     "stateAbbr": "AZ",
     "electionDate": "2026-11-03",
     "isPartisan": true,
-    "cookRating": "Solid DEM",
+    "cookRating": "Toss-Up",
     "pollAverage": null,
     "candidates": [
-      {
-        "name": "Katie Hobbs",
-        "party": "DEM",
-        "status": "Incumbent",
-        "priorOffice": "Arizona Secretary of State",
-        "age": 56,
-        "biography": "Katie Hobbs (56 years old), incumbent Governor of Arizona. Prior office: Arizona Secretary of State.",
-        "sourceVerification": {
-          "agency": "Arizona Secretary of State Elections Division",
-          "filingId": "AZ-GOV-INCUMBENT",
-          "filingDate": "2026-02-15",
-          "verificationStatus": "Official State Certification",
-          "sourceUrl": "https://www.nga.org/governors/arizona/"
-        }
-      }
+            {
+                    "name": "Katie Hobbs",
+                    "party": "DEM",
+                    "status": "Incumbent",
+                    "priorOffice": "Arizona Secretary of State",
+                    "age": 56,
+                    "biography": "Katie Hobbs, incumbent Governor of Arizona.",
+                    "sourceVerification": {
+                            "agency": "Arizona Secretary of State",
+                            "filingId": "AZ-GOV-HOBBS",
+                            "filingDate": "2026-02-15",
+                            "verificationStatus": "Official Candidate",
+                            "sourceUrl": "https://ballotpedia.org/Arizona_gubernatorial_election,_2026"
+                    }
+            }
     ],
-    "notes": "2026 Gubernatorial election in Arizona. Incumbent Katie Hobbs running for re-election."
+    "notes": "2026 Gubernatorial election in Arizona. Incumbent Democrat Katie Hobbs running for re-election. Cook Toss-Up."
   },
   {
     "raceId": "2026-GOV-AR",

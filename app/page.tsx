@@ -29,7 +29,7 @@ export default function ControlBoardPage() {
   );
 
   // Competitive Battleground Spotlight Races
-  const battlegroundIds = ['senate-tx', 'senate-mi', 'senate-nh', 'senate-nc', 'senate-me', 'senate-oh', 'gov-ga'];
+  const battlegroundIds = ['senate-tx', 'senate-mi', 'senate-nh', 'senate-nc', 'senate-me', 'senate-oh', 'senate-ga', 'gov-ga'];
   const battlegroundRaces = races.filter(r => battlegroundIds.includes(r.id));
 
   const electionDate = new Date('2026-11-03T07:00:00-05:00').getTime();
@@ -355,7 +355,7 @@ export default function ControlBoardPage() {
         </div>
       </div>
 
-      {/* ── 5. STAGE SELECT: 6 COMPETITIVE BATTLEGROUNDS ───────────────── */}
+      {/* ── 5. STAGE SELECT: 8 COMPETITIVE BATTLEGROUNDS ───────────────── */}
       <div className="space-y-4">
         <div className="flex flex-wrap items-center justify-between gap-4 border-b-2 border-[#2D2264] pb-3">
           <div>

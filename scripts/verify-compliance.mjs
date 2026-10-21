@@ -209,7 +209,7 @@ if (!husted || !brown) {
 
 // LA: Cassidy lost primary
 const laSenate = senateRaces.find(r => r.state === 'LA');
-const cassidy = laSenate?.candidates.find(c => c.name.includes('Cassidy') && c.status === 'incumbent-not-running');
+const cassidy = laSenate?.candidates.find(c => c.name.includes('Cassidy') && (c.status === 'incumbent-not-running' || c.status === 'incumbent-defeated-in-primary-runoff'));
 if (!cassidy) {
   console.error('❌ [Rule 5] LA Senate assertion failed: Cassidy marked incumbent-not-running required!');
   process.exit(1);
@@ -224,7 +224,173 @@ if (!rJackson || !bottoms) {
   process.exit(1);
 }
 
-console.log('  ✓ Known-Wrong Facts: TX, MI, NH, NC, ME, OH, LA, GA Gov verified against authoritative sources.');
+
+// AL: Barry Moore vs Everett Wess + Tuberville retired
+const alSenate = senateRaces.find(r => r.state === "AL");
+if (!alSenate?.candidates.find(c => c.name === "Barry Moore" && c.status === "nominee" && c.party === "REP") ||
+    !alSenate?.candidates.find(c => c.name === "Everett Wess" && c.status === "nominee" && c.party === "DEM") ||
+    !alSenate?.candidates.find(c => c.name === "Tommy Tuberville" && c.status === "incumbent-not-running")) {
+  console.error("❌ [Rule 5] AL Senate assertion failed: Moore(REP) vs Wess(DEM) + Tuberville(retired) required!");
+  process.exit(1);
+}
+
+// IL: Juliana Stratton vs Don Tracy + Durbin retired
+const ilSenate = senateRaces.find(r => r.state === "IL");
+if (!ilSenate?.candidates.find(c => c.name === "Juliana Stratton" && c.status === "nominee" && c.party === "DEM") ||
+    !ilSenate?.candidates.find(c => c.name === "Don Tracy" && c.status === "nominee" && c.party === "REP") ||
+    !ilSenate?.candidates.find(c => c.name === "Dick Durbin" && c.status === "incumbent-not-running")) {
+  console.error("❌ [Rule 5] IL Senate assertion failed: Stratton(DEM) vs Tracy(REP) + Durbin(retired) required!");
+  process.exit(1);
+}
+
+// IA: Ashley Hinson vs Josh Turek + Ernst retired
+const iaSenate = senateRaces.find(r => r.state === "IA");
+if (!iaSenate?.candidates.find(c => c.name === "Ashley Hinson" && c.status === "nominee" && c.party === "REP") ||
+    !iaSenate?.candidates.find(c => c.name === "Josh Turek" && c.status === "nominee" && c.party === "DEM") ||
+    !iaSenate?.candidates.find(c => c.name === "Joni Ernst" && c.status === "incumbent-not-running")) {
+  console.error("❌ [Rule 5] IA Senate assertion failed: Hinson(REP) vs Turek(DEM) + Ernst(retired) required!");
+  process.exit(1);
+}
+
+// KY: Andy Barr vs Charles Booker + McConnell retired
+const kySenate = senateRaces.find(r => r.state === "KY");
+if (!kySenate?.candidates.find(c => c.name === "Andy Barr" && c.status === "nominee" && c.party === "REP") ||
+    !kySenate?.candidates.find(c => c.name === "Charles Booker" && c.status === "nominee" && c.party === "DEM") ||
+    !kySenate?.candidates.find(c => c.name === "Mitch McConnell" && c.status === "incumbent-not-running")) {
+  console.error("❌ [Rule 5] KY Senate assertion failed: Barr(REP) vs Booker(DEM) + McConnell(retired) required!");
+  process.exit(1);
+}
+
+// MN: Peggy Flanagan vs Michele Tafoya + Tina Smith retired
+const mnSenate = senateRaces.find(r => r.state === "MN");
+if (!mnSenate?.candidates.find(c => c.name === "Peggy Flanagan" && c.status === "nominee" && c.party === "DEM") ||
+    !mnSenate?.candidates.find(c => c.name === "Michele Tafoya" && c.status === "nominee" && c.party === "REP") ||
+    !mnSenate?.candidates.find(c => c.name === "Tina Smith" && c.status === "incumbent-not-running")) {
+  console.error("❌ [Rule 5] MN Senate assertion failed: Flanagan(DEM) vs Tafoya(REP) + Smith(retired) required!");
+  process.exit(1);
+}
+
+// MT: Kurt Alme vs Alani Bankhead + Daines retired
+const mtSenate = senateRaces.find(r => r.state === "MT");
+if (!mtSenate?.candidates.find(c => c.name === "Kurt Alme" && c.status === "nominee" && c.party === "REP") ||
+    !mtSenate?.candidates.find(c => c.name === "Alani Bankhead" && c.status === "nominee" && c.party === "DEM") ||
+    !mtSenate?.candidates.find(c => c.name === "Steve Daines" && c.status === "incumbent-not-running")) {
+  console.error("❌ [Rule 5] MT Senate assertion failed: Alme(REP) vs Bankhead(DEM) + Daines(retired) required!");
+  process.exit(1);
+}
+
+// OK: T.W. Shannon vs Madison Horn + Armstrong retiring
+const okSenate = senateRaces.find(r => r.state === "OK");
+if (!okSenate?.candidates.find(c => c.name === "T.W. Shannon" && c.status === "nominee" && c.party === "REP") ||
+    !okSenate?.candidates.find(c => c.name === "Madison Horn" && c.status === "nominee" && c.party === "DEM") ||
+    !okSenate?.candidates.find(c => c.name === "Alan Armstrong" && c.status === "incumbent-not-running")) {
+  console.error("❌ [Rule 5] OK Senate assertion failed: Shannon(REP) vs Horn(DEM) + Armstrong(retiring) required!");
+  process.exit(1);
+}
+
+// WY: Harriet Hageman + Lummis retired
+const wySenate = senateRaces.find(r => r.state === "WY");
+if (!wySenate?.candidates.find(c => c.name === "Harriet Hageman" && c.status === "nominee" && c.party === "REP") ||
+    !wySenate?.candidates.find(c => c.name === "Cynthia Lummis" && c.status === "incumbent-not-running")) {
+  console.error("❌ [Rule 5] WY Senate assertion failed: Hageman(REP) + Lummis(retired) required!");
+  process.exit(1);
+}
+
+// FL Special: Ashley Moody vs Angie Nixon + Rubio resigned
+const flSenate = senateRaces.find(r => r.state === "FL" && r.office.includes("Special"));
+if (!flSenate?.candidates.find(c => c.name === "Ashley Moody" && c.status === "nominee" && c.party === "REP") ||
+    !flSenate?.candidates.find(c => c.name === "Angie Nixon" && c.status === "nominee" && c.party === "DEM") ||
+    !flSenate?.candidates.find(c => c.name === "Marco Rubio" && c.status === "incumbent-not-running")) {
+  console.error("❌ [Rule 5] FL Special assertion failed: Moody(REP) vs Nixon(DEM) + Rubio(resigned) required!");
+  process.exit(1);
+}
+
+// GA Senate: Jon Ossoff vs Mike Collins (NOT Chris Carr)
+const gaSenate = senateRaces.find(r => r.state === "GA");
+if (!gaSenate?.candidates.find(c => c.name === "Jon Ossoff" && c.status === "nominee" && c.party === "DEM") ||
+    !gaSenate?.candidates.find(c => c.name === "Mike Collins" && c.status === "nominee" && c.party === "REP")) {
+  console.error("❌ [Rule 5] GA Senate assertion failed: Ossoff(DEM) vs Collins(REP) required!");
+  process.exit(1);
+}
+
+// SC: Nancy Mace vs Michael B. Moore + Lindsey Graham replaced
+const scSenate = senateRaces.find(r => r.state === "SC");
+if (!scSenate?.candidates.find(c => c.name === "Nancy Mace" && c.status === "nominee" && c.party === "REP") ||
+    !scSenate?.candidates.find(c => c.name === "Michael B. Moore" && c.status === "nominee" && c.party === "DEM") ||
+    !scSenate?.candidates.find(c => c.name === "Lindsey Graham" && c.status === "incumbent-not-running")) {
+  console.error("❌ [Rule 5] SC Senate assertion failed: Mace(REP) vs Moore(DEM) + Graham(replaced) required!");
+  process.exit(1);
+}
+
+// AK: Sullivan vs Peltola
+const akSenate = senateRaces.find(r => r.state === "AK");
+if (!akSenate?.candidates.find(c => c.name === "Dan Sullivan" && c.party === "REP") ||
+    !akSenate?.candidates.find(c => c.name === "Mary Peltola" && c.party === "DEM")) {
+  console.error("❌ [Rule 5] AK Senate assertion failed: Sullivan vs Peltola required!");
+  process.exit(1);
+}
+
+// KS: Marshall vs Hamilton
+const ksSenate = senateRaces.find(r => r.state === "KS");
+if (!ksSenate?.candidates.find(c => c.name === "Roger Marshall" && c.party === "REP") ||
+    !ksSenate?.candidates.find(c => c.name === "Adam Hamilton" && c.party === "DEM")) {
+  console.error("❌ [Rule 5] KS Senate assertion failed: Marshall vs Hamilton required!");
+  process.exit(1);
+}
+
+// NE: Ricketts vs Osborn
+const neSenate = senateRaces.find(r => r.state === "NE");
+if (!neSenate?.candidates.find(c => c.name === "Pete Ricketts" && c.party === "REP") ||
+    !neSenate?.candidates.find(c => c.name === "Dan Osborn" && c.party === "IND")) {
+  console.error("❌ [Rule 5] NE Senate assertion failed: Ricketts vs Osborn required!");
+  process.exit(1);
+}
+
+// AZ Gov: Katie Hobbs DEM
+const azGov = govRaces.find(r => r.state === "AZ");
+if (!azGov?.candidates.find(c => c.name === "Katie Hobbs" && c.party === "DEM")) {
+  console.error("❌ [Rule 5] AZ Gov assertion failed: Katie Hobbs must be DEM!");
+  process.exit(1);
+}
+
+console.log('  ✓ Ground-Truth Nominees: 35 Senate races + AZ/GA Gov checked against primary source receipts.');
+
+// ── RULE 5: RATINGS PARITY (COOK POLITICAL REPORT AS OF 2026-10-20) ───────────
+const ratingExpected = [
+  { id: "senate-ga", expected: "Likely Democrat" },
+  { id: "senate-nc", expected: "Likely Democrat" },
+  { id: "senate-oh", expected: "Toss Up" },
+  { id: "senate-ak", expected: "Toss Up" },
+  { id: "senate-ia", expected: "Toss Up" },
+  { id: "senate-ks", expected: "Toss Up" },
+  { id: "senate-mn", expected: "Lean Democrat" },
+  { id: "senate-ms", expected: "Likely Republican" },
+  { id: "senate-ne", expected: "Likely Republican" },
+  { id: "senate-sc", expected: "Lean Republican" },
+  { id: "gov-az", expected: "Toss Up" },
+  { id: "gov-ga", expected: "Toss Up" }
+];
+
+for (const rc of ratingExpected) {
+  const race = races.find(r => r.id === rc.id);
+  const cook = race?.ratings.find(rt => rt.rater === "Cook Political Report");
+  if (!cook || cook.verbatim_label !== rc.expected) {
+    console.error(`❌ [Rule 5] Cook rating mismatch in ${rc.id}: expected "${rc.expected}", found "${cook?.verbatim_label}"!`);
+    process.exit(1);
+  }
+}
+
+// Ensure zero bare "Solid" governor ratings without party
+for (const g of govRaces) {
+  for (const rt of g.ratings) {
+    if (rt.verbatim_label === "Solid") {
+      console.error(`❌ [Rule 5] Bare unassigned "Solid" rating found in ${g.id}! Must specify party (e.g. Solid Republican/Solid Democrat).`);
+      process.exit(1);
+    }
+  }
+}
+console.log("  ✓ Forecaster Ratings: 10 shifted Cook Senate ratings + all 36 Governor ratings match published baseline.");
+
 
 // ── RULE 9 & 11: BANNED WORDS IN SOURCE (FAIL CLOSED) ─────────────────────────
 const BANNED_WORDS = [

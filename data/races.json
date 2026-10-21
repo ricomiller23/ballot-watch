@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-10-21T03:16:31.140Z",
+    "generated_at": "2026-10-20T20:20:00Z",
     "cycle": 2026,
     "election_date": "2026-11-03",
     "total_races": 537,
@@ -10,8 +10,8 @@
       "tier3_house": 435,
       "tier6_mayoral": 31
     },
-    "total_candidates": 116,
-    "total_sourced_nominees": 91,
+    "total_candidates": 139,
+    "total_sourced_nominees": 104,
     "total_polls": 12,
     "total_ratings": 82
   },
@@ -35,7 +35,7 @@
           "is_incumbent": false,
           "fec_id": "S6TX00491",
           "source_url": "https://ballotpedia.org/United_States_Senate_election_in_Texas,_2026",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         },
         {
           "name": "James Talarico",
@@ -44,12 +44,12 @@
           "is_incumbent": false,
           "fec_id": "S6TX00517",
           "source_url": "https://ballotpedia.org/United_States_Senate_election_in_Texas,_2026",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         },
         {
           "name": "John Cornyn",
           "party": "REP",
-          "status": "incumbent-defeated-in-primary-runoff",
+          "status": "incumbent-not-running",
           "is_incumbent": true,
           "fec_id": "S2TX00106",
           "source_url": "https://ballotpedia.org/United_States_Senate_election_in_Texas,_2026_(May_26_Republican_primary_runoff)",
@@ -126,7 +126,7 @@
           "Ken Paxton": 46
         },
         "qualifying_polls_count": 3,
-        "method": "Recency-weighted inverse-variance average of 3 qualifying non-partisan surveys (October 2026)"
+        "method": "Recency-weighted inverse-variance average of 3 qualifying non-partisan October 2026 surveys (Oct 2 - Oct 16)"
       }
     },
     {
@@ -148,7 +148,7 @@
           "is_incumbent": false,
           "fec_id": "S6MI00388",
           "source_url": "https://ballotpedia.org/United_States_Senate_election_in_Michigan,_2026",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         },
         {
           "name": "Mike Rogers",
@@ -157,7 +157,7 @@
           "is_incumbent": false,
           "fec_id": "S4MI00356",
           "source_url": "https://ballotpedia.org/United_States_Senate_election_in_Michigan,_2026",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         },
         {
           "name": "Gary Peters",
@@ -166,13 +166,13 @@
           "is_incumbent": true,
           "fec_id": "S4MI00208",
           "source_url": "https://ballotpedia.org/United_States_Senate_election_in_Michigan,_2026",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [
         {
           "rater": "Cook Political Report",
-          "verbatim_label": "Lean Democrat",
+          "verbatim_label": "Toss Up",
           "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
         },
@@ -217,16 +217,7 @@
           "sponsor": "Detroit News"
         }
       ],
-      "polling_average": {
-        "leader": "Abdul El-Sayed",
-        "spread": 1.2,
-        "averages": {
-          "Abdul El-Sayed": 46.8,
-          "Mike Rogers": 45.6
-        },
-        "qualifying_polls_count": 2,
-        "method": "Recency-weighted average of 2 qualifying statewide surveys"
-      }
+      "polling_average": null
     },
     {
       "id": "senate-nh",
@@ -238,7 +229,7 @@
       "cycle": 2026,
       "election_date": "2026-11-03",
       "status": "nominees-certified",
-      "is_featured": false,
+      "is_featured": true,
       "candidates": [
         {
           "name": "Chris Pappas",
@@ -247,7 +238,7 @@
           "is_incumbent": false,
           "fec_id": "S6NH00215",
           "source_url": "https://ballotpedia.org/United_States_Senate_election_in_New_Hampshire,_2026",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         },
         {
           "name": "John E. Sununu",
@@ -256,7 +247,7 @@
           "is_incumbent": false,
           "fec_id": "S6NH00231",
           "source_url": "https://ballotpedia.org/United_States_Senate_election_in_New_Hampshire,_2026",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         },
         {
           "name": "Jeanne Shaheen",
@@ -265,7 +256,7 @@
           "is_incumbent": true,
           "fec_id": "S8NH00118",
           "source_url": "https://ballotpedia.org/United_States_Senate_election_in_New_Hampshire,_2026",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [
@@ -318,7 +309,7 @@
           "is_incumbent": false,
           "fec_id": "S6NC00412",
           "source_url": "https://ballotpedia.org/United_States_Senate_election_in_North_Carolina,_2026",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         },
         {
           "name": "Michael Whatley",
@@ -327,7 +318,7 @@
           "is_incumbent": false,
           "fec_id": "S6NC00438",
           "source_url": "https://ballotpedia.org/United_States_Senate_election_in_North_Carolina,_2026",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         },
         {
           "name": "Thom Tillis",
@@ -336,7 +327,7 @@
           "is_incumbent": true,
           "fec_id": "S4NC00155",
           "source_url": "https://ballotpedia.org/United_States_Senate_election_in_North_Carolina,_2026",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [
@@ -387,16 +378,7 @@
           "sponsor": null
         }
       ],
-      "polling_average": {
-        "leader": "Roy Cooper",
-        "spread": 1.3,
-        "averages": {
-          "Roy Cooper": 48.1,
-          "Michael Whatley": 46.8
-        },
-        "qualifying_polls_count": 2,
-        "method": "Recency-weighted average of 2 qualifying statewide surveys"
-      }
+      "polling_average": null
     },
     {
       "id": "senate-me",
@@ -408,7 +390,7 @@
       "cycle": 2026,
       "election_date": "2026-11-03",
       "status": "nominees-certified",
-      "is_featured": false,
+      "is_featured": true,
       "candidates": [
         {
           "name": "Susan Collins",
@@ -417,7 +399,7 @@
           "is_incumbent": true,
           "fec_id": "S6ME00054",
           "source_url": "https://ballotpedia.org/United_States_Senate_election_in_Maine,_2026",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         },
         {
           "name": "Troy Jackson",
@@ -426,7 +408,7 @@
           "is_incumbent": false,
           "fec_id": "S6ME00192",
           "source_url": "https://ballotpedia.org/United_States_Senate_election_in_Maine,_2026",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [
@@ -479,7 +461,7 @@
           "is_incumbent": false,
           "fec_id": "S6OH00401",
           "source_url": "https://ballotpedia.org/United_States_Senate_special_election_in_Ohio,_2026",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         },
         {
           "name": "Sherrod Brown",
@@ -488,7 +470,7 @@
           "is_incumbent": false,
           "fec_id": "S6OH00163",
           "source_url": "https://ballotpedia.org/United_States_Senate_special_election_in_Ohio,_2026",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [
@@ -529,39 +511,6 @@
       "polling_average": null
     },
     {
-      "id": "senate-la",
-      "state": "LA",
-      "state_name": "Louisiana",
-      "office": "U.S. Senate (Class II)",
-      "district": null,
-      "tier": 1,
-      "cycle": 2026,
-      "election_date": "2026-11-03",
-      "status": "primary-pending",
-      "is_featured": false,
-      "candidates": [
-        {
-          "name": "Bill Cassidy",
-          "party": "REP",
-          "status": "incumbent-not-running",
-          "is_incumbent": true,
-          "fec_id": "S4LA00065",
-          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_Louisiana,_2026",
-          "verified_at": "2026-10-01"
-        }
-      ],
-      "ratings": [
-        {
-          "rater": "Cook Political Report",
-          "verbatim_label": "Solid Republican",
-          "rater_date": "2026-09-10",
-          "source_url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
-        }
-      ],
-      "polls": [],
-      "polling_average": null
-    },
-    {
       "id": "senate-ga",
       "state": "GA",
       "state_name": "Georgia",
@@ -580,23 +529,23 @@
           "is_incumbent": true,
           "fec_id": "S0GA00527",
           "source_url": "https://ballotpedia.org/United_States_Senate_election_in_Georgia,_2026",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         },
         {
-          "name": "Chris Carr",
+          "name": "Mike Collins",
           "party": "REP",
           "status": "nominee",
           "is_incumbent": false,
           "fec_id": "S6GA00329",
           "source_url": "https://ballotpedia.org/United_States_Senate_election_in_Georgia,_2026",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [
         {
           "rater": "Cook Political Report",
-          "verbatim_label": "Toss Up",
-          "rater_date": "2026-09-22",
+          "verbatim_label": "Likely Democrat",
+          "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
         }
       ],
@@ -608,7 +557,7 @@
           "sample_type": "lv",
           "results": {
             "Jon Ossoff": 47.6,
-            "Chris Carr": 46.8,
+            "Mike Collins": 46.8,
             "Undecided": 5.6
           },
           "source_url": "https://www.ajc.com/politics/",
@@ -618,9 +567,51 @@
       "polling_average": null
     },
     {
+      "id": "senate-la",
+      "state": "LA",
+      "state_name": "Louisiana",
+      "office": "U.S. Senate (Class II)",
+      "district": null,
+      "tier": 1,
+      "cycle": 2026,
+      "election_date": "2026-11-03",
+      "status": "nominee-sourced",
+      "is_featured": false,
+      "candidates": [
+        {
+          "name": "Julia Letlow",
+          "party": "REP",
+          "status": "nominee",
+          "is_incumbent": false,
+          "fec_id": null,
+          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_Louisiana,_2026",
+          "verified_at": "2026-10-20"
+        },
+        {
+          "name": "Bill Cassidy",
+          "party": "REP",
+          "status": "incumbent-defeated-in-primary-runoff",
+          "is_incumbent": true,
+          "fec_id": "S4LA00065",
+          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_Louisiana,_2026",
+          "verified_at": "2026-10-20"
+        }
+      ],
+      "ratings": [
+        {
+          "rater": "Cook Political Report",
+          "verbatim_label": "Solid Republican",
+          "rater_date": "2026-10-20",
+          "source_url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+        }
+      ],
+      "polls": [],
+      "polling_average": null
+    },
+    {
       "id": "senate-al",
       "state": "AL",
-      "state_name": "AL",
+      "state_name": "Alabama",
       "office": "U.S. Senate (AL Class II)",
       "district": null,
       "tier": 1,
@@ -630,20 +621,38 @@
       "is_featured": false,
       "candidates": [
         {
-          "name": "Tommy Tuberville",
+          "name": "Barry Moore",
           "party": "REP",
           "status": "nominee",
+          "is_incumbent": false,
+          "fec_id": null,
+          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_Alabama,_2026",
+          "verified_at": "2026-10-20"
+        },
+        {
+          "name": "Everett Wess",
+          "party": "DEM",
+          "status": "nominee",
+          "is_incumbent": false,
+          "fec_id": null,
+          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_Alabama,_2026",
+          "verified_at": "2026-10-20"
+        },
+        {
+          "name": "Tommy Tuberville",
+          "party": "REP",
+          "status": "incumbent-not-running",
           "is_incumbent": true,
           "fec_id": null,
-          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_AL,_2026",
-          "verified_at": "2026-10-01"
+          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_Alabama,_2026",
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [
         {
           "rater": "Cook Political Report",
           "verbatim_label": "Solid Republican",
-          "rater_date": "2026-09-01",
+          "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
         }
       ],
@@ -653,7 +662,7 @@
     {
       "id": "senate-ak",
       "state": "AK",
-      "state_name": "AK",
+      "state_name": "Alaska",
       "office": "U.S. Senate (AK Class II)",
       "district": null,
       "tier": 1,
@@ -668,15 +677,24 @@
           "status": "nominee",
           "is_incumbent": true,
           "fec_id": null,
-          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_AK,_2026",
-          "verified_at": "2026-10-01"
+          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_Alaska,_2026",
+          "verified_at": "2026-10-20"
+        },
+        {
+          "name": "Mary Peltola",
+          "party": "DEM",
+          "status": "nominee",
+          "is_incumbent": false,
+          "fec_id": null,
+          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_Alaska,_2026",
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [
         {
           "rater": "Cook Political Report",
-          "verbatim_label": "Solid Republican",
-          "rater_date": "2026-09-01",
+          "verbatim_label": "Toss Up",
+          "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
         }
       ],
@@ -686,7 +704,7 @@
     {
       "id": "senate-ar",
       "state": "AR",
-      "state_name": "AR",
+      "state_name": "Arkansas",
       "office": "U.S. Senate (AR Class II)",
       "district": null,
       "tier": 1,
@@ -701,15 +719,15 @@
           "status": "nominee",
           "is_incumbent": true,
           "fec_id": null,
-          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_AR,_2026",
-          "verified_at": "2026-10-01"
+          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_Arkansas,_2026",
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [
         {
           "rater": "Cook Political Report",
           "verbatim_label": "Solid Republican",
-          "rater_date": "2026-09-01",
+          "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
         }
       ],
@@ -719,7 +737,7 @@
     {
       "id": "senate-co",
       "state": "CO",
-      "state_name": "CO",
+      "state_name": "Colorado",
       "office": "U.S. Senate (CO Class II)",
       "district": null,
       "tier": 1,
@@ -734,15 +752,15 @@
           "status": "nominee",
           "is_incumbent": true,
           "fec_id": null,
-          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_CO,_2026",
-          "verified_at": "2026-10-01"
+          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_Colorado,_2026",
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [
         {
           "rater": "Cook Political Report",
           "verbatim_label": "Solid Democrat",
-          "rater_date": "2026-09-01",
+          "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
         }
       ],
@@ -752,7 +770,7 @@
     {
       "id": "senate-de",
       "state": "DE",
-      "state_name": "DE",
+      "state_name": "Delaware",
       "office": "U.S. Senate (DE Class II)",
       "district": null,
       "tier": 1,
@@ -767,15 +785,15 @@
           "status": "nominee",
           "is_incumbent": true,
           "fec_id": null,
-          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_DE,_2026",
-          "verified_at": "2026-10-01"
+          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_Delaware,_2026",
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [
         {
           "rater": "Cook Political Report",
           "verbatim_label": "Solid Democrat",
-          "rater_date": "2026-09-01",
+          "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
         }
       ],
@@ -785,7 +803,7 @@
     {
       "id": "senate-fl-sp",
       "state": "FL",
-      "state_name": "FL",
+      "state_name": "Florida",
       "office": "U.S. Senate (FL Special)",
       "district": null,
       "tier": 1,
@@ -795,20 +813,38 @@
       "is_featured": false,
       "candidates": [
         {
-          "name": "Marco Rubio",
+          "name": "Ashley Moody",
           "party": "REP",
           "status": "nominee",
           "is_incumbent": true,
           "fec_id": null,
-          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_FL,_2026",
-          "verified_at": "2026-10-01"
+          "source_url": "https://ballotpedia.org/United_States_Senate_special_election_in_Florida,_2026",
+          "verified_at": "2026-10-20"
+        },
+        {
+          "name": "Angie Nixon",
+          "party": "DEM",
+          "status": "nominee",
+          "is_incumbent": false,
+          "fec_id": null,
+          "source_url": "https://ballotpedia.org/United_States_Senate_special_election_in_Florida,_2026",
+          "verified_at": "2026-10-20"
+        },
+        {
+          "name": "Marco Rubio",
+          "party": "REP",
+          "status": "incumbent-not-running",
+          "is_incumbent": false,
+          "fec_id": null,
+          "source_url": "https://ballotpedia.org/United_States_Senate_special_election_in_Florida,_2026",
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [
         {
           "rater": "Cook Political Report",
           "verbatim_label": "Solid Republican",
-          "rater_date": "2026-09-01",
+          "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
         }
       ],
@@ -818,7 +854,7 @@
     {
       "id": "senate-id",
       "state": "ID",
-      "state_name": "ID",
+      "state_name": "Idaho",
       "office": "U.S. Senate (ID Class II)",
       "district": null,
       "tier": 1,
@@ -833,15 +869,15 @@
           "status": "nominee",
           "is_incumbent": true,
           "fec_id": null,
-          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_ID,_2026",
-          "verified_at": "2026-10-01"
+          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_Idaho,_2026",
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [
         {
           "rater": "Cook Political Report",
           "verbatim_label": "Solid Republican",
-          "rater_date": "2026-09-01",
+          "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
         }
       ],
@@ -851,7 +887,7 @@
     {
       "id": "senate-il",
       "state": "IL",
-      "state_name": "IL",
+      "state_name": "Illinois",
       "office": "U.S. Senate (IL Class II)",
       "district": null,
       "tier": 1,
@@ -861,20 +897,38 @@
       "is_featured": false,
       "candidates": [
         {
-          "name": "Dick Durbin",
+          "name": "Juliana Stratton",
           "party": "DEM",
           "status": "nominee",
+          "is_incumbent": false,
+          "fec_id": null,
+          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_Illinois,_2026",
+          "verified_at": "2026-10-20"
+        },
+        {
+          "name": "Don Tracy",
+          "party": "REP",
+          "status": "nominee",
+          "is_incumbent": false,
+          "fec_id": null,
+          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_Illinois,_2026",
+          "verified_at": "2026-10-20"
+        },
+        {
+          "name": "Dick Durbin",
+          "party": "DEM",
+          "status": "incumbent-not-running",
           "is_incumbent": true,
           "fec_id": null,
-          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_IL,_2026",
-          "verified_at": "2026-10-01"
+          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_Illinois,_2026",
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [
         {
           "rater": "Cook Political Report",
           "verbatim_label": "Solid Democrat",
-          "rater_date": "2026-09-01",
+          "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
         }
       ],
@@ -884,7 +938,7 @@
     {
       "id": "senate-ia",
       "state": "IA",
-      "state_name": "IA",
+      "state_name": "Iowa",
       "office": "U.S. Senate (IA Class II)",
       "district": null,
       "tier": 1,
@@ -894,20 +948,38 @@
       "is_featured": false,
       "candidates": [
         {
-          "name": "Joni Ernst",
+          "name": "Ashley Hinson",
           "party": "REP",
           "status": "nominee",
+          "is_incumbent": false,
+          "fec_id": null,
+          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_Iowa,_2026",
+          "verified_at": "2026-10-20"
+        },
+        {
+          "name": "Josh Turek",
+          "party": "DEM",
+          "status": "nominee",
+          "is_incumbent": false,
+          "fec_id": null,
+          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_Iowa,_2026",
+          "verified_at": "2026-10-20"
+        },
+        {
+          "name": "Joni Ernst",
+          "party": "REP",
+          "status": "incumbent-not-running",
           "is_incumbent": true,
           "fec_id": null,
-          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_IA,_2026",
-          "verified_at": "2026-10-01"
+          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_Iowa,_2026",
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [
         {
           "rater": "Cook Political Report",
-          "verbatim_label": "Solid Republican",
-          "rater_date": "2026-09-01",
+          "verbatim_label": "Toss Up",
+          "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
         }
       ],
@@ -917,7 +989,7 @@
     {
       "id": "senate-ks",
       "state": "KS",
-      "state_name": "KS",
+      "state_name": "Kansas",
       "office": "U.S. Senate (KS Class II)",
       "district": null,
       "tier": 1,
@@ -932,15 +1004,24 @@
           "status": "nominee",
           "is_incumbent": true,
           "fec_id": null,
-          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_KS,_2026",
-          "verified_at": "2026-10-01"
+          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_Kansas,_2026",
+          "verified_at": "2026-10-20"
+        },
+        {
+          "name": "Adam Hamilton",
+          "party": "DEM",
+          "status": "nominee",
+          "is_incumbent": false,
+          "fec_id": null,
+          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_Kansas,_2026",
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [
         {
           "rater": "Cook Political Report",
-          "verbatim_label": "Solid Republican",
-          "rater_date": "2026-09-01",
+          "verbatim_label": "Toss Up",
+          "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
         }
       ],
@@ -950,7 +1031,7 @@
     {
       "id": "senate-ky",
       "state": "KY",
-      "state_name": "KY",
+      "state_name": "Kentucky",
       "office": "U.S. Senate (KY Class II)",
       "district": null,
       "tier": 1,
@@ -960,20 +1041,38 @@
       "is_featured": false,
       "candidates": [
         {
-          "name": "Mitch McConnell",
+          "name": "Andy Barr",
           "party": "REP",
           "status": "nominee",
+          "is_incumbent": false,
+          "fec_id": null,
+          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_Kentucky,_2026",
+          "verified_at": "2026-10-20"
+        },
+        {
+          "name": "Charles Booker",
+          "party": "DEM",
+          "status": "nominee",
+          "is_incumbent": false,
+          "fec_id": null,
+          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_Kentucky,_2026",
+          "verified_at": "2026-10-20"
+        },
+        {
+          "name": "Mitch McConnell",
+          "party": "REP",
+          "status": "incumbent-not-running",
           "is_incumbent": true,
           "fec_id": null,
-          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_KY,_2026",
-          "verified_at": "2026-10-01"
+          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_Kentucky,_2026",
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [
         {
           "rater": "Cook Political Report",
           "verbatim_label": "Solid Republican",
-          "rater_date": "2026-09-01",
+          "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
         }
       ],
@@ -983,7 +1082,7 @@
     {
       "id": "senate-ma",
       "state": "MA",
-      "state_name": "MA",
+      "state_name": "Massachusetts",
       "office": "U.S. Senate (MA Class II)",
       "district": null,
       "tier": 1,
@@ -998,15 +1097,15 @@
           "status": "nominee",
           "is_incumbent": true,
           "fec_id": null,
-          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_MA,_2026",
-          "verified_at": "2026-10-01"
+          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_Massachusetts,_2026",
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [
         {
           "rater": "Cook Political Report",
           "verbatim_label": "Solid Democrat",
-          "rater_date": "2026-09-01",
+          "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
         }
       ],
@@ -1016,7 +1115,7 @@
     {
       "id": "senate-mn",
       "state": "MN",
-      "state_name": "MN",
+      "state_name": "Minnesota",
       "office": "U.S. Senate (MN Class II)",
       "district": null,
       "tier": 1,
@@ -1026,20 +1125,38 @@
       "is_featured": false,
       "candidates": [
         {
-          "name": "Tina Smith",
+          "name": "Peggy Flanagan",
           "party": "DEM",
           "status": "nominee",
+          "is_incumbent": false,
+          "fec_id": null,
+          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_Minnesota,_2026",
+          "verified_at": "2026-10-20"
+        },
+        {
+          "name": "Michele Tafoya",
+          "party": "REP",
+          "status": "nominee",
+          "is_incumbent": false,
+          "fec_id": null,
+          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_Minnesota,_2026",
+          "verified_at": "2026-10-20"
+        },
+        {
+          "name": "Tina Smith",
+          "party": "DEM",
+          "status": "incumbent-not-running",
           "is_incumbent": true,
           "fec_id": null,
-          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_MN,_2026",
-          "verified_at": "2026-10-01"
+          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_Minnesota,_2026",
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [
         {
           "rater": "Cook Political Report",
-          "verbatim_label": "Solid Democrat",
-          "rater_date": "2026-09-01",
+          "verbatim_label": "Lean Democrat",
+          "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
         }
       ],
@@ -1049,7 +1166,7 @@
     {
       "id": "senate-ms",
       "state": "MS",
-      "state_name": "MS",
+      "state_name": "Mississippi",
       "office": "U.S. Senate (MS Class II)",
       "district": null,
       "tier": 1,
@@ -1064,15 +1181,15 @@
           "status": "nominee",
           "is_incumbent": true,
           "fec_id": null,
-          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_MS,_2026",
-          "verified_at": "2026-10-01"
+          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_Mississippi,_2026",
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [
         {
           "rater": "Cook Political Report",
-          "verbatim_label": "Solid Republican",
-          "rater_date": "2026-09-01",
+          "verbatim_label": "Likely Republican",
+          "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
         }
       ],
@@ -1082,7 +1199,7 @@
     {
       "id": "senate-mt",
       "state": "MT",
-      "state_name": "MT",
+      "state_name": "Montana",
       "office": "U.S. Senate (MT Class II)",
       "district": null,
       "tier": 1,
@@ -1092,20 +1209,38 @@
       "is_featured": false,
       "candidates": [
         {
-          "name": "Steve Daines",
+          "name": "Kurt Alme",
           "party": "REP",
           "status": "nominee",
+          "is_incumbent": false,
+          "fec_id": null,
+          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_Montana,_2026",
+          "verified_at": "2026-10-20"
+        },
+        {
+          "name": "Alani Bankhead",
+          "party": "DEM",
+          "status": "nominee",
+          "is_incumbent": false,
+          "fec_id": null,
+          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_Montana,_2026",
+          "verified_at": "2026-10-20"
+        },
+        {
+          "name": "Steve Daines",
+          "party": "REP",
+          "status": "incumbent-not-running",
           "is_incumbent": true,
           "fec_id": null,
-          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_MT,_2026",
-          "verified_at": "2026-10-01"
+          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_Montana,_2026",
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [
         {
           "rater": "Cook Political Report",
           "verbatim_label": "Solid Republican",
-          "rater_date": "2026-09-01",
+          "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
         }
       ],
@@ -1115,7 +1250,7 @@
     {
       "id": "senate-ne",
       "state": "NE",
-      "state_name": "NE",
+      "state_name": "Nebraska",
       "office": "U.S. Senate (NE Class II)",
       "district": null,
       "tier": 1,
@@ -1130,15 +1265,24 @@
           "status": "nominee",
           "is_incumbent": true,
           "fec_id": null,
-          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_NE,_2026",
-          "verified_at": "2026-10-01"
+          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_Nebraska,_2026",
+          "verified_at": "2026-10-20"
+        },
+        {
+          "name": "Dan Osborn",
+          "party": "IND",
+          "status": "nominee",
+          "is_incumbent": false,
+          "fec_id": null,
+          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_Nebraska,_2026",
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [
         {
           "rater": "Cook Political Report",
-          "verbatim_label": "Solid Republican",
-          "rater_date": "2026-09-01",
+          "verbatim_label": "Likely Republican",
+          "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
         }
       ],
@@ -1148,7 +1292,7 @@
     {
       "id": "senate-nj",
       "state": "NJ",
-      "state_name": "NJ",
+      "state_name": "New Jersey",
       "office": "U.S. Senate (NJ Class II)",
       "district": null,
       "tier": 1,
@@ -1163,15 +1307,15 @@
           "status": "nominee",
           "is_incumbent": true,
           "fec_id": null,
-          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_NJ,_2026",
-          "verified_at": "2026-10-01"
+          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_New_Jersey,_2026",
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [
         {
           "rater": "Cook Political Report",
           "verbatim_label": "Solid Democrat",
-          "rater_date": "2026-09-01",
+          "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
         }
       ],
@@ -1181,7 +1325,7 @@
     {
       "id": "senate-nm",
       "state": "NM",
-      "state_name": "NM",
+      "state_name": "New Mexico",
       "office": "U.S. Senate (NM Class II)",
       "district": null,
       "tier": 1,
@@ -1196,15 +1340,15 @@
           "status": "nominee",
           "is_incumbent": true,
           "fec_id": null,
-          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_NM,_2026",
-          "verified_at": "2026-10-01"
+          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_New_Mexico,_2026",
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [
         {
           "rater": "Cook Political Report",
           "verbatim_label": "Solid Democrat",
-          "rater_date": "2026-09-01",
+          "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
         }
       ],
@@ -1214,7 +1358,7 @@
     {
       "id": "senate-ok",
       "state": "OK",
-      "state_name": "OK",
+      "state_name": "Oklahoma",
       "office": "U.S. Senate (OK Class II)",
       "district": null,
       "tier": 1,
@@ -1224,20 +1368,38 @@
       "is_featured": false,
       "candidates": [
         {
-          "name": "Markwayne Mullin",
+          "name": "T.W. Shannon",
           "party": "REP",
           "status": "nominee",
+          "is_incumbent": false,
+          "fec_id": null,
+          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_Oklahoma,_2026",
+          "verified_at": "2026-10-20"
+        },
+        {
+          "name": "Madison Horn",
+          "party": "DEM",
+          "status": "nominee",
+          "is_incumbent": false,
+          "fec_id": null,
+          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_Oklahoma,_2026",
+          "verified_at": "2026-10-20"
+        },
+        {
+          "name": "Alan Armstrong",
+          "party": "REP",
+          "status": "incumbent-not-running",
           "is_incumbent": true,
           "fec_id": null,
-          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_OK,_2026",
-          "verified_at": "2026-10-01"
+          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_Oklahoma,_2026",
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [
         {
           "rater": "Cook Political Report",
           "verbatim_label": "Solid Republican",
-          "rater_date": "2026-09-01",
+          "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
         }
       ],
@@ -1247,7 +1409,7 @@
     {
       "id": "senate-or",
       "state": "OR",
-      "state_name": "OR",
+      "state_name": "Oregon",
       "office": "U.S. Senate (OR Class II)",
       "district": null,
       "tier": 1,
@@ -1262,15 +1424,15 @@
           "status": "nominee",
           "is_incumbent": true,
           "fec_id": null,
-          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_OR,_2026",
-          "verified_at": "2026-10-01"
+          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_Oregon,_2026",
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [
         {
           "rater": "Cook Political Report",
           "verbatim_label": "Solid Democrat",
-          "rater_date": "2026-09-01",
+          "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
         }
       ],
@@ -1280,7 +1442,7 @@
     {
       "id": "senate-ri",
       "state": "RI",
-      "state_name": "RI",
+      "state_name": "Rhode Island",
       "office": "U.S. Senate (RI Class II)",
       "district": null,
       "tier": 1,
@@ -1295,15 +1457,15 @@
           "status": "nominee",
           "is_incumbent": true,
           "fec_id": null,
-          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_RI,_2026",
-          "verified_at": "2026-10-01"
+          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_Rhode_Island,_2026",
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [
         {
           "rater": "Cook Political Report",
           "verbatim_label": "Solid Democrat",
-          "rater_date": "2026-09-01",
+          "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
         }
       ],
@@ -1313,7 +1475,7 @@
     {
       "id": "senate-sc",
       "state": "SC",
-      "state_name": "SC",
+      "state_name": "South Carolina",
       "office": "U.S. Senate (SC Class II)",
       "district": null,
       "tier": 1,
@@ -1323,20 +1485,38 @@
       "is_featured": false,
       "candidates": [
         {
-          "name": "Lindsey Graham",
+          "name": "Nancy Mace",
           "party": "REP",
           "status": "nominee",
-          "is_incumbent": true,
+          "is_incumbent": false,
           "fec_id": null,
-          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_SC,_2026",
-          "verified_at": "2026-10-01"
+          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_South_Carolina,_2026",
+          "verified_at": "2026-10-20"
+        },
+        {
+          "name": "Michael B. Moore",
+          "party": "DEM",
+          "status": "nominee",
+          "is_incumbent": false,
+          "fec_id": null,
+          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_South_Carolina,_2026",
+          "verified_at": "2026-10-20"
+        },
+        {
+          "name": "Lindsey Graham",
+          "party": "REP",
+          "status": "incumbent-not-running",
+          "is_incumbent": false,
+          "fec_id": null,
+          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_South_Carolina,_2026",
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [
         {
           "rater": "Cook Political Report",
-          "verbatim_label": "Solid Republican",
-          "rater_date": "2026-09-01",
+          "verbatim_label": "Lean Republican",
+          "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
         }
       ],
@@ -1346,7 +1526,7 @@
     {
       "id": "senate-sd",
       "state": "SD",
-      "state_name": "SD",
+      "state_name": "South Dakota",
       "office": "U.S. Senate (SD Class II)",
       "district": null,
       "tier": 1,
@@ -1361,15 +1541,15 @@
           "status": "nominee",
           "is_incumbent": true,
           "fec_id": null,
-          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_SD,_2026",
-          "verified_at": "2026-10-01"
+          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_South_Dakota,_2026",
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [
         {
           "rater": "Cook Political Report",
           "verbatim_label": "Solid Republican",
-          "rater_date": "2026-09-01",
+          "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
         }
       ],
@@ -1379,7 +1559,7 @@
     {
       "id": "senate-tn",
       "state": "TN",
-      "state_name": "TN",
+      "state_name": "Tennessee",
       "office": "U.S. Senate (TN Class II)",
       "district": null,
       "tier": 1,
@@ -1394,15 +1574,15 @@
           "status": "nominee",
           "is_incumbent": true,
           "fec_id": null,
-          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_TN,_2026",
-          "verified_at": "2026-10-01"
+          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_Tennessee,_2026",
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [
         {
           "rater": "Cook Political Report",
           "verbatim_label": "Solid Republican",
-          "rater_date": "2026-09-01",
+          "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
         }
       ],
@@ -1412,7 +1592,7 @@
     {
       "id": "senate-va",
       "state": "VA",
-      "state_name": "VA",
+      "state_name": "Virginia",
       "office": "U.S. Senate (VA Class II)",
       "district": null,
       "tier": 1,
@@ -1427,15 +1607,15 @@
           "status": "nominee",
           "is_incumbent": true,
           "fec_id": null,
-          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_VA,_2026",
-          "verified_at": "2026-10-01"
+          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_Virginia,_2026",
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [
         {
           "rater": "Cook Political Report",
           "verbatim_label": "Solid Democrat",
-          "rater_date": "2026-09-01",
+          "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
         }
       ],
@@ -1445,7 +1625,7 @@
     {
       "id": "senate-wv",
       "state": "WV",
-      "state_name": "WV",
+      "state_name": "West Virginia",
       "office": "U.S. Senate (WV Class II)",
       "district": null,
       "tier": 1,
@@ -1460,15 +1640,15 @@
           "status": "nominee",
           "is_incumbent": true,
           "fec_id": null,
-          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_WV,_2026",
-          "verified_at": "2026-10-01"
+          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_West_Virginia,_2026",
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [
         {
           "rater": "Cook Political Report",
           "verbatim_label": "Solid Republican",
-          "rater_date": "2026-09-01",
+          "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
         }
       ],
@@ -1478,7 +1658,7 @@
     {
       "id": "senate-wy",
       "state": "WY",
-      "state_name": "WY",
+      "state_name": "Wyoming",
       "office": "U.S. Senate (WY Class II)",
       "district": null,
       "tier": 1,
@@ -1488,20 +1668,29 @@
       "is_featured": false,
       "candidates": [
         {
-          "name": "Cynthia Lummis",
+          "name": "Harriet Hageman",
           "party": "REP",
           "status": "nominee",
+          "is_incumbent": false,
+          "fec_id": null,
+          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_Wyoming,_2026",
+          "verified_at": "2026-10-20"
+        },
+        {
+          "name": "Cynthia Lummis",
+          "party": "REP",
+          "status": "incumbent-not-running",
           "is_incumbent": true,
           "fec_id": null,
-          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_WY,_2026",
-          "verified_at": "2026-10-01"
+          "source_url": "https://ballotpedia.org/United_States_Senate_election_in_Wyoming,_2026",
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [
         {
           "rater": "Cook Political Report",
           "verbatim_label": "Solid Republican",
-          "rater_date": "2026-09-01",
+          "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
         }
       ],
@@ -1527,14 +1716,14 @@
           "is_incumbent": true,
           "fec_id": null,
           "source_url": "https://ballotpedia.org/AL_gubernatorial_election,_2026",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [
         {
           "rater": "Cook Political Report",
-          "verbatim_label": "Solid",
-          "rater_date": "2026-09-15",
+          "verbatim_label": "Solid Republican",
+          "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
         }
       ],
@@ -1560,14 +1749,14 @@
           "is_incumbent": true,
           "fec_id": null,
           "source_url": "https://ballotpedia.org/AK_gubernatorial_election,_2026",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [
         {
           "rater": "Cook Political Report",
-          "verbatim_label": "Solid",
-          "rater_date": "2026-09-15",
+          "verbatim_label": "Solid Republican",
+          "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
         }
       ],
@@ -1588,19 +1777,19 @@
       "candidates": [
         {
           "name": "Katie Hobbs",
-          "party": "REP",
+          "party": "DEM",
           "status": "nominee",
           "is_incumbent": true,
           "fec_id": null,
           "source_url": "https://ballotpedia.org/AZ_gubernatorial_election,_2026",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [
         {
           "rater": "Cook Political Report",
-          "verbatim_label": "Solid",
-          "rater_date": "2026-09-15",
+          "verbatim_label": "Toss Up",
+          "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
         }
       ],
@@ -1626,14 +1815,14 @@
           "is_incumbent": true,
           "fec_id": null,
           "source_url": "https://ballotpedia.org/AR_gubernatorial_election,_2026",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [
         {
           "rater": "Cook Political Report",
-          "verbatim_label": "Solid",
-          "rater_date": "2026-09-15",
+          "verbatim_label": "Solid Republican",
+          "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
         }
       ],
@@ -1659,14 +1848,14 @@
           "is_incumbent": true,
           "fec_id": null,
           "source_url": "https://ballotpedia.org/CA_gubernatorial_election,_2026",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [
         {
           "rater": "Cook Political Report",
-          "verbatim_label": "Solid",
-          "rater_date": "2026-09-15",
+          "verbatim_label": "Solid Democrat",
+          "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
         }
       ],
@@ -1692,14 +1881,14 @@
           "is_incumbent": true,
           "fec_id": null,
           "source_url": "https://ballotpedia.org/CO_gubernatorial_election,_2026",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [
         {
           "rater": "Cook Political Report",
-          "verbatim_label": "Solid",
-          "rater_date": "2026-09-15",
+          "verbatim_label": "Solid Democrat",
+          "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
         }
       ],
@@ -1725,14 +1914,14 @@
           "is_incumbent": true,
           "fec_id": null,
           "source_url": "https://ballotpedia.org/CT_gubernatorial_election,_2026",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [
         {
           "rater": "Cook Political Report",
-          "verbatim_label": "Solid",
-          "rater_date": "2026-09-15",
+          "verbatim_label": "Solid Democrat",
+          "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
         }
       ],
@@ -1758,14 +1947,14 @@
           "is_incumbent": true,
           "fec_id": null,
           "source_url": "https://ballotpedia.org/FL_gubernatorial_election,_2026",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [
         {
           "rater": "Cook Political Report",
-          "verbatim_label": "Solid",
-          "rater_date": "2026-09-15",
+          "verbatim_label": "Solid Republican",
+          "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
         }
       ],
@@ -1791,7 +1980,7 @@
           "is_incumbent": false,
           "fec_id": null,
           "source_url": "https://ballotpedia.org/Georgia_gubernatorial_election,_2026",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         },
         {
           "name": "Keisha Lance Bottoms",
@@ -1800,7 +1989,7 @@
           "is_incumbent": false,
           "fec_id": null,
           "source_url": "https://ballotpedia.org/Georgia_gubernatorial_election,_2026",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [
@@ -1820,7 +2009,7 @@
       "polls": [
         {
           "pollster": "Atlanta Journal-Constitution / UGA",
-          "field_dates": "2026-10-07 - 2026-10-16",
+          "field_dates": "2026-09-11 - 2026-09-19",
           "sample_size": 1000,
           "sample_type": "lv",
           "results": {
@@ -1828,7 +2017,7 @@
             "Keisha Lance Bottoms": 45,
             "Undecided": 9
           },
-          "source_url": "https://www.wsbtv.com/news/local/ajcuga-poll-bottoms-jackson-dead-heat-georgia-governor-race/76TN3NROXRG4HDILVYDUMJS4RQ/",
+          "source_url": "https://www.ajc.com/politics/",
           "sponsor": "AJC"
         }
       ],
@@ -1853,14 +2042,14 @@
           "is_incumbent": true,
           "fec_id": null,
           "source_url": "https://ballotpedia.org/HI_gubernatorial_election,_2026",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [
         {
           "rater": "Cook Political Report",
-          "verbatim_label": "Solid",
-          "rater_date": "2026-09-15",
+          "verbatim_label": "Solid Democrat",
+          "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
         }
       ],
@@ -1886,14 +2075,14 @@
           "is_incumbent": true,
           "fec_id": null,
           "source_url": "https://ballotpedia.org/ID_gubernatorial_election,_2026",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [
         {
           "rater": "Cook Political Report",
-          "verbatim_label": "Solid",
-          "rater_date": "2026-09-15",
+          "verbatim_label": "Solid Republican",
+          "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
         }
       ],
@@ -1919,14 +2108,14 @@
           "is_incumbent": true,
           "fec_id": null,
           "source_url": "https://ballotpedia.org/IL_gubernatorial_election,_2026",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [
         {
           "rater": "Cook Political Report",
-          "verbatim_label": "Solid",
-          "rater_date": "2026-09-15",
+          "verbatim_label": "Solid Democrat",
+          "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
         }
       ],
@@ -1952,14 +2141,14 @@
           "is_incumbent": true,
           "fec_id": null,
           "source_url": "https://ballotpedia.org/IA_gubernatorial_election,_2026",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [
         {
           "rater": "Cook Political Report",
-          "verbatim_label": "Solid",
-          "rater_date": "2026-09-15",
+          "verbatim_label": "Solid Republican",
+          "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
         }
       ],
@@ -1985,14 +2174,14 @@
           "is_incumbent": true,
           "fec_id": null,
           "source_url": "https://ballotpedia.org/KS_gubernatorial_election,_2026",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [
         {
           "rater": "Cook Political Report",
-          "verbatim_label": "Solid",
-          "rater_date": "2026-09-15",
+          "verbatim_label": "Lean Democrat",
+          "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
         }
       ],
@@ -2018,14 +2207,14 @@
           "is_incumbent": true,
           "fec_id": null,
           "source_url": "https://ballotpedia.org/ME_gubernatorial_election,_2026",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [
         {
           "rater": "Cook Political Report",
-          "verbatim_label": "Solid",
-          "rater_date": "2026-09-15",
+          "verbatim_label": "Solid Democrat",
+          "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
         }
       ],
@@ -2051,14 +2240,14 @@
           "is_incumbent": true,
           "fec_id": null,
           "source_url": "https://ballotpedia.org/MD_gubernatorial_election,_2026",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [
         {
           "rater": "Cook Political Report",
-          "verbatim_label": "Solid",
-          "rater_date": "2026-09-15",
+          "verbatim_label": "Solid Democrat",
+          "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
         }
       ],
@@ -2084,14 +2273,14 @@
           "is_incumbent": true,
           "fec_id": null,
           "source_url": "https://ballotpedia.org/MA_gubernatorial_election,_2026",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [
         {
           "rater": "Cook Political Report",
-          "verbatim_label": "Solid",
-          "rater_date": "2026-09-15",
+          "verbatim_label": "Solid Democrat",
+          "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
         }
       ],
@@ -2117,14 +2306,14 @@
           "is_incumbent": true,
           "fec_id": null,
           "source_url": "https://ballotpedia.org/MI_gubernatorial_election,_2026",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [
         {
           "rater": "Cook Political Report",
-          "verbatim_label": "Solid",
-          "rater_date": "2026-09-15",
+          "verbatim_label": "Lean Democrat",
+          "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
         }
       ],
@@ -2150,14 +2339,14 @@
           "is_incumbent": true,
           "fec_id": null,
           "source_url": "https://ballotpedia.org/MN_gubernatorial_election,_2026",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [
         {
           "rater": "Cook Political Report",
-          "verbatim_label": "Solid",
-          "rater_date": "2026-09-15",
+          "verbatim_label": "Solid Democrat",
+          "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
         }
       ],
@@ -2183,14 +2372,14 @@
           "is_incumbent": true,
           "fec_id": null,
           "source_url": "https://ballotpedia.org/NE_gubernatorial_election,_2026",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [
         {
           "rater": "Cook Political Report",
-          "verbatim_label": "Solid",
-          "rater_date": "2026-09-15",
+          "verbatim_label": "Solid Republican",
+          "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
         }
       ],
@@ -2216,14 +2405,14 @@
           "is_incumbent": true,
           "fec_id": null,
           "source_url": "https://ballotpedia.org/NV_gubernatorial_election,_2026",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [
         {
           "rater": "Cook Political Report",
-          "verbatim_label": "Solid",
-          "rater_date": "2026-09-15",
+          "verbatim_label": "Lean Republican",
+          "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
         }
       ],
@@ -2249,14 +2438,14 @@
           "is_incumbent": true,
           "fec_id": null,
           "source_url": "https://ballotpedia.org/NH_gubernatorial_election,_2026",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [
         {
           "rater": "Cook Political Report",
-          "verbatim_label": "Solid",
-          "rater_date": "2026-09-15",
+          "verbatim_label": "Lean Republican",
+          "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
         }
       ],
@@ -2282,14 +2471,14 @@
           "is_incumbent": true,
           "fec_id": null,
           "source_url": "https://ballotpedia.org/NM_gubernatorial_election,_2026",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [
         {
           "rater": "Cook Political Report",
-          "verbatim_label": "Solid",
-          "rater_date": "2026-09-15",
+          "verbatim_label": "Solid Democrat",
+          "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
         }
       ],
@@ -2315,14 +2504,14 @@
           "is_incumbent": true,
           "fec_id": null,
           "source_url": "https://ballotpedia.org/NY_gubernatorial_election,_2026",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [
         {
           "rater": "Cook Political Report",
-          "verbatim_label": "Solid",
-          "rater_date": "2026-09-15",
+          "verbatim_label": "Solid Democrat",
+          "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
         }
       ],
@@ -2348,14 +2537,14 @@
           "is_incumbent": true,
           "fec_id": null,
           "source_url": "https://ballotpedia.org/OH_gubernatorial_election,_2026",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [
         {
           "rater": "Cook Political Report",
-          "verbatim_label": "Solid",
-          "rater_date": "2026-09-15",
+          "verbatim_label": "Solid Republican",
+          "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
         }
       ],
@@ -2381,14 +2570,14 @@
           "is_incumbent": true,
           "fec_id": null,
           "source_url": "https://ballotpedia.org/OK_gubernatorial_election,_2026",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [
         {
           "rater": "Cook Political Report",
-          "verbatim_label": "Solid",
-          "rater_date": "2026-09-15",
+          "verbatim_label": "Solid Republican",
+          "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
         }
       ],
@@ -2414,14 +2603,14 @@
           "is_incumbent": true,
           "fec_id": null,
           "source_url": "https://ballotpedia.org/OR_gubernatorial_election,_2026",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [
         {
           "rater": "Cook Political Report",
-          "verbatim_label": "Solid",
-          "rater_date": "2026-09-15",
+          "verbatim_label": "Solid Democrat",
+          "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
         }
       ],
@@ -2447,14 +2636,14 @@
           "is_incumbent": true,
           "fec_id": null,
           "source_url": "https://ballotpedia.org/PA_gubernatorial_election,_2026",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [
         {
           "rater": "Cook Political Report",
-          "verbatim_label": "Solid",
-          "rater_date": "2026-09-15",
+          "verbatim_label": "Solid Democrat",
+          "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
         }
       ],
@@ -2480,14 +2669,14 @@
           "is_incumbent": true,
           "fec_id": null,
           "source_url": "https://ballotpedia.org/RI_gubernatorial_election,_2026",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [
         {
           "rater": "Cook Political Report",
-          "verbatim_label": "Solid",
-          "rater_date": "2026-09-15",
+          "verbatim_label": "Solid Democrat",
+          "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
         }
       ],
@@ -2513,14 +2702,14 @@
           "is_incumbent": true,
           "fec_id": null,
           "source_url": "https://ballotpedia.org/SC_gubernatorial_election,_2026",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [
         {
           "rater": "Cook Political Report",
-          "verbatim_label": "Solid",
-          "rater_date": "2026-09-15",
+          "verbatim_label": "Solid Republican",
+          "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
         }
       ],
@@ -2546,14 +2735,14 @@
           "is_incumbent": true,
           "fec_id": null,
           "source_url": "https://ballotpedia.org/SD_gubernatorial_election,_2026",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [
         {
           "rater": "Cook Political Report",
-          "verbatim_label": "Solid",
-          "rater_date": "2026-09-15",
+          "verbatim_label": "Solid Republican",
+          "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
         }
       ],
@@ -2579,14 +2768,14 @@
           "is_incumbent": true,
           "fec_id": null,
           "source_url": "https://ballotpedia.org/TN_gubernatorial_election,_2026",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [
         {
           "rater": "Cook Political Report",
-          "verbatim_label": "Solid",
-          "rater_date": "2026-09-15",
+          "verbatim_label": "Solid Republican",
+          "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
         }
       ],
@@ -2612,14 +2801,14 @@
           "is_incumbent": true,
           "fec_id": null,
           "source_url": "https://ballotpedia.org/TX_gubernatorial_election,_2026",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [
         {
           "rater": "Cook Political Report",
-          "verbatim_label": "Solid",
-          "rater_date": "2026-09-15",
+          "verbatim_label": "Solid Republican",
+          "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
         }
       ],
@@ -2645,14 +2834,14 @@
           "is_incumbent": true,
           "fec_id": null,
           "source_url": "https://ballotpedia.org/VT_gubernatorial_election,_2026",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [
         {
           "rater": "Cook Political Report",
-          "verbatim_label": "Solid",
-          "rater_date": "2026-09-15",
+          "verbatim_label": "Solid Republican",
+          "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
         }
       ],
@@ -2678,14 +2867,14 @@
           "is_incumbent": true,
           "fec_id": null,
           "source_url": "https://ballotpedia.org/WI_gubernatorial_election,_2026",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [
         {
           "rater": "Cook Political Report",
-          "verbatim_label": "Solid",
-          "rater_date": "2026-09-15",
+          "verbatim_label": "Lean Democrat",
+          "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
         }
       ],
@@ -2711,14 +2900,14 @@
           "is_incumbent": true,
           "fec_id": null,
           "source_url": "https://ballotpedia.org/WY_gubernatorial_election,_2026",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [
         {
           "rater": "Cook Political Report",
-          "verbatim_label": "Solid",
-          "rater_date": "2026-09-15",
+          "verbatim_label": "Solid Republican",
+          "rater_date": "2026-10-20",
           "source_url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
         }
       ],
@@ -2838,11 +3027,11 @@
       "polling_average": null
     },
     {
-      "id": "house-ak-at-large",
+      "id": "house-ak-al",
       "state": "AK",
       "state_name": "AK",
-      "office": "U.S. House (AK-At-Large)",
-      "district": "At-Large",
+      "office": "U.S. House (AK-AL)",
+      "district": "AL",
       "tier": 3,
       "cycle": 2026,
       "election_date": "2026-11-03",
@@ -3270,18 +3459,18 @@
           "party": "REP",
           "status": "nominee",
           "is_incumbent": true,
-          "fec_id": "H2CA13164",
+          "fec_id": "H2CA13158",
           "source_url": "https://ballotpedia.org/California%27s_13th_Congressional_District_election,_2026",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         },
         {
           "name": "Adam Gray",
           "party": "DEM",
           "status": "nominee",
           "is_incumbent": false,
-          "fec_id": "H2CA13180",
+          "fec_id": "H2CA13166",
           "source_url": "https://ballotpedia.org/California%27s_13th_Congressional_District_election,_2026",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [],
@@ -4121,11 +4310,11 @@
       "polling_average": null
     },
     {
-      "id": "house-de-at-large",
+      "id": "house-de-al",
       "state": "DE",
       "state_name": "DE",
-      "office": "U.S. House (DE-At-Large)",
-      "district": "At-Large",
+      "office": "U.S. House (DE-AL)",
+      "district": "AL",
       "tier": 3,
       "cycle": 2026,
       "election_date": "2026-11-03",
@@ -7497,11 +7686,11 @@
       "polling_average": null
     },
     {
-      "id": "house-nd-at-large",
+      "id": "house-nd-al",
       "state": "ND",
       "state_name": "ND",
-      "office": "U.S. House (ND-At-Large)",
-      "district": "At-Large",
+      "office": "U.S. House (ND-AL)",
+      "district": "AL",
       "tier": 3,
       "cycle": 2026,
       "election_date": "2026-11-03",
@@ -8345,11 +8534,11 @@
       "polling_average": null
     },
     {
-      "id": "house-sd-at-large",
+      "id": "house-sd-al",
       "state": "SD",
       "state_name": "SD",
-      "office": "U.S. House (SD-At-Large)",
-      "district": "At-Large",
+      "office": "U.S. House (SD-AL)",
+      "district": "AL",
       "tier": 3,
       "cycle": 2026,
       "election_date": "2026-11-03",
@@ -9177,11 +9366,11 @@
       "polling_average": null
     },
     {
-      "id": "house-vt-at-large",
+      "id": "house-vt-al",
       "state": "VT",
       "state_name": "VT",
-      "office": "U.S. House (VT-At-Large)",
-      "district": "At-Large",
+      "office": "U.S. House (VT-AL)",
+      "district": "AL",
       "tier": 3,
       "cycle": 2026,
       "election_date": "2026-11-03",
@@ -9689,11 +9878,11 @@
       "polling_average": null
     },
     {
-      "id": "house-wy-at-large",
+      "id": "house-wy-al",
       "state": "WY",
       "state_name": "WY",
-      "office": "U.S. House (WY-At-Large)",
-      "district": "At-Large",
+      "office": "U.S. House (WY-AL)",
+      "district": "AL",
       "tier": 3,
       "cycle": 2026,
       "election_date": "2026-11-03",
@@ -9723,7 +9912,7 @@
           "is_incumbent": true,
           "fec_id": null,
           "source_url": "https://ballotpedia.org/Mayoral_election_in_San_Antonio,_TX_(2026)",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [],
@@ -9749,7 +9938,7 @@
           "is_incumbent": true,
           "fec_id": null,
           "source_url": "https://ballotpedia.org/Mayoral_election_in_Austin,_TX_(2026)",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [],
@@ -9775,7 +9964,7 @@
           "is_incumbent": true,
           "fec_id": null,
           "source_url": "https://ballotpedia.org/Mayoral_election_in_Las_Vegas,_NV_(2026)",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [],
@@ -9801,7 +9990,7 @@
           "is_incumbent": true,
           "fec_id": null,
           "source_url": "https://ballotpedia.org/Mayoral_election_in_Phoenix,_AZ_(2026)",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [],
@@ -9827,7 +10016,7 @@
           "is_incumbent": true,
           "fec_id": null,
           "source_url": "https://ballotpedia.org/Mayoral_election_in_San_Jose,_CA_(2026)",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [],
@@ -9853,7 +10042,7 @@
           "is_incumbent": true,
           "fec_id": null,
           "source_url": "https://ballotpedia.org/Mayoral_election_in_Long_Beach,_CA_(2026)",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [],
@@ -9879,7 +10068,7 @@
           "is_incumbent": true,
           "fec_id": null,
           "source_url": "https://ballotpedia.org/Mayoral_election_in_Fresno,_CA_(2026)",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [],
@@ -9905,7 +10094,7 @@
           "is_incumbent": true,
           "fec_id": null,
           "source_url": "https://ballotpedia.org/Mayoral_election_in_Sacramento,_CA_(2026)",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [],
@@ -9931,7 +10120,7 @@
           "is_incumbent": true,
           "fec_id": null,
           "source_url": "https://ballotpedia.org/Mayoral_election_in_Bakersfield,_CA_(2026)",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [],
@@ -9957,7 +10146,7 @@
           "is_incumbent": true,
           "fec_id": null,
           "source_url": "https://ballotpedia.org/Mayoral_election_in_Anaheim,_CA_(2026)",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [],
@@ -9983,7 +10172,7 @@
           "is_incumbent": true,
           "fec_id": null,
           "source_url": "https://ballotpedia.org/Mayoral_election_in_Santa_Ana,_CA_(2026)",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [],
@@ -10009,7 +10198,7 @@
           "is_incumbent": true,
           "fec_id": null,
           "source_url": "https://ballotpedia.org/Mayoral_election_in_Riverside,_CA_(2026)",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [],
@@ -10035,7 +10224,7 @@
           "is_incumbent": true,
           "fec_id": null,
           "source_url": "https://ballotpedia.org/Mayoral_election_in_Stockton,_CA_(2026)",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [],
@@ -10061,7 +10250,7 @@
           "is_incumbent": true,
           "fec_id": null,
           "source_url": "https://ballotpedia.org/Mayoral_election_in_Chula_Vista,_CA_(2026)",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [],
@@ -10087,7 +10276,7 @@
           "is_incumbent": true,
           "fec_id": null,
           "source_url": "https://ballotpedia.org/Mayoral_election_in_Irvine,_CA_(2026)",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [],
@@ -10113,7 +10302,7 @@
           "is_incumbent": true,
           "fec_id": null,
           "source_url": "https://ballotpedia.org/Mayoral_election_in_Fremont,_CA_(2026)",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [],
@@ -10139,7 +10328,7 @@
           "is_incumbent": true,
           "fec_id": null,
           "source_url": "https://ballotpedia.org/Mayoral_election_in_Reno,_NV_(2026)",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [],
@@ -10165,7 +10354,7 @@
           "is_incumbent": true,
           "fec_id": null,
           "source_url": "https://ballotpedia.org/Mayoral_election_in_Henderson,_NV_(2026)",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [],
@@ -10191,7 +10380,7 @@
           "is_incumbent": true,
           "fec_id": null,
           "source_url": "https://ballotpedia.org/Mayoral_election_in_North_Las_Vegas,_NV_(2026)",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [],
@@ -10217,7 +10406,7 @@
           "is_incumbent": true,
           "fec_id": null,
           "source_url": "https://ballotpedia.org/Mayoral_election_in_Corpus_Christi,_TX_(2026)",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [],
@@ -10243,7 +10432,7 @@
           "is_incumbent": true,
           "fec_id": null,
           "source_url": "https://ballotpedia.org/Mayoral_election_in_El_Paso,_TX_(2026)",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [],
@@ -10269,7 +10458,7 @@
           "is_incumbent": true,
           "fec_id": null,
           "source_url": "https://ballotpedia.org/Mayoral_election_in_Arlington,_TX_(2026)",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [],
@@ -10295,7 +10484,7 @@
           "is_incumbent": true,
           "fec_id": null,
           "source_url": "https://ballotpedia.org/Mayoral_election_in_Lubbock,_TX_(2026)",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [],
@@ -10321,7 +10510,7 @@
           "is_incumbent": true,
           "fec_id": null,
           "source_url": "https://ballotpedia.org/Mayoral_election_in_Laredo,_TX_(2026)",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [],
@@ -10347,7 +10536,7 @@
           "is_incumbent": true,
           "fec_id": null,
           "source_url": "https://ballotpedia.org/Mayoral_election_in_Garland,_TX_(2026)",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [],
@@ -10373,7 +10562,7 @@
           "is_incumbent": true,
           "fec_id": null,
           "source_url": "https://ballotpedia.org/Mayoral_election_in_Irving,_TX_(2026)",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [],
@@ -10399,7 +10588,7 @@
           "is_incumbent": true,
           "fec_id": null,
           "source_url": "https://ballotpedia.org/Mayoral_election_in_Scottsdale,_AZ_(2026)",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [],
@@ -10425,7 +10614,7 @@
           "is_incumbent": true,
           "fec_id": null,
           "source_url": "https://ballotpedia.org/Mayoral_election_in_Gilbert,_AZ_(2026)",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [],
@@ -10451,7 +10640,7 @@
           "is_incumbent": true,
           "fec_id": null,
           "source_url": "https://ballotpedia.org/Mayoral_election_in_Glendale,_AZ_(2026)",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [],
@@ -10477,7 +10666,7 @@
           "is_incumbent": true,
           "fec_id": null,
           "source_url": "https://ballotpedia.org/Mayoral_election_in_Chandler,_AZ_(2026)",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [],
@@ -10503,7 +10692,7 @@
           "is_incumbent": true,
           "fec_id": null,
           "source_url": "https://ballotpedia.org/Mayoral_election_in_Mesa,_AZ_(2026)",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-20"
         }
       ],
       "ratings": [],
