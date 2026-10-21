@@ -2,49 +2,150 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --bg: #FFFFFF;
-  --bg-subtle: #F6F8FB;
-  --surface: #FFFFFF;
-  --border: #E4E9F0;
-  --border-strong: #CBD5E1;
-  --text: #0B1220;
-  --text-body: #24303F;
-  --text-muted: #5B6779;
-  --text-faint: #8494A8;
-  --brand: #0E63C4;
-  --brand-hover: #0A4E9E;
-  --brand-soft: #EBF3FD;
-  --brand-ink: #0A3F73;
-  --tossup: #8A6100;
-  --tossup-bg: #FFFBEB;
-  --tossup-bd: #FCE8A5;
-  --lean: #B54708;
-  --lean-bg: #FFF7ED;
-  --lean-bd: #FCD9B6;
-  --likely: #0E63C4;
-  --likely-bg: #EBF3FD;
-  --likely-bd: #C9DFF7;
-  --solid: #5B6473;
-  --solid-bg: #F8FAFC;
-  --solid-bd: #D8DEE7;
-  --moved: #B42318;
-  --moved-bg: #FEF2F2;
-  --moved-bd: #FBD5D5;
-  --live: #0BA360;
-  --font-ui: 'Inter', system-ui, sans-serif;
-  --font-display: 'Manrope', 'Inter', sans-serif;
-  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+@layer base {
+  :root {
+    --arcade-bg: #080616;
+    --arcade-surface: #100C2A;
+    --arcade-surface-card: #161238;
+    --arcade-border: #2D2264;
+    --arcade-yellow: #FFE600;
+    --arcade-cyan: #00F0FF;
+    --arcade-pink: #FF007F;
+    --arcade-green: #39FF14;
+    --arcade-purple: #BD00FF;
+    --arcade-orange: #FF5500;
+    --arcade-red: #FF2244;
+    --arcade-blue: #0066FF;
+    --text-primary: #FFFFFF;
+    --text-secondary: #A5B4FC;
+    --text-muted: #6366F1;
+  }
+
+  body {
+    background-color: #080616;
+    color: #FFFFFF;
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    -webkit-font-smoothing: antialiased;
+  }
 }
 
-body {
-  background-color: var(--bg);
-  color: var(--text);
-  font-family: var(--font-ui);
-  -webkit-font-smoothing: antialiased;
+/* 1980s Arcade CRT Scanline & Grid Effect */
+.arcade-scanlines {
+  background: 
+    linear-gradient(rgba(18, 14, 38, 0) 50%, rgba(0, 0, 0, 0.35) 50%),
+    linear-gradient(90deg, rgba(255, 0, 80, 0.03), rgba(0, 255, 120, 0.02), rgba(0, 150, 255, 0.03));
+  background-size: 100% 4px, 6px 100%;
 }
 
-.tabular-nums {
-  font-variant-numeric: tabular-nums;
-  font-family: var(--font-mono);
+.arcade-grid-bg {
+  background-color: #080616;
+  background-image: 
+    radial-gradient(circle at 50% 0%, rgba(189, 0, 255, 0.15) 0%, transparent 60%),
+    linear-gradient(rgba(0, 240, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 240, 255, 0.06) 1px, transparent 1px);
+  background-size: 100% 100%, 28px 28px, 28px 28px;
+}
+
+/* 1980s Arcade Typography */
+.font-arcade {
+  font-family: 'Press Start 2P', cursive, monospace;
+}
+
+.font-crt {
+  font-family: 'VT323', monospace;
+}
+
+.font-pixel {
+  font-family: 'Silkscreen', cursive, monospace;
+}
+
+/* 1980s Neon Glows */
+.arcade-glow-cyan {
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.6), inset 0 0 10px rgba(0, 240, 255, 0.2);
+}
+
+.arcade-glow-pink {
+  box-shadow: 0 0 12px rgba(255, 0, 127, 0.6), inset 0 0 10px rgba(255, 0, 127, 0.2);
+}
+
+.arcade-glow-yellow {
+  box-shadow: 0 0 12px rgba(255, 230, 0, 0.6), inset 0 0 10px rgba(255, 230, 0, 0.2);
+}
+
+.arcade-glow-green {
+  box-shadow: 0 0 12px rgba(57, 255, 20, 0.6), inset 0 0 10px rgba(57, 255, 20, 0.2);
+}
+
+.arcade-text-glow-yellow {
+  text-shadow: 0 0 8px #FFE600, 0 0 16px rgba(255, 230, 0, 0.5);
+}
+
+.arcade-text-glow-cyan {
+  text-shadow: 0 0 8px #00F0FF, 0 0 16px rgba(0, 240, 255, 0.5);
+}
+
+.arcade-text-glow-pink {
+  text-shadow: 0 0 8px #FF007F, 0 0 16px rgba(255, 0, 127, 0.5);
+}
+
+.arcade-text-glow-green {
+  text-shadow: 0 0 8px #39FF14, 0 0 16px rgba(57, 255, 20, 0.5);
+}
+
+/* 1980s Chunky Pixel Borders & Buttons */
+.arcade-frame-cyan {
+  border: 3px solid #00F0FF;
+  box-shadow: 4px 4px 0px #000, 0 0 15px rgba(0, 240, 255, 0.4);
+}
+
+.arcade-frame-pink {
+  border: 3px solid #FF007F;
+  box-shadow: 4px 4px 0px #000, 0 0 15px rgba(255, 0, 127, 0.4);
+}
+
+.arcade-frame-yellow {
+  border: 3px solid #FFE600;
+  box-shadow: 4px 4px 0px #000, 0 0 15px rgba(255, 230, 0, 0.4);
+}
+
+.arcade-frame-green {
+  border: 3px solid #39FF14;
+  box-shadow: 4px 4px 0px #000, 0 0 15px rgba(57, 255, 20, 0.4);
+}
+
+.arcade-btn {
+  font-family: 'Press Start 2P', monospace;
+  transition: all 0.1s ease;
+  box-shadow: 3px 3px 0px #000;
+}
+
+.arcade-btn:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0px #000;
+}
+
+.arcade-btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px #000;
+}
+
+/* Blinking Animation */
+@keyframes arcade-blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+
+.arcade-blink {
+  animation: arcade-blink 0.9s infinite;
+}
+
+/* Retro Pixel Health/Power Gauge */
+.arcade-meter-bar {
+  background: repeating-linear-gradient(
+    90deg,
+    currentColor 0px,
+    currentColor 6px,
+    transparent 6px,
+    transparent 9px
+  );
 }
